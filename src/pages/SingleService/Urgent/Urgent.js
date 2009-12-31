@@ -57,6 +57,8 @@ class Urgent extends React.Component {
                         </div>
                     </div><br /><br />
                 </div>
+                <Contact />
+                <Footer />
             </Div>
         )
         }
