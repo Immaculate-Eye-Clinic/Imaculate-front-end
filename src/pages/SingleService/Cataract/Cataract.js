@@ -5,6 +5,7 @@ import Navs from '../Navbar/Navs'
 import {Div} from './styled'
 import Prop from './Prop'
 import Footer from '../../../components/modules/footer/footer'
+import Contact from '../../../components/modules/contactUs/Contact'
 
 class Cataract extends React.Component {
     
@@ -117,6 +118,7 @@ class Cataract extends React.Component {
                         </div>
                     </div><br /><br />
                 </div>
+                <Contact />
                 <Footer />
             </Div>
         )
