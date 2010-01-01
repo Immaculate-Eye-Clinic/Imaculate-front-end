@@ -33,11 +33,15 @@ text-align: left;
   left: 8%;
   width: 40%;
   @media (max-width: 1000px) {
-    width: 100%;
+    width: 80%;
   }
   .flex {
     display: flex;
     justify-content: space-between;
   }
+}
+.acc {
+  position: relative;
+  left: 2%;
 }
 `
