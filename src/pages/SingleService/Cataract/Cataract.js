@@ -4,6 +4,7 @@ import Header from '../../../components/modules/Header/Header'
 import Navs from '../Navbar/Navs'
 import {Div} from './styled'
 import Prop from './Prop'
+import Footer from '../../../components/modules/footer/footer'
 
 class Cataract extends React.Component {
     
