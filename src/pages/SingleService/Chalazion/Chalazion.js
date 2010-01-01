@@ -49,7 +49,7 @@ class Chalazion extends React.Component {
                         </div>
                     </div><br /><br />
                 </div>
-                
+                <Footer />
             </Div>
         )
         }
