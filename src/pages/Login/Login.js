@@ -35,7 +35,7 @@ function Login() {
                      .email('invalid email address')
                      .required(''), 
                      password: Yup.string()
-                     .min(4)
+                     .min(4,)
                      .max(12)
                      .matches('^(?=.*[a-z])(?=.*[A-Z](?=.*d)[a-zA-Zd]$')
                      .required('')

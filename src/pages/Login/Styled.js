@@ -131,6 +131,7 @@ a {
     text-align: center;
     color: #252079;
     font-size: 13px;
+    cursor: pointer;
 }
 
 
@@ -142,6 +143,7 @@ a {
 }
 
 .error {
+    position: relative;
     color: #dc143c;
     font-size: 14px;
     margin-top: 10px;
