@@ -32,6 +32,9 @@ text-align: left;
   position: relative;
   left: 8%;
   width: 40%;
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
   .flex {
     display: flex;
     justify-content: space-between;
