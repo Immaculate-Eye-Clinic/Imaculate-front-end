@@ -4,6 +4,7 @@ import Header from '../../../components/modules/Header/Header'
 import Navs from '../Navbar/Navs'
 import {Div} from './styled'
 import Prop from './Chalazionprop'
+import Footer from '../../../components/modules/footer/footer'
 
 class Chalazion extends React.Component {
     
@@ -48,6 +49,7 @@ class Chalazion extends React.Component {
                         </div>
                     </div><br /><br />
                 </div>
+                
             </Div>
         )
         }
