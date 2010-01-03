@@ -44,7 +44,6 @@ function Blog() {
             <Header 
                 bgcolor={'transparent'}
                 title={'Visit Our Blogs'}
-                subText={''}
                 height={'70vh'}
                 img={'https://res.cloudinary.com/hisroyalwonginess/image/upload/v1588437898/Immaculate/Doctors_ieplxk.jpg'}
             />
