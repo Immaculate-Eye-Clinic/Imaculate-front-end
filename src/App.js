@@ -6,7 +6,9 @@ import Home from './pages/Home'
 function App() {
   return (
     <BrowserRouter>
-      <Route path='/' component={Home} exact />
+      <Switch>
+        <Route path='/' component={Home} exact />
+      </Switch>
     </BrowserRouter>
   );
 }
