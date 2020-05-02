@@ -1,7 +1,7 @@
 import React from 'react';
 // import {Provider} from 'react-redux';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Home from './pages/Home';
+import Home from './pages/home/Home';
 // import store from './store';
 
 function App() {
