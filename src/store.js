@@ -1,7 +1,7 @@
-import {createStore, applyMiddleware} from 'redux'
+// import {createStore, applyMiddleware} from 'redux'
 
-const initialState = {};
+// const initialState = {};
 
-const store = createStore(initialState, applyMiddleware())
+// const store = createStore(initialState, applyMiddleware())
 
-export default store
+// export default store
