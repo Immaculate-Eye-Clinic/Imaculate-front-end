@@ -11,7 +11,10 @@ function App() {
             <Switch>
                 <Route path="/" component={Home} exact />
             </Switch>
-            <BlockCard />
+            <BlockCard 
+                imgUrl='/Asset/Img/g.jpg'
+                caption='What you must know about Corona Virus'
+            />
         </BrowserRouter>
     );
 }
