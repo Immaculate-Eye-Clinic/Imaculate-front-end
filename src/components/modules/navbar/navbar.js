@@ -1,20 +1,23 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom'
-import {Div, Div2, A, H1, Div1, P1,D} from './Styled'
+import {Div, Div2, Div1} from './Styled'
 
 class Navbar extends React.Component {
     render () {
         return (
             <Div>
                 <Div1>
-                    <div><H1>Immaculate</H1></div>
-                    <D><P1>Eye Clinic</P1></D>
+                    <div><h1>Immaculate</h1></div>
+                    <span>Eye Clinic</span>
                 </Div1>
                 <Div2>
-                    <NavLink to='/'  activeClassName='active' className='nav'><A>Home</A></NavLink><br />
-                    <NavLink to='/common-eye-ailments'  activeClassName='active' className='nav'><A>Common Eye Ailments</A></NavLink>
-                    <NavLink to='/our-services'  activeClassName='active' className='nav'><A>Our Services</A></NavLink>
-                    <NavLink to='/visit-us' activeClassName='active' className='nav'><A>Visit Us</A></NavLink>
+                    <ul class="menu">
+                        <li><NavLink to='/'  activeClassName='active'>Home</NavLink><span class="isactive"></span></li>
+                        <li><NavLink to='/about'  activeClassName='active'>About</NavLink><span class="isactive"></span></li>
+                        <li><NavLink to='/services'  activeClassName='active'>Services</NavLink><span class="isactive"></span></li>
+                        <li><NavLink to='/Test'  activeClassName='active'>Eye Test</NavLink><span class="isactive"></span></li>
+                        <li><NavLink to='/visitUs'  activeClassName='active'>Visit Us</NavLink><span class="isactive"></span></li>               
+                    </ul>
                 </Div2>
             </Div>
         )

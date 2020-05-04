@@ -1,46 +1,86 @@
 import styled from 'styled-components'
 
 export const Div = styled.header`
-display: flex;
-justify-content: space-between;
-background: transparent;
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
 `
-export const A = styled.div `
-padding: 25px;
-color: #0000cd;
-text-decoration: none;
-font-weight: 800;
-font-size: 18px;
-:hover {
+
+export const Div2 = styled.div `
+    display: flex;
+    justify-content: space-between;
+    margin: 2em;
+    padding-bottom: 2em;
+    align-content: center;
+    .menu {
+        list-style-type: none;
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+
+        .active~span {
+            position: absolute;
+            width: 27px;
+            border-bottom: 1.5px solid #0000cd;
+            padding-bottom: 2rem;
+            z-index: 0;
+        }
+
+        .notif {
+        width: 20px;
+        height: 20px;
         cursor: pointer;
-    }
+        }
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
 
-`
-
-export const Div2 = styled.ul `
-display: flex;
-justify-content: space-between;
-margin: 2em;
-padding-bottom: 2em;
-align-content: center;
-.active {
-    border-bottom: 0.4em solid #0000cd;
-}
-.nav {
-    text-decoration: none;
-}
-`
-export const H1 = styled.h1 `
-color: #00008b;
+            &:hover {
+            span:not(.hasContent) {
+                position: absolute;
+                width: 27px;
+                border-bottom: 1.5px solid #0000cd;
+                padding-bottom: 2rem;
+                z-index: 0;
+            }
+            }
+            a {
+                color: #0000cd;
+                text-decoration: none;
+                font-weight: 500;
+                font-size: 18px;
+                font-style: normal;
+                line-height: 20px;
+                padding: 0 25px;
+                text-decoration: none;
+                z-index: 1;
+    
+                &.bold {
+                font-weight: bold;
+                }
+            .active {
+                border-bottom: 0.4em solid #0000cd;
+            }
 `
 export const Div1 = styled.div `
-margin-left: 3em;
-`
-export const P1 = styled.p `
-font-size: 20px;
-color: #0000cd;
-font-weight: 600;
-`
-export const D = styled.div `
-margin-bottom: 1em;
+    margin-left: 3em;
+    margin-top: 1em;
+
+        h1 {
+            color: #00008b;
+            display: inline;
+        }
+        div {
+            display: b;
+        }
+        span {
+            color: color: #00008b;
+            font-weight: 500;
+            font-size: 18px;
+            font-style: normal;
+        }
 `
