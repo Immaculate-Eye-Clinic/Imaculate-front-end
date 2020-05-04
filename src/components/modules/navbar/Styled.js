@@ -27,12 +27,6 @@ export const Div2 = styled.div `
             padding-bottom: 2rem;
             z-index: 0;
         }
-
-        .notif {
-        width: 20px;
-        height: 20px;
-        cursor: pointer;
-        }
         li {
             display: flex;
             align-items: center;
@@ -58,13 +52,6 @@ export const Div2 = styled.div `
                 padding: 0 25px;
                 text-decoration: none;
                 z-index: 1;
-    
-                &.bold {
-                font-weight: bold;
-                }
-            .active {
-                border-bottom: 0.4em solid #0000cd;
-            }
 `
 export const Div1 = styled.div `
     margin-left: 3em;
