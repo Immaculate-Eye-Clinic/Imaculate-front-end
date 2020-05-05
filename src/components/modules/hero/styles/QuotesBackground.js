@@ -6,14 +6,15 @@ export const QuotesBackground = styled.div`
     max-width: 500px;
     max-height: 80px;
     margin: 0 auto;
-    top: 77%;
+    top: 57%;
     border-radius: 3px;
     padding: 3px 3px 3px;
     text-align: center;
     display: block;
     font-size: 13px;
+    font-weight: 400;
     line-height: 15px;
-    color: rgb(220, 239, 255);
+    color: white;
 
 
     @media only screen and (min-width: 375px) {
