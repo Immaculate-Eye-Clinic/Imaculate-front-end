@@ -1,9 +1,16 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.div `
-background: #9370db;
+background: url(/Asset/Img/EyeCareBackground.jpg);
+background-size: 100%;
+position: relative;
 color: white;
 `
+export const Diw = styled.div `
+background: #9370db;
+opacity: 0.8;
+`
+
 export const Div = styled.div `
 display: flex;
 justify-content: space-evenly;

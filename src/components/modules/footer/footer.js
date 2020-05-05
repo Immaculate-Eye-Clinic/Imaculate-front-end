@@ -1,10 +1,11 @@
 import React from 'react'
-import {Wrapper, Div, Div1, Div2, Div3, Dim} from './styled'
+import {Wrapper, Div, Div1, Div2, Div3, Dim, Diw} from './styled'
 
 class Footer extends React.Component {
     render() {
         return (
             <Wrapper>
+             <Diw>
               <Div>
                 <Div1>
                     <div className='name'>
@@ -35,12 +36,14 @@ class Footer extends React.Component {
                     <p>Mission, Vision and values</p>
                 </Div3>
              </Div><br/> <br /><br /><br />
-                <Dim>
+             <Dim>
                     <div>
                         <p className='a'>Privacy Policy</p>
                         <p className='b'>Terms and Conditions</p>
                     </div>
                 </Dim>
+             </Diw>
+                
             </Wrapper>
         )
     }
