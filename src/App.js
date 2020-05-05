@@ -6,6 +6,7 @@ import Home from './pages/home/Home';
 import BlockCard from './components/blogCard/BlockCard'
 
 import Navbar from './components/modules/navbar/navbar'
+import HomeIcon from './components/homeIcon/HomeIcon'
  
 function App() {
     return (
