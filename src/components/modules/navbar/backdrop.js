@@ -1,6 +1,6 @@
 import React from 'react';
-import './menu.css';
+import { Backdrop } from './Styled'
 
-const backdrop = props => <div className="backdrop" onClick={props.click} />;
+const backdrop = props => <Backdrop className="backdrop" onClick={props.click} />;
 
 export default backdrop;

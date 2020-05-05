@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import './menu.css';
+// import './menu.css';
 import { Link } from 'react-router-dom';
+import { Drawer } from './Styled'
 
 class sideDrawer extends Component {
     render() {
@@ -9,6 +10,7 @@ class sideDrawer extends Component {
             drawerClasses = 'side-drawer open';
         }
         return (
+            <Drawer>
             <nav className={drawerClasses}>
                 <ul>
                         <li>
@@ -31,6 +33,7 @@ class sideDrawer extends Component {
                         </li>
                 </ul>
             </nav>
+            </Drawer>
         );
     }
 }
