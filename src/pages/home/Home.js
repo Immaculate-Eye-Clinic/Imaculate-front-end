@@ -8,8 +8,8 @@ function Home() {
         <div>
             <Hero />
             <HomeIcon 
-                imgUrl='/Asset/Img/aid.svg'
-                caption='First Aid Suggestion'
+                imgUrl='/Asset/Img/book.jpg'
+                caption='Book an Appointment'
             />
         </div>
     );

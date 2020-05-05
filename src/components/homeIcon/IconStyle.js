@@ -10,6 +10,7 @@ div{
     img{
         position: absolute;
         margin-left: 0.5em;
+        width: 9%;
     }
     p{
         position: absolute;
