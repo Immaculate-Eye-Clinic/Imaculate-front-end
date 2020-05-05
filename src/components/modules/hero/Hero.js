@@ -3,14 +3,7 @@ import {HeroStyle} from "./styles/HeroStyle"
 import { QuotesBackground } from "./styles/QuotesBackground"
 import {Overlay} from "./styles/Overlay"
 
-class Hero extends React.Component{
-    constructor(){
-        super()
-        this.state = {
-
-        }
-    }
-    render(){
+function Hero (){
         return(
 
             <HeroStyle>
@@ -25,6 +18,5 @@ class Hero extends React.Component{
             
         )
     }
-}
 
 export default Hero
