@@ -3,8 +3,8 @@ import styled from 'styled-components'
 export const Div = styled.header`
     display: flex;
     justify-content: space-between;
-    background-color: rgba(14, 14, 17, 0.342);
-    position: fixed;
+    background-color: transparent;
+    position: absolute;
     width: 100%;
     height: 100px;
     top: 0;
@@ -50,9 +50,6 @@ export const Div = styled.header`
             border-bottom: 1.5px solid #0000cd;
             padding-bottom: 2rem;
             z-index: 0;
-            a {
-                color: #0000cd;
-            }
         }
         li {
             display: flex;
@@ -72,7 +69,7 @@ export const Div = styled.header`
             a {
                 color: white;
                 text-decoration: none;
-                font-weight: 600;
+                font-weight: 500;
                 font-size: 18px;
                 font-style: normal;
                 line-height: 20px;
