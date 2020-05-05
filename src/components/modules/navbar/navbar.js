@@ -1,16 +1,16 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom'
-import {Div, Div2, Div1} from './Styled'
+import { Div } from './Styled'
 
 class Navbar extends React.Component {
     render () {
         return (
             <Div>
-                <Div1>
+                <div className="logo">
                     <div><h1>Immaculate</h1></div>
                     <span>Eye Clinic</span>
-                </Div1>
-                <Div2>
+                </div>
+                <div className="navs">
                     <ul class="menu">
                         <li><NavLink to='/'  activeClassName='active'>Home</NavLink><span></span></li>
                         <li><NavLink to='/about'  activeClassName='active'>About</NavLink><span></span></li>
@@ -18,7 +18,7 @@ class Navbar extends React.Component {
                         <li><NavLink to='/Test'  activeClassName='active'>Eye Test</NavLink><span></span></li>
                         <li><NavLink to='/visitUs'  activeClassName='active'>Visit Us</NavLink><span></span></li>               
                     </ul>
-                </Div2>
+                </div>
             </Div>
         )
     }

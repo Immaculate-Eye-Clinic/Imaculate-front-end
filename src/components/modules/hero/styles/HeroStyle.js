@@ -4,7 +4,7 @@ export const HeroStyle = styled.div`
     overflow: hidden;
     position: relative;
     width: 100%;
-    height: 240px;
+    height: 30vh;
     background: url("https://res.cloudinary.com/hisroyalwonginess/image/upload/v1588437898/Immaculate/Doctors_ieplxk.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
