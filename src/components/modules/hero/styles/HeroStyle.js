@@ -3,6 +3,8 @@ import styled from "styled-components"
 export const HeroStyle = styled.div`
     overflow: hidden;
     position: relative;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 80vh;
     background: url("https://res.cloudinary.com/hisroyalwonginess/image/upload/v1588437898/Immaculate/Doctors_ieplxk.jpg");
