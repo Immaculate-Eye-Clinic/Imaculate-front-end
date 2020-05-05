@@ -2,6 +2,7 @@ import React from 'react';
 import Hero from  "../../components/modules/hero/Hero.js"
 import {GlobalStyle} from "../../GlobalStyle.js"
 
+
 function Home() {
     return (
         <div>
