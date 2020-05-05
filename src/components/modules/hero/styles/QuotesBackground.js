@@ -12,7 +12,6 @@ export const QuotesBackground = styled.div`
     text-align: center;
     display: block;
     font-size: 13px;
-    font-family: 'Dancing Script','Sue Ellen Francisco', 'Montserrat';
     line-height: 15px;
     color: rgb(220, 239, 255);
 

@@ -4,12 +4,14 @@ import Home from '../pages/home/Home';
 import NoMatch from './NoMatch';
 import ScrollToTop from './ScrollToTop';
 import NavBar from '../components/modules/navbar/navbar'
+import {GlobalStyle} from "../GlobalStyle"
 
 class ReactRouter extends React.Component {
     render() {
         return (
             <React.Fragment>
                 <BrowserRouter>
+                <GlobalStyle />
                     <NavBar />
                     <ScrollToTop>
                         <Switch>

@@ -1,9 +1,7 @@
 import {createGlobalStyle} from "styled-components";
 
-const GlobalStyle = createGlobalStyle `
+export const GlobalStyle = createGlobalStyle `
     *{
-        font-family: 'Dancing Script', Open-Sans-Condensed, sans-serif, Montserrat;
+        font-family: 'Montserrat', 'Open-Sans-Condensed', sans-serif;
     }
 `
-
-export default GlobalStyle
