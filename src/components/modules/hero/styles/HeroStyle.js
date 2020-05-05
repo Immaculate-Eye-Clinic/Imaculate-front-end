@@ -4,12 +4,12 @@ export const HeroStyle = styled.div`
     overflow: hidden;
     position: relative;
     width: 100%;
-    height: 30vh;
+    height: 80vh;
     background: url("https://res.cloudinary.com/hisroyalwonginess/image/upload/v1588437898/Immaculate/Doctors_ieplxk.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
 
-    @media only screen and (min-width: 240px) {
+    /* @media only screen and (min-width: 240px) {
         height: 185px;
     }
 
@@ -43,6 +43,6 @@ export const HeroStyle = styled.div`
 
     @media only screen and (min-width: 1440px) {
         height: 950px;
-    }
+    } */
     
 `
