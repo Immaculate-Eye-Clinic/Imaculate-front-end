@@ -1,19 +1,13 @@
 import React from "react"
-import {HeroStyle} from "./styles/HeroStyle"
-import { QuotesBackground } from "./styles/QuotesBackground"
-import {Overlay} from "./styles/Overlay"
-
+import {HeroStyle} from "./HeroStyle"
 function Hero (){
         return(
 
             <HeroStyle>
-                <Overlay>
-                    <QuotesBackground>
-                        <p>
-                            This good news of the Kingdom must be preached in all the inhabited earth, then the end will come. 
-                        </p>
-                    </QuotesBackground>
-                </Overlay>
+                <div class="hero-text">
+                    <h1>Text goes here</h1>
+                    <p>sub text goes here now like this</p>
+                </div>
             </HeroStyle>
             
         )
