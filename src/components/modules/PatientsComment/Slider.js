@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import Slide from './Slide';
-import landingData from '../Landing';
+import landingData from '../PatientsComment/Landing';
 import LeftArrow from './left_arrow';
 import RightArrow from './right_arrow';
-import './main.css';
+import {StyleComments} from "./StyleComments"
+
 
 
 export default 
@@ -12,7 +13,7 @@ class Slider extends Component {
     super(props);
     
     this.state = {
-      activeIndex: 0,
+      activeIndex: 1,
       length: landingData.length
     };
   }
@@ -47,21 +48,23 @@ class Slider extends Component {
 
   render() {
     return (
-      <div className='slider'>
-        <div className='slider-items'>
+      <StyleComments>
+        <div className='left_arrow'>
           <LeftArrow
             goToPrevSlide={() => this.goToPrevSlide()}
           />
+        </div>
         <div className='slider-text'>
           <Slide
             activeIndex={this.state.activeIndex}
           />
         </div>
+        <div className = 'right_arrow'>
           <RightArrow
             goToNextSlide={() => this.goToNextSlide()}
           />
         </div>
-      </div>
+      </StyleComments>
     );
   }
 

@@ -9,17 +9,14 @@ class Slide extends Component {
     }render() {
       return(
         <StyleComments>
-            <section>
-            {
-            this.state.landing.map((s, index) =>
+            {this.state.landing.map((s, index) =>
                 <div className={
                 index === this.props.activeIndex ? 'active' : 'inactive'}
                 key={index}>
-                    <h1>{s.title}</h1>
-                    <p>{s.description}</p>
+                  <p>{s.comment}</p>
+                  <h1>{s.patient}</h1>
                 </div>
-            ) }
-            </section>
+            )}
         </StyleComments>
       )
     }
