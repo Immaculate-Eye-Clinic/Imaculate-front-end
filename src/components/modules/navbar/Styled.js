@@ -12,21 +12,12 @@ export const Div = styled.header`
     z-index: 5;
 
     .logo {
-        margin-left: 3em;
-        margin-top: 1em;
+        margin-left: 15px;
+        margin-top: 9px;
 
-        h1 {
-            color: #00008b;
-            display: inline;
-        }
-        div {
-            display: b;
-        }
-        span {
-            color:  #00008b;
-            font-weight: 500;
-            font-size: 18px;
-            font-style: normal;
+        img {
+            width: 300px;
+            height: 90px;
         }
     }
 
@@ -119,7 +110,7 @@ export const Button = styled.button`
     .toggle-button__line {
     width: 30px;
     height: 2px;
-    background: #1890FF;
+    background: #0000cd;
   }
   
   :focus {
@@ -129,7 +120,7 @@ export const Button = styled.button`
 export const Drawer = styled.div `
     .side-drawer {
     height: 100%;
-    background: #001529;
+    background: #0000cd;
     box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
@@ -149,6 +140,10 @@ export const Drawer = styled.div `
     }
     li {
         margin: 0.5rem 0;
+
+        .link {
+            color: white;
+        }
     }
   }
   

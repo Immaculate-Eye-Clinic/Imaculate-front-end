@@ -8,8 +8,7 @@ class Navbar extends React.Component {
         return (
             <Div>
                 <div className="logo">
-                    <div><h1>Immaculate</h1></div>
-                    <span>Eye Clinic</span>
+                    <img src="asset/img/logo1.png" alt="logo" />
                 </div>          
                 <div className="navs">
                     <ul class="menu">
@@ -17,7 +16,7 @@ class Navbar extends React.Component {
                         <li><NavLink to='/about'  activeClassName='active'>About</NavLink><span></span></li>
                         <li><NavLink to='/services'  activeClassName='active'>Services</NavLink><span></span></li>
                         <li><NavLink to='/Test'  activeClassName='active'>Eye Test</NavLink><span></span></li>
-                        <li><NavLink to='/visitUs'  activeClassName='active'>Visit Us</NavLink><span></span></li>
+                        <li><NavLink to='/visit'  activeClassName='active'>Visit Us</NavLink><span></span></li>
                     </ul>
                 </div>
                 <div className="toggle">

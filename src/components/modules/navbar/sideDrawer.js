@@ -14,20 +14,32 @@ class sideDrawer extends Component {
             <nav className={drawerClasses}>
                 <ul>
                         <li>
-                            <Link className="link" to="/profile">
-                                Dashboard
+                            <Link className="link" to="/">
+                                Home
                             </Link>
                             <hr style={{ marginRight: '40px' }} />
                         </li>
                         <li>
-                            <Link className="link" to="/bookings">
-                                Bookings
+                            <Link className="link" to="/about">
+                                About
                             </Link>
                             <hr style={{ marginRight: '40px' }} />
                         </li>
                         <li>
-                            <Link className="link" to="/events">
-                                Events
+                            <Link className="link" to="/service">
+                                Service
+                            </Link>
+                            <hr style={{ marginRight: '40px' }} />
+                        </li>
+                        <li>
+                            <Link className="link" to="/test">
+                                Eye Test
+                            </Link>
+                            <hr style={{ marginRight: '40px' }} />
+                        </li>
+                        <li>
+                            <Link className="link" to="/visit">
+                                Visit Us
                             </Link>
                             <hr style={{ marginRight: '40px' }} />
                         </li>
