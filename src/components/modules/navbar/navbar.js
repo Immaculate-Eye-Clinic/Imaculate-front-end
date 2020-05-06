@@ -10,8 +10,7 @@ class Navbar extends React.Component {
                 <div className="logo">
                     <div><h1>Immaculate</h1></div>
                     <span>Eye Clinic</span>
-                </div>
-                <DrawerToggleButton className="toggleButton" click={this.props.drawerClickHandler} />            
+                </div>          
                 <div className="navs">
                     <ul class="menu">
                         <li><NavLink to='/'  activeClassName='active'>Home</NavLink><span></span></li>
@@ -21,6 +20,9 @@ class Navbar extends React.Component {
                         <li><NavLink to='/visitUs'  activeClassName='active'>Visit Us</NavLink><span></span></li>
                     </ul>
                 </div>
+                <div className="toggle">
+                    <DrawerToggleButton click={this.props.drawerClickHandler} /> 
+                </div> 
             </Div>
         )
     }

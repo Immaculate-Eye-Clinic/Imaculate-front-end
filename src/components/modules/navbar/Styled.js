@@ -87,11 +87,19 @@ export const Div = styled.header`
         }
     }
     @media (max-width: 760px) {
-        .toggleButton {
+        .toggle {
         display: block;
-        float: right;
+        position: absolute;
+        top: 20px;
+        /* margin-top: 10px; */
+        right: 40px;
         }
     }
+    @media (min-width: 769px) {
+        .toggle {
+      display: none;
+    }
+  }
 `
 
 export const Button = styled.button`
@@ -105,8 +113,8 @@ export const Button = styled.button`
     cursor: pointer;
     padding: 0;
     box-sizing: border-box;
-    position: fixed;
-    top: 10px;
+    /* position: fixed;
+    top: 10px; */
 
     .toggle-button__line {
     width: 30px;
