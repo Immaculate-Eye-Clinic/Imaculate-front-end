@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
 import Toolbar from './modules/navbar/navbar';
 import SideDrawer from './modules/navbar/sideDrawer';
 import Backdrop from './modules/navbar/backdrop';
