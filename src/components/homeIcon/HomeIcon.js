@@ -5,7 +5,7 @@ function HomeIcon(props){
     return(
         <Div>
            <div>
-            <img src={props.imgUrl} />
+            <img src={props.imgUrl} alt = ""/>
             <p>{props.caption}</p>
            </div>
         </Div>
