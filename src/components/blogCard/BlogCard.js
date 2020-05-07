@@ -1,7 +1,7 @@
 import React from 'react'
 import {Div, Img, P} from './Style'
 
-function BlockCard(props){
+function BlogCard(props){
     return(
         <Div>
             <Img src={props.imgUrl}/>
@@ -10,4 +10,4 @@ function BlockCard(props){
     )
 }
 
-export default BlockCard
+export default BlogCard
