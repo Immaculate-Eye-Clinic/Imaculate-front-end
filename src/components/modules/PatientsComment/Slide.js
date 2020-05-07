@@ -14,7 +14,7 @@ class Slide extends Component {
                 index === this.props.activeIndex ? 'active' : 'inactive'}
                 key={index}>
                   <p>{s.comment}</p>
-                  <h1>{s.patient}</h1>
+                  <h2>- {s.patient}</h2>
                 </div>
             )}
         </StyleComments>

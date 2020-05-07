@@ -13,7 +13,7 @@ class Slider extends Component {
     super(props);
     
     this.state = {
-      activeIndex: 1,
+      activeIndex: 0,
       length: landingData.length
     };
   }
