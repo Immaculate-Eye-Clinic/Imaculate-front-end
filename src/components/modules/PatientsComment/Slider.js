@@ -15,7 +15,16 @@ class Slider extends Component {
     this.state = {
       activeIndex: 0,
       length: landingData.length
-    };
+    }
+  }
+
+  componentDidMount = () => {
+    this.myTimer = setInterval(() => {
+      this.setState(prevState => ({
+        activeIndex: prevState.activeIndex + 1
+      }
+      ))
+    }, 5000);
   }
 
   goToPrevSlide() {
@@ -55,6 +64,7 @@ class Slider extends Component {
           />
         </div>
         <div className='slider-text'>
+          <p><h2>Our Patients Say</h2></p>
           <Slide
             activeIndex={this.state.activeIndex}
           />

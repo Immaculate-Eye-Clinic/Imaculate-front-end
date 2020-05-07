@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import landingData from "./Landing"
-import {StyleComments} from "./StyleComments"
 
 class Slide extends Component {
     constructor(props) {
@@ -8,16 +7,16 @@ class Slide extends Component {
       this.state = {landing: landingData};
     }render() {
       return(
-        <StyleComments>
+        <div>
             {this.state.landing.map((s, index) =>
                 <div className={
                 index === this.props.activeIndex ? 'active' : 'inactive'}
                 key={index}>
                   <p>{s.comment}</p>
-                  <h2>- {s.patient}</h2>
+                  <h4 style={{textAlign: 'Right'}}>- {s.patient}</h4>
                 </div>
             )}
-        </StyleComments>
+        </div>
       )
     }
   }export default Slide;

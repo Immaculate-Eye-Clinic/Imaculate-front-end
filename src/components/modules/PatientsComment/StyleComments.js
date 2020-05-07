@@ -12,6 +12,11 @@ export const StyleComments = styled.div`
     .left_arrow {
         flex: 1;
         text-align: center;
+
+    }
+
+    .left_arrow:hover{
+        background-color: rgba(212, 214, 241, 0.100);
     }
 
     .right_arrow {
@@ -20,7 +25,10 @@ export const StyleComments = styled.div`
         margin: 0;
         text-align: center;
         margin: 0, 0, 10px;
-        height: 100%;
+    }
+
+    .right_arrow:hover{
+        background-color: rgba(212, 214, 241, 0.100);
     }
 
     .slider-text {

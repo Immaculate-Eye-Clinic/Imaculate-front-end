@@ -4,7 +4,7 @@ const  landingData = [{
     patient: 'Justice Iheanacho',
   },
   {
-    comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla rhoncus molestie. Aliquam erat volutpat. Maecenas condimentum est vitae augue consequat consequat. Duis leo nulla, consectetur id tempor sit amet. ',
+    comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla rhoncus molestie. Aliquam erat volutpat. Maecenas condimentum est vitae augue consequat consequat. Duis leo nulla, consectetur. ',
 
     patient: 'Madu McBobby',
   },
