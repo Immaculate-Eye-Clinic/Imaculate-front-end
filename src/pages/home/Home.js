@@ -12,14 +12,14 @@ function Home() {
             <Hero />
             <Div>
                 <IconList 
-                    imgUrl='/Asset/Img/book.jpg'
-                    caption='Book an Appointment'/>
+                    imgUrl='/Asset/Img/health.jpg'
+                    caption='First Aid Suggestions'/>
                 <IconList 
                     imgUrl='/Asset/Img/book.jpg'
                     caption='Book an Appointment'/>
                 <IconList 
-                    imgUrl='/Asset/Img/book.jpg'
-                    caption='Book an Appointment'/>
+                    imgUrl='/Asset/Img/doctor.jpg'
+                    caption='Meet the Doctor'/>
             </Div><br/><br/>
             <Div1>
                 <BlogList 

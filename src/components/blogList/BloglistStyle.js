@@ -28,4 +28,8 @@ p{
     width: 40%;
     margin: 1em;
 }
+@media (max-width: 1200px){
+    width: 35%%;
+    margin: 1em;
+}
 `
