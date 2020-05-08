@@ -19,11 +19,20 @@ class Slider extends Component {
   }
 
   componentDidMount = () => {
-    this.myTimer = setInterval(() => {
-      this.setState(prevState => ({
-        activeIndex: prevState.activeIndex + 1
-      }
-      ))
+    setInterval(() => {
+      this.goToNextSlide() 
+        let index = this.state.activeIndex;
+        let length = this.state.length;
+        
+        if(index === length - 1) {
+          index = 0
+        }
+        else {
+          index++;
+        }this.setState({
+          activeIndex: index
+        });
+  
     }, 5000);
   }
 

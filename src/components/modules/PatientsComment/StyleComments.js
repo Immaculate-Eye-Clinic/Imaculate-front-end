@@ -6,7 +6,7 @@ export const StyleComments = styled.div`
     margin: 0px auto 20px;
     align-items: center;
     align-content: space-between;
-    width: fit-content;
+    width: 60%;
     max-width: 1000px;
 
     .left_arrow {
