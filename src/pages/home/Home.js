@@ -6,7 +6,7 @@ import Slider from "../../components/modules/PatientsComment/Slider"
 
 function Home() {
     return (
-        <div>
+        <div style={{width: "100%"}}>
             <Hero />
             <HomeIcon 
                 imgUrl='/Asset/Img/book.jpg' alt=""
