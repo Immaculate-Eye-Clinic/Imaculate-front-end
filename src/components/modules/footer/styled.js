@@ -66,6 +66,18 @@ div {
     .div {
         display: flex;
         flex-wrap: wrap;
+
+        h1 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+        .spa {
+            font-size: 30px;
+        }
     }
 }
 

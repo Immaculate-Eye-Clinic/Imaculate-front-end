@@ -9,7 +9,7 @@ class Footer extends React.Component {
               <div className='div'>
                 <div className='div1'>
                     <div className='name'>
-                       <h1>Immaculate</h1><br />
+                       <h1 className='spa'>Immaculate</h1><br />
                        <span>Eye Clinic</span>
                     </div><br /><br /><br />
                     <div className='add'>
