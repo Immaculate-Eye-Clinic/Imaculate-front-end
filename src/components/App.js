@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import Toolbar from './modules/navbar/navbar';
+import Footer from './modules/footer/footer';
 import SideDrawer from './modules/navbar/sideDrawer';
 import Backdrop from './modules/navbar/backdrop';
 
 class App extends Component {
     state = {
         sideDrawerOpen: false,
-        token: null,
-        userId: null,
     };
 
     drawerToggleClickHandler = () => {
@@ -33,9 +32,9 @@ class App extends Component {
                 <SideDrawer show={this.state.sideDrawerOpen} />
                 {backdrop}
                 <main>
-                    
-                    <div>{children}</div>
+                    {children}
                 </main>
+                <Footer />
             </div>
         );
     }
