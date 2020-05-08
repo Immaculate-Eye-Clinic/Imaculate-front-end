@@ -5,6 +5,7 @@ background: url(/Asset/Img/EyeCareBackground.jpg);
 background-size: 100%;
 position: relative;
 color: white;
+width: 100%;
 `
 export const Diw = styled.div `
 background: #9370db;

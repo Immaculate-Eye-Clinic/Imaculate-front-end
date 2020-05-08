@@ -6,8 +6,8 @@ export const HeroStyle = styled.div`
     top: 0;
     left: 0;
     width: 100%;
-    height: 80vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/hisroyalwonginess/image/upload/v1588437898/Immaculate/Doctors_ieplxk.jpg");
+    height: ${props => props.height};
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${props => props.img});
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
