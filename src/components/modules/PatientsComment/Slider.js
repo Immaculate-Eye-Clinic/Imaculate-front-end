@@ -16,24 +16,11 @@ class Slider extends Component {
       activeIndex: 0,
       length: landingData.length
     }
+    this.goToNextSlide = this.goToNextSlide.bind(this)
   }
 
   componentDidMount = () => {
-    setInterval(() => {
-      this.goToNextSlide() 
-        let index = this.state.activeIndex;
-        let length = this.state.length;
-        
-        if(index === length - 1) {
-          index = 0
-        }
-        else {
-          index++;
-        }this.setState({
-          activeIndex: index
-        });
-  
-    }, 5000);
+    setInterval(this.goToNextSlide, 5000);
   }
 
   goToPrevSlide() {
