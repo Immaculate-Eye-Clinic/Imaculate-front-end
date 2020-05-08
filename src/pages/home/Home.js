@@ -20,16 +20,20 @@ function Home() {
                 <IconList 
                     imgUrl='/Asset/Img/book.jpg'
                     caption='Book an Appointment'/>
-            </Div>
+            </Div><br/><br/>
             <Div1>
                 <BlogList 
                     imgUrl='/Asset/Img/g.jpg'
                     caption='What you must know about Corona Virus'/><br/>
                 <BlogList 
                     imgUrl='/Asset/Img/g.jpg'
+                    caption='What you must know about Corona Virus'/><br/>
+                <BlogList 
+                    imgUrl='/Asset/Img/g.jpg'
                     caption='What you must know about Corona Virus'/>
-            </Div1><br/><br/>
-            <Div1>
+                <BlogList 
+                    imgUrl='/Asset/Img/g.jpg'
+                    caption='What you must know about Corona Virus'/><br/>
                 <BlogList 
                     imgUrl='/Asset/Img/g.jpg'
                     caption='What you must know about Corona Virus'/><br/>
