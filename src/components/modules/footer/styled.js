@@ -5,11 +5,8 @@ background: url(/Asset/Img/EyeCareBackground.jpg);
 background-size: 100%;
 position: relative;
 color: white;
-
 .diw {
-background: #9370db;
-opacity: 0.8;
-}
+width: 100%;
 
 .div {
 display: flex;
