@@ -7,7 +7,7 @@ import Slider from "../../components/modules/PatientsComment/Slider"
 function Home() {
     return (
         <div style={{width: "100%"}}>
-            <Hero />
+            <Hero title={"Welcome Home"} subText={"Sub text goes here and this long"}/>
             <HomeIcon 
                 imgUrl='/Asset/Img/book.jpg' alt=""
                 caption='Book an Appointment'
