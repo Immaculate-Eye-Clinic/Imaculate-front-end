@@ -1,19 +1,19 @@
 import styled from 'styled-components'
 
 export const Div = styled.div`
-
-margin-left: 3em;
-height: 30vh;
+width: 100px;
+padding: 0;
 div{
-    display: flex;
-    grid: grid;
     img{
         margin-left: 0.5em;
-        width: 9%;
+        margin-top: 3em;
+        width: 100%;
     }
     p{
-        margin-top: 7.9em;
-        font-weight: 500;
+        width: 200px;
+        font-size: 13px;
+        margin: 0;
+        padding-bottom: 1em;
     }
 }
 `
