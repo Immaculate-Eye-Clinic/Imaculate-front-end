@@ -8,6 +8,7 @@ export const StyleComments = styled.div`
     align-content: space-between;
     width: 60%;
     max-width: 1000px;
+    height: 500px;
 
     .left_arrow {
         flex: 1;
