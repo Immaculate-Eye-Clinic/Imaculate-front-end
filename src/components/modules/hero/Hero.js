@@ -1,12 +1,12 @@
 import React from "react"
 import {HeroStyle} from "./HeroStyle"
-function Hero (){
+function Hero ({ title, subText, height, img}){
         return(
 
-            <HeroStyle>
+            <HeroStyle height={height} img={img}>
                 <div class="hero-text">
-                    <h1>Text goes here</h1>
-                    <p>sub text goes here now like this</p>
+                    <h1>{title}</h1>
+                    <p>{subText}</p>
                 </div>
             </HeroStyle>
             

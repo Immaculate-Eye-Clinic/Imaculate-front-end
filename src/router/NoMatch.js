@@ -1,22 +1,15 @@
 import React, { Component } from 'react';
-// import { Link } from 'react-router-dom';
-import styled from 'styled-components';
-
-const HeaderWrapper = styled.div`
-    text-align: left;
-    border: 3px solid #001529;
-    padding: 3rem;
-    margin: 2rem auto;
-    width: 40rem;
-    max-width: 97%;
-`;
+import Hero from '../components/modules/hero/Hero'
 
 class NoMatch extends Component {
     render() {
         return (
-            <HeaderWrapper>
-                <div> 404 no page found</div>
-            </HeaderWrapper>
+            <Hero 
+                title={"404"} 
+                subText={"page not found"} 
+                height={"100vh"}
+                img={"asset/img/404.svg"}
+            />
         );
     }
 }
