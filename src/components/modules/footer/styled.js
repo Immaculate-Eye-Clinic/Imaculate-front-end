@@ -15,7 +15,7 @@ opacity: 0.8;
 display: flex;
 justify-content: space-evenly;
 div {
-    text-align: center;
+    text-align: left;
     width: 45%;
 }
 }
@@ -66,6 +66,7 @@ div {
     .div {
         display: flex;
         flex-wrap: wrap;
+        text-align: left;
 
         h1 {
             font-size: 20px;
@@ -82,8 +83,14 @@ div {
 }
 
 @media (max-width: 760px) {
+   .div1 {
+       margin-right: 20em;
+   } 
+}
+
+@media (max-width: 760px) {
    .div2 {
-       margin-right: 2em;
+       margin-right: 16em;
        margin-top: 2em;
 
    } 
@@ -92,19 +99,20 @@ div {
 @media (max-width: 760px) {
  .div3 {
        margin-top: 2em;
+       margin-right: 16em;
+       text-align: left;
  }   
 }
 
 @media (max-width: 760px) {
   .add {
-      margin-left: 1.5em;
+      margin-right: 12em;
   }  
 }
 
 @media (max-width: 760px) {
  .num {
-    margin-left: 1.5em;
-    text-align: center;
+    margin-right: 12em;
    }
 }
 
@@ -119,6 +127,14 @@ div {
       margin-left: 2em;
   }  
 }
+
+@media (max-width: 760px) {
+   .pa {
+       width: 13em;
+   } 
+}
+
+
 `
 
 

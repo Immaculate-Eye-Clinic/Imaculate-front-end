@@ -14,7 +14,7 @@ class Footer extends React.Component {
                     </div><br /><br /><br />
                     <div className='add'>
                         <h1>Adress</h1>
-                        <p>No 1. Ipsun Street mbah ndi Ipsun maka Ipsun is all i have to say at this Ipsun Loremous Time</p>
+                        <p className='pa'>No 1. Ipsun Street mbah ndi Ipsun maka Ipsun is all i have to say at this Ipsun Loremous Time</p>
                     </div><br />
                     <div className='num'>
                         <h1>Mobile</h1>
