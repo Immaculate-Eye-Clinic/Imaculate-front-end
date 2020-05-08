@@ -3,15 +3,22 @@ import styled from "styled-components";
 export const StyleComments = styled.div`
 
     display: flex;
-    margin: 0px auto 20px;
+    color: white;
+    margin: 0px auto 50px;
     align-items: center;
-    align-content: space-between;
-    width: 60%;
-    max-width: 1000px;
+    justify-content: space-between;
+    width: 100%;
+    height: 280px;
+    background-image: url("https://res.cloudinary.com/hisroyalwonginess/image/upload/v1588967268/testimonial-slider-background-black-1-1170x466_vky7uy.jpg");
+    border-radius: 5px;
 
     .left_arrow {
-        flex: 1;
+        width: 10%;
         text-align: center;
+        margin: 0;
+        padding: 2px;
+        box-sizing: border-box;
+
 
     }
 
@@ -20,11 +27,12 @@ export const StyleComments = styled.div`
     }
 
     .right_arrow {
-        flex: 1;
-        padding: 0;
+        width: 10%;
+        padding: 2px;
         margin: 0;
         text-align: center;
-        margin: 0, 0, 10px;
+        margin: 0, 0, 2px;
+        box-sizing: border-box;
     }
 
     .right_arrow:hover{
@@ -32,11 +40,13 @@ export const StyleComments = styled.div`
     }
 
     .slider-text {
-        flex: 6;
+        width: 60%;
         font-size: 1.3em;
         text-align: center;
         border-radius:10px;
         height: 100%;
+        padding: 2px;
+        box-sizing: border-box;
         
     }
 
