@@ -44,7 +44,6 @@ export const StyleComments = styled.div`
         font-size: 1.3em;
         text-align: center;
         border-radius:10px;
-        height: 100%;
         padding: 2px;
         box-sizing: border-box;
         
