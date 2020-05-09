@@ -8,8 +8,8 @@ function BlogCard(props){
 
     return(
         <Div>
-            <div><img src={props.imgUrl}/></div>
-            <div><p>{props.caption}</p></div>
+            <div><img src={props.blog.imgUrl}/></div>
+            <div><p>{props.blog.caption}</p></div>
         </Div>
     )
 }

@@ -5,7 +5,6 @@ import BlogCard from '../../components/blogCard/BlogList'
 import HomeIcon from '../../components/homeIcon/HomeIcon'
 
 function Home() {
-    
     return (
         <div>
             <Hero />
