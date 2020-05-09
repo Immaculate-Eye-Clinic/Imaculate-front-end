@@ -6,7 +6,11 @@ background-size: 100%;
 position: relative;
 color: white;
 .diw {
+background: #9932cc;
 width: 100%;
+background-size: 100%;
+opacity: 0.7;
+}
 
 .div {
 display: flex;
@@ -55,7 +59,7 @@ div {
         flex-direction: column;
         flex-wrap: wrap;
         text-align: left;
-        margin left: 3em;
+        margin-left: 3em;
 
         h1 {
             font-size: 20px;
@@ -120,8 +124,6 @@ div {
        width: 13em;
    } 
 }
-
-
 `
 
 
