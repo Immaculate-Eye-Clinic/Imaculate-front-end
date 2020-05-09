@@ -1,5 +1,6 @@
 import React from 'react'
-import {Div} from './BloglistStyle'
+import {Div} from './Style'
+import BlogData from './BlogData'
 
 function BlogList(props){
     return(

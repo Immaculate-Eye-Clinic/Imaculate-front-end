@@ -1,5 +1,6 @@
 import React from 'react'
-import {Div} from './IconListStyle'
+import {Div} from './IconStyle'
+import IconData from './IconData'
 
 function IconList(props){
     return(
