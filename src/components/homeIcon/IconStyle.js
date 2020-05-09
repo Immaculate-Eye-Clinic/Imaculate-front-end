@@ -1,21 +1,35 @@
 import styled from 'styled-components'
 
 export const Div = styled.div`
-margin-left: 3em;
-height: 30vh;
+width: 7%;
+padding: 0;
 div{
-    margin: 0;
-    padding: 0;
-    
     img{
-        position: absolute;
-        margin-left: 0.5em;
-        width: 9%;
+        margin-left: 1em;
+        margin-top: 2em;
+        width: 100%;
     }
     p{
-        position: absolute;
-        margin-top: 7.9em;
-        font-weight: 500;
+        width: 120px;
+        text-align: center;
+        font-size: 12px;
+        margin: 0;
+        padding-bottom: 1em;
     }
 }
+
+@media (max-width: 760px){
+    width: 70px;
+    margin: 1em;
+    div{
+        p{
+            font-size: 12px;
+        }
+        img{
+            margin-left: 1.8em;
+        } 
+        
+    }
+}
+
 `
