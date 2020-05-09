@@ -9,9 +9,9 @@ function Home() {
         <div>
             <Hero 
                 title={"Welcome Home"} 
-                subText={"Sub Text goes here and of this lenth"} 
+                subText={"Sub text goes here and this long"} 
                 height={"80vh"}
-                img={"asset/img/404.svg"}
+                img={"https://res.cloudinary.com/hisroyalwonginess/image/upload/v1588437898/Immaculate/Doctors_ieplxk.jpg"}
             />
             <HomeIcon />
             <BlogCard />
