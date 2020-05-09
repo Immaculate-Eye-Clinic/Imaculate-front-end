@@ -5,8 +5,8 @@ function IconList(props){
     return(
         <Div>
            <div>
-                <img src={props.imgUrl}/>
-                <p>{props.caption}</p>
+                <img src={props.icon.imgUrl}/>
+                <p>{props.icon.caption}</p>
            </div>
         </Div>
     )
