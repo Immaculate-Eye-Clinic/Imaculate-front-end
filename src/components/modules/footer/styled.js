@@ -5,53 +5,125 @@ background: url(/Asset/Img/EyeCareBackground.jpg);
 background-size: 100%;
 position: relative;
 color: white;
+.diw {
+background: #9932cc;
 width: 100%;
-`
-export const Diw = styled.div `
-background: #9370db;
-opacity: 0.8;
-`
+background-size: 100%;
+opacity: 0.7;
+}
 
-export const Div = styled.div `
+.div {
 display: flex;
 justify-content: space-evenly;
+margin-left: 6em;
 div {
-    text-align: center;
+    text-align: left;
     width: 45%;
 }
-`
-export const Div1 = styled.div `
-margin-left: 4em;
-margin-top: 2em;
-.name {
-    color: #00008b;
-    span {
-            color:  #00008b;
-            font-weight: 500;
-            font-size: 18px;
-            font-style: normal;
-        }
-        h1 {
-            display: inline;
-        }
 }
-`
-export const Div2 = styled.div `
-margin-top: 9em;
-margin-right: 5em;
-`
-export const Div3 = styled.div `
-margin-top: 9em;
-`
-export const Dim = styled.div `
+
+.div1 {
+
+margin-top: 2em;
+ }
+
+ 
+
+ .div2 {
+margin-top: 12.5em;
+
+
+ }
+
+.div3 {
+margin-top: 12.5em;
+
+}
+
+.dim {
 div {
     display: flex;
     justify-content: space-evenly;
     .a {
-        margin-left: 16em;
+        margin-left: 30em;
     }
     .b {
-        margin-right: 16em;
+        margin-right: 30em;
     }
 }
+}
+
+@media (max-width: 760px) {
+    .div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: left;
+        margin-left: 3em;
+
+        h1 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+        img {
+            width: 60%;
+        }
+    }
+}
+
+@media (max-width: 760px) {
+   .div1 {
+  
+   } 
+}
+
+@media (max-width: 760px) {
+   .div2 {
+       margin-top: 2em;
+       
+   } 
+}
+
+@media (max-width: 760px) {
+ .div3 {
+       margin-top: 2em;
+       text-align: left;
+ }   
+}
+
+@media (max-width: 760px) {
+  .add {
+      margin-right: 12em;
+  }  
+}
+
+@media (max-width: 760px) {
+ .num {
+    margin-right: 12em;
+   }
+}
+
+@media (max-width: 760px) {
+ .a  {
+     margin-right: 2em;
+ }   
+}
+
+@media (max-width: 760px) {
+  .b {
+      margin-left: 2em;
+  }  
+}
+
+@media (max-width: 760px) {
+   .pa {
+       width: 13em;
+   } 
+}
 `
+
+

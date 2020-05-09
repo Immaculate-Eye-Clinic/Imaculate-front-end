@@ -1,15 +1,16 @@
 import React from 'react'
-import {Div} from './IconStyle'
+import IconList from './IconList'
+import IconData from './IconData'
+import {Div} from '../blogCard/ComponentStyle'
 
 function HomeIcon(props){
+    const IconComponent = IconData.map(icon => <IconList key={icon.id} icon ={icon}/>)
+
     return(
-        <Div>
-           <div>
-            <img src={props.imgUrl} alt = ""/>
-            <p>{props.caption}</p>
-           </div>
-        </Div>
+        <div>
+            <Div>{IconComponent}</Div>
+        </div>
     )
 }
 
-export default HomeIcon
+export default HomeIcon 
