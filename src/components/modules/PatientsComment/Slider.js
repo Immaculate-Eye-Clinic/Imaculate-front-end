@@ -13,9 +13,27 @@ class Slider extends Component {
     super(props);
     
     this.state = {
-      activeIndex: 1,
+      activeIndex: 0,
       length: landingData.length
-    };
+    }
+  }
+
+  componentDidMount = () => {
+    setInterval(() => {
+      this.goToNextSlide() 
+        let index = this.state.activeIndex;
+        let length = this.state.length;
+        
+        if(index === length - 1) {
+          index = 0
+        }
+        else {
+          index++;
+        }this.setState({
+          activeIndex: index
+        });
+  
+    }, 5000);
   }
 
   goToPrevSlide() {
@@ -55,6 +73,7 @@ class Slider extends Component {
           />
         </div>
         <div className='slider-text'>
+          <p><h2>Our Patients Say</h2></p>
           <Slide
             activeIndex={this.state.activeIndex}
           />

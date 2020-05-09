@@ -5,21 +5,19 @@ background: url(/Asset/Img/EyeCareBackground.jpg);
 background-size: 100%;
 position: relative;
 color: white;
-`
-export const Diw = styled.div `
-background: #9370db;
-opacity: 0.8;
-`
+.diw {
+width: 100%;
 
-export const Div = styled.div `
+.div {
 display: flex;
 justify-content: space-evenly;
 div {
-    text-align: center;
+    text-align: left;
     width: 45%;
 }
-`
-export const Div1 = styled.div `
+}
+
+.div1 {
 margin-left: 4em;
 margin-top: 2em;
 .name {
@@ -34,23 +32,106 @@ margin-top: 2em;
             display: inline;
         }
 }
-`
-export const Div2 = styled.div `
+ }
+
+ 
+
+ .div2 {
 margin-top: 9em;
-margin-right: 5em;
-`
-export const Div3 = styled.div `
+margin-right: 3.1em;
+
+ }
+
+.div3 {
 margin-top: 9em;
-`
-export const Dim = styled.div `
+}
+
+.dim {
 div {
     display: flex;
     justify-content: space-evenly;
     .a {
-        margin-left: 16em;
+        margin-left: 30em;
     }
     .b {
-        margin-right: 16em;
+        margin-right: 30em;
     }
 }
+}
+
+@media (max-width: 760px) {
+    .div {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: left;
+
+        h1 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+        .spa {
+            font-size: 30px;
+        }
+    }
+}
+
+@media (max-width: 760px) {
+   .div1 {
+       margin-right: 20em;
+   } 
+}
+
+@media (max-width: 760px) {
+   .div2 {
+       margin-right: 16em;
+       margin-top: 2em;
+
+   } 
+}
+
+@media (max-width: 760px) {
+ .div3 {
+       margin-top: 2em;
+       margin-right: 16em;
+       text-align: left;
+ }   
+}
+
+@media (max-width: 760px) {
+  .add {
+      margin-right: 12em;
+  }  
+}
+
+@media (max-width: 760px) {
+ .num {
+    margin-right: 12em;
+   }
+}
+
+@media (max-width: 760px) {
+ .a  {
+     margin-right: 2em;
+ }   
+}
+
+@media (max-width: 760px) {
+  .b {
+      margin-left: 2em;
+  }  
+}
+
+@media (max-width: 760px) {
+   .pa {
+       width: 13em;
+   } 
+}
+
+
 `
+
+

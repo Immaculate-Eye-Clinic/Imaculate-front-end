@@ -72,12 +72,12 @@ export const Div = styled.header`
             }
         }
     }
-    @media (max-width: 760px) {
+    @media (max-width: 990px) {
         .navs {
         display: none;
         }
     }
-    @media (max-width: 760px) {
+    @media (max-width: 990px) {
         .toggle {
         display: block;
         position: absolute;
@@ -86,7 +86,7 @@ export const Div = styled.header`
         right: 40px;
         }
     }
-    @media (min-width: 769px) {
+    @media (min-width: 990px) {
         .toggle {
       display: none;
     }
