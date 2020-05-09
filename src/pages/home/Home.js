@@ -1,46 +1,14 @@
 import React from 'react';
-import {Div, Div1, Div2} from './HomeStyle'
 import Hero from  "../../components/modules/hero/Hero.js"
 import Slider from "../../components/modules/PatientsComment/Slider"
-import BlogList from '../../components/blogList/BlogList'
-import IconList from '../../components/blogList/IconList'
+import Array from '../../components/blogList/Arrary'
 
 
 function Home() {
     return (
         <div>
             <Hero />
-            <Div>
-                <IconList 
-                    imgUrl='/Asset/Img/health.jpg'
-                    caption='First Aid Suggestions'/>
-                <IconList 
-                    imgUrl='/Asset/Img/book.jpg'
-                    caption='Book an Appointment'/>
-                <IconList 
-                    imgUrl='/Asset/Img/doctor.jpg'
-                    caption='Meet the Doctor'/>
-            </Div><br/><br/>
-            <Div1>
-                <BlogList 
-                    imgUrl='/Asset/Img/g.jpg'
-                    caption='What you must know about Corona Virus'/><br/>
-                <BlogList 
-                    imgUrl='/Asset/Img/g.jpg'
-                    caption='What you must know about Corona Virus'/><br/>
-                <BlogList 
-                    imgUrl='/Asset/Img/g.jpg'
-                    caption='What you must know about Corona Virus'/>
-                <BlogList 
-                    imgUrl='/Asset/Img/g.jpg'
-                    caption='What you must know about Corona Virus'/><br/>
-                <BlogList 
-                    imgUrl='/Asset/Img/g.jpg'
-                    caption='What you must know about Corona Virus'/><br/>
-                <BlogList 
-                    imgUrl='/Asset/Img/g.jpg'
-                    caption='What you must know about Corona Virus'/>
-            </Div1>
+            <Array />
             <Slider />
         </div>
     );
