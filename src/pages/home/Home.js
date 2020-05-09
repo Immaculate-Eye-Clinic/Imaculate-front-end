@@ -7,7 +7,12 @@ import HomeIcon from '../../components/homeIcon/HomeIcon'
 function Home() {
     return (
         <div>
-            <Hero />
+            <Hero 
+                title={"Welcome Home"} 
+                subText={"Sub Text goes here and of this lenth"} 
+                height={"80vh"}
+                img={"asset/img/404.svg"}
+            />
             <HomeIcon />
             <BlogCard />
             <Slider />
