@@ -9,7 +9,7 @@ class Footer extends React.Component {
               <div className='div'>
                 <div className='div1'>
                     <div className='name'>
-                       <img src='/Asset/Img/Imma.png' />
+                       <img src='asset/img/logo1.png' alt="logo" />
                     </div><br /><br /><br />
                     <div className='add'>
                         <h1>Adress</h1>

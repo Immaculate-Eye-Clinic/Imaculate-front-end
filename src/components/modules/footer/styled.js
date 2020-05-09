@@ -5,6 +5,7 @@ background: url(/Asset/Img/EyeCareBackground.jpg);
 background-size: 100%;
 position: relative;
 color: white;
+
 .diw {
 background: #9932cc;
 width: 100%;
@@ -24,7 +25,13 @@ div {
 
 .div1 {
 
-margin-top: 2em;
+    margin-top: 2em;
+    .name {
+        img {
+            width: 350px;
+            height: 100px;
+        }
+    }
  }
 
  
@@ -70,7 +77,8 @@ div {
         }
 
         img {
-            width: 60%;
+            width: 300px;
+            height: 70px;
         }
     }
 }
