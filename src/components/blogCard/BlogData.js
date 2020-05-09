@@ -28,7 +28,7 @@ const BlogData = [
         id: '6',
         imgUrl:'/Asset/Img/g.jpg',
         caption:'What you must know about Corona Virus'
-    },
+    }
 ]
 
 export default BlogData

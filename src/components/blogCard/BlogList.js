@@ -1,12 +1,14 @@
 import React from 'react'
-import {Div} from './Style'
+import {Div} from './ComponentStyle'
 import BlogData from './BlogData'
+import BlogCard from './BlogCard'
 
 function BlogList(props){
     return(
         <Div>
-            <div><img src={props.blog.imgUrl}/></div>
-            <div><p>{props.blog.caption}</p></div>
+            {BlogData.map((blog, index) => (
+                <BlogCard key={blog.id} imgUrl={blog.imgUrl} caption={blog.caption} />
+            ))}
         </Div>
     )
 }
