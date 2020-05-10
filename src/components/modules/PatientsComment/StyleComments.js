@@ -12,6 +12,9 @@ export const StyleComments = styled.div`
     background-image: url("https://res.cloudinary.com/hisroyalwonginess/image/upload/v1588967268/testimonial-slider-background-black-1-1170x466_vky7uy.jpg");
     border-radius: 5px;
 
+    p{
+        
+    }
 
     .left_arrow {
         width: 10%;
