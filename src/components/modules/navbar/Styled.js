@@ -120,7 +120,7 @@ export const Button = styled.button`
 export const Drawer = styled.div `
     .side-drawer {
     height: 100%;
-    background: #0000cd;
+    background: #252079;
     box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
