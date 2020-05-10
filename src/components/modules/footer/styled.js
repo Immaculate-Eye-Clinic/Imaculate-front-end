@@ -5,12 +5,18 @@ background: url(/Asset/Img/EyeCareBackground.jpg);
 background-size: 100%;
 position: relative;
 color: white;
+
 .diw {
+background: #9932cc;
 width: 100%;
+background-size: 100%;
+opacity: 0.7;
+}
 
 .div {
 display: flex;
 justify-content: space-evenly;
+margin-left: 6em;
 div {
     text-align: left;
     width: 45%;
@@ -18,32 +24,27 @@ div {
 }
 
 .div1 {
-margin-left: 4em;
-margin-top: 2em;
-.name {
-    color: #00008b;
-    span {
-            color:  #00008b;
-            font-weight: 500;
-            font-size: 18px;
-            font-style: normal;
+
+    margin-top: 2em;
+    .name {
+        img {
+            width: 350px;
+            height: 100px;
         }
-        h1 {
-            display: inline;
-        }
-}
+    }
  }
 
  
 
  .div2 {
-margin-top: 9em;
-margin-right: 3.1em;
+margin-top: 12.5em;
+
 
  }
 
 .div3 {
-margin-top: 9em;
+margin-top: 12.5em;
+
 }
 
 .dim {
@@ -62,8 +63,10 @@ div {
 @media (max-width: 760px) {
     .div {
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
         text-align: left;
+        margin-left: 3em;
 
         h1 {
             font-size: 20px;
@@ -73,30 +76,29 @@ div {
             font-size: 15px;
         }
 
-        .spa {
-            font-size: 30px;
+        img {
+            width: 300px;
+            height: 70px;
         }
     }
 }
 
 @media (max-width: 760px) {
    .div1 {
-       margin-right: 20em;
+  
    } 
 }
 
 @media (max-width: 760px) {
    .div2 {
-       margin-right: 16em;
        margin-top: 2em;
-
+       
    } 
 }
 
 @media (max-width: 760px) {
  .div3 {
        margin-top: 2em;
-       margin-right: 16em;
        text-align: left;
  }   
 }
@@ -130,8 +132,6 @@ div {
        width: 13em;
    } 
 }
-
-
 `
 
 

@@ -16,7 +16,6 @@ class ReactRouter extends React.Component {
                         <App>
                         <Switch>
                             <Route exact path="/" component={Home} />
-                            <Route exact path="/about" component={Home} />
                             <Route component={NoMatch} />
                         </Switch>
                         </App>

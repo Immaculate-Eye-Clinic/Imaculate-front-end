@@ -15,7 +15,7 @@ class Navbar extends React.Component {
                         <li><NavLink to='/'  activeClassName='active'>Home</NavLink><span></span></li>
                         <li><NavLink to='/about'  activeClassName='active'>About</NavLink><span></span></li>
                         <li><NavLink to='/services'  activeClassName='active'>Services</NavLink><span></span></li>
-                        <li><NavLink to='/Test'  activeClassName='active'>Eye Test</NavLink><span></span></li>
+                        <li><NavLink to='/blog'  activeClassName='active'>Blog</NavLink><span></span></li>
                         <li><NavLink to='/visit'  activeClassName='active'>Visit Us</NavLink><span></span></li>
                     </ul>
                 </div>

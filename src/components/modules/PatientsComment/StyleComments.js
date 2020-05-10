@@ -3,17 +3,16 @@ import styled from "styled-components";
 export const StyleComments = styled.div`
 
     display: flex;
-    color: white;
+    color: black;
     margin: 0px auto 50px;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     height: 280px;
-    background-image: url("https://res.cloudinary.com/hisroyalwonginess/image/upload/v1588967268/testimonial-slider-background-black-1-1170x466_vky7uy.jpg");
     border-radius: 5px;
 
     p{
-        
+
     }
 
     .left_arrow {
