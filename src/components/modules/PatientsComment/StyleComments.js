@@ -4,11 +4,12 @@ export const StyleComments = styled.div`
 
     display: flex;
     color: black;
-    margin: 0px auto 50px;
+    margin-top: 0;
+    padding-top:0;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 280px;
+    height: 200px;
     border-radius: 5px;
 
     p{

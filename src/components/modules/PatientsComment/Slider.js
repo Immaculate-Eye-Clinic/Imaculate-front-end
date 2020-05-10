@@ -79,7 +79,6 @@ class Slider extends Component {
           />
         </div>
         <div className='slider-text'>  
-          <p><h2>Our Patients Say</h2></p>
           <div style = {{...styles, opacity: this.state.fade}}>
             <Slide
               activeIndex={this.state.activeIndex}
