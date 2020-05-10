@@ -11,7 +11,7 @@ class Slide extends Component {
             {this.state.landing.map((s, index) =>
                 <div className={
                 index === this.props.activeIndex ? 'active' : 'inactive'}
-                key={index}>
+                key={index} >
                   <p>{s.comment}</p>
                   <h4 style={{textAlign: 'Right'}}>- {s.patient}</h4>
                 </div>

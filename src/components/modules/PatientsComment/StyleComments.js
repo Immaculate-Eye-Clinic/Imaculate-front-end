@@ -3,16 +3,25 @@ import styled from "styled-components";
 export const StyleComments = styled.div`
 
     display: flex;
-    margin: 0px auto 20px;
+    color: black;
+    margin: 0px auto 50px;
     align-items: center;
-    align-content: space-between;
-    width: 60%;
-    max-width: 1000px;
-    height: 500px;
+    justify-content: space-between;
+    width: 100%;
+    height: 280px;
+    border-radius: 5px;
+
+    p{
+
+    }
 
     .left_arrow {
-        flex: 1;
+        width: 10%;
         text-align: center;
+        margin: 0;
+        padding: 2px;
+        box-sizing: border-box;
+
 
     }
 
@@ -21,11 +30,12 @@ export const StyleComments = styled.div`
     }
 
     .right_arrow {
-        flex: 1;
-        padding: 0;
+        width: 10%;
+        padding: 2px;
         margin: 0;
         text-align: center;
-        margin: 0, 0, 10px;
+        margin: 0, 0, 2px;
+        box-sizing: border-box;
     }
 
     .right_arrow:hover{
@@ -33,10 +43,12 @@ export const StyleComments = styled.div`
     }
 
     .slider-text {
-        flex: 6;
+        width: 60%;
         font-size: 1.3em;
         text-align: center;
         border-radius:10px;
+        padding: 2px;
+        box-sizing: border-box;
         
     }
 
