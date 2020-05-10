@@ -5,7 +5,9 @@ import LeftArrow from './left_arrow';
 import RightArrow from './right_arrow';
 import {StyleComments} from "./StyleComments"
 
-
+const styles = {
+  transition: 'opacity 1s ease-in-out'
+}
 
 export default 
 class Slider extends Component {
@@ -14,14 +16,27 @@ class Slider extends Component {
     
     this.state = {
       activeIndex: 0,
-      length: landingData.length
+      length: landingData.length,
+      fade: 0
     }
     this.goToNextSlide = this.goToNextSlide.bind(this)
   }
 
   componentDidMount = () => {
-    setInterval(this.goToNextSlide, 5000);
+
+    setInterval(() =>{
+        if (this.state.fade ===1) {
+          this.setState({fade:0})
+        }
+    
+      setTimeout(()=>{
+        this.goToNextSlide()
+      },1000)
+    },5000)
+    
   }
+
+  
 
   goToPrevSlide() {
     let index = this.state.activeIndex;
@@ -33,7 +48,8 @@ class Slider extends Component {
     else {
       index--;
     }this.setState({
-      activeIndex: index
+      activeIndex: index,
+      fade: 1
     });
   }
   
@@ -47,19 +63,22 @@ class Slider extends Component {
       else {
         index++;
       }this.setState({
-        activeIndex: index
+        activeIndex: index,
+        fade: 1
       });
   }
 
   render() {
     return (
       <StyleComments>
+        {this.state.fade} <br />
+        {this.timer}
         <div className='left_arrow'>
           <LeftArrow
             goToPrevSlide={() => this.goToPrevSlide()}
           />
         </div>
-        <div className='slider-text'>
+        <div className='slider-text' style = {{...styles, opacity: this.state.fade}}>
           <p><h2>Our Patients Say</h2></p>
           <Slide
             activeIndex={this.state.activeIndex}
