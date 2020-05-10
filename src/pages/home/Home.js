@@ -3,6 +3,7 @@ import Hero from  "../../components/modules/hero/Hero.js"
 import Slider from "../../components/modules/PatientsComment/Slider"
 import BlogCard from '../../components/blogCard/BlogList'
 import HomeIcon from '../../components/homeIcon/HomeIcon'
+import Why from '../../components/modules/why_us/why_us'
 
 function Home() {
     return (
@@ -16,6 +17,7 @@ function Home() {
             <HomeIcon />
             <BlogCard />
             <Slider />
+            <Why />
         </div>
     );
 }
