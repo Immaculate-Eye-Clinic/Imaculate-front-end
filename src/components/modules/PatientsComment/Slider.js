@@ -5,9 +5,11 @@ import LeftArrow from './left_arrow';
 import RightArrow from './right_arrow';
 import {StyleComments} from "./StyleComments"
 
+
 const styles = {
   transition: 'opacity 1s ease-in-out'
 }
+
 
 export default 
 class Slider extends Component {
@@ -71,18 +73,18 @@ class Slider extends Component {
   render() {
     return (
       <StyleComments>
-        {this.state.fade} <br />
-        {this.timer}
         <div className='left_arrow'>
           <LeftArrow
             goToPrevSlide={() => this.goToPrevSlide()}
           />
         </div>
-        <div className='slider-text' style = {{...styles, opacity: this.state.fade}}>
+        <div className='slider-text'>  
           <p><h2>Our Patients Say</h2></p>
-          <Slide
-            activeIndex={this.state.activeIndex}
-          />
+          <div style = {{...styles, opacity: this.state.fade}}>
+            <Slide
+              activeIndex={this.state.activeIndex}
+            />
+          </div>
         </div>
         <div className = 'right_arrow'>
           <RightArrow
