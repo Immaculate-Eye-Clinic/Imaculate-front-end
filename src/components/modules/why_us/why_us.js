@@ -7,6 +7,7 @@ class Slide extends Component {
     render() {
       return(
         <Container>
+            <p className="what">Why Choose Us</p>
             <div className="all">
                 {Data.map((why, index) => (
                     <React.Fragment>

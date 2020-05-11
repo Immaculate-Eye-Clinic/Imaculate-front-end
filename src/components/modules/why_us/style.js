@@ -2,6 +2,12 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     width: 100%;
+    .what {
+        text-align: center;
+        color: #252079;
+        font-size: 30px;
+        font-weight: bolder;
+    }
     .all {
         width: 100%;
         display: flex;
@@ -13,7 +19,7 @@ export const Container = styled.div`
         justify-content: space-around;
         align-content: baseline;
         flex-wrap: wrap;
-        width: 90%;
+        width: 80%;
         margin: auto;
 
         .image {
@@ -27,8 +33,9 @@ export const Container = styled.div`
             height: 100%;
             .title {
                 font-size: 25px;
-                font-weight: 700;
+                font-weight: 1000;
                 padding-top: 90px;
+                color: #252079;
             }
         }
     }

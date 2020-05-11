@@ -3,13 +3,14 @@ import styled from "styled-components";
 export const StyleComments = styled.div`
 
     display: flex;
-    color: black;
+    color: white;
     margin: 0px auto 50px;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 280px;
+    height: 380px;
     border-radius: 5px;
+    background-color: #252079;
 
     p{
 
