@@ -32,4 +32,33 @@ div{
     }
 }
 
+.container {
+    position: relative;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+
+    .card {
+        position: relative;
+        height: 250px;
+        background: #fff;
+        display: flex;
+        width: 800px%;
+        margin: 30px;
+    }
+
+    .imgBx {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #333;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        transition: 0.5s ease-in-out;
+    }
+}
 `
