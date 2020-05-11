@@ -4,13 +4,11 @@ import BlogData from './BlogData'
 import BlogCard from './BlogCard'
 
 function BlogList(props){
-    const BlogComponent = BlogData.map(blog => <BlogCard key={blog.id} blog={blog}/>)
     return(
         <Div1>
-            {BlogComponent}
+            {BlogData.map((blog, index) => (
+            <BlogCard key={blog.id} blog={blog}/>))}
         </Div1>
     )
 }
-{/*{BlogData.map((blog, index) => (<BlogCard key={blog.id} imgUrl={blog.imgUrl} caption={blog.caption} />
-))}*/}
 export default BlogList
