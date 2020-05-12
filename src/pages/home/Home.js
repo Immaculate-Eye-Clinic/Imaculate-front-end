@@ -16,7 +16,6 @@ function Home() {
             />
             <HomeIcon />
             <BlogCard />
-          <h2 style = {{textAlign: "center"}}>Our Patients Say</h2>
             <Slider />
             <Why />
         </div>
