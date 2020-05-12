@@ -13,8 +13,8 @@ function IconList(props){
                     </div>
                 <div>
                     <div className='design'>
-                        <h3>Design</h3>
-                        <p>Lorem ipsum dolor sit amet</p>
+                        <h3>{props.icon.h3} </h3>
+                        <p>{props.icon.p}</p>
                         <p>{props.icon.caption}</p>
                     </div>
                     

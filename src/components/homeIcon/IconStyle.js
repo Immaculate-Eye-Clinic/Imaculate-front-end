@@ -88,6 +88,9 @@ div{
         .container{
             margin: 0;
         }
+        img {
+            margin-right: 2em;
+        }
     
 }
 `

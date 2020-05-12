@@ -3,11 +3,11 @@ import styled from 'styled-components'
 export const Div = styled.div`
 display: flex;
 justify-content: space-evenly;
-@media (max-width: 992px){
+@media (max-width: 760px){
+    padding-right: 2em;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50%;
+    justify-content: space-evenly;
+    margin-right: 3em;
 }
 `
 export const Div1 = styled.div`
