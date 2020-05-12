@@ -94,3 +94,52 @@ div{
     
 }
 `
+
+export const Body = styled.body `
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 100vh;
+
+ .container {
+position: relative;
+width: 500px;
+justify-content: space-between;
+flex-wrap: wrap;
+margin: 20px ;
+ }
+
+ .container .card {
+     position: relative;
+     height: 250px;
+     background: #fff;
+     display: flex;
+     width: 45%;
+     margin: 30px 15px;
+ }
+
+ .container .card .imgBx {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: #333;
+     z-index: 1;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     overflow: hidden;
+     transition: 0.5s ease-in-out;
+ }
+
+ .container .card:hover .imgBx
+ {
+     width: 75px;
+     height: 75px;
+     left: -37.5px;
+     top: calc(50% - 75px);
+     transition: 0.5s ease-in-out;
+     background: #ff0057;
+ } 
+`
