@@ -8,7 +8,7 @@ export const StyleComments = styled.div`
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 380px;
+    height: 200px;
     border-radius: 5px;
     background-color: #252079;
 
