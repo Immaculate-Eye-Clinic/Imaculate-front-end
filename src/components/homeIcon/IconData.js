@@ -1,17 +1,17 @@
 const IconData = [
     {
         id: '1',
-        imgUrl:'/Asset/Img/health.jpg',
+        imgUrl:'/Asset/Img/healths.svg',
         caption:'First Aid Suggestions'
     },
     {
         id: '2',
-        imgUrl:'/Asset/Img/book.jpg',
+        imgUrl:'/Asset/Img/books.svg',
         caption:'Book an Appointment'
     },
     {
         id: '3',
-        imgUrl:'/Asset/Img/doctor.jpg',
+        imgUrl:'/Asset/Img/doctors.svg',
         caption:'Meet the Doctor'
     }
 ]
