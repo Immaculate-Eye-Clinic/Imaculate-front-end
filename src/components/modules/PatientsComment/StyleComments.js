@@ -3,11 +3,14 @@ import styled from "styled-components";
 export const StyleComments = styled.div`
 
     display: flex;
-    color: black;
+    color: white;
+    margin: 0px auto 50px;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 200px;
+    height: 380px;
+    border-radius: 5px;
+    background-color: #252079;
 
 
     .left_arrow {
