@@ -3,9 +3,6 @@ import styled from 'styled-components'
 export const Div = styled.div`
 margin: 2.5em;
 align-items: center;
-display: flex;
-flex-wrap: wrap;
-flex-direction: column;
 
 .card{
     display: grid;
@@ -17,7 +14,6 @@ flex-direction: column;
     text-align: center;
     transition: 0.5s ease;
     cursor: pointer;
-    flex-wrap: wrap;
 
     :hover{
         transform: scale(1.1);
