@@ -10,14 +10,13 @@ align-items: center;
     grid-template-rows: 180px 180px 60px;
     border-radius: 18px;
     background: white;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
     text-align: center;
     transition: 0.5s ease;
     cursor: pointer;
 
     :hover{
-        transform: scale(1.1);
-        box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+        box-shadow: 5px 5px 15px rgba(0,0,0,0.3), 5px 5px 15px rgba(0,0,0,0.3), 5px 5px 15px rgba(0,0,0,0.3);
     }
     
     
@@ -39,7 +38,7 @@ align-items: center;
         p{
             color: grey;
             font-size: 15px;
-            font weight: 300;
+            font-weight: 300;
         }
         h2{
             margin-top: 0;
@@ -77,6 +76,7 @@ align-items: center;
             border-right: 1px solid rgb(172,26,87);
         }
     }
+}
 
 `
 
