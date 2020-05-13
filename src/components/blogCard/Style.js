@@ -4,10 +4,12 @@ export const Div = styled.div`
 width: 24.5%;
 margin: 3em;
 align-items: center;
+
+
 .card{
     display: grid;
     grid-template-columns: 300px;
-    grid-template-rows: 200px 200px 60px;
+    grid-template-rows: 180px 180px 60px;
     border-radius: 18px;
     background: white;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
@@ -15,9 +17,11 @@ align-items: center;
     transition: 0.5s ease;
     cursor: pointer;
     :hover{
-        transform: scale(1.2)
-        box-shadow: 5px 5px 15px rgba(0,0,0,0.6)
+        transform: scale(1.1);
+        box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
     }
+    
+    
     .card-image{
         img{
             width: 96.5%;
@@ -72,7 +76,7 @@ align-items: center;
             border-right: 1px solid rgb(172,26,87);
         }
     }
-}
+
 `
 
 
