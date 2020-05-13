@@ -12,8 +12,8 @@ function New (props) {
                     <div className='content'>
                         <div>
                             <h3>{props.icon.h3} </h3>
-                            <p>{props.icon.p} </p>
-                            <p>{props.icon.caption} </p>
+                            <p className='p'>{props.icon.p} </p>
+                            <p className='p2'>{props.icon.caption} </p>
                         </div>
 
                     </div>
