@@ -7,13 +7,13 @@ justify-content: space-evenly;
     padding-right: 2em;
 }
 `
+
 export const Div1 = styled.div`
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-padding-left: 6em;
+padding-left: 3em;
 @media (max-width: 760px){
     padding-right: 1em;
 }
-
 `
