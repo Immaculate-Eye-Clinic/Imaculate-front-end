@@ -13,7 +13,9 @@ display: flex;
 flex-direction: row;
 flex-wrap: wrap;
 padding-left: 3em;
+margin-left: 5em;
 @media (max-width: 760px){
-    padding-right: 1em;
+    margin-left: 2em;
+    padding: 0;
 }
 `
