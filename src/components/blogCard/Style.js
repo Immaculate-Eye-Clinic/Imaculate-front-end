@@ -1,10 +1,11 @@
 import styled from 'styled-components'
 
 export const Div = styled.div`
-width: 24.5%;
-margin: 3em;
+margin: 2.5em;
 align-items: center;
-
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
 
 .card{
     display: grid;
@@ -16,6 +17,8 @@ align-items: center;
     text-align: center;
     transition: 0.5s ease;
     cursor: pointer;
+    flex-wrap: wrap;
+
     :hover{
         transform: scale(1.1);
         box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
@@ -24,10 +27,11 @@ align-items: center;
     
     .card-image{
         img{
-            width: 96.5%;
+            width: 100%;
             border-top-right-radius: 18px;
             border-top-left-radius: 18px;
             margin-right: 1em;
+            
         }   
     }
     .card-text{
@@ -47,13 +51,14 @@ align-items: center;
         }
     }
     .card-stats{
-        width: 96.5%;
+        width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
         background: rgb(255, 7, 110);
+
         .stat{
             display: flex;
             align-items: center;
