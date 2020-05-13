@@ -144,18 +144,7 @@ margin: 20px ;
      background: #ff0057;
  } 
 
- .container .card .imgBx::before
- {
-    content: attr(dataText);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    font-size: 20px;
-    color: rgba(255, 255, 255, .05);
-    font-weight: 700;
- }
+
 
  .container .card .imgBx img
  {
@@ -188,8 +177,6 @@ margin: 20px ;
 
  .container .card .content .p2 
  {
-     background: #252079;
-     color: #fff;
      text-align: center;
      margin-right: 12px;
      font-size: 12px;
@@ -200,7 +187,9 @@ margin: 20px ;
          width: 250px;
          display: flex;
          flex-direction: row;
-         margin:0 0;
+         align-items: center;
+         margin: -9em;
+         margin-bottom: 1em;
      }
      .container .card {
          display: flex;
@@ -208,21 +197,19 @@ margin: 20px ;
          width: 30%;
          margin: 1px ;
          margin-left: 1px;
-         margin-right: 6em;
+         margin-right: 0;
      }
  }
 
  @media (max-width: 760px) {
      .container {
-         width: 250px;
-         display: flex;
-         flex-direction: row;
-         margin:0 0;
+        margin-right: 3em; 
      }
      .container .card {
-         width: 30%;
+         max-width: 30%;
         flex-direction: column;
-        height: 7em;
+        height: auto;
+        margin-right: 3em; 
      }
      .container .card .imgBx {
          position: relative;
@@ -233,12 +220,12 @@ margin: 20px ;
       {
          left: 0;
          width: 100%;
-         height: 190px;
+         height: 40px;
          
      }
 
-     .container .card .imgBx .img,
-     .container .card:hover .imgBx .img 
+     .container .card .imgBx img,
+     .container .card:hover .imgBx img 
      {
          max-width: 25px;
      }
@@ -254,6 +241,10 @@ margin: 20px ;
      .container .content .p
      {
          display: none;
+     }
+     .container .content .p2 {
+         background: whitesmoke;
+         color: black;
      }
  }
 `

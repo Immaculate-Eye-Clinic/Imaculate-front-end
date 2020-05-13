@@ -36,7 +36,7 @@ margin-top: 17em;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-left: 13em;
+    margin-left: 11em;
 }
 
 
