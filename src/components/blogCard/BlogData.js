@@ -2,32 +2,81 @@ const BlogData = [
     {
         id: '1',
         imgUrl:'/Asset/Img/g.jpg',
-        caption:'What you must know about Corona Virus'
+        date:'4 days ago',
+        post: 'Post one',
+        caption: 'What you must know about Corona Virus',
+        viewNumber: '4m',
+        read: 'read',
+        views: '3456',
+        viewsText: 'view',
+        comment: '40',
+        commentText: 'comments',
+
     },
     {
         id: '2',
         imgUrl:'/Asset/Img/g.jpg',
-        caption:'What you must know about Corona Virus'
+        date:'4 days ago',
+        post: 'Post one',
+        caption: 'What you must know about Corona Virus',
+        viewNumber: '4m',
+        read: 'read',
+        views: '3456',
+        viewsText: 'view',
+        comment: '40',
+        commentText: 'comments',
     },
     {
         id: '3',
         imgUrl:'/Asset/Img/g.jpg',
-        caption:'What you must know about Corona Virus'
+        date:'4 days ago',
+        post: 'Post one',
+        caption: 'What you must know about Corona Virus',
+        viewNumber: '4m',
+        read: 'read',
+        views: '3456',
+        viewsText: 'view',
+        comment: '40',
+        commentText: 'comments',
     },
     {
         id: '4',
         imgUrl:'/Asset/Img/g.jpg',
-        caption:'What you must know about Corona Virus'
+        date:'4 days ago',
+        post: 'Post one',
+        caption: 'What you must know about Corona Virus',
+        viewNumber: '4m',
+        read: 'read',
+        views: '3456',
+        viewsText: 'view',
+        comment: '40',
+        commentText: 'comments',
     },
     {
         id: '5',
         imgUrl:'/Asset/Img/g.jpg',
-        caption:'What you must know about Corona Virus'
+        date:'4 days ago',
+        post: 'Post one',
+        caption: 'What you must know about Corona Virus',
+        viewNumber: '4m',
+        read: 'read',
+        views: '3456',
+        viewsText: 'view',
+        comment: '40',
+        commentText: 'comments',
     },
     {
         id: '6',
         imgUrl:'/Asset/Img/g.jpg',
-        caption:'What you must know about Corona Virus'
+        date:'4 days ago',
+        post: 'Post one',
+        caption: 'What you must know about Corona Virus',
+        viewNumber: '4m',
+        read: 'read',
+        views: '3456',
+        viewsText: 'view',
+        comment: '40',
+        commentText: 'comments',
     }
 ]
 
