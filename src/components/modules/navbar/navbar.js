@@ -2,6 +2,7 @@ import React from 'react'
 import {NavLink} from 'react-router-dom'
 import { Div } from './Styled'
 import DrawerToggleButton from './drawerToggleButton';
+import Users from './Users'
 
 class Navbar extends React.Component {
     render () {
@@ -17,6 +18,7 @@ class Navbar extends React.Component {
                         <li><NavLink to='/services'  activeClassName='active'>Services</NavLink><span></span></li>
                         <li><NavLink to='/blog'  activeClassName='active'>Blog</NavLink><span></span></li>
                         <li><NavLink to='/visit'  activeClassName='active'>Visit Us</NavLink><span></span></li>
+                        <li> <Users /> <span></span></li>
                     </ul>
                 </div>
                 <div className="toggle">
