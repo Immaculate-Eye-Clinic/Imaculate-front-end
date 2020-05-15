@@ -55,7 +55,7 @@ align-items: center;
         }
         h2{
             margin-top: 0;
-            font-size: 28px;
+            font-size: 27px;
             color: #252079;
             @media (max-width: 760px){
                 font-size: 8px;
