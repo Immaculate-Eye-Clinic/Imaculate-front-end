@@ -19,7 +19,7 @@ class Slider extends Component {
     this.state = {
       activeIndex: 0,
       length: landingData.length,
-      fade: 0
+      fade: 1
     }
     this.goToNextSlide = this.goToNextSlide.bind(this)
   }
@@ -27,7 +27,7 @@ class Slider extends Component {
   componentDidMount = () => {
 
     setInterval(() =>{
-        if (this.state.fade ===1) {
+        if (this.state.fade === 1) {
           this.setState({fade:0})
         }
     
@@ -72,26 +72,28 @@ class Slider extends Component {
 
   render() {
     return (
-      <StyleComments>
-        <div className='left_arrow'>
-          <LeftArrow
-            goToPrevSlide={() => this.goToPrevSlide()}
-          />
-        </div>
-        <div className='slider-text'>  
-          <p><h2>Our Patients Say</h2></p>
-          <div style = {{...styles, opacity: this.state.fade}}>
-            <Slide
-              activeIndex={this.state.activeIndex}
+      <div>
+        <h1 style = {{textAlign: 'center', fontWeight: ''}}>Our Patients Say</h1>
+        <StyleComments>
+          <div className='left_arrow'>
+            <LeftArrow
+              goToPrevSlide={() => this.goToPrevSlide()}
             />
           </div>
-        </div>
-        <div className = 'right_arrow'>
-          <RightArrow
-            goToNextSlide={() => this.goToNextSlide()}
-          />
-        </div>
-      </StyleComments>
+          <div className='slider-text'>  
+            <div style = {{...styles, opacity: this.state.fade}}>
+              <Slide
+                activeIndex={this.state.activeIndex}
+              />
+            </div>
+          </div>
+          <div className = 'right_arrow'>
+            <RightArrow
+              goToNextSlide={() => this.goToNextSlide()}
+            />
+          </div>
+        </StyleComments>
+      </div>
     );
   }
 
