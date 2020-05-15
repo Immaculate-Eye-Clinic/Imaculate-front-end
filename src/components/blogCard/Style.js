@@ -39,7 +39,7 @@ align-items: center;
     .card-text{
         margin: 25px;
         .date{
-            color: rgb(255, 7, 110);
+            color: #252079;
             font-size: 13px;
             @media (max-width: 760px){
                 font-size: 8px;
@@ -56,6 +56,7 @@ align-items: center;
         h2{
             margin-top: 0;
             font-size: 28px;
+            color: #252079;
             @media (max-width: 760px){
                 font-size: 8px;
             }
@@ -69,12 +70,13 @@ align-items: center;
         button{
             border: none;
             color: white;
-            background: #4caf50;
+            background: #252079;
             padding: 10px 22px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
             font-size: 13px;
+            cursor: pointer;
             @media (max-width: 760px){
                 font-size: 8px;
                 padding: 8px 15px;
