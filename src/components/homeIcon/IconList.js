@@ -1,32 +1,26 @@
 import React from 'react'
-import {Div} from './IconStyle'
+import {Body} from './IconStyle'
 
-function IconList(props){
-    return(
-        <Div>
+function IconList (props) {
+    return (
+        <Body>
             <div className='container'>
-            <div className='card'>
-               <div className='.div'>
-                   <div className='imgBx' dataText={props.icon.h3} >
-                     <img src={props.icon.imgUrl} alt="icon"/>
-                    
+                <div className='card'>
+                    <div className='imgBx' dataText={props.icon.h3}>
+                    <img src={props.icon.imgUrl} alt="icon"/>
                     </div>
-                <div>
-                    <div className='design'>
+                    <div className='content'>
                         <div>
-                        <h3>{props.icon.h3} </h3>
-                        <p>{props.icon.p}</p>
-                        <p>{props.icon.caption}</p>
+                            <h3>{props.icon.h3} </h3>
+                            <p className='p'>{props.icon.p} </p>
+                            <p className='p2'>{props.icon.caption} </p>
                         </div>
-                    </div>
+
                     </div>
                 </div>
-                </div>
-           </div>
-        </Div>
+            </div>
+        </Body>
     )
 }
-
-
 
 export default IconList
