@@ -11,7 +11,7 @@ align-items: center;
     grid-template-rows: 150px 150px 50px;
     border-radius: 18px;
     background: white;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
     text-align: center;
     transition: 0.5s ease;
     cursor: pointer;
@@ -22,8 +22,7 @@ align-items: center;
     }
 
     :hover{
-        transform: scale(1.1);
-        box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+        box-shadow: 5px 5px 15px rgba(0,0,0,0.3), 5px 5px 15px rgba(0,0,0,0.3), 5px 5px 15px rgba(0,0,0,0.3);
     }
     
     
@@ -84,6 +83,7 @@ align-items: center;
         }
         
     }
+}
 
 `
 
