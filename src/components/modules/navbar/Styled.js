@@ -70,25 +70,40 @@ export const Div = styled.header`
                 z-index: 1;
               }
 
+              /* The Sign-up and Login Styles begins here */
               img{
                 margin: 2em;
+                padding: 0;
               }
 
-              .userStyle{
-                position: absolute;
-                top: 75px;
-                color: white;
-                text-align: center;
-                line-height: 1.9;
-                display: block;
-                background: #252079;
-                width: 150px;
-                border-radius: 3px;
-                transition: 0.5s;
-                opacity: 1;
+              .container-sign-up {
+                text-align: left;
+                align-content: center;
+                margin: 0;
+                padding: 0;
+
+
+                .userStyle{
+                  position: absolute;
+                  top: 75px;
+                  color: white;
+                  text-align: center;
+                  line-height: 2em;
+                  display: block;
+                  background: transparent;
+                  width: 100px;
+                  border-radius: 3px;
+                  transition: 0.5s;
+                  opacity: 0;
+                }
+
+                :hover .userStyle{
+                  opacity: 1;
+                  transition: 0.6s;
+                }
 
                 .login {
-                  border-bottom: 1px solid black;
+                  border-bottom: 1px solid gray;
                 }
 
                 .sign-up{
@@ -96,16 +111,18 @@ export const Div = styled.header`
                 }
 
                 .login:hover {
-                  background: white;
+                  background: rgba(25, 20, 80, 0.795);
+                  border-radius: 3px;
                   transition: 0.5s;
                 }
 
                 .sign-up:hover {
-                  background: white;
+                  background: rgba(25, 20, 80, 0.795);
+                  border-radius: 3px;
                   transition: 0.5s;
                 }
 
-              }
+              } /* The Sign-up and Login Styles ends here */
 
             }
         }
