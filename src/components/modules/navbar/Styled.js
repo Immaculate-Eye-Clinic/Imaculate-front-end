@@ -68,7 +68,45 @@ export const Div = styled.header`
                 padding: 0 25px;
                 text-decoration: none;
                 z-index: 1;
+              }
+
+              img{
+                margin: 2em;
+              }
+
+              .userStyle{
+                position: absolute;
+                top: 75px;
+                color: white;
+                text-align: center;
+                line-height: 1.9;
+                display: block;
+                background: #252079;
+                width: 150px;
+                border-radius: 3px;
+                transition: 0.5s;
+                opacity: 1;
+
+                .login {
+                  border-bottom: 1px solid black;
                 }
+
+                .sign-up{
+                  
+                }
+
+                .login:hover {
+                  background: white;
+                  transition: 0.5s;
+                }
+
+                .sign-up:hover {
+                  background: white;
+                  transition: 0.5s;
+                }
+
+              }
+
             }
         }
     }
