@@ -1,6 +1,6 @@
 import React from 'react'
 import IconData from './IconData'
-import {Div, Divs} from '../blogCard/ComponentStyle'
+import {Divs} from '../blogCard/ComponentStyle'
 import New from './IconList' 
 
 function HomeIcon(props){

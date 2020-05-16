@@ -131,6 +131,7 @@ margin: 20px ;
      }
      .container .card .imgBx {
          position: relative;
+        
      }
 
      .container .card .imgBx,
