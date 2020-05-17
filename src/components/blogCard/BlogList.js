@@ -11,6 +11,9 @@ function BlogList(props){
             {BlogData.map((blog, index) => (
             <BlogCard key={blog.id} blog={blog}/>))}
             </div>
+            <div className="butContianer">
+            <button className="but">View All</button>
+            </div>
         </Div1>
     )
 }

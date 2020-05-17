@@ -75,6 +75,7 @@ align-items: center;
             text-decoration: none;
             display: inline-block;
             font-size: 13px;
+            border-radius: 10px;
             cursor: pointer;
             @media (max-width: 760px){
                 font-size: 8px;

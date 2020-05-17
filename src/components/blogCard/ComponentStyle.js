@@ -8,11 +8,13 @@ export const Div = styled.div`
 `
 export const Div1 = styled.div`
     margin-top: 100px;
+    margin-bottom: 100px;
     .title {
         font-size: 40px;
         font-weight: 1000;
         text-align: center;
         margin-bottom: 60px;
+        color: #252079;
     }
     .container {
         display: flex;
@@ -25,6 +27,28 @@ export const Div1 = styled.div`
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-between;
+        }
+    }
+    .butContianer {
+        width: 150px;
+        margin: 70px auto;
+        .but{
+            border: none;
+            width: 150px;
+            margin: auto;
+            color: white;
+            background: #252079;
+            padding: 10px 22px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 13px;
+            border-radius: 10px;
+            cursor: pointer;
+            @media (max-width: 760px){
+                font-size: 8px;
+                padding: 8px 15px;
+            }
         }
     }
 
