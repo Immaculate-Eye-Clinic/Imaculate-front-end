@@ -1,10 +1,10 @@
 import styled from "styled-components"
 
 export const HeroStyle = styled.div`
-    overflow: hidden;
+    /* overflow: hidden;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0; */
     width: 100%;
     height: ${props => props.height};
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${props => props.img});
