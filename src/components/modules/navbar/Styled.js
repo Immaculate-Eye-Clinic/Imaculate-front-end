@@ -79,10 +79,9 @@ export const Div = styled.header`
 
               .container-sign-up {
                 text-align: left;
-                align-content: center;
                 margin: 0;
                 padding: 0;
-                height: 40px;
+                height: 30px;
 
 
                 .userStyle{
