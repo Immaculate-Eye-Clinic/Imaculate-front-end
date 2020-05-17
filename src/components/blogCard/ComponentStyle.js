@@ -15,7 +15,7 @@ padding-left: 3em;
 export const Divs = styled.div `
 position: relative;
 width: 1000px;
-justify-content: space-evenly;
+justify-content: center;
 flex-direction: row;
 display: flex;
 margin-top: 17em;
@@ -32,5 +32,6 @@ margin-top: 17em;
     
     margin-left: 20em;
 }
+
 
 `
