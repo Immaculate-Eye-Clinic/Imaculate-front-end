@@ -5,6 +5,7 @@ import App from '../components/App';
 import NoMatch from './NoMatch';
 import ScrollToTop from './ScrollToTop';
 import {GlobalStyle} from "../GlobalStyle"
+import SignUp from '../pages/SignUp/SignUp'
 
 class ReactRouter extends React.Component {
     render() {
@@ -16,7 +17,8 @@ class ReactRouter extends React.Component {
                         <App>
                         <Switch>
                             <Route exact path="/" component={Home} />
-                            <Route component={NoMatch} />
+                            <Route path='/signup' component={SignUp} />
+                            <Route component={NoMatch} /> 
                         </Switch>
                         </App>
                     </ScrollToTop>

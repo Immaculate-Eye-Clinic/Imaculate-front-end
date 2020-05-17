@@ -15,6 +15,6 @@ justify-content: space-evenly;
     display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-justify-content: space-between;
+justify-content: space-evenly;
 }
 `
