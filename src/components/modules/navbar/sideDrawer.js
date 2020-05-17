@@ -43,6 +43,20 @@ class sideDrawer extends Component {
                             </Link>
                             <hr style={{ marginRight: '40px' }} />
                         </li>
+
+
+                        <li>
+                            
+                        <div className = 'container-sign-up'>
+                                <img src = "https://res.cloudinary.com/hisroyalwonginess/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1589490335/65U_hqdqju.svg"  alt = "Login" height = "30px" width = "30px"/>
+                                <div className = 'userStyle'>
+                                    <div className = 'login'>Login</div>
+                                    <div className = 'sign-up'>Sign Up</div>
+                                </div>
+                            </div>
+                            
+                            <hr style={{ marginRight: '40px' }} />
+                        </li>
                 </ul>
             </nav>
             </Drawer>
