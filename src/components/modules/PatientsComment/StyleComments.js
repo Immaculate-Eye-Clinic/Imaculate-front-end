@@ -6,22 +6,16 @@ export const StyleComments = styled.div`
     color: white;
     margin: 0px auto 50px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
-    height: 380px;
+    height: 300px;
     border-radius: 5px;
     background-color: #252079;
 
-    p{
-
-    }
 
     .left_arrow {
-        width: 10%;
+        flex: 1;
         text-align: center;
-        margin: 0;
-        padding: 2px;
-        box-sizing: border-box;
 
 
     }
@@ -31,12 +25,10 @@ export const StyleComments = styled.div`
     }
 
     .right_arrow {
-        width: 10%;
+        flex: 1;
         padding: 2px;
         margin: 0;
         text-align: center;
-        margin: 0, 0, 2px;
-        box-sizing: border-box;
     }
 
     .right_arrow:hover{
@@ -44,13 +36,9 @@ export const StyleComments = styled.div`
     }
 
     .slider-text {
-        width: 60%;
+        flex: 6;
         font-size: 1.3em;
         text-align: center;
-        border-radius:10px;
-        padding: 2px;
-        box-sizing: border-box;
-        
     }
 
     .inactive {
