@@ -14,8 +14,10 @@ function Home() {
                 height={"70vh"}
                 img={"https://res.cloudinary.com/hisroyalwonginess/image/upload/v1588437898/Immaculate/Doctors_ieplxk.jpg"}
             />
-            <HomeIcon />
+            {/* <HomeIcon /> */}
+            <div style={{width: "90%", margin: "auto"}}>
             <BlogCard />
+            </div>
             <Slider />
             <Why />
         </div>

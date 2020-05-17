@@ -1,20 +1,28 @@
 import styled from 'styled-components'
 
 export const Div = styled.div`
-display: flex;
-justify-content: space-evenly;
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
 
 `
 export const Div1 = styled.div`
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
 @media (max-width: 760px){
     display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
 }
 
 `

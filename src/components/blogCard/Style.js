@@ -47,7 +47,7 @@ align-items: center;
         p{
             color: grey;
             font-size: 13px;
-            font weight: 300;
+            font-weight: 300;
             @media (max-width: 760px){
                 font-size: 8px;
             }
