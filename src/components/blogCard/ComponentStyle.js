@@ -7,23 +7,26 @@ export const Div = styled.div`
 
 `
 export const Div1 = styled.div`
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 100%;
-@media (max-width: 760px){
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.title {
-    font-size: 30px;
-    font-weight: 800;
-    text-align: center;
-}
+    margin-top: 100px;
+    .title {
+        font-size: 40px;
+        font-weight: 1000;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+        @media (max-width: 760px){
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
 
 `
 
