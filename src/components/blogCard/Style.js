@@ -4,20 +4,25 @@ export const Div = styled.div`
 margin: 2.5em;
 align-items: center;
 
+
 .card{
     display: grid;
-    grid-template-columns: 300px;
-    grid-template-rows: 180px 180px 60px;
+    grid-template-columns: 250px;
+    grid-template-rows: 150px 150px 50px;
     border-radius: 18px;
     background: white;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
     text-align: center;
     transition: 0.5s ease;
     cursor: pointer;
+    @media (max-width: 760px){
+        display: grid;
+        grid-template-columns: 100px;
+        grid-template-rows: 40px 120px 40px;
+    }
 
     :hover{
-        transform: scale(1.1);
-        box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+        box-shadow: 5px 5px 15px rgba(0,0,0,0.3), 5px 5px 15px rgba(0,0,0,0.3), 5px 5px 15px rgba(0,0,0,0.3);
     }
     
     
@@ -33,50 +38,52 @@ align-items: center;
     .card-text{
         margin: 25px;
         .date{
-            color: rgb(255, 7, 110);
+            color: #252079;
             font-size: 13px;
+            @media (max-width: 760px){
+                font-size: 8px;
+            }
         }
         p{
             color: grey;
-            font-size: 15px;
+            font-size: 13px;
             font weight: 300;
+            @media (max-width: 760px){
+                font-size: 8px;
+            }
         }
         h2{
             margin-top: 0;
-            font-size: 28px;
+            font-size: 27px;
+            color: #252079;
+            @media (max-width: 760px){
+                font-size: 8px;
+            }
         }
     }
-    .card-stats{
+    .button{
         width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
-        background: rgb(255, 7, 110);
-
-        .stat{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            padding: 10px;
+        
+        button{
+            border: none;
             color: white;
+            background: #252079;
+            padding: 10px 22px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 13px;
+            cursor: pointer;
+            @media (max-width: 760px){
+                font-size: 8px;
+                padding: 8px 15px;
+            }
         }
-        .type{
-            font-size: 11px;
-            font-weight: 300;
-            text-transform: uppercase;
-        }
-        .value{
-            font-size: 22px;
-            font-weight: 500;
-        }
-        .border{
-            border-left: 1px solid rgb(172,26,87);
-            border-right: 1px solid rgb(172,26,87);
-        }
+        
     }
+}
 
 `
 
