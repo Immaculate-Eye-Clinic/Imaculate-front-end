@@ -11,7 +11,7 @@ function Home() {
             <Hero 
                 title={"Welcome Home"} 
                 subText={"Sub text goes here and this long"} 
-                height={"90vh"}
+                height={"70vh"}
                 img={"https://res.cloudinary.com/hisroyalwonginess/image/upload/v1588437898/Immaculate/Doctors_ieplxk.jpg"}
             />
             <HomeIcon />
