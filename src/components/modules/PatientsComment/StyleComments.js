@@ -26,8 +26,6 @@ export const StyleComments = styled.div`
         flex: 1;
         text-align: center;
         cursor: pointer;
-
-
         }
 
         .right_arrow {
@@ -50,10 +48,30 @@ export const StyleComments = styled.div`
         .active {
             display: block;
         }
-        @media (max-width: 990px) {
+        @media (max-width: 990px) 
+        {
             .slider-text {
+                position: absolute;
                 font-size: 17px;
-                text-align: left;
+                text-align: center;
+                max-width: 310px;
+                margin-top: 9em;
+            }
+
+            .right_arrow {
+            position: absolute;
+            left: 350px;
+            margin-top: 9em;
+            text-align: right;
+            cursor: pointer;
+            }
+
+            .left_arrow {
+            position: absolute;
+            right: 350px;
+            margin-top: 9em;
+            text-align: left;
+            cursor: pointer;
             }
         }
     }
