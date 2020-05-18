@@ -215,8 +215,7 @@ export const Drawer = styled.div `
                   text-align: center;
                   display: flex;
                   line-height:2em;
-                  background: rgba(14, 16, 11, 0.533);
-                  width: 150px;
+                  width: 140px;
                   border-radius: 3px;
                   transition: 0.5s;
                   opacity: 0;
@@ -230,13 +229,13 @@ export const Drawer = styled.div `
                 }
 
                 .login {
-                  flex: 1;
-                  border-right: 1px solid gray;
+                  width: fit-content;
+                  padding: 2px 7px 2px;
                 }
 
                 .sign-up{
-                  flex: 1;
-                  border-left: 1px solid gray;
+                  width: fit-content;
+                  padding: 2px 7px 2px;
                 }
 
                 .login:hover {
