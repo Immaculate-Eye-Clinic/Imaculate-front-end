@@ -77,7 +77,7 @@ export const Div = styled.header`
                 padding: 0;
               }
 
-              .container-sign-up {
+              .container_sign_up {
                 text-align: left;
                 margin: 0;
                 padding: 0;
@@ -109,7 +109,7 @@ export const Div = styled.header`
                   border-bottom: 1px solid gray;
                 }
 
-                .sign-up{
+                .sign_up{
                   
                 }
 
@@ -119,7 +119,7 @@ export const Div = styled.header`
                   transition: 0.5s;
                 }
 
-                .sign-up:hover {
+                .sign_up:hover {
                   background: rgba(25, 20, 80, 0.795);
                   border-radius: 3px;
                   transition: 0.5s;
@@ -204,7 +204,8 @@ export const Drawer = styled.div `
         }
     }
 
-    .container-sign-up {
+    .container_sign_up {
+      position: absolute;
         display: flex;
         margin: 2rem 2.7em;
 
@@ -235,7 +236,7 @@ export const Drawer = styled.div `
                       padding: 2px 7px 2px;
                     }
 
-                    .sign-up{
+                    .sign_up{
                       width: fit-content;
                       padding: 2px 7px 2px;
                     }
@@ -246,7 +247,7 @@ export const Drawer = styled.div `
                       transition: 0.5s;
                     }
 
-                    .sign-up:hover {
+                    .sign_up:hover {
                       background: rgba(25, 20, 80, 0.795);
                       border-radius: 3px;
                       transition: 0.5s;
