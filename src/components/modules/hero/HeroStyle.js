@@ -11,6 +11,10 @@ export const HeroStyle = styled.div`
     background-repeat: no-repeat;
     background-size: 100%;
 
+    @media (max-width: 990px) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("asset/img/404.svg");   
+    }
+
     .hero-text {
         text-align: center;
         position: absolute;
