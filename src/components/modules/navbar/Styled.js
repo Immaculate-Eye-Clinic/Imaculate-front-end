@@ -216,7 +216,7 @@ export const Drawer = styled.div `
                   display: flex;
                   line-height:2em;
                   background: rgba(14, 16, 11, 0.533);
-                  width: 200px;
+                  width: 150px;
                   border-radius: 3px;
                   transition: 0.5s;
                   opacity: 0;
