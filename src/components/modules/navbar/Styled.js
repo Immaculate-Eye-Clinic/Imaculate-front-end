@@ -130,21 +130,21 @@ export const Div = styled.header`
             }
         }
     }
-    @media (max-width: 990px) {
+    @media (max-width: 1100px) {
         .navs {
         display: none;
         }
     }
-    @media (max-width: 990px) {
+    @media (max-width: 1100px) {
         .toggle {
         display: block;
         position: absolute;
         top: 20px;
-        /* margin-top: 10px; */
+        margin-top: 10px;
         right: 40px;
         }
     }
-    @media (min-width: 990px) {
+    @media (min-width: 1100px) {
         .toggle {
       display: none;
     }

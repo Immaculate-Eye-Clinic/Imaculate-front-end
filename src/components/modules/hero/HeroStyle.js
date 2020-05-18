@@ -1,20 +1,25 @@
 import styled from "styled-components"
 
 export const HeroStyle = styled.div`
-    overflow: hidden;
-    position: relative;
+    /* overflow: hidden;
+    position: absolute;
     top: 0;
-    left: 0;
+    left: 0; */
     width: 100%;
     height: ${props => props.height};
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${props => props.img});
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+
+    @media (max-width: 990px) {
+        height: 50vh;
+    }
 
     .hero-text {
+        width: 90%;
         text-align: center;
         position: absolute;
-        top: 50%;
+        top: 35%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
