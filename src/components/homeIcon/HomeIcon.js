@@ -1,14 +1,14 @@
 import React from 'react'
-import IconList from './IconList'
 import IconData from './IconData'
-import {Div} from '../blogCard/ComponentStyle'
+import {Divs} from '../blogCard/ComponentStyle'
+import New from './IconList' 
 
 function HomeIcon(props){
-    const IconComponent = IconData.map(icon => <IconList key={icon.id} icon ={icon}/>)
-
+    const IconComponent = IconData.map(icon => <New key={icon.id} icon={icon}/>)
     return(
         <div>
-            <Div>{IconComponent}</Div>
+       
+               <Divs>{IconComponent}</Divs>
         </div>
     )
 }

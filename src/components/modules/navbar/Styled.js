@@ -72,15 +72,16 @@ export const Div = styled.header`
 
               /* The Sign-up and Login Styles begins here */
               img{
-                margin: 2em;
+                margin-left: 2em;
+                margin-right: 2em;
                 padding: 0;
               }
 
               .container-sign-up {
                 text-align: left;
-                align-content: center;
                 margin: 0;
                 padding: 0;
+                height: 30px;
 
 
                 .userStyle{
@@ -90,16 +91,18 @@ export const Div = styled.header`
                   text-align: center;
                   line-height: 2em;
                   display: block;
-                  background: transparent;
+                  background: rgba(14, 16, 116, 0.033);
                   width: 100px;
                   border-radius: 3px;
                   transition: 0.5s;
                   opacity: 0;
+                  visibility: hidden;
                 }
 
                 :hover .userStyle{
                   opacity: 1;
                   transition: 0.6s;
+                  visibility: visible;
                 }
 
                 .login {
