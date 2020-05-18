@@ -206,7 +206,7 @@ export const Drawer = styled.div `
 
     .container-sign-up {
         display: flex;
-        margin-bottom:280px;
+        margin: 2rem 2.7em;
 
           img{
             margin-right: 1em;
