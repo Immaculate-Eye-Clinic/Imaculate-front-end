@@ -205,51 +205,53 @@ export const Drawer = styled.div `
     }
 
     .container-sign-up {
-                  display: flex;
-      img{
-        margin-right: 1em;
-      }            
-      .userStyle{
-                  position: relative;
-                  color: white;
-                  text-align: center;
-                  display: flex;
-                  line-height:2em;
-                  width: 140px;
-                  border-radius: 3px;
-                  transition: 0.5s;
-                  opacity: 0;
-                  visibility: hidden;
-                }
+        display: flex;
+        margin-bottom:280px;
 
-                :hover .userStyle{
-                  opacity: 1;
-                  transition: 0.6s;
-                  visibility: visible;
-                }
+          img{
+            margin-right: 1em;
+          }            
+          .userStyle{
+                      position: relative;
+                      color: white;
+                      text-align: center;
+                      display: flex;
+                      line-height:2em;
+                      width: 140px;
+                      border-radius: 3px;
+                      transition: 0.5s;
+                      opacity: 0;
+                      visibility: hidden;
+                    }
 
-                .login {
-                  width: fit-content;
-                  padding: 2px 7px 2px;
-                }
+                    :hover .userStyle{
+                      opacity: 1;
+                      transition: 0.6s;
+                      visibility: visible;
+                    }
 
-                .sign-up{
-                  width: fit-content;
-                  padding: 2px 7px 2px;
-                }
+                    .login {
+                      width: fit-content;
+                      padding: 2px 7px 2px;
+                    }
 
-                .login:hover {
-                  background: rgba(25, 20, 80, 0.795);
-                  border-radius: 3px;
-                  transition: 0.5s;
-                }
+                    .sign-up{
+                      width: fit-content;
+                      padding: 2px 7px 2px;
+                    }
 
-                .sign-up:hover {
-                  background: rgba(25, 20, 80, 0.795);
-                  border-radius: 3px;
-                  transition: 0.5s;
-                }
-              }
+                    .login:hover {
+                      background: rgba(25, 20, 80, 0.795);
+                      border-radius: 3px;
+                      transition: 0.5s;
+                    }
+
+                    .sign-up:hover {
+                      background: rgba(25, 20, 80, 0.795);
+                      border-radius: 3px;
+                      transition: 0.5s;
+                    }
+                  }
   }
   
   .side-drawer.open {
