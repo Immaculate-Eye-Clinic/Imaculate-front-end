@@ -203,6 +203,54 @@ export const Drawer = styled.div `
             color: white;
         }
     }
+
+    .container-sign-up {
+                  display: flex;
+      img{
+        margin-right: 1em;
+      }            
+      .userStyle{
+                  position: relative;
+                  color: white;
+                  text-align: center;
+                  display: flex;
+                  line-height:2em;
+                  background: rgba(14, 16, 11, 0.533);
+                  width: 200px;
+                  border-radius: 3px;
+                  transition: 0.5s;
+                  opacity: 0;
+                  visibility: hidden;
+                }
+
+                :hover .userStyle{
+                  opacity: 1;
+                  transition: 0.6s;
+                  visibility: visible;
+                }
+
+                .login {
+                  flex: 1;
+                  border-right: 1px solid gray;
+                }
+
+                .sign-up{
+                  flex: 1;
+                  border-left: 1px solid gray;
+                }
+
+                .login:hover {
+                  background: rgba(25, 20, 80, 0.795);
+                  border-radius: 3px;
+                  transition: 0.5s;
+                }
+
+                .sign-up:hover {
+                  background: rgba(25, 20, 80, 0.795);
+                  border-radius: 3px;
+                  transition: 0.5s;
+                }
+              }
   }
   
   .side-drawer.open {
