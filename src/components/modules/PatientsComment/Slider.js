@@ -72,9 +72,11 @@ class Slider extends Component {
 
   render() {
     return (
-      <div>
-        <h1 style = {{textAlign: 'center', fontWeight: ''}}>Our Patients Say</h1>
+      // <div style={{backgroundColor: "#252079", color: 'white', paddingTop: "50px"}}>
+        // <h1 style = {{textAlign: 'center', fontWeight: ''}}>Our Patients Say</h1>
         <StyleComments>
+          <div className="title">Our Patients Say</div>
+          <div className="body">
           <div className='left_arrow'>
             <LeftArrow
               goToPrevSlide={() => this.goToPrevSlide()}
@@ -92,8 +94,9 @@ class Slider extends Component {
               goToNextSlide={() => this.goToNextSlide()}
             />
           </div>
+          </div>
         </StyleComments>
-      </div>
+      // </div>
     );
   }
 

@@ -140,7 +140,7 @@ export const Div = styled.header`
         display: block;
         position: absolute;
         top: 20px;
-        /* margin-top: 10px; */
+        margin-top: 10px;
         right: 40px;
         }
     }
