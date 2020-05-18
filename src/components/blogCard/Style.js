@@ -17,8 +17,8 @@ align-items: center;
     cursor: pointer;
     @media (max-width: 760px){
         display: grid;
-        grid-template-columns: 100px;
-        grid-template-rows: 40px 120px 40px;
+        grid-template-columns: 200px;
+        grid-template-rows: 110px 110px 40px;
     }
 
     :hover{
@@ -41,7 +41,7 @@ align-items: center;
             color: #252079;
             font-size: 13px;
             @media (max-width: 760px){
-                font-size: 8px;
+                font-size: 13px;
             }
         }
         p{
@@ -49,7 +49,7 @@ align-items: center;
             font-size: 13px;
             font-weight: 300;
             @media (max-width: 760px){
-                font-size: 8px;
+                font-size: 10px;
             }
         }
         h2{
