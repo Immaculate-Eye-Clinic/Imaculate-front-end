@@ -16,6 +16,9 @@ div{
         @media screen and (max-width: 1050px){
             grid-gap: 5rem;
         }
+        @media screen and (max-width: 900px){
+            grid-template-columns: 1fr;
+        }
 
         .phone{
             display: flex;
@@ -27,6 +30,12 @@ div{
                 @media screen and (max-width: 900px){
                     display: none;
                 }
+                @media screen and (max-width: 1000px){
+                    width: 400px;
+                }
+                @media screen and (max-width: 1200px){
+                    width: 500px;
+                }
             }
         }
 
@@ -35,6 +44,10 @@ div{
             justify-content: space-evenly;
             align-items: center;
             text-align: center;
+            @media screen and (max-width: 900px){
+                justify-content: center;
+            }
+            
             form{
                 width: 360px;
 
@@ -43,10 +56,7 @@ div{
                 }
 
                 img{
-                    width: 100px;
-                    @media screen and (max-width: 1000px){
-                        width: 400px;
-                    }
+                    width: 100px;  
                 }
                 h2{
                     font-size: 2.9rem;
@@ -78,8 +88,7 @@ div{
                             color: black;
                             display: none;
                             font-size: 18px;
-                            transition: .3s;
-                            
+                            transition: .3s; 
                         }
 
                         input{
@@ -101,13 +110,14 @@ div{
                         display: block;
                         width: 100%;
                         height: 50%;
+                        color: white;
                         border-radius: 25px;
                         margin: 1rem 0;
                         padding: 1rem;
                         font-size: 1.2rem;
                         outline: none;
                         border: none;
-                        background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+                        background-image: linear-gradient(to right, #252079, #252076, blue);
                         cursor: pointer;
                         text-transform: uppercase;
                         background-size: 200%;
