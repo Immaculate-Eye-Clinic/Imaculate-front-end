@@ -11,32 +11,52 @@ div{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grip-gap: 7rem;
-        padding: 0 2rem;
+        padding: 0 3rem;
+
+        @media screen and (max-width: 1050px){
+            grid-gap: 5rem;
+        }
 
         .phone{
             display: flex;
-            justify-content: flex-end;
+            justify-content: space-evenly;
             align-items: center;
             img{
                 width: 700px;
+
+                @media screen and (max-width: 900px){
+                    display: none;
+                }
             }
         }
 
         .sign-up{
             display: flex;
+            justify-content: space-evenly;
             align-items: center;
             text-align: center;
-
             form{
                 width: 360px;
+
+                @media screen and (max-width: 1000px){
+                    width: 290px;    
+                }
+
                 img{
                     width: 100px;
+                    @media screen and (max-width: 1000px){
+                        width: 400px;
+                    }
                 }
                 h2{
                     font-size: 2.9rem;
                     text-transform: uppercase;
                     margin: 15px 0;
                     color: #333;
+                    @media screen and (max-width: 1000px){
+                        font-size: 2.4rem;
+                        margin: 8px 0;
+                    }
                 }
                 .input-div{
                     margin: 0;
@@ -59,6 +79,7 @@ div{
                             display: none;
                             font-size: 18px;
                             transition: .3s;
+                            
                         }
 
                         input{
@@ -98,8 +119,8 @@ div{
                 }
             }
         }
+        
     }
     }
 }
-
 `
