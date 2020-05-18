@@ -9,16 +9,17 @@ export const HeroStyle = styled.div`
     height: ${props => props.height};
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${props => props.img});
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
 
     @media (max-width: 990px) {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("asset/img/404.svg");   
+        height: 50vh;
     }
 
     .hero-text {
+        width: 90%;
         text-align: center;
         position: absolute;
-        top: 50%;
+        top: 35%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
