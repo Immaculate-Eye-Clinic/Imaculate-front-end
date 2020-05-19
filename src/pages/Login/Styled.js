@@ -80,12 +80,13 @@ form h2 {
     height: 45px;
 }
 
+
 .input-div.focus .i i{
     color: blue;
 }
 
 .input-div.focus div .h5 {
-top: -5px;
+top: -9px;
 font-size: 12px;
 }
 
@@ -98,7 +99,6 @@ font-size: 12px;
     font-size: 18px;
     transition: .3s;
     margin-top: 2em;
-
 }
 
 input {
@@ -214,5 +214,17 @@ button {
     .login-container{
         margin-left: 5.2em;
       }
+    }
+
+    @media screen and (max-width: 500px) {
+        .login-container {
+        margin-left: 2em;
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        .login-container {
+            margin-left: 0.4em;
+        }
     }
 `
