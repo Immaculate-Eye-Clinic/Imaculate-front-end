@@ -21,19 +21,18 @@ export const Div1 = styled.div`
         overflow-y: hidden;
         white-space: nowrap;
         .container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: no_wrap;
-        justify-content: space-evenly;
-        width: 100%;
-        @media (max-width: 760px){
             display: flex;
             flex-direction: row;
             flex-wrap: no_wrap;
-            justify-content: space-between;
+            justify-content: space-evenly;
+            width: 100%;
+            @media (max-width: 760px){
+                display: flex;
+                flex-direction: row;
+                flex-wrap: no_wrap;
+                justify-content: space-between;
+            }
         }
-    }
-    
     }
     .butContianer {
         width: 150px;

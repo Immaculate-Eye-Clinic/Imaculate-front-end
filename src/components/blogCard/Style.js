@@ -36,7 +36,7 @@ align-items: center;
         }   
     }
     .card-text{
-        margin: 25px;
+        margin: auto;
         .date{
             color: #252079;
             font-size: 13px;
