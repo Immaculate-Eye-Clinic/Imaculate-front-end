@@ -6,7 +6,7 @@ margin: 0;
 background: teal;
 overflow: hidden;
 .div {
-margin-top: 8em;
+margin-top: 8%;
 height: 100vh;
 background: teal;
 width: 100vw;
@@ -37,7 +37,7 @@ form {
 }
 
 .avatar {
-    width: 100px;
+    width: 30%;
 }
 
 .pic {
@@ -61,6 +61,10 @@ form h2 {
 }
 
 .input-div.one {
+    margin-top: 0;
+}
+
+.input-div.two {
     margin-bottom: 4px;
 }
 
@@ -70,7 +74,7 @@ form h2 {
     align-items: center;
 }
 
-.i i {
+.i i{
     color: #d9d9d9;
     margin-top: 5px;
 }
