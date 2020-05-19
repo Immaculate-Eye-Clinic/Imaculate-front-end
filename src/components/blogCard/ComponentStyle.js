@@ -9,7 +9,7 @@ export const Div = styled.div`
 export const Div1 = styled.div`
     margin-top: 100px;
     margin-bottom: 100px;
-    @media (max-width: 760px){
+    @media (min-width: 760px){
         display: none
     }
     @media (max-width: 990px){
@@ -26,6 +26,9 @@ export const Div1 = styled.div`
         overflow-x: scroll;
         overflow-y: hidden;
         white-space: nowrap;
+        &::-webkit-scrollbar {
+            display: none;
+        }
         .container {
             display: flex;
             flex-direction: row;
