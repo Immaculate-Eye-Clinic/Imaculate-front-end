@@ -1,6 +1,6 @@
 import React from 'react'
 import IconData from './IconData'
-import {Divs} from '../blogCard/ComponentStyle'
+import {body} from '../blogCard/ComponentStyle'
 import New from './IconList' 
 
 function HomeIcon(props){
@@ -8,7 +8,7 @@ function HomeIcon(props){
     return(
         <div>
        
-               <Divs>{IconComponent}</Divs>
+               <body>{IconComponent}</body>
         </div>
     )
 }

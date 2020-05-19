@@ -13,7 +13,7 @@ class Slide extends Component {
                 index === this.props.activeIndex ? 'active' : 'inactive'}
                 key={index} >
                   <p>{s.comment}</p>
-                  <h4 style={{textAlign: 'Right'}}>- {s.patient}</h4>
+                  <h4 style={{textAlign: 'left'}}>- {s.patient}</h4>
                 </div>
             )}
         </div>

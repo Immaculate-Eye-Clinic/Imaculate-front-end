@@ -19,7 +19,7 @@ class Slide extends Component {
                                 </p>
                             </div>
                             <div className="image">
-                                <img src={why.imgUrl} />
+                                <img src={why.imgUrl} alt="" />
                             </div>
                         </div>
                     </React.Fragment>

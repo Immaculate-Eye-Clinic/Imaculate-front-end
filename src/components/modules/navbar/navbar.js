@@ -18,8 +18,8 @@ class Navbar extends React.Component {
                         <li><NavLink to='/services'  activeClassName='active'>Services</NavLink><span></span></li>
                         <li><NavLink to='/blog'  activeClassName='active'>Blog</NavLink><span></span></li>
                         <li><NavLink to='/visit'  activeClassName='active'>Visit Us</NavLink><span></span></li>
-                        <li><div className = 'container-sign-up'>
-                                <img src = "https://res.cloudinary.com/hisroyalwonginess/image/upload/v1589490335/65U_hqdqju.svg"  alt = "Login" height = "30px" width = "30px"/>
+                        <li height = "30px"><div className = 'container_sign_up'>
+                                <img src = "https://res.cloudinary.com/hisroyalwonginess/image/upload/v1589821953/pngfind.com-profile-icon-png-1102927_gaepvx.png"  alt = "user" height = "30px" width = "30px"/>
                                 <div className = 'userStyle'>
                                     <div className = 'login'><NavLink to='/login'>Login</NavLink></div>
                                     <div className = 'sign-up'><NavLink to='/signup'>SignUp</NavLink></div>
