@@ -18,7 +18,7 @@ align-items: center;
     @media (max-width: 760px){
         display: grid;
         grid-template-columns: 200px;
-        grid-template-rows: 110px 110px 40px;
+        grid-template-rows: 110px 100px 40px;
     }
 
     :hover{
