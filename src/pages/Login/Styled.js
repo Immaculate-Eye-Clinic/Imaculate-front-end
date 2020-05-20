@@ -5,11 +5,12 @@ padding: 0;
 margin: 0;
 background: teal;
 overflow: hidden;
+width: 100%;
+height: 100vh;
+
 .div {
 margin-top: 8%;
-height: 100vh;
 background: teal;
-width: 100vw;
 display: grid;
 grid-template-columns: repeat(2, 1fr);
 grid-gap: 7rem;
