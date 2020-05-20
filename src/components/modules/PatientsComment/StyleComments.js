@@ -3,8 +3,13 @@ import styled from "styled-components";
 export const StyleComments = styled.div`
 
     background-color: #252079;
-    min-height: 300px;
-    padding: 70px;
+    min-height: 200px;
+    padding: 20px 100px 10px;
+
+    @media (max-width: 990px) {
+        padding: 20px 10px 0px;
+    }
+
 
     .title {
         font-weight: 800;
@@ -15,12 +20,11 @@ export const StyleComments = styled.div`
 
     .body {
         display: flex;
-        padding-top: 50px;
+        padding-top: 30px;
         color: white;
         margin: 0px auto 0px;
         align-items: center;
-        justify-content: center;
-        width: 100%;
+        justify-content: space-between;
 
         .left_arrow {
         flex: 1;
@@ -38,7 +42,7 @@ export const StyleComments = styled.div`
         .slider-text {
             flex: 6;
             font-size: 19px;
-            text-align: left;
+            text-align: justify;
         }
 
         .inactive {
@@ -51,25 +55,19 @@ export const StyleComments = styled.div`
         @media (max-width: 990px) 
         {
             .slider-text {
-                position: absolute;
-                font-size: 17px;
+                font-size: 15px;
                 text-align: center;
-                max-width: 310px;
-                margin-top: 9em;
+                flex: 14;
             }
 
             .right_arrow {
-            position: absolute;
-            left: 350px;
-            margin-top: 9em;
             text-align: right;
             cursor: pointer;
+            margin-right: 0;
+            padding-right: 0;
             }
 
             .left_arrow {
-            position: absolute;
-            right: 350px;
-            margin-top: 9em;
             text-align: left;
             cursor: pointer;
             }

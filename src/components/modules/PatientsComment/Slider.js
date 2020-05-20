@@ -77,27 +77,26 @@ class Slider extends Component {
         <StyleComments>
           <div className="title">Our Patients Say</div>
           <div className="body">
-          <div className='left_arrow'>
-            <LeftArrow
-              goToPrevSlide={() => this.goToPrevSlide()}
-            />
-          </div>
-          <div className='slider-text'>  
-            <div style = {{...styles, opacity: this.state.fade}}>
-              <Slide
-                activeIndex={this.state.activeIndex}
+            <div className='left_arrow'>
+              <LeftArrow
+                goToPrevSlide={() => this.goToPrevSlide()}
               />
             </div>
-          </div>
-          <div className = 'right_arrow'>
-            <RightArrow
-              goToNextSlide={() => this.goToNextSlide()}
-            />
-          </div>
+            <div className='slider-text'>  
+              <div style = {{...styles, opacity: this.state.fade}}>
+                <Slide
+                  activeIndex={this.state.activeIndex}
+                />
+              </div>
+            </div>
+            <div className = 'right_arrow'>
+              <RightArrow
+                goToNextSlide={() => this.goToNextSlide()}
+              />
+            </div>
           </div>
         </StyleComments>
       // </div>
     );
   }
-
 }
