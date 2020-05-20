@@ -77,7 +77,7 @@ export const Div = styled.header`
                 padding: 0;
               }
 
-              .container-sign-up {
+              .container_sign_up {
                 text-align: left;
                 margin: 0;
                 padding: 0;
@@ -109,7 +109,7 @@ export const Div = styled.header`
                   border-bottom: 1px solid gray;
                 }
 
-                .sign-up{
+                .sign_up{
                   
                 }
 
@@ -119,7 +119,7 @@ export const Div = styled.header`
                   transition: 0.5s;
                 }
 
-                .sign-up:hover {
+                .sign_up:hover {
                   background: rgba(25, 20, 80, 0.795);
                   border-radius: 3px;
                   transition: 0.5s;
@@ -130,21 +130,21 @@ export const Div = styled.header`
             }
         }
     }
-    @media (max-width: 990px) {
+    @media (max-width: 1100px) {
         .navs {
         display: none;
         }
     }
-    @media (max-width: 990px) {
+    @media (max-width: 1100px) {
         .toggle {
         display: block;
         position: absolute;
         top: 20px;
-        /* margin-top: 10px; */
+        margin-top: 10px;
         right: 40px;
         }
     }
-    @media (min-width: 990px) {
+    @media (min-width: 1100px) {
         .toggle {
       display: none;
     }
@@ -203,6 +203,56 @@ export const Drawer = styled.div `
             color: white;
         }
     }
+
+    .container_sign_up {
+      position: absolute;
+        display: flex;
+        margin: 2rem 2.7em;
+
+          img{
+            margin-right: 1em;
+          }            
+          .userStyle{
+                      position: relative;
+                      color: white;
+                      text-align: center;
+                      display: flex;
+                      line-height:2em;
+                      width: 140px;
+                      border-radius: 3px;
+                      transition: 0.5s;
+                      opacity: 0;
+                      visibility: hidden;
+                    }
+
+                    :hover .userStyle{
+                      opacity: 1;
+                      transition: 0.6s;
+                      visibility: visible;
+                    }
+
+                    .login {
+                      width: fit-content;
+                      padding: 2px 7px 2px;
+                    }
+
+                    .sign_up{
+                      width: fit-content;
+                      padding: 2px 7px 2px;
+                    }
+
+                    .login:hover {
+                      background: rgba(25, 20, 80, 0.795);
+                      border-radius: 3px;
+                      transition: 0.5s;
+                    }
+
+                    .sign_up:hover {
+                      background: rgba(25, 20, 80, 0.795);
+                      border-radius: 3px;
+                      transition: 0.5s;
+                    }
+                  }
   }
   
   .side-drawer.open {
