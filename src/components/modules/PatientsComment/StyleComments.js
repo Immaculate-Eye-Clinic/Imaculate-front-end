@@ -4,7 +4,7 @@ export const StyleComments = styled.div`
 
     background-color: #252079;
     min-height: 200px;
-    padding: 20px 100px 10px;
+    padding: 70px;
 
     @media (max-width: 990px) {
         padding: 20px 10px 0px;
