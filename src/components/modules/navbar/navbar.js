@@ -22,7 +22,7 @@ class Navbar extends React.Component {
                                 <img src = "https://res.cloudinary.com/hisroyalwonginess/image/upload/v1589821953/pngfind.com-profile-icon-png-1102927_gaepvx.png"  alt = "user" height = "30px" width = "30px"/>
                                 <div className = 'userStyle'>
                                     <div className = 'login'>Login</div>
-                                    <div className = 'sign-up'><NavLink to='/signup'>Signup</NavLink></div>
+                                    <div className = 'sign-up'>Sign up</div>
                                 </div>
                             </div>
                         </li>

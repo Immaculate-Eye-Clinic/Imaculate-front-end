@@ -78,10 +78,11 @@ height: 100vh;
     font-size: 20px;
     outline: none;
     letter-spacing: 1px;
-    color: #fffab5;
+    color: white;
     border: #ffffcl 2px solid;
     box-sizing: border-box;
-    border-radius: 20px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .box .inputbox label{
@@ -91,7 +92,7 @@ height: 100vh;
     top: 7px;
     left: 35px;
     font-size: 18px;
-    color: #ffcb76cb;
+    color: silver;
     letter-spacing: 1px;
     pointer-events: none;
     transition: .2s;
