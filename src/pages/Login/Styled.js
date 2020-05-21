@@ -7,6 +7,7 @@ background: teal;
 overflow: hidden;
 width: 100%;
 height: 100vh;
+font-family: cursive;
 
 .div {
 margin-top: 8%;
@@ -33,126 +34,106 @@ padding: 0 2rem;
     text-align: center;
 }
 
-form {
-    width: 360px;
-}
-
-.avatar {
-    width: 30%;
-}
-
-.pic {
-    width: 70%;
-}
-
-form h2 {
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    margin: 15px 0;
-    color: #333;
-}
-
-.input-div {
-    position: relative;
-    display: grid;
-    grid-template-columns: 7% 93%;
-    margin: 25px 0;
-    padding: 5px 0;
-    border-bottom: 2px solid #d9d9d9;
-}
-
-.input-div.one {
-    margin-top: 0;
-}
-
-.input-div.two {
-    margin-bottom: 4px;
-}
-
-.i {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.i i{
-    color: #d9d9d9;
-    margin-top: 5px;
-}
-
-.input-div > div {
-    position: relative;
-    height: 45px;
-}
-
-
-.input-div.focus .i i{
-    color: blue;
-}
-
-.input-div.focus div .h5 {
-top: -9px;
-font-size: 12px;
-}
-
-.input-div div h5 {
+.box {
     position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #999;
-    font-size: 18px;
-    transition: .3s;
-    margin-top: 2em;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    box-sizing: border-box;
 }
 
-input {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+.box h1 {
+    padding: 0 0 15px;
+    margin: 15px;
+    font-size: 45px;
+    color: #ffe1a8;
+    text-align: center;
+    letter-spacing: 2px;
+    user-select: none;
+}
+
+.box .inputbox {
+    position: relative;
     top: 0;
-    left: 0;
-    border: none;
-    outline: none;
-    background: none;
-    padding: 0.5rem 0.7rem;
-    font-size: 1.2rem;
-    font-family: 'Poppins', sans-serif;
-    color: #fff;
+    margin: 40px 0 40px;
 }
 
-a {
-    display: block;
-    text-align: right;
-    text-decoration: none;
-    color: #999;
-    font-size: 0.9rem;
-    transition: .3s;
-    :hover {
-        color: #252079;
-    }
-}
-
-button {
-    display: block;
+.box .inputbox input,
+.box .inputbox button
+ {
+    padding: 0 35px;
+    margin: 0;
     width: 100%;
-    height: 50px;
-    border-radius: 25px;
-    margin: 1rem 0;
-    font-size: 1.2rem;
+    height: 27px;
+    background: transparent;
+    font-size: 20px;
     outline: none;
-    border: none;
-    background: linear-gradient(to right, #252079, #252052, #252079) ;
-    color: white;
-    cursor: pointer;
-    font-family: 'Poppins', sans-serif;
-    text-transform: uppercase;
-    background-size: 200%;
-    transition: .5s;
+    letter-spacing: 1px;
+    color: #fffab5;
+    border: #ffffc1 2px solid;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
 
-    :hover {
-        background-position: right;
-    }
+.box .inputbox label {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 5px;
+    left: 35px;
+    font-size: 15px;
+    color: #ffcb76cb;
+    letter-spacing: 1px;
+    pointer-events: none;
+    transition: .2s;
+}
+
+.box .inputbox input:focus ~ label,
+.box .inputbox input:valid ~ label {
+    top: -27px;
+    left: 5px;
+    color: #becdff;
+    font-size: 13px;
+}
+
+.box .inputbox button {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 15px;
+    left: 50%;
+    width: 90%;
+    height: 35px;
+    transform: translate(-50%,-50%);
+    font-size: 16px;
+    color: #d5ebff;
+    border-color: #d5ebff;
+    outline: none;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.box .inputbox button:hover {
+    width: 95%;
+    height: 40px;
+    font-size: 18px;
+    background: #f1ccff25;
+    font-weight: bold;
+}
+
+.box a {
+    position: relative;
+    top: 20px;
+    left: 0;
+    text-decoration: none;
+    color: #899bd6;
+    font-size: 16px;
+    transition: .1s;
+}
+
+.box a:hover {
+    color: #c6d3ff;
+    text-shadow: 0 0 5px #c6d3ff;
 }
 
 @media screen and (max-width: 1050px) {
@@ -162,6 +143,8 @@ button {
 }
 
 @media screen and (max-width: 1000px) {
+   
+
     form{
         width: 290px;
     }
@@ -188,7 +171,9 @@ button {
     .login-container{
         justify-content: center;
         align-items: center;
-        margin-left: 16em;
+        margin-left: 14em;
+        margin-top: 40%;
+        width: 290px;
     }
 }
 
@@ -204,6 +189,8 @@ button {
 @media screen and (max-width: 700px) {
     .login-container {
         margin-left: 10em;
+        margin-top: 50%;
+        width: 290px;
     }
 }
 
@@ -223,7 +210,9 @@ button {
 
     @media screen and (max-width: 500px) {
         .login-container {
-        margin-left: 2em;
+        margin-left: 1.5em;
+        margin-top: 85%;
+        width: 290px;
         }
     }
 
@@ -232,4 +221,6 @@ button {
             margin-left: 0.4em;
         }
     }
+
+   
 `
