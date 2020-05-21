@@ -16,13 +16,12 @@ class ReactRouter extends React.Component {
                 <GlobalStyle />
                     <ScrollToTop>
                         <App>
-                        <Switch>
-                        <Route  exact path='/login' component={Login} />
-                            <Route exact path='/signup' component={SignUp} />
-                            <Route exact path="/" component={Home} />
-                         
-                            <Route component={NoMatch} />      
-                        </Switch>
+                          <Switch>
+                              <Route  exact path='/login' component={Login} />
+                              <Route exact path='/signup' component={SignUp} />
+                              <Route exact path="/" component={Home} />
+                              <Route component={NoMatch} />      
+                          </Switch>
                         </App>
                     </ScrollToTop>
                 </BrowserRouter>
