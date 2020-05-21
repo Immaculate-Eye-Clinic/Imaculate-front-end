@@ -72,7 +72,7 @@ padding: 0 2rem;
     color: #fffab5;
     border: #ffffc1 2px solid;
     box-sizing: border-box;
-    border-radius: 20px;
+    border-radius: 8px;
 }
 
 .box .inputbox label {
