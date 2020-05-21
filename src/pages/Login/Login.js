@@ -6,7 +6,7 @@ class Login extends React.Component {
     constructor(){
         super()
         this.state = {
-            Username: '',
+            Email: '',
             Password: '',
         }
         this.handleChange = this.handleChange.bind(this)
@@ -33,9 +33,9 @@ class Login extends React.Component {
 
                     <form action='#'>
                         <div className='inputbox'>
-                               <input name='Username'
-                                type='text'
-                                value={this.state.Username} 
+                               <input name='Email'
+                                type='email'
+                                value={this.state.Email} 
                                 onChange={this.handleChange} required/>
                                 <label>E-mail</label>
                         </div>
