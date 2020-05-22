@@ -205,51 +205,46 @@ export const Drawer = styled.div `
     }
 
     .container_sign_up {
-      position: absolute;
+        position: absolute;
         display: flex;
-        margin: 2rem 2.7em;
-
-          img{
-            margin-right: 1em;
-          }            
+        margin: 1rem 1em;
+           
           .userStyle{
                       position: relative;
                       color: white;
                       text-align: center;
                       display: flex;
+                      justify-content: space-between;
+                      align-content: center;
                       line-height:2em;
-                      width: 140px;
+                      font-size: 18px;
+                      width: 200px;
                       border-radius: 3px;
                       transition: 0.5s;
-                      opacity: 0;
-                      visibility: hidden;
-                    }
-
-                    :hover .userStyle{
-                      opacity: 1;
-                      transition: 0.6s;
-                      visibility: visible;
+                      margin-left: 0px;
                     }
 
                     .login {
-                      width: fit-content;
+                      flex: 1;
                       padding: 2px 7px 2px;
                     }
 
                     .sign_up{
-                      width: fit-content;
+                      flex: 1;
                       padding: 2px 7px 2px;
                     }
 
                     .login:hover {
-                      background: rgba(25, 20, 80, 0.795);
+                      background: rgba(25, 20, 80, 0.395);
                       border-radius: 3px;
+                      font-size: 22px;
                       transition: 0.5s;
                     }
 
                     .sign_up:hover {
-                      background: rgba(25, 20, 80, 0.795);
+                      background: rgba(25, 20, 80, 0.395);
                       border-radius: 3px;
+                      font-size: 22px;
                       transition: 0.5s;
                     }
                   }
