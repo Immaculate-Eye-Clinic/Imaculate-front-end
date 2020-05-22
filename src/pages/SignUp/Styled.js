@@ -137,6 +137,6 @@ height: 100vh;
     top: -25px;
     left: 5px;
     color: #becdff;
-    font-size: 18px;
+    font-size: 15px;
 }
 `
