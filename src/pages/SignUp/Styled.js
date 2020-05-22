@@ -56,42 +56,26 @@ height: 100vh;
             }
         }
 
-.box h1{
-    padding: 0 0 15px;
-    margin: 15px;
-    font-size: 45px;
-    color: white;
-    text-align: center;
-    letter-spacing: 2px;
-    user-select: none;
-    @media (max-width: 500px){
-        font-size: 30px;
-    }
-}
-
-.box .inputbox{
-    position: relative;
-    top: 0;
-    margin: 20px 0 30px;
-}
-
-
-.box .inputbox input,
-.box .inputbox button{
-    padding: 0 25px;
-    margin: 0;
-    width: 100%;
-    height: 35px;
-    background: transparent;
-    font-size: 20px;
-    outline: none;
-    letter-spacing: 1px;
-    color: white;
-    border: 2px #ffff solid ;
-    box-sizing: border-box;
-    border-radius: 10px;
-    cursor: pointer;
-}
+        .inputbox{
+        position: relative;
+        top: 0;
+        margin: 5px 0 40px;
+    
+            input{
+            padding: 0 25px;
+            margin: 0;
+            width: 100%;
+            height: 40px;
+            background: transparent;
+            font-size: 17px;
+            outline: none;
+            letter-spacing: 1px;
+            color: white;
+            border: 2px solid;
+            box-sizing: border-box;
+            border-radius: 10px;
+            cursor: pointer;
+            }
 
             label{
             position: absolute;
@@ -153,32 +137,6 @@ height: 100vh;
     top: -25px;
     left: 5px;
     color: #becdff;
-    font-size: 18px;
-}
-
-.box .inputbox button{
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    top: 30px;
-    left: 50%;
-    width: 100%;
-    height: 40px;
-    transform: translate(-50%,-50%);
-    font-size: 16px;
-    background: #252079;
-    color: white;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    transition: .1s;
-}
-
-.box .inputbox button:hover{
-    width: 100%;
-    height: 45px;
-    font-size: 18px;
-    background: #252078;
-    font-weight: bold;
+    font-size: 15px;
 }
 `
