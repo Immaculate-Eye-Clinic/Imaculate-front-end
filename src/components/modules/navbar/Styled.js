@@ -218,7 +218,7 @@ export const Drawer = styled.div `
                       align-content: center;
                       line-height:2em;
                       font-size: 18px;
-                      width: 200px;
+                      width: 250px;
                       border-radius: 3px;
                       transition: 0.5s;
                       margin-left: 0px;
