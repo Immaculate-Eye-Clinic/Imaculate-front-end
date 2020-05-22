@@ -45,7 +45,7 @@ padding: 0 2rem;
 .box h1 {
     padding: 0 0 15px;
     margin: 15px;
-    font-size: 45px;
+    font-size: 35px;
     color: #ffe1a8;
     text-align: center;
     letter-spacing: 2px;
@@ -66,7 +66,7 @@ padding: 0 2rem;
     width: 100%;
     height: 27px;
     background: transparent;
-    font-size: 20px;
+    font-size: 17px;
     outline: none;
     letter-spacing: 1px;
     color: #fffab5;
@@ -123,13 +123,15 @@ padding: 0 2rem;
 
 .box a {
     position: relative;
-    top: 20px;
+    top: 25px;
     left: 0;
     text-decoration: none;
     color: #899bd6;
     font-size: 16px;
     transition: .1s;
 }
+
+
 
 .box a:hover {
     color: #c6d3ff;
@@ -169,8 +171,7 @@ padding: 0 2rem;
     }
 
     .login-container{
-        justify-content: center;
-        align-items: center;
+
         margin-left: 14em;
         margin-top: 40%;
         width: 290px;
@@ -218,7 +219,7 @@ padding: 0 2rem;
 
     @media screen and (max-width: 400px) {
         .login-container {
-            margin-left: 0.4em;
+            margin-left: -1em;
         }
     }
 
