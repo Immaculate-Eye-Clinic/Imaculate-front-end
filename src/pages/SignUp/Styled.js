@@ -12,41 +12,49 @@ height: 100vh;
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-}
 
-.container .img img{
-    width: 500px;
-    @media (max-width: 1000px){
-        display: none;
-    }
-}
-
-.container .img{
+    .img{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-}
+        img{
+        width: 80%;
+            @media (max-width: 1000px){
+            display: none;
+            }
+        }
+    }
 
-.box{
+    .box{
     position: absolute;
-    
-    margin: 10px;
+    margin: 20px;
     padding: 10px;
-    width: 360px;
+    width: 420px;
     height: 580px;
     top: 50%;
     left: 70%;
     transform: translate(-50%,-50%);
     border-radius: 20px;
     box-sizing: border-box;
-    @media (max-width: 1000px){
-        left: 50%;
-    }
-    @media (max-width: 500px){
-        width: 280px;
-        overflow: hidden;
-    }
-}
+        @media (max-width: 1000px){
+            left: 50%;
+        }
+        @media (max-width: 500px){
+            width: 280px;
+        }
+        
+        h1{
+        padding: 0 0 15px;
+        margin: 15px;
+        font-size: 45px;
+        color: white;
+        text-align: center;
+        letter-spacing: 2px;
+        user-select: none;
+            @media (max-width: 500px){
+                font-size: 30px;
+            }
+        }
 
 .box h1{
     padding: 0 0 15px;
@@ -85,17 +93,59 @@ height: 100vh;
     cursor: pointer;
 }
 
-.box .inputbox label{
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    top: 7px;
-    left: 35px;
-    font-size: 18px;
-    color: silver;
-    letter-spacing: 1px;
-    pointer-events: none;
-    transition: .2s;
+            label{
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            top: 8px;
+            left: 30px;
+            font-size: 16px;
+            color: silver;
+            letter-spacing: 1px;
+            pointer-events: none;
+            transition: .2s;
+            }
+        }
+        button{
+            padding: 0 25px;
+            margin: 0;
+            width: 100%;
+            height: 35px;
+            background: transparent;
+            font-size: 20px;
+            outline: none;
+            letter-spacing: 1px;
+            color: white;
+            border: 2px solid;
+            box-sizing: border-box;
+            border-radius: 10px;
+            cursor: pointer;
+                :hover{
+                    width: 100%;
+                    height: 45px;
+                    font-size: 18px;
+                    background: #252078;
+                    font-weight: bold;
+                }
+        }
+        .button{
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            top: 30px;
+            left: 50%;
+            width: 100%;
+            height: 40px;
+            transform: translate(-50%,-50%);
+            font-size: 16px;
+            background: #252079;
+            color: white;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            transition: .1s;
+        }
+    }
 }
 
 .box .inputbox input:focus ~ label,
