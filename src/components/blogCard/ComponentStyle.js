@@ -78,13 +78,13 @@ export const Mobile_Div = styled.div`
     }
 `
 
-// export const Divs = styled.div `
-// position: relative;
-// width: 1000px;
-// justify-content: space-evenly;
-// flex-direction: row;
-// display: flex;
-// margin-top: 17em;
+export const Divs = styled.div `
+position: relative;
+width: 1000px;
+justify-content: center;
+flex-direction: row;
+display: flex;
+margin-top: 17em;
 
 // @media (max-width: 992px){
 //     width: 50%;
@@ -99,4 +99,5 @@ export const Mobile_Div = styled.div`
 //     margin-left: 20em;
 // }
 
-// `
+
+`
