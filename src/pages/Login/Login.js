@@ -34,7 +34,7 @@ class Login extends React.Component {
                     <form action='#'>
                         <div className='inputbox'>
                                <input name='Email'
-                                type='email'
+                                type='text'
                                 value={this.state.Email} 
                                 onChange={this.handleChange} required/>
                                 <label>E-mail</label>
@@ -47,11 +47,11 @@ class Login extends React.Component {
                                 <label>Password</label>
                         </div>
                         <div className='inputbox'>
-                            <button>Login</button>
+                            <button className='button'>Login</button>
                         </div>
                     </form>
                     <a><NavLink to='/signup'>Don't Have An Account?</NavLink></a><br />
-                    <a><NavLink to='/'>Forgot My Password</NavLink></a>
+                    <a className='a'><NavLink to='/'>Forgot My Password</NavLink></a>
                 </div>   
                    </div>
                 </div>
