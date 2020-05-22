@@ -3,12 +3,12 @@ import styled from 'styled-components'
 export const Div = styled.div`
 margin: 2.5em;
 align-items: center;
+width: 250px;
 
 
 .card{
-    display: grid;
-    grid-template-columns: 250px;
-    grid-template-rows: 150px 150px 50px;
+    display: flex;
+    flex-wrap: wrap;
     border-radius: 18px;
     background: white;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
@@ -16,9 +16,7 @@ align-items: center;
     transition: 0.5s ease;
     cursor: pointer;
     @media (max-width: 760px){
-        display: grid;
-        grid-template-columns: 200px;
-        grid-template-rows: 110px 110px 40px;
+        display: flex;
     }
 
     :hover{
@@ -63,6 +61,7 @@ align-items: center;
     }
     .button{
         width: 100%;
+        margin-bottom: 1em;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
         
