@@ -49,7 +49,7 @@ class SignUp extends React.Component{
                             </div>
 
                             <div class='inputbox'>
-                                <button>SIGN UP</button>
+                                <button className='button'>SIGN UP</button>
                             </div>
                         </form>
                     </div>
