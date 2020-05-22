@@ -64,7 +64,7 @@ padding: 0 2rem;
     padding: 0 35px;
     margin: 0;
     width: 100%;
-    height: 27px;
+    height: 40px;
     background: transparent;
     font-size: 17px;
     outline: none;
@@ -102,7 +102,7 @@ padding: 0 2rem;
     padding: 0;
     top: 15px;
     left: 50%;
-    width: 90%;
+    width: 40%;
     height: 35px;
     transform: translate(-50%,-50%);
     font-size: 16px;
@@ -113,29 +113,14 @@ padding: 0 2rem;
     transition: .1s;
 }
 
-.box .inputbox button:hover {
-    width: 95%;
-    height: 40px;
-    font-size: 18px;
-    background: #f1ccff25;
-    font-weight: bold;
-}
 
 .box a {
     position: relative;
-    top: 25px;
+    top: 30px;
     left: 0;
     text-decoration: none;
     color: #899bd6;
-    font-size: 16px;
-    transition: .1s;
-}
-
-
-
-.box a:hover {
-    color: #c6d3ff;
-    text-shadow: 0 0 5px #c6d3ff;
+    font-size: 13px;
 }
 
 @media screen and (max-width: 1050px) {
