@@ -79,7 +79,7 @@ height: 100vh;
     outline: none;
     letter-spacing: 1px;
     color: white;
-    border: #ffffcl 2px solid;
+    border: 2px #ffff solid ;
     box-sizing: border-box;
     border-radius: 10px;
     cursor: pointer;
@@ -124,7 +124,7 @@ height: 100vh;
     transition: .1s;
 }
 
-.box .inputbox button: hover{
+.box .inputbox button:hover{
     width: 100%;
     height: 45px;
     font-size: 18px;
