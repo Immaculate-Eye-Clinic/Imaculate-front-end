@@ -16,7 +16,9 @@ width: 250px;
     transition: 0.5s ease;
     cursor: pointer;
     @media (max-width: 760px){
-        display: flex;
+        display: grid;
+        grid-template-columns: 200px;
+        grid-template-rows: 110px 100px 40px;
     }
 
     :hover{
