@@ -2,10 +2,10 @@ import styled from 'styled-components'
 
 export const Div = styled.div`
 overflow: hidden;
-background: grey;
+background: white;
 margin: 0;
 padding: 0;
-height: 100vh;
+height: auto;
 
 .container{
     width: 100vw;
@@ -18,7 +18,7 @@ height: 100vh;
     justify-content: flex-end;
     align-items: center;
         img{
-        width: 80%;
+        width: 90%;
             @media (max-width: 1000px){
             display: none;
             }
@@ -47,7 +47,7 @@ height: 100vh;
         padding: 0 0 15px;
         margin: 15px;
         font-size: 45px;
-        color: white;
+        color: #252079;
         text-align: center;
         letter-spacing: 2px;
         user-select: none;
@@ -70,8 +70,8 @@ height: 100vh;
             font-size: 17px;
             outline: none;
             letter-spacing: 1px;
-            color: white;
-            border: 2px solid;
+            color: #252079;
+            border: 2px solid #252079;
             box-sizing: border-box;
             border-radius: 10px;
             cursor: pointer;
@@ -84,7 +84,7 @@ height: 100vh;
             top: 8px;
             left: 30px;
             font-size: 16px;
-            color: silver;
+            color: #252079;
             letter-spacing: 1px;
             pointer-events: none;
             transition: .2s;
@@ -93,7 +93,7 @@ height: 100vh;
         button{
             padding: 0 25px;
             margin: 0;
-            width: 100%;
+            width: 40%;
             height: 35px;
             background: transparent;
             font-size: 20px;
@@ -104,13 +104,7 @@ height: 100vh;
             box-sizing: border-box;
             border-radius: 10px;
             cursor: pointer;
-                :hover{
-                    width: 100%;
-                    height: 45px;
-                    font-size: 18px;
-                    background: #252078;
-                    font-weight: bold;
-                }
+               
         }
         .button{
             position: absolute;
@@ -118,7 +112,7 @@ height: 100vh;
             padding: 0;
             top: 30px;
             left: 50%;
-            width: 100%;
+            width: 40%;
             height: 40px;
             transform: translate(-50%,-50%);
             font-size: 16px;
@@ -136,7 +130,13 @@ height: 100vh;
 .box .inputbox input:valid ~ label{
     top: -25px;
     left: 5px;
-    color: #becdff;
+    color: #252079;
     font-size: 15px;
+}
+
+.error{
+    color: #dc143c;
+    margin-top: .8em;
+    font-weight: 500;
 }
 `
