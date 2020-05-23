@@ -52,14 +52,6 @@ class SignUp extends React.Component{
                             .email('Invalid email address')
                             .required(''),
 
-                        user: Yup.string()
-                            .min(4, 'Too Short')
-                            .max(15, 'Too Long')
-                            .required('')
-                            .matches(/^[\w-.@ ]+$/, {
-                                message: 'Incorrect carector'
-                            }),
-
                         password: Yup.string()
                             .required('')
                             .min(4, 'Seems a bit short...')
@@ -99,13 +91,8 @@ class SignUp extends React.Component{
                                     </div>
 
                                     <div class='inputbox'>
-                                        <CustomTextInput type='email' name='email' required />
+                                        <CustomTextInput type='text' name='email' required />
                                         <label>Email Address</label>
-                                    </div>
-
-                                    <div class='inputbox'>
-                                        <CustomTextInput type='text' name='user' required />
-                                        <label>Username</label>
                                     </div>
 
                                     <div class='inputbox'>

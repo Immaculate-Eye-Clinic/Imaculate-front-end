@@ -2,10 +2,10 @@ import styled from 'styled-components'
 
 export const Div = styled.div`
 overflow: hidden;
-background: grey;
+background: white;
 margin: 0;
 padding: 0;
-height: 100vh;
+height: auto;
 
 .container{
     width: 100vw;
@@ -18,7 +18,7 @@ height: 100vh;
     justify-content: flex-end;
     align-items: center;
         img{
-        width: 80%;
+        width: 90%;
             @media (max-width: 1000px){
             display: none;
             }
@@ -47,7 +47,7 @@ height: 100vh;
         padding: 0 0 15px;
         margin: 15px;
         font-size: 45px;
-        color: white;
+        color: #252079;
         text-align: center;
         letter-spacing: 2px;
         user-select: none;
@@ -70,8 +70,8 @@ height: 100vh;
             font-size: 17px;
             outline: none;
             letter-spacing: 1px;
-            color: white;
-            border: 2px solid;
+            color: #252079;
+            border: 2px solid #252079;
             box-sizing: border-box;
             border-radius: 10px;
             cursor: pointer;
@@ -136,7 +136,13 @@ height: 100vh;
 .box .inputbox input:valid ~ label{
     top: -25px;
     left: 5px;
-    color: #becdff;
+    color: #252079;
     font-size: 15px;
+}
+
+.error{
+    color: #dc143c;
+    margin-top: .8em;
+    font-weight: 500;
 }
 `
