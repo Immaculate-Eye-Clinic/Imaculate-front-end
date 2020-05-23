@@ -2,13 +2,13 @@ import styled from 'styled-components'
 
 export const Div = styled.div`
 margin: 2.5em;
-align-items: center;
-width: 250px;
+align-items: stretch;
 
 
 .card{
     display: flex;
     flex-wrap: wrap;
+    justify-content: stretch;
     border-radius: 18px;
     background: white;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
@@ -16,9 +16,9 @@ width: 250px;
     transition: 0.5s ease;
     cursor: pointer;
     @media (max-width: 760px){
-        display: grid;
-        grid-template-columns: 200px;
-        grid-template-rows: 110px 100px 40px;
+        display: flex;
+        flex-wrap: wrap;
+        
     }
 
     :hover{
@@ -40,6 +40,7 @@ width: 250px;
         .date{
             color: #252079;
             font-size: 13px;
+            flex: 1;
             @media (max-width: 760px){
                 font-size: 13px;
             }
@@ -48,6 +49,7 @@ width: 250px;
             color: grey;
             font-size: 13px;
             font-weight: 300;
+            flex: 20;
             @media (max-width: 760px){
                 font-size: 10px;
             }
@@ -56,6 +58,7 @@ width: 250px;
             margin-top: 0;
             font-size: 27px;
             color: #252079;
+            flex: 1;
             @media (max-width: 760px){
                 font-size: 8px;
             }
@@ -78,6 +81,7 @@ width: 250px;
             font-size: 13px;
             border-radius: 10px;
             cursor: pointer;
+
             @media (max-width: 760px){
                 font-size: 8px;
                 padding: 8px 15px;
