@@ -40,7 +40,7 @@ function Login() {
                  })}
                 onSubmit={(values, { setSubmitting, resetForm}) => {
                     setTimeout(() => {
-                      alert(JSON.stringify(values, null, 2));
+                      console.log(JSON.stringify(values, null, 2));
                       resetForm();
                       setSubmitting(false);
                     }, 3000)
@@ -59,7 +59,7 @@ function Login() {
 
                     <form action='#'>
                         <div className='inputbox'>
-                        <CustomTextInput  name='email' type='email' required/>
+                        <CustomTextInput  name='email' type='text' required/>
                         <label>E-mail</label>
                         </div>
                         <div className='inputbox'>
@@ -67,7 +67,7 @@ function Login() {
                         <label>Password</label>
                         </div>
                         <div className='inputbox'>
-                            <button className='button'>Login</button>
+                         <button type='submit' className='button'>{ props.isSubmitting ? 'Loading...' : 'Login' }</button>
                         </div>
                     </form>
                     <a><NavLink to='/signup'>Don't Have An Account?</NavLink></a><br />
@@ -84,41 +84,5 @@ function Login() {
         )
     }
 
-
-{/*
-<div className='div'>
-                   <div className='img'>
-                        <img src='/Asset/Icon/Personalization.svg' alt='' />
-                   </div>
-                   <div className='login-container'>
-                   <div className='box'>
-                    <h1>LOGIN</h1>  
-
-                    <form action='#'>
-                        <div className='inputbox'>
-                               <input name='Email'
-                                type='email'
-                                value={this.state.Email} 
-                                onChange={this.handleChange} required/>
-                                <label>E-mail</label>
-                        </div>
-                        <div className='inputbox'>
-                               <input name='Password'
-                                type='password'
-                                value={this.state.Password} 
-                                onChange={this.handleChange} required/>
-                                <label>Password</label>
-                        </div>
-                        <div className='inputbox'>
-                            <button className='button'>Login</button>
-                        </div>
-                    </form>
-                    <a><NavLink to='/signup'>Don't Have An Account?</NavLink></a><br />
-                    <a className='a'><NavLink to='/'>Forgot My Password</NavLink></a>
-                </div>   
-                   </div>
-                </div>
-
-*/}
 
 export default Login
