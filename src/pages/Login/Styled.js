@@ -206,4 +206,9 @@ a {
     }
 
 }
+
+.error {
+    color: vermillion;
+    font-size: 14px;
+}
 `
