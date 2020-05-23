@@ -84,7 +84,7 @@ height: auto;
             top: 8px;
             left: 30px;
             font-size: 16px;
-            color: silver;
+            color: #252079;
             letter-spacing: 1px;
             pointer-events: none;
             transition: .2s;
@@ -93,7 +93,7 @@ height: auto;
         button{
             padding: 0 25px;
             margin: 0;
-            width: 100%;
+            width: 40%;
             height: 35px;
             background: transparent;
             font-size: 20px;
@@ -104,13 +104,7 @@ height: auto;
             box-sizing: border-box;
             border-radius: 10px;
             cursor: pointer;
-                :hover{
-                    width: 100%;
-                    height: 45px;
-                    font-size: 18px;
-                    background: #252078;
-                    font-weight: bold;
-                }
+               
         }
         .button{
             position: absolute;
@@ -118,7 +112,7 @@ height: auto;
             padding: 0;
             top: 30px;
             left: 50%;
-            width: 100%;
+            width: 40%;
             height: 40px;
             transform: translate(-50%,-50%);
             font-size: 16px;
