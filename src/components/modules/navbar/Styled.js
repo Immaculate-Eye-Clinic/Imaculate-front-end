@@ -218,7 +218,7 @@ export const Drawer = styled.div `
                       align-content: center;
                       line-height:2em;
                       font-size: 18px;
-                      width: 250px;
+                      width: 200px;
                       border-radius: 3px;
                       transition: 0.5s;
                       margin-left: 0px;
@@ -226,12 +226,12 @@ export const Drawer = styled.div `
 
                     .login {
                       flex: 1;
-                      padding: 2px 7px 2px;
+                      padding: 2px 5px 2px;
                     }
 
                     .sign_up{
                       flex: 1;
-                      padding: 2px 7px 2px;
+                      padding: 2px 5px 2px;
                     }
 
                     .login:hover {
