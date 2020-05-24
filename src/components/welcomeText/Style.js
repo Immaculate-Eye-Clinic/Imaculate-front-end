@@ -6,13 +6,19 @@ align-content: baseline;
 justify-content: space-around;
 flex-wrap: wrap;
 padding: 2.5em;
-background: #252079;
-color: white;
+background: white;
+color: black;
 .welcome{
     width: 500px;
     height: 100%;
+    h2{
+        font-size: 36px;
+    }
 }
 .hours{
+    h1{
+        font-size: 38px;
+    }
     p1{
         word-spacing: 300px;
     }
@@ -32,7 +38,7 @@ color: white;
         word-spacing: 290px;
     }
     hr{
-        border-top: 1px dashed white;
+        border-top: 1px dashed black;
     }
 }
 `
