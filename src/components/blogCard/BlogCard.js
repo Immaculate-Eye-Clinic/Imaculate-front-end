@@ -5,7 +5,9 @@ function BlogCard(props){
     return(
         <Div>
             <div className='card'>
-                <div className='card-image'><img src={props.blog.imgUrl} alt = ""/></div>
+                <div className='card-image'>
+                    <img src={props.blog.imgUrl} alt = ""/>
+                </div>
 
 
                 <div className='card-text'>

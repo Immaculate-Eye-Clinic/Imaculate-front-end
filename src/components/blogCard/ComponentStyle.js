@@ -65,8 +65,8 @@ margin-top: 100px;
 `
 
 export const Mobile_Div = styled.div`
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 60px;
+    margin-bottom: 10px;
     @media (min-width: 760px){
         display: block
     }
@@ -77,7 +77,7 @@ export const Mobile_Div = styled.div`
         font-size: 40px;
         font-weight: 1000;
         text-align: center;
-        margin-bottom: 60px;
+        margin-bottom: 30px;
         color: #252079;
     }
     .scrolling_wrapper {
@@ -88,13 +88,13 @@ export const Mobile_Div = styled.div`
         .container {
             display: flex;
             flex-direction: row;
-            flex-wrap: no-wrap;
+            flex-wrap: nowrap;
             justify-content: space-evenly;
             width: 100%;
             @media (max-width: 760px){
                 display: flex;
                 flex-direction: row;
-                flex-wrap: no-wrap;
+                flex-wrap: nowrap;
                 justify-content: space-between;
             }
         }

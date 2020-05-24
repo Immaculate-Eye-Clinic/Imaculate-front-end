@@ -4,7 +4,7 @@ const BlogData = [
         imgUrl:'/Asset/Img/g.jpg',
         date:'4 days ago',
         post: 'Post one',
-        caption: 'What you must know about Corona Virus',
+        caption: 'Placeholder placeholder What you must know about Corona Virus',
         seeMore: 'See more',
 
     },
