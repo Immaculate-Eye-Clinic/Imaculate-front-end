@@ -4,6 +4,7 @@ import Slider from "../../components/modules/PatientsComment/Slider"
 import BlogCard from '../../components/blogCard/BlogList'
 import HomeIcon from '../../components/homeIcon/HomeIcon'
 import Why from '../../components/modules/why_us/why_us'
+import WelcomeText from '../../components/welcomeText/WelcomeText.js';
 
 function Home() {
     return (
@@ -15,7 +16,9 @@ function Home() {
                 img={"https://res.cloudinary.com/hisroyalwonginess/image/upload/v1588437898/Immaculate/Doctors_ieplxk.jpg"}
             />
             {/* <HomeIcon /> */}
+            <WelcomeText />
             <div style={{width: "90%", margin: "auto"}}>
+            
             <BlogCard />
             </div>
             <Slider />

@@ -96,7 +96,7 @@ height: 100%;
             margin: 0;
             width: 40%;
             height: 35px;
-            background: transparent;
+            background: #252079;
             font-size: 20px;
             outline: none;
             letter-spacing: 1px;
