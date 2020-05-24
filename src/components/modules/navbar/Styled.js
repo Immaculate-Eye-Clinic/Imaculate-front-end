@@ -233,20 +233,6 @@ export const Drawer = styled.div `
                       flex: 1;
                       padding: 2px 5px 2px;
                     }
-
-                    .login:hover {
-                      background: rgba(25, 20, 80, 0.395);
-                      border-radius: 3px;
-                      font-size: 22px;
-                      transition: 0.5s;
-                    }
-
-                    .sign_up:hover {
-                      background: rgba(25, 20, 80, 0.395);
-                      border-radius: 3px;
-                      font-size: 22px;
-                      transition: 0.5s;
-                    }
                   }
   }
   
