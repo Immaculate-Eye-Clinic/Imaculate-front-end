@@ -1,15 +1,16 @@
 import styled from 'styled-components'
 
 export const Div = styled.div`
-overflow: hidden;
+/* overflow: hidden; */
 background: white;
-margin: 0;
+margin-bottom: 30px;
 padding: 0;
-height: auto;
+height: 100%;
 
 .container{
     width: 100vw;
     height: 100vh;
+    /* max-height: 100%; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
