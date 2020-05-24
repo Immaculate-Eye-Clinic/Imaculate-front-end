@@ -35,7 +35,7 @@ padding: 0 2rem;
     .box {
     position: absolute;
     margin: 20px;
-    padding: 10px;
+    padding: 10px 0;
     border-radius: 20px;
     box-sizing: border-box;
 
@@ -51,6 +51,7 @@ padding: 0 2rem;
     .inputbox {
     position: relative;
     top: 0;
+    width: 400px;
     margin: 40px 0 40px;
 
   
