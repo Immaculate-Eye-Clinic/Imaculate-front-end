@@ -84,6 +84,8 @@ export const Mobile_Div = styled.div`
         overflow-x: scroll;
         overflow-y: hidden;
         white-space: nowrap;
+        overflow-y: hidden; /* Hide vertical scrollbar */
+        overflow-x: hidden;
         .container {
             display: flex;
             flex-direction: row;
