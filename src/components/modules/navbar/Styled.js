@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Div = styled.header`
     display: flex;
     justify-content: space-between;
-    background-color: transparent;
+    background-color: ${props => props.bgcolor};
     position: absolute;
     width: 100%;
     height: 100px;

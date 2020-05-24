@@ -7,7 +7,7 @@ import DrawerToggleButton from './drawerToggleButton';
 class Navbar extends React.Component {
     render () {
         return (
-            <Div>
+            <Div bgcolor={this.props.bgcolor}>
                 <div className="logo">
                     <img src="asset/img/logo1.png" alt="logo" />
                 </div>          
