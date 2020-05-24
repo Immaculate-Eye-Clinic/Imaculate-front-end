@@ -84,6 +84,7 @@ export const Mobile_Div = styled.div`
         overflow-x: scroll;
         overflow-y: hidden;
         white-space: nowrap;
+        
         .container {
             display: flex;
             flex-direction: row;
@@ -98,12 +99,20 @@ export const Mobile_Div = styled.div`
             }
         }
     }
+    .scrolling_wrapper::-webkit-scrollbar {
+        display: none;
+    }
+
+    .scrolling_wrapper {
+        -ms-overflow-style: none;
+    }
     .butContianer {
         width: 150px;
         margin: 70px auto;
         .but{
             border: none;
             width: 150px;
+            padding: 10px 0;
             margin: auto;
             color: white;
             background: #252079;
@@ -117,6 +126,8 @@ export const Mobile_Div = styled.div`
             @media (max-width: 760px){
                 font-size: 8px;
                 padding: 8px 15px;
+                width: 90px;
+                padding: 10px 0;
             }
         }
     }

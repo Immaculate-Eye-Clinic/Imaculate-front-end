@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Div = styled.body `
 padding: 0;
 margin: 0;
-background: teal;
+background: whitesmoke;
 overflow: hidden;
 width: 100%;
 height: 100vh;
@@ -11,92 +11,86 @@ font-family: cursive;
 
 .div {
 margin-top: 8%;
-background: teal;
+background: whitesmoke;
 display: grid;
 grid-template-columns: repeat(2, 1fr);
 grid-gap: 7rem;
 padding: 0 2rem;
-}
+
 
 .img {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-}
 
-.img img{
+    img{
     width: 500px;
 }
-
+}
 .login-container {
     display: flex;
     align-items: center;
     text-align: center;
-}
 
-.box {
+    .box {
     position: absolute;
     margin: 20px;
     padding: 10px;
     border-radius: 20px;
     box-sizing: border-box;
-}
 
-.box h1 {
+    h1 {
     padding: 0 0 15px;
     margin: 15px;
-    font-size: 45px;
-    color: #ffe1a8;
+    font-size: 35px;
+    color: #252079;
     text-align: center;
     letter-spacing: 2px;
     user-select: none;
 }
-
-.box .inputbox {
+    .inputbox {
     position: relative;
     top: 0;
     margin: 40px 0 40px;
-}
 
-.box .inputbox input,
-.box .inputbox button
+  
+
+    input,
+    button
  {
     padding: 0 35px;
     margin: 0;
     width: 100%;
     height: 40px;
     background: transparent;
-    font-size: 20px;
+    font-size: 17px;
     outline: none;
     letter-spacing: 1px;
-    color: #fffab5;
-    border: #ffffc1 2px solid;
+    color: #252079;
+    border: #252079 2px solid;
     box-sizing: border-box;
     border-radius: 8px;
+    :focus ~ label,
+    :valid ~ label {
+    top: -27px;
+    left: 5px;
+    color: #252079;
+    font-size: 13px;
 }
-
-.box .inputbox label {
+}
+label {
     position: absolute;
     margin: 0;
     padding: 0;
-    top: 5px;
+    top: 10px;
     left: 35px;
     font-size: 15px;
-    color: #ffcb76cb;
+    color: #252079;
     letter-spacing: 1px;
     pointer-events: none;
     transition: .2s;
 }
-
-.box .inputbox input:focus ~ label,
-.box .inputbox input:valid ~ label {
-    top: -27px;
-    left: 5px;
-    color: #becdff;
-    font-size: 13px;
-}
-
-.box .inputbox button {
+button {
     position: absolute;
     margin: 0;
     padding: 0;
@@ -107,22 +101,27 @@ padding: 0 2rem;
     transform: translate(-50%,-50%);
     font-size: 16px;
     color: #d5ebff;
+    background-color: #252079;
     border-color: #d5ebff;
     outline: none;
     cursor: pointer;
     transition: .1s;
 }
+}
 
+  
 
-.box a {
+a {
     position: relative;
     top: 30px;
     left: 0;
     text-decoration: none;
-    color: #899bd6;
+    color: #252079;
     font-size: 13px;
 }
+}
 
+}
 @media screen and (max-width: 1050px) {
   .div {
       grid-gap: 5rem;
@@ -132,46 +131,44 @@ padding: 0 2rem;
 @media screen and (max-width: 1000px) {
    
 
-    form{
-        width: 290px;
-    }
+   form{
+       width: 290px;
+   }
 
-    form h2{
-        font-size: 2.4rem;
-        margin: 8px 0;
-    }
+   form h2{
+       font-size: 2.4rem;
+       margin: 8px 0;
+   }
 
-    .img img{
-        width: 400px;
-    }
+   .img img{
+       width: 400px;
+   }
 }
 
 @media screen and (max-width: 900px) {
-    .img{
-        display: none;
-    }
+   .img{
+       display: none;
+   }
 
-    .container{
-        grid-template-columns: 1fr;
-    }
+   .container{
+       grid-template-columns: 1fr;
+   }
 
-    .login-container{
-        justify-content: center;
-        align-items: center;
-        margin-left: 14em;
-        margin-top: 40%;
-        width: 290px;
-    }
+   .login-container{
+
+       margin-left: 14em;
+       margin-top: 40%;
+       width: 290px;
+   }
 }
 
 @media screen and (max-width: 800px) {
-    .login-container{
-        justify-content: center;
-        align-items: center;
-        margin-left: 14em;
+   .login-container{
+       justify-content: center;
+       align-items: center;
+       margin-left: 14em;
 }
 }
-
 
 @media screen and (max-width: 700px) {
     .login-container {
@@ -197,17 +194,24 @@ padding: 0 2rem;
 
     @media screen and (max-width: 500px) {
         .login-container {
-        margin-left: 1.5em;
-        margin-top: 85%;
+        margin-left: 3.5em;
+        margin-top: 75%;
         width: 290px;
         }
     }
 
     @media screen and (max-width: 400px) {
         .login-container {
-            margin-left: 0.4em;
+            margin-left: -1em;
         }
     }
 
-   
+}
+
+.error {
+    color: #dc143c;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: left;
+}
 `
