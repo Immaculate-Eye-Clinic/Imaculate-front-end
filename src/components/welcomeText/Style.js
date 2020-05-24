@@ -2,8 +2,7 @@ import styled from 'styled-components'
 
 export const Div = styled.div`
 display: flex;
-align-content: baseline;
-justify-content: space-around;
+justify-content: space-evenly;
 flex-wrap: wrap;
 padding: 2.5em;
 background: white;
@@ -16,29 +15,17 @@ color: black;
     }
 }
 .hours{
+    width: 600px;
     h1{
         font-size: 38px;
     }
-    p1{
-        word-spacing: 300px;
-    }
-    p2{
-        word-spacing: 300px;
-    }
-    p3{
-        word-spacing: 273px;
-    }
-    p4{
-        word-spacing: 291px;
-    }
-    p5{
-        word-spacing: 314px;
-    }
-    p6{
-        word-spacing: 290px;
-    }
     hr{
         border-top: 1px dashed black;
+    }
+    .days{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
 }
 `
