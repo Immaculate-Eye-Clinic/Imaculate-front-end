@@ -1,12 +1,13 @@
 import React from 'react'
 
-import Navbar from './navbar/navbar'
-import Hero from './hero/Hero'
+import Navbar from '../navbar/navbar'
+import Hero from '../hero/Hero'
 
 function Header(props) {
     return (
         <div>
-            <Navbar />
+            <Navbar 
+            bgcolor={props.bgcolor}/>
             <Hero 
             title={props.title}
             subText={props.subText}
