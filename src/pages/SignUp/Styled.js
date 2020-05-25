@@ -11,15 +11,16 @@ height: 100%;
     width: 100vw;
     height: 100vh;
     /* max-height: 100%; */
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 
     .img{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    position: absolute;
+    right: 50%;
+    top: 20%;
         img{
-        width: 90%;
+        width: 500px;
             @media (max-width: 1000px){
             display: none;
             }
