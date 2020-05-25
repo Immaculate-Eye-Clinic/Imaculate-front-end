@@ -7,6 +7,10 @@ margin-bottom: 30px;
 padding: 0;
 height: 100%;
 
+.space {
+    margin: 20px;
+}
+
 .container{
     width: 100vw;
     height: 100vh;
