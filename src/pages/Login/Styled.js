@@ -12,32 +12,44 @@ font-family: cursive;
 .div {
 margin-top: 8%;
 background: whitesmoke;
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-gap: 7rem;
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
 padding: 0 2rem;
 
 
 .img {
+    position: absolute;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    left: 5%;
+    top: 30%;
 
     img{
     width: 500px;
 }
+@media (max-width: 1000px) {
+    display: none;
 }
-.login-container {
-    display: flex;
-    align-items: center;
-    text-align: center;
+}
+
 
     .box {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 30%;
+    right: 10%;
     margin: 20px;
     padding: 10px 0;
     border-radius: 20px;
     box-sizing: border-box;
+
+    @media (max-width: 1000px) {
+    position: relative;
+    right: 0%;
+}
 
     h1 {
     padding: 0 0 15px;
@@ -115,97 +127,17 @@ button {
 a {
     position: relative;
     top: 30px;
-    left: 0;
     text-decoration: none;
+    text-align: center;
     color: #252079;
     font-size: 13px;
 }
-}
 
-}
-@media screen and (max-width: 1050px) {
-  .div {
-      grid-gap: 5rem;
-  }  
-}
 
-@media screen and (max-width: 1000px) {
-   
-
-   form{
-       width: 290px;
-   }
-
-   form h2{
-       font-size: 2.4rem;
-       margin: 8px 0;
-   }
-
-   .img img{
-       width: 400px;
-   }
-}
-
-@media screen and (max-width: 900px) {
-   .img{
-       display: none;
-   }
-
-   .container{
-       grid-template-columns: 1fr;
-   }
-
-   .login-container{
-
-       margin-left: 14em;
-       margin-top: 40%;
-       width: 290px;
-   }
-}
-
-@media screen and (max-width: 800px) {
-   .login-container{
-       justify-content: center;
-       align-items: center;
-       margin-left: 14em;
-}
-}
-
-@media screen and (max-width: 700px) {
-    .login-container {
-        margin-left: 10em;
-        margin-top: 50%;
-        width: 290px;
-    }
 }
 
 
-@media screen and (max-width: 650px) {
-    .login-container {
-        margin-left: 8em;
-    }
-}
 
-
-@media screen and (max-width: 600px) {
-    .login-container{
-        margin-left: 5.2em;
-      }
-    }
-
-    @media screen and (max-width: 500px) {
-        .login-container {
-        margin-left: 3.5em;
-        margin-top: 75%;
-        width: 290px;
-        }
-    }
-
-    @media screen and (max-width: 400px) {
-        .login-container {
-            margin-left: -1em;
-        }
-    }
 
 }
 
