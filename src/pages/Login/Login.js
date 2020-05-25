@@ -5,7 +5,7 @@ import {NavLink} from 'react-router-dom'
 import {Formik, useField, Form} from 'formik'
 import * as Yup from 'yup'
 
-import Header from '../../components/modules/Header/Header'
+import Navbar from '../../components/modules/navbar/navbar'
 
 const CustomTextInput = ({ label, ...props }) => {
     const[field, meta] = useField(props);
@@ -50,7 +50,7 @@ function Login() {
                 >
                     {props => (
                         <Form>
-                        <Header 
+                        <Navbar 
                         bgcolor={'#252079'}
                         />
 
