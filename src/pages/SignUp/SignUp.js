@@ -113,6 +113,7 @@ class SignUp extends React.Component{
                         </div>
                     </Form>
                 </Formik>
+                <div className="space"></div>
             </Div>
 
         )
