@@ -2,6 +2,7 @@ import React from 'react'
 import {Div} from './Styled'
 import {Formik, useField, Form} from 'formik'
 import * as Yup from 'yup'
+import Navbar from '../../components/modules/navbar/navbar'
 
 
 const CustomTextInput = ({label, ...props}) => {
@@ -73,6 +74,7 @@ class SignUp extends React.Component{
                     }}
                 >
                     <Form>
+                        <Navbar bgcolor={'#252079'} />
                         <div className='container'>
                             <div className='img'>
                                 <img src='/Asset/Img/phone.svg'/>
