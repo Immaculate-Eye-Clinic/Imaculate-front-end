@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
-import Hero from '../components/modules/hero/Hero'
+import Header from '../components/modules/Header/Header'
 
 class NoMatch extends Component {
     render() {
         return (
-            <Hero 
-                title={"404"} 
-                subText={"page not found"} 
-                height={"100vh"}
-                img={"asset/img/404.svg"}
+            <Header 
+                bgcolor={'transparent'}
+                title={'404'}
+                subText={'Sub text goes herPage not found'}
+                height={'100vh'}
+                mobileHeight={'100vh'}
+                img={'asset/img/404.svg'}
             />
         );
     }
