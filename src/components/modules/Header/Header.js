@@ -36,6 +36,7 @@ class Header extends React.Component {
                 subText={this.props.subText}
                 height={this.props.height}
                 img={this.props.img}
+                mobileHeight={this.props.mobileHeight}
                 />
             </div>
         );

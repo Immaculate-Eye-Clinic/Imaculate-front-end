@@ -1,6 +1,7 @@
 import React from 'react'
 import {Div} from './Styled'
 import {NavLink} from 'react-router-dom'
+import Header from '../../components/modules/Header/Header'
 
 import {Formik, useField, Form} from 'formik'
 import * as Yup from 'yup'
@@ -50,8 +51,10 @@ function Login() {
                 >
                     {props => (
                         <Form>
-                        <Navbar 
-                        bgcolor={'#252079'}
+                        <Header 
+                            bgcolor={'rgba(0,0,0,0.5)'}
+                            mobileHeight="0px"
+                            height={'0px'}
                         />
 
                         <div className='div'>
