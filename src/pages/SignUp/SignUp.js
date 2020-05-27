@@ -1,4 +1,5 @@
 import React from 'react'
+import Header from '../../components/modules/Header/Header'
 import {Div} from './Styled'
 import {Formik, useField, Form} from 'formik'
 import * as Yup from 'yup'
@@ -28,6 +29,11 @@ class SignUp extends React.Component{
     render(){
         return(
             <Div>
+                <Header 
+                    bgcolor={'rgba(0,0,0,0.5)'}
+                    mobileHeight="0px"
+                    height={'0px'}
+                />
                 <Formik
                     initialValues={{
                         firstName: '',
