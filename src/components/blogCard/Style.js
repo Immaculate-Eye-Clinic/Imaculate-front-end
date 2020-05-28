@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Div = styled.div`
 margin: 2.5em;
 align-items: stretch;
-width: 250px;
+width: 100%;
 
 @media (max-width: 760px){
     margin-left: 1.5em;
