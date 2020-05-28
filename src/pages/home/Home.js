@@ -1,12 +1,8 @@
 import React from 'react';
-
-import Hero from  "../../components/modules/hero/Hero.js"
-import Slider from "../../components/modules/PatientsComment/Slider"
-import BlogCard from '../../components/blogCard/BlogList'
-import HomeIcon from '../../components/homeIcon/HomeIcon'
-import Why from '../../components/modules/why_us/why_us'
-import Header from '../../components/modules/Header/Header'
-import { red } from 'color-name';
+import Slider from "../../components/modules/PatientsComment/Slider";
+import BlogCard from '../../components/blogCard/BlogList';
+import Why from '../../components/modules/why_us/why_us';
+import Header from '../../components/modules/Header/Header';
 import WelcomeText from '../../components/welcomeText/WelcomeText.js';
 import Footer from '../../components/modules/footer/footer'
 
