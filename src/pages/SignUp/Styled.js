@@ -43,7 +43,7 @@ height: 100%;
     border-radius: 20px;
     box-sizing: border-box;
         @media (max-width: 1050px){
-            left: 50%;
+            left: 45%;
         }
         
         
@@ -133,16 +133,17 @@ height: 100%;
 
 .box .inputbox input:focus ~ label,
 .box .inputbox input:valid ~ label{
-    top: -25px;
+    top: -20px;
     left: 5px;
     color: #252079;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .error{
-    font-size: 14px;
+    position: absolute;
+    font-size: 13px;
     color: #dc143c;
-    margin-top: .8em;
+    margin-top: 4px;
     font-weight: 500;
 }
 `
