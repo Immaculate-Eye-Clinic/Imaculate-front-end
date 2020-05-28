@@ -85,7 +85,7 @@ padding: 0 2rem;
     border-radius: 8px;
     :focus ~ label,
     :valid ~ label {
-    top: -27px;
+    top: -20px;
     left: 5px;
     color: #252079;
     font-size: 13px;
@@ -143,10 +143,11 @@ a {
 }
 
 .error {
-    position: relative;
+    position: absolute;
     color: #dc143c;
-    font-size: 14px;
-    margin-top: 10px;
+    font-size: 13px;
+    margin-top: 4px;
     text-align: left;
+    left: 5px;
 }
 `
