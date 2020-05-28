@@ -211,8 +211,8 @@ export const Drawer = styled.div `
            
           .userStyle{
                       position: relative;
-                      color: white;
                       text-align: center;
+                      color: white;
                       display: flex;
                       justify-content: space-between;
                       align-content: center;
@@ -222,6 +222,10 @@ export const Drawer = styled.div `
                       border-radius: 3px;
                       transition: 0.5s;
                       margin-left: 0px;
+                    }
+
+                    a{
+                      color: white;
                     }
 
                     .login {
