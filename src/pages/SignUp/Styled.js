@@ -1,26 +1,31 @@
 import styled from 'styled-components'
 
 export const Div = styled.div`
-/* overflow: hidden; */
+overflow: hidden;
 background: white;
 margin-bottom: 30px;
 padding: 0;
 height: 100%;
 
+.space {
+    margin: 20px;
+}
+
 .container{
     width: 100vw;
     height: 100vh;
     /* max-height: 100%; */
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 
     .img{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    position: absolute;
+    right: 50%;
+    top: 25%;
         img{
-        width: 90%;
-            @media (max-width: 1000px){
+        width: 500px;
+            @media (max-width: 1050px){
             display: none;
             }
         }
@@ -32,17 +37,15 @@ height: 100%;
     padding: 10px;
     width: 420px;
     height: 580px;
-    top: 50%;
+    top: 55%;
     left: 70%;
     transform: translate(-50%,-50%);
     border-radius: 20px;
     box-sizing: border-box;
-        @media (max-width: 1000px){
+        @media (max-width: 1050px){
             left: 50%;
         }
-        @media (max-width: 500px){
-            width: 280px;
-        }
+        
         
         h1{
         padding: 0 0 15px;
@@ -60,7 +63,8 @@ height: 100%;
         .inputbox{
         position: relative;
         top: 0;
-        margin: 5px 0 40px;
+        width: 400px;
+        margin: 20px 0 40px;
     
             input{
             padding: 0 25px;
@@ -136,6 +140,7 @@ height: 100%;
 }
 
 .error{
+    font-size: 14px;
     color: #dc143c;
     margin-top: .8em;
     font-weight: 500;

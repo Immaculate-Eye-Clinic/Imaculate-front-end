@@ -1,7 +1,9 @@
 import React from 'react'
+import Header from '../../components/modules/Header/Header'
 import {Div} from './Styled'
 import {Formik, useField, Form} from 'formik'
 import * as Yup from 'yup'
+import Navbar from '../../components/modules/navbar/navbar'
 
 
 const CustomTextInput = ({label, ...props}) => {
@@ -28,6 +30,11 @@ class SignUp extends React.Component{
     render(){
         return(
             <Div>
+                <Header 
+                    bgcolor={'rgba(0,0,0,0.5)'}
+                    mobileHeight="0px"
+                    height={'0px'}
+                />
                 <Formik
                     initialValues={{
                         firstName: '',
@@ -73,6 +80,7 @@ class SignUp extends React.Component{
                     }}
                 >
                     <Form>
+                        <Navbar bgcolor={'#252079'} />
                         <div className='container'>
                             <div className='img'>
                                 <img src='/Asset/Img/phone.svg'/>
@@ -113,6 +121,7 @@ class SignUp extends React.Component{
                         </div>
                     </Form>
                 </Formik>
+                <div className="space"></div>
             </Div>
 
         )

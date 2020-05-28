@@ -11,16 +11,19 @@ color: black;
     width: 500px;
     height: 100%;
     h2{
-        font-size: 36px;
+        color: #252079;
+    }
+    p{
+        line-height: 30px;
     }
 }
 .hours{
-    width: 600px;
+    width: 500px;
     h1{
-        font-size: 38px;
+        color: #252079;
     }
     hr{
-        border-top: 1px dashed black;
+        border-top: 1px dashed #252079;
     }
     .days{
         display: flex;

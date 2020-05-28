@@ -125,7 +125,7 @@ export const Div = styled.header`
                   transition: 0.5s;
                 }
 
-              } /* The Sign-up and Login Styles ends here */
+              } 
 
             }
         }
