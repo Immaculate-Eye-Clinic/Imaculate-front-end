@@ -8,6 +8,7 @@ import Why from '../../components/modules/why_us/why_us'
 import Header from '../../components/modules/Header/Header'
 import { red } from 'color-name';
 import WelcomeText from '../../components/welcomeText/WelcomeText.js';
+import Footer from '../../components/modules/footer/footer'
 
 function Home() {
     return (
@@ -27,6 +28,7 @@ function Home() {
             </div>
             <Slider />
             <Why />
+            <Footer />
         </div>
     );
 }
