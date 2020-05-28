@@ -12,7 +12,7 @@ export const HeroStyle = styled.div`
     background-size: cover;
 
     @media (max-width: 990px) {
-        height: 50vh;
+        height: ${props => props.mobileHeight};;
     }
 
     .hero-text {
