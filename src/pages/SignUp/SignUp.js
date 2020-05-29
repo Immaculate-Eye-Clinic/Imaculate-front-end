@@ -88,7 +88,7 @@ class SignUp extends React.Component{
                             </div>
                             <div className='box'>
                                 <h1>SIGNUP</h1>
-                                <div action='#'>
+                                <form action='#'>
                                     <div class='inputbox'>
                                         <CustomTextInput type='text' name='firstName' required />
                                         <label>First Name</label>
@@ -115,9 +115,9 @@ class SignUp extends React.Component{
                                     </div>
 
                                     <div class='inputbox'>
-                                        <button className='button' type='submit'>{this.props.isSubmitting ? 'Loading...' : 'SIGNUP'} </button>
+                                        <button className='button' type='submit'>SIGNUP</button>
                                     </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </Form>
