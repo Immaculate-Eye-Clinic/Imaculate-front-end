@@ -130,7 +130,7 @@ export const Div = styled.header`
             }
         }
     }
-    @media (max-width: 1100px) {
+    @media (max-width: 1099px) {
         .navs {
         display: none;
         }
@@ -256,7 +256,7 @@ export const Drawer = styled.div `
     color: #1890FF;
   }
 
-  @media (min-width: 769px) {
+  @media (min-width: 1100px) {
     .side-drawer {
       display: none;
     }
