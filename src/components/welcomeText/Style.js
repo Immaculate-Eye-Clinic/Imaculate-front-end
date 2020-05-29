@@ -20,8 +20,10 @@ color: black;
     }
 }
 .image{
+    display: none;
     min-width: 300px;
     @media (min-width: 769px){
+        display: block;
         width: 500px;
         margin-top: 2em;
     }
