@@ -125,12 +125,12 @@ export const Div = styled.header`
                   transition: 0.5s;
                 }
 
-              } /* The Sign-up and Login Styles ends here */
+              } 
 
             }
         }
     }
-    @media (max-width: 1100px) {
+    @media (max-width: 1099px) {
         .navs {
         display: none;
         }
@@ -211,8 +211,8 @@ export const Drawer = styled.div `
            
           .userStyle{
                       position: relative;
-                      color: white;
                       text-align: center;
+                      color: white;
                       display: flex;
                       justify-content: space-between;
                       align-content: center;
@@ -224,6 +224,10 @@ export const Drawer = styled.div `
                       margin-left: 0px;
                     }
 
+                    a{
+                      color: white;
+                    }
+
                     .login {
                       flex: 1;
                       padding: 2px 5px 2px;
@@ -232,20 +236,6 @@ export const Drawer = styled.div `
                     .sign_up{
                       flex: 1;
                       padding: 2px 5px 2px;
-                    }
-
-                    .login:hover {
-                      background: rgba(25, 20, 80, 0.395);
-                      border-radius: 3px;
-                      font-size: 22px;
-                      transition: 0.5s;
-                    }
-
-                    .sign_up:hover {
-                      background: rgba(25, 20, 80, 0.395);
-                      border-radius: 3px;
-                      font-size: 22px;
-                      transition: 0.5s;
                     }
                   }
   }
@@ -266,7 +256,7 @@ export const Drawer = styled.div `
     color: #1890FF;
   }
 
-  @media (min-width: 769px) {
+  @media (min-width: 1100px) {
     .side-drawer {
       display: none;
     }
