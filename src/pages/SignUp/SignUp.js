@@ -1,7 +1,9 @@
 import React from 'react'
+import Header from '../../components/modules/Header/Header'
 import {Div} from './Styled'
 import {Formik, useField, Form} from 'formik'
 import * as Yup from 'yup'
+import Navbar from '../../components/modules/navbar/navbar'
 
 
 const CustomTextInput = ({label, ...props}) => {
@@ -70,16 +72,23 @@ class SignUp extends React.Component{
                             resetForm()
                             setSubmitting(false)
                         }, 3000)
-                    }}
-                >
+                    }}>
+
+                    {props => (    
                     <Form>
+                        <Header 
+                        bgcolor={'rgba(0,0,0,0.5)'}
+                        mobileHeight="0px"
+                        height={'0px'}
+                        />
+                        
                         <div className='container'>
                             <div className='img'>
                                 <img src='/Asset/Img/phone.svg'/>
                             </div>
                             <div className='box'>
                                 <h1>SIGNUP</h1>
-                                <form action='#'>
+                                <div action='#'>
                                     <div class='inputbox'>
                                         <CustomTextInput type='text' name='firstName' required />
                                         <label>First Name</label>
@@ -108,11 +117,13 @@ class SignUp extends React.Component{
                                     <div class='inputbox'>
                                         <button className='button' type='submit'>{this.props.isSubmitting ? 'Loading...' : 'SIGNUP'} </button>
                                     </div>
-                                </form>
+                                </div>
                             </div>
                         </div>
                     </Form>
+                    )}
                 </Formik>
+                <div className="space"></div>
             </Div>
 
         )

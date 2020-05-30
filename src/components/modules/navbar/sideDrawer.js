@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Drawer } from './Styled'
 
+
 class sideDrawer extends Component {
     render() {
         let drawerClasses = 'side-drawer';
@@ -15,8 +16,12 @@ class sideDrawer extends Component {
 
             <div className = 'container_sign_up'>
                 <div className = 'userStyle'>
-                    <div className = 'login'>Login</div>
-                    <div className = 'sign_up'>Sign Up</div>
+                    <div className = 'login'>
+                        <Link to='/login'>Login</Link>
+                    </div>
+                    <div className = 'sign_up'>
+                        <Link to='/signup'>SignUp</Link>
+                    </div>
                 </div>
             </div>
                 <ul>

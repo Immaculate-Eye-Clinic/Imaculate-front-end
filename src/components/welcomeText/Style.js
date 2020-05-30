@@ -1,31 +1,39 @@
 import styled from 'styled-components'
 
 export const Div = styled.div`
+margin-top: 1.5em;
 display: flex;
-justify-content: space-evenly;
+justify-content: space-around;
 flex-wrap: wrap;
 padding: 2.5em;
 background: white;
 color: black;
+
+
 .welcome{
     width: 500px;
-    height: 100%;
     h2{
-        font-size: 36px;
+        color: #252079;
+    }
+    p{
+        line-height: 30px;
     }
 }
-.hours{
-    width: 600px;
-    h1{
-        font-size: 38px;
+.image{
+    display: none;
+    min-width: 300px;
+    @media (min-width: 769px){
+        display: block;
+        width: 500px;
+        margin-top: 2em;
     }
-    hr{
-        border-top: 1px dashed black;
+    img{
+        width: 300px;
+        @media (min-width: 769px){
+        width: 500px;
     }
-    .days{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
     }
 }
+
+
 `
