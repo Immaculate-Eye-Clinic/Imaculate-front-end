@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Div = styled.body `
+export const Div = styled.div `
 padding: 0;
 margin: 0;
 background: whitesmoke;
@@ -64,7 +64,10 @@ padding: 0 2rem;
     position: relative;
     top: 0;
     width: 400px;
-    margin: 40px 0 40px;
+    margin: 50px 0 40px;
+    @media (max-width: 1000px) {
+        width: 300px;
+    }
 
   
 
@@ -85,7 +88,7 @@ padding: 0 2rem;
     border-radius: 8px;
     :focus ~ label,
     :valid ~ label {
-    top: -27px;
+    top: -20px;
     left: 5px;
     color: #252079;
     font-size: 13px;
@@ -126,11 +129,15 @@ button {
 
 a {
     position: relative;
-    top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 40px;
     text-decoration: none;
-    text-align: center;
     color: #252079;
     font-size: 13px;
+    cursor: pointer;
 }
 
 
@@ -142,9 +149,11 @@ a {
 }
 
 .error {
+    position: absolute;
     color: #dc143c;
-    font-size: 14px;
-    margin-top: 10px;
+    font-size: 13px;
+    margin-top: 4px;
     text-align: left;
+    left: 5px;
 }
 `
