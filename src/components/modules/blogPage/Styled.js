@@ -7,7 +7,7 @@ margin: 50px;
 .info {
     position: relative;
     right: 7%;
-    @media (max-width: 1390px) {
+    @media (max-width: 1400px) {
     right: 10%;  
     }
     .date {
@@ -22,7 +22,7 @@ margin: 50px;
 .image {
     position: relative;
     left: 8%;
-    @media (max-width: 1390px) {
+    @media (max-width: 1400px) {
     left: -5%;  
 }
 }
@@ -41,8 +41,7 @@ right: 50%;
 flex-direction: column;
 width: 250px;
 text-align: center;
-border: 3px solid black;
-@media (max-width: 1390px) {
+@media (max-width: 1400px) {
   right: 0;  
 }
 .head {
@@ -51,7 +50,9 @@ border: 3px solid black;
     font-size: 14px;
     color: white;
     text-align: left;
-
+}
+.body {
+    text-decoration: none;
 }
 .category {
 

@@ -9,7 +9,7 @@ function Category() {
                 <div className='head'>
                 <strong>Category</strong>
                 </div>
-                <div className>
+                <div className='body'>
                 <p><NavLink to='/blog'>Blog</NavLink></p>
                 <p><NavLink to='/'>Eye Care</NavLink></p>
                 <p><NavLink to='/'>Red Eyes</NavLink></p>
@@ -19,6 +19,7 @@ function Category() {
                 <div className='head'>
                     <strong>Archive</strong>
                 </div>
+                <div className='body'>
                 <p><NavLink to='/'>October 2019</NavLink></p>
                 <p><NavLink to='/'>October 2019</NavLink></p>
                 <p><NavLink to='/'>October 2019</NavLink></p>
@@ -31,6 +32,7 @@ function Category() {
                 <p><NavLink to='/'>October 2019</NavLink></p>
                 <p><NavLink to='/'>October 2019</NavLink></p>
                 <p><NavLink to='/'>October 2019</NavLink></p> 
+                </div>
             </div>
         </Cat>
     )
