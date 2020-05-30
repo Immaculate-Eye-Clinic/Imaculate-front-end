@@ -10,8 +10,10 @@ function BlogPage() {
     return (
         <Div>
             <div>
-            <p>home > blog</p>
+            <div className='first'>
+            <p>Home > Blog</p>
             <h1>Blog</h1>
+            </div>
             {Blog}
             </div>
             <div>
