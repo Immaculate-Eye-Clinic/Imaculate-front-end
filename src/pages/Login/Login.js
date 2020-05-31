@@ -36,7 +36,7 @@ function Login() {
                      .email('invalid email address')
                      .required(''), 
                      password: Yup.string()
-                     .min(4)
+                     .min(4,)
                      .max(12)
                      .matches('^(?=.*[a-z])(?=.*[A-Z](?=.*d)[a-zA-Zd]$')
                      .required('')
@@ -63,9 +63,8 @@ function Login() {
                    </div>
                    <div className='login-container'>
                    <div className='box'>
-                    <h1>LOGIN</h1>  
-
-                    <form action='#'>
+                    <h1>LOGIN</h1>
+                    <div>  
                         <div className='inputbox'>
                         <CustomTextInput  name='email' type='text' required/>
                         <label>E-mail</label>
@@ -76,10 +75,12 @@ function Login() {
                         </div>
                         <div className='inputbox'>
                          <button type='submit' className='button'>{ props.isSubmitting ? 'Loading...' : 'Login' }</button>
+                         </div>
                         </div>
-                    </form>
-                    <a><NavLink to='/signup'>Don't Have An Account?</NavLink></a><br />
-                    <a className='a'><NavLink to='/'>Forgot My Password</NavLink></a>
+                        <div className='a'>
+                    <NavLink to='/signup' className='nav'>Don't Have An Account?</NavLink>
+                    <NavLink to='/' className='nav'>Forgot My Password</NavLink>
+                    </div>
                 </div>   
                    </div>
                 </div>
