@@ -64,6 +64,16 @@ justify-content: space-evenly;
     @media (max-width: 1270px) {
     left: 2%;  
     }
+    @media (max-width: 985px) {
+    text-align: center;
+    top: 2%;  
+    margin-right: 16px;
+    }
+    @media (max-width: 760px) {
+    left: 5%;  
+    top: 1%;
+    margin-right: 10px;
+    }
     h1{
         font-size: 60px;
         font-weight: 700;
@@ -99,7 +109,7 @@ text-align: center;
     }
 }
 .body {
-    background: #b2beb5;
+    background: silver;
     padding-top: 6px;
     padding-bottom: 8px;
     text-align: left;
