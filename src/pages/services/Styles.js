@@ -3,6 +3,7 @@ import styled from "styled-components"
 export const Cards = styled.div `
     align-items: center;
     width: 380px;
+    margin: 1em;
 
     
 
@@ -24,7 +25,7 @@ export const Cards = styled.div `
             justify-content: space-around;
             flex-wrap: wrap;
             text-align: center;
-            background-image: url(${props => props.imgUrl});
+            background-image: linear-gradient(rgba(8, 1, 43, 0.63), rgba(8, 1, 43, 0.63)), url(${props => props.imgUrl});
             background-repeat: no-repeat;
             background-size: 380px 330px;
             width: 380px;
