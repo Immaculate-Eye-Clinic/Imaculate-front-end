@@ -6,6 +6,16 @@ display: flex;
 flex-wrap: wrap-reverse;
 width: 100%;
 height: 100%;
+
+input {
+    ::placeholder{
+        color: #252079;
+        font-weight: 700;
+    }
+    :focus {
+        outline: 2px  #252079;
+    }
+}
 .img{
     width: 50%;
     
@@ -87,12 +97,6 @@ height: 100%;
                 border: none;
                 outline: none;
                 box-sizing: border-box;
-                :focus {
-                    outline: 2px solid #252079;
-                }
-                ::placeholder{
-                    color: #252079;
-                }
                 @media (max-width: 1200px){
                     width: 45%;
                     margin: 0;
@@ -114,6 +118,7 @@ height: 100%;
                 }
                 ::placeholder{
                     color: #252079;
+                    font-weight: 700;
                 }
             @media (max-width: 1200px){
                 width: 100%;
@@ -125,6 +130,7 @@ height: 100%;
             display: grid;
             grid-template-columns: 50% 50%;
             width: 100%;
+            margin-top: 30px;
             @media (max-width: 800px){
                 display: block;
             }
