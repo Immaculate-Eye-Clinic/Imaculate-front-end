@@ -3,6 +3,7 @@ import Services from '../services/ShowServices'
 import Header from '../../components/modules/Header/Header'
 import Footer from '../../components/modules/footer/footer'
 import {Container} from './StyleAbout'
+import Contact from '../../components/modules/contactUs/Contact'
 
 function AboutUs (){
     return(
@@ -17,6 +18,7 @@ function AboutUs (){
             <div className = 'service_container'>
                 <Services />
             </div>
+            <Contact />
             < Footer />
         </Container>
     )
