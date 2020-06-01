@@ -14,6 +14,7 @@ function AboutUs (){
             height={'70vh'}
             img={'https://res.cloudinary.com/hisroyalwonginess/image/upload/v1588437898/Immaculate/Doctors_ieplxk.jpg'}
             />
+            <span><em><i>Private Ophtalmology</i></em> London</span>
             <div className = 'service_container'>
                 <Services />
             </div>
