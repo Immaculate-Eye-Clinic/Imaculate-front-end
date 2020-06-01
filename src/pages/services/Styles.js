@@ -3,10 +3,10 @@ import styled from "styled-components"
 export const Cards = styled.div `
     align-items: center;
     width: 280px;
-    margin: 0.5em;
+    margin: 2em;
     @media (min-width: 760px){
         width: 365px;
-        margin: 1em;
+        margin: 1.5em 0.5em 5em;
     }
 
     
