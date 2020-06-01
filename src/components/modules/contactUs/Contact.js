@@ -31,15 +31,13 @@ class Contact extends React.Component{
                             <textarea type='text' placeholder='Message*' /><br/>
                             <span className='below'>
                                 <span><p className='p'>By submitting this form you confirm that you’re happy for us to contact you by phone, messaging and email.</p></span>
-                                <span><button>Send Message</button></span>
+                                <span className='span'><button className='button'>Send</button></span>
                             </span>
                         </form>
                     </div>
                 </div>
                 <div className='img'>
-                    <img src='\Asset\Img\EyeCareBackground.jpg' />
-                    <img src='\Asset\Img\g.jpg' />
-                    <img src='\Asset\Img\EyeCareBackground.jpg' />
+                    <img src='\Asset\Img\optician.jpg' />
                 </div>
             </Div>
         )

@@ -13,11 +13,11 @@ class Navbar extends React.Component {
                 </div>          
                 <div className="navs">
                     <ul class="menu">
-                        <li><NavLink to='/'  activeClassName='active'>Home</NavLink><span></span></li>
-                        <li><NavLink to='/about'  activeClassName='active'>About</NavLink><span></span></li>
-                        <li><NavLink to='/services'  activeClassName='active'>Services</NavLink><span></span></li>
-                        <li><NavLink to='/blog'  activeClassName='active'>Blog</NavLink><span></span></li>
-                        <li><NavLink to='/visit'  activeClassName='active'>Visit Us</NavLink><span></span></li>
+                        <li><NavLink exact to='/'  activeClassName='active'>Home</NavLink><span></span></li>
+                        <li><NavLink exact to='/about'  activeClassName='active'>About</NavLink><span></span></li>
+                        <li><NavLink exact to='/services'  activeClassName='active'>Services</NavLink><span></span></li>
+                        <li><NavLink exact to='/blog'  activeClassName='active'>Blog</NavLink><span></span></li>
+                        <li><NavLink exact to='/visit'  activeClassName='active'>Visit Us</NavLink><span></span></li>
                         <li height = "30px"><div className = 'container_sign_up'>
                                 <img src = "https://res.cloudinary.com/hisroyalwonginess/image/upload/v1589821953/pngfind.com-profile-icon-png-1102927_gaepvx.png"  alt = "user" height = "30px" width = "30px"/>
                                 <div className = 'userStyle'>

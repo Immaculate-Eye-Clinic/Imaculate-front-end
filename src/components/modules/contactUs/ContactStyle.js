@@ -8,18 +8,19 @@ width: 100%;
 
 .img{
     width: 50%;
-    display: flex;
+    
     @media (max-width: 800px){
         width: 100%;
     }
     img{
         width: 100%;
+        height: 100%;
     }
 }
 
 .body{
     width: 50%;
-    background: silver;
+    background: #c0c0c0;
     box-sizing: border-box;
     @media (max-width: 800px){
         width: 100%;
@@ -104,34 +105,35 @@ width: 100%;
         
         .below{
             display: flex;
-            justify-content: space-between;
+            flex-direction: row;
             width: 100%;
             @media (max-width: 800px){
                 display: block;
             }
             .p{
-            font-size: 12px;
-            margin-right: 10px;
+            font-size: 11.5px;
+            margin-right: 20px;
+            width: 90%;
             }
-            button{
-                padding: 5px 60px;
+            .span{
+                button{
+                width: 100%;
                 margin-top: 8px;
-                font-size: 14px;
+                padding: 15px 40px;
+                font-size: 16px;
                 border: none;
                 background: #252079;
                 color: white;
                 box-sizing: border-box;
+                border-radius: 15px;
                 cursor: pointer;
-                :hover{
-                    background: #252060;
-                }
-                @media (max-width: 1200px){
-                    width: 100%;
-                    padding: 20px 30px;
-                }
-                @media (max-width: 800px){
-                    width: 100%;
-                    padding: 15px 30px;
+                    :hover{
+                        background: #252060;
+                    }
+                    @media (max-width: 800px){
+                        width: 100%;
+                        padding: 15px 30px;
+                    }
                 }
             }
         }
