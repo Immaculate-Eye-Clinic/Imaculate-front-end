@@ -22,12 +22,12 @@ class Contact extends React.Component{
                         </div>
                         <form>
                             <h3><i>Request a call back</i></h3>
-                            <input type='text' placeholder='Your Name*' className='name' /><br/><br/>
+                            <input type='text' placeholder='Your Name*' className='name' required /><br/><br/>
                             <div className='div1'>
-                                <input type='email' placeholder='Email Address*' className='email' /><br/><br/>
-                                <input type='number' placeholder='Phone Number*' className='phone' /><br/><br/>
+                                <input type='email' placeholder='Email Address*' className='email' required/><br/><br/>
+                                <input type='number' placeholder='Phone Number*' className='phone' required/><br/><br/>
                             </div>
-                            <input type='text' placeholder='Subject*' className='subject' /><br/><br/>
+                            <input type='text' placeholder='Subject*' className='subject' required/><br/><br/>
                             <textarea type='text' placeholder='Message*' /><br/>
                             <div className='below'>
                                 <div><p className='p'>By submitting this form you confirm that you’re happy for us to contact you by phone, messaging and email.</p></div>

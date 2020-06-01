@@ -5,7 +5,7 @@ overflow: hidden;
 display: flex;
 flex-wrap: wrap-reverse;
 width: 100%;
-
+height: 100%;
 .img{
     width: 50%;
     
@@ -27,10 +27,9 @@ width: 100%;
         padding-bottom: 30px;
     }
     .div{
-        margin: 85px;
-        
+        margin: 85px 85px 10px 85px;
         @media (max-width: 1200px){
-            margin: 60px 70px 60px 20px;
+            margin: 60px 70px 40px 20px;
         }
         @media (max-width: 800px){
         margin: 10px;
@@ -59,6 +58,12 @@ width: 100%;
             padding: 15px 30px;
             border: none;
             box-sizing: border-box;
+                :focus {
+                    outline: 2px solid #252079;
+                }
+                ::placeholder{
+                    color: #252079;
+                }
             @media (max-width: 1200px){
                 width: 100%;
                 margin: 0;
@@ -80,7 +85,14 @@ width: 100%;
                 width: 45%;
                 padding: 15px 30px;
                 border: none;
+                outline: none;
                 box-sizing: border-box;
+                :focus {
+                    outline: 2px solid #252079;
+                }
+                ::placeholder{
+                    color: #252079;
+                }
                 @media (max-width: 1200px){
                     width: 45%;
                     margin: 0;
@@ -93,10 +105,16 @@ width: 100%;
         
         textarea{
             width: 100%;
-            height: 250px;
+            height: 100px;
             padding: 10px 30px;
             border: none;
             box-sizing: border-box;
+                :focus {
+                    outline: 2px solid #252079;
+                }
+                ::placeholder{
+                    color: #252079;
+                }
             @media (max-width: 1200px){
                 width: 100%;
                 margin: 0;
@@ -122,7 +140,7 @@ width: 100%;
                 button{
                 width: 70%;
                 float: right;
-                padding: 15px 32px;
+                padding: 10px 10px;
                 margin-top: 8px;
                 text-align: center;
                 text-decoration: none;
