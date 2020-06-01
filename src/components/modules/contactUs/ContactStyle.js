@@ -120,7 +120,7 @@ width: 100%;
             }
             .span{
                 button{
-                width: 90%;
+                width: 70%;
                 float: right;
                 padding: 15px 32px;
                 margin-top: 8px;

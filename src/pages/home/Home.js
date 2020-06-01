@@ -5,7 +5,6 @@ import Why from '../../components/modules/why_us/why_us';
 import Header from '../../components/modules/Header/Header';
 import WelcomeText from '../../components/welcomeText/WelcomeText.js';
 import Footer from '../../components/modules/footer/footer'
-import Contact from '../../components/modules/contactUs/Contact'
 
 function Home() {
     return (
@@ -18,7 +17,6 @@ function Home() {
             mobileHeight={'50vh'}
             img={'https://res.cloudinary.com/hisroyalwonginess/image/upload/v1588437898/Immaculate/Doctors_ieplxk.jpg'}
             />
-            <Contact />
             <WelcomeText />
             <div style={{width: "90%", margin: "auto"}}>
             <BlogCard />
