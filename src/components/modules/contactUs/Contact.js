@@ -29,10 +29,10 @@ class Contact extends React.Component{
                             </div>
                             <input type='text' placeholder='Subject*' className='subject' /><br/><br/>
                             <textarea type='text' placeholder='Message*' /><br/>
-                            <span className='below'>
-                                <span><p className='p'>By submitting this form you confirm that you’re happy for us to contact you by phone, messaging and email.</p></span>
-                                <span className='span'><button className='button'>Send</button></span>
-                            </span>
+                            <div className='below'>
+                                <div><p className='p'>By submitting this form you confirm that you’re happy for us to contact you by phone, messaging and email.</p></div>
+                                <div className='span'><button className='button'>Send Message</button></div>
+                            </div>
                         </form>
                     </div>
                 </div>

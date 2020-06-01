@@ -104,8 +104,8 @@ width: 100%;
         }
         
         .below{
-            display: flex;
-            flex-direction: row;
+            display: grid;
+            grid-template-columns: 50% 50%;
             width: 100%;
             @media (max-width: 800px){
                 display: block;
@@ -113,13 +113,19 @@ width: 100%;
             .p{
             font-size: 11.5px;
             margin-right: 20px;
-            width: 90%;
+            width: 100%;
+                @media (max-width: 800px){
+                    width: 100%;
+                }
             }
             .span{
                 button{
-                width: 100%;
+                width: 90%;
+                float: right;
+                padding: 15px 32px;
                 margin-top: 8px;
-                padding: 15px 40px;
+                text-align: center;
+                text-decoration: none;
                 font-size: 16px;
                 border: none;
                 background: #252079;
