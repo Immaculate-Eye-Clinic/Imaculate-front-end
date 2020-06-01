@@ -5,7 +5,6 @@ import Why from '../../components/modules/why_us/why_us';
 import Header from '../../components/modules/Header/Header';
 import WelcomeText from '../../components/welcomeText/WelcomeText.js';
 import Footer from '../../components/modules/footer/footer';
-import Services from '../../pages/services/ShowServices';
 
 function Home() {
     return (
@@ -20,7 +19,6 @@ function Home() {
             />
             <WelcomeText />
             <div style={{width: "90%", margin: "auto"}}>
-            <Services />
             <BlogCard />
             </div>
             <Slider />

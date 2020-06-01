@@ -1,14 +1,15 @@
 import React from "react"
 import ServicesData from "./ServicesData"
 import Services from "./Services"
+import {FlexStyle} from "./Styles"
 
 function ShowServices (props){
     return(
-        <div>
+        <FlexStyle>
             {ServicesData.map((service, index) =>(
                 <Services key = {service.id} service = {service} />
             ))}
-        </div>
+        </FlexStyle>
     )
 }
 
