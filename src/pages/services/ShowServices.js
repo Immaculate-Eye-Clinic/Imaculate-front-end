@@ -20,7 +20,7 @@ function ShowServices (props){
         <Page>
             <span className = 'intro_text'><h4><em><strong>Private Eye Care Services </strong>  Imo State</em></h4></span>
             <br />
-            <h1>About <span className = 'immaculate_text'>Immaculate Eye Clinic</span></h1>
+            <h1>Services at <span className = 'immaculate_text'>Immaculate Eye Clinic</span></h1>
             <br />
             <span className = 'sub_text'><h3>Immaculate Eye Clinic is a Private Ophtalmology clinic in Imo State, around Awaka, Owerri - North.</h3></span>
             <br />
