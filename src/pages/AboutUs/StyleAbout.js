@@ -15,6 +15,7 @@ export const Container = styled.div `
         flex-wrap: wrap;
         width: 90%;
         margin: 0 auto;
+        overflow: hidden;
 
         @media (min-width: 760px){
             width: 90%;

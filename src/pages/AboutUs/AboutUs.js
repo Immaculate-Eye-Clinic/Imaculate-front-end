@@ -4,6 +4,7 @@ import Header from '../../components/modules/Header/Header'
 import Footer from '../../components/modules/footer/footer'
 import {Container} from './StyleAbout'
 import AboutUsData from './AboutUsData'
+import Contact from '../../components/modules/contactUs/Contact'
 
 function AboutUs (){
     return(
@@ -23,6 +24,8 @@ function AboutUs (){
                 <Services key = {service.id} service = {service} />
                 ))}
             </div>
+            <Contact />
+            < Footer />
         </Container>
             < Footer />
             </div>
