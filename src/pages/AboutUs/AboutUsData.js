@@ -23,12 +23,6 @@ const AboutUsData = [
         imgUrl:'/Asset/Img/g.jpg',
         caption: 'What you must know about Corona Virus',
         readMore: 'Read More',
-    },
-    {
-        id: '5',
-        imgUrl:'/Asset/Img/g.jpg',
-        caption: 'Our Vision',
-        readMore: 'Read More',
     }
 ]
 

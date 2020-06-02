@@ -1,6 +1,9 @@
 import styled from 'styled-components'
 
 export const Container = styled.div `
+    margin: auto;
+    width: 90%;
+    
     
 
     .aboutUs_container{
@@ -8,12 +11,13 @@ export const Container = styled.div `
         flex-direction: row;
         align-items: center;
         align-content: center;
-        justify-content: space-evenly;
+        justify-content: center;
         flex-wrap: wrap;
-        margin: 1em;
         width: 90%;
+        margin: 0 auto;
 
         @media (min-width: 760px){
-            width: 100%;
+            width: 90%;
+    }
     }
 `

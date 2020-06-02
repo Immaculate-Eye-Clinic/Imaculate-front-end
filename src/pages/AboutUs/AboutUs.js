@@ -7,7 +7,7 @@ import AboutUsData from './AboutUsData'
 
 function AboutUs (){
     return(
-        <Container>
+        <div>
             <Header 
             bgcolor={'transparent'}
             title={'About Us'}
@@ -16,12 +16,17 @@ function AboutUs (){
             mobileHeight={'50vh'}
             img={'https://res.cloudinary.com/hisroyalwonginess/image/upload/v1588437898/Immaculate/Doctors_ieplxk.jpg'}
             />
-            <span><em><i>Private Ophtalmology</i></em> London</span>
-            <div className = 'service_container'>
-                <Services />
+        <Container>
+            <span><em><strong>Private Ophtalmology</strong></em> London</span>
+            <div className = 'aboutUs_container'>
+                {AboutUsData.map((service, index) =>(
+                <Services key = {service.id} service = {service} />
+                ))}
             </div>
-            < Footer />
         </Container>
+            < Footer />
+            </div>
+        
     )
 }
 
