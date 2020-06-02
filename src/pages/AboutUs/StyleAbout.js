@@ -1,10 +1,24 @@
 import styled from 'styled-components'
 
 export const Container = styled.div `
-overflow: hidden;
+    margin: auto;
+    width: 90%;
+    
+    
 
-    .service_container{
-        margin-top: 6em;
-        margin-bottom: 4em;
+    .aboutUs_container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 0 auto;
+        overflow: hidden;
+
+        @media (min-width: 760px){
+            width: 90%;
+    }
     }
 `
