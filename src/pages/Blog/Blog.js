@@ -1,16 +1,19 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios';
 
-import BlogPage from '../../components/modules/blogPage/blogPage'
+import Cat from './Category'
 import Header from '../../components/modules/Header/Header'
 import Pagination from './Pagination'
 import Posts from './Posts'
+
+
+    
 
 function Blog() {
     const [posts, setPosts] = useState([]);
     const [loading, setLoading] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
-    const [postsPerPage, setPostsPerPage] = useState(6);
+    const [postsPerPage, setPostsPerPage] = useState(10);
 
     useEffect(() => {
         const fetchPosts = async () => {
@@ -22,6 +25,7 @@ function Blog() {
         fetchPosts();
         
     }, []);
+    console.log(posts)
 
     // Get current posts
     const indexOfLastPost = currentPage * postsPerPage;
@@ -30,6 +34,8 @@ function Blog() {
 
     // Change page
     const paginate = pageNumber => setCurrentPage(pageNumber);
+
+   
 
     return (
         <div>
@@ -40,8 +46,9 @@ function Blog() {
             height={'70vh'}
             img={'https://res.cloudinary.com/hisroyalwonginess/image/upload/v1588437898/Immaculate/Doctors_ieplxk.jpg'}
             />
-            <BlogPage />
-            <h1>Blog in Spanish</h1>
+            <Cat />
+            
+            <h1 style={{color: '#252079'}}>Blog in Spanish</h1>
             <Posts posts={currentPosts} loading={loading} /> 
             <Pagination postsPerPage={postsPerPage} totalPosts={posts.length} paginate={paginate} />         
         </div>
