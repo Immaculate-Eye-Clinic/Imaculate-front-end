@@ -1,18 +1,18 @@
 import React from 'react'
+import {Ul} from './styled'
 
-import BlogList from '../../components/modules/blogPage/blogList'
-import BlogData from '../../components/modules/blogPage/blogData'
 
-function Posts({posts, loading}) {
-    if (loading) {
-        return <h2>loading.....</h2>
+const Posts = ({ posts, loading }) => {
+    if(loading) {
+        return <h2>Loading...</h2>
     }
-
-    return <ul>
-        {BlogList.map(data => (
-            <li></li>
-        ))}
-    </ul>
+    return(
+     <Ul>
+      {posts.map(post => (
+        <li key={post.id}>{post.title}</li>
+      ))}
+     </Ul>
+    )
 }
 
 export default Posts
