@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div `
     margin: auto;
-    width: 90%;
+    width: 80%;
     
     .intro_text{
         font-weight: normal;
@@ -16,12 +16,12 @@ export const Container = styled.div `
     h1{
             padding: 0;
             margin: 0;
+            font-size:  50px;
         }
     .immaculate_text{
-        font-size:  30px;
+        font-size:  50px;
         font-weight: bolder;
         color: #252079;
-        letter-spacing: 3px;
     }
     .sub_text{
         font-size: 17px;
@@ -42,10 +42,10 @@ export const Container = styled.div `
         flex-direction: row;
         align-items: center;
         align-content: center;
-        justify-content: center;
+        justify-content: space-between;
         flex-wrap: wrap;
         width: 90%;
-        margin: 0 auto;
+        margin: 0 auto 6em;
         overflow: hidden;
 
         @media (min-width: 760px){
