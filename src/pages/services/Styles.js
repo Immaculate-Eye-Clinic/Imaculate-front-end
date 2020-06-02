@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const Page = styled.div`
     margin: auto;
-    width: 90%;
+    width: 80%;
 
     
     .intro_text{
@@ -17,12 +17,12 @@ export const Page = styled.div`
     h1{
             padding: 0;
             margin: 0;
+            font-size:  50px;
         }
     .immaculate_text{
-        font-size:  30px;
+        font-size:  50px;
         font-weight: bolder;
         color: #252079;
-        letter-spacing: 3px;
     }
     .sub_text{
         font-size: 17px;
@@ -147,9 +147,9 @@ export const FlexStyle = styled.div`
     flex-direction: row;
     align-items: center;
     align-content: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
-    margin: 1em;
+    margin: 1em 0 6em;
     width: 90%;
 
     @media (min-width: 760px){
