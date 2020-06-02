@@ -31,8 +31,8 @@ function AboutUs (){
                 <Services key = {service.id} service = {service} />
                 ))}
             </div>
-            <Contact />
         </Container>
+        <Contact />
             < Footer />
             </div>
         
