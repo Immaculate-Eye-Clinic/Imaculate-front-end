@@ -1,6 +1,5 @@
 import React from 'react'
 import {Div } from './ContactStyle'
-import MapImage from './MapImage'
 
 class Contact extends React.Component{
     constructor(){
@@ -12,11 +11,6 @@ class Contact extends React.Component{
     render(){
         return(
             <Div>
-                <div className='map'>
-                    <MapImage />
-                </div>
-                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
                 <div className='main'>
                     <div className='body'>
                         <div className='div'>

@@ -4,6 +4,7 @@ import Header from '../../components/modules/Header/Header'
 import Footer from '../../components/modules/footer/footer'
 import {Container} from './StyleAbout'
 import Contact from '../../components/modules/contactUs/Contact'
+import MapImage from '../../components/modules/contactUs/MapImage'
 
 function AboutUs (){
     return(
@@ -17,6 +18,9 @@ function AboutUs (){
             />
             <div className = 'service_container'>
                 <Services />
+            </div>
+            <div>
+                <MapImage />
             </div>
             <Contact />
             < Footer />
