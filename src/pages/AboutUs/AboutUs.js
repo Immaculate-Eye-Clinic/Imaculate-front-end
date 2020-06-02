@@ -25,7 +25,6 @@ function AboutUs (){
                 ))}
             </div>
             <Contact />
-            < Footer />
         </Container>
             < Footer />
             </div>
