@@ -23,7 +23,6 @@ export const Page = styled.div`
         font-size:  50px;
         font-weight: bolder;
         color: #252079;
-        letter-spacing: 3px;
     }
     .sub_text{
         font-size: 17px;
