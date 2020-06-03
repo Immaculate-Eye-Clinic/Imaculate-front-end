@@ -3,8 +3,12 @@ import styled from "styled-components"
 export const Page = styled.div`
     margin: auto;
     width: 80%;
+    margin: 5em auto 5em;
 
-    
+    .text_paragraph{
+        line-height: 20px;
+        text-align: justify;
+    }    
     .intro_text{
         font-weight: normal;
         font-size: 20px;
@@ -153,6 +157,7 @@ export const FlexStyle = styled.div`
     width: 90%;
 
     @media (min-width: 760px){
-        width: 100%;
+        margin: auto;
+        width: 85%;
     }
 `

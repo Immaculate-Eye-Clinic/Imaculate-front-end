@@ -3,7 +3,12 @@ import styled from 'styled-components'
 export const Container = styled.div `
     margin: auto;
     width: 80%;
-    
+    margin-top: 5em;
+
+    .text_paragraph{
+        line-height: 20px;
+        text-align: justify;
+    }
     .intro_text{
         font-weight: normal;
         font-size: 20px;
