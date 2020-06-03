@@ -1,4 +1,4 @@
-{/*import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect} from 'react'
 import axios from 'axios';
 
 import Category from './Cat'
@@ -9,7 +9,7 @@ import Posts from './Posts'
 
     
 
-function Blog() {
+function Blo() {
     const [posts, setPosts] = useState([]);
     const [loading, setLoading] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
@@ -57,4 +57,4 @@ function Blog() {
            
 
 
-export default Blog*/}
+export default Blo
