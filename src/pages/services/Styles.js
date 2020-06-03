@@ -6,7 +6,7 @@ export const Page = styled.div`
     margin: 5em auto 5em;
 
     .text_paragraph{
-        line-height: 20px;
+        line-height: 25px;
         text-align: justify;
     }    
     .intro_text{
@@ -54,9 +54,19 @@ export const Cards = styled.div `
     align-items: center;
     width: 310px;
     margin: 1em;
-    
 
-    
+    @media (min-width: 600px) {
+        width: 500px;
+    }  
+    @media (min-width: 700px) {
+        width: 600px;
+    }
+    @media (min-width: 900px) {
+                width: 750px;
+            }
+    @media (min-width: 1025px) {
+        width: 320px;
+    }
 
     .card{
         display: flex;
@@ -86,9 +96,25 @@ export const Cards = styled.div `
             height: 250px;
             margin: auto;
 
-
-            
-            
+            @media (min-width: 600px) {
+                background-size: 500px 400px;
+                width: 500px;
+            }
+            @media (min-width: 700px) {
+                background-size: 600px 450px;
+                width: 600px;
+                height: 350px;
+            }
+            @media (min-width: 900px) {
+                background-size: 750px 550px;
+                width: 750px;
+                height: 450px;
+            }
+            @media (min-width: 1025px) {
+                background-size: 350px 300px;
+                width: 320px;
+                height: 250px;
+            }
         }
             .card_text{
                 position: absolute;
@@ -123,8 +149,19 @@ export const Cards = styled.div `
                 text-align: center;
                 width: 270px;
                 padding: 20px;
-
-                
+                    
+                    @media (min-width: 600px) {
+                        width: 460px;
+                    }
+                    @media (min-width: 700px) {
+                        width: 560px;
+                    }
+                    @media (min-width: 900px) {
+                        width: 710px;
+                    }
+                    @media (min-width: 1025px) {
+                        width: 270px;
+                    }
                 }
             }
 
