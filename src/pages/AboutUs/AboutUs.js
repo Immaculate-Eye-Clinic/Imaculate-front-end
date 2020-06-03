@@ -5,7 +5,6 @@ import Footer from '../../components/modules/footer/footer'
 import {Container} from './StyleAbout'
 import AboutUsData from './AboutUsData'
 import Contact from '../../components/modules/contactUs/Contact'
-import MapImage from '../../components/modules/contactUs/MapImage'
 
 function AboutUs (){
     return(
@@ -32,9 +31,7 @@ function AboutUs (){
                 <Services key = {service.id} service = {service} />
                 ))}
             </div>
-            <div>
-                <MapImage />
-            </div>
+            
             <Contact />
             < Footer />
         </Container>
