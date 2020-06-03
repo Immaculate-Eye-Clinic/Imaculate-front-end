@@ -7,6 +7,7 @@ flex-wrap: wrap;
 width: 100%;
 box-sizing: border-box;
 
+
 .text-section{
     width: 50%;
     .div{

@@ -2,10 +2,12 @@ import React from 'react'
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 import {Div } from './MapStyle'
 
+
 const mapStyle = {
     width: '40%',
     height: '55%',
 }
+
 
 export class MapImage extends React.Component{
     render(){
