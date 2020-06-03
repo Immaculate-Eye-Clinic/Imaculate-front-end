@@ -1,10 +1,10 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom'
-import {Cat} from './Styled'
+import {Cate} from './styled'
 
 function Category() {
     return (
-        <Cat>
+        <Cate>
             <div className='category'>
                 <div className='head'>
                 <strong>Category</strong>
@@ -34,7 +34,7 @@ function Category() {
                 <p><NavLink to='/'>October 2019</NavLink></p> 
                 </div>
             </div>
-        </Cat>
+        </Cate>
     )
 }
 
