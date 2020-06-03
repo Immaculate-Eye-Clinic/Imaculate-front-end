@@ -38,7 +38,7 @@ class sideDrawer extends Component {
                             <hr style={{ marginRight: '40px' }} />
                         </li>
                         <li>
-                            <Link className="link" to="/service">
+                            <Link className="link" to="/services">
                                 Service
                             </Link>
                             <hr style={{ marginRight: '40px' }} />

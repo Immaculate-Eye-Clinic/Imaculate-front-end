@@ -1,12 +1,55 @@
 import styled from "styled-components"
 
+export const Page = styled.div`
+    margin: auto;
+    width: 80%;
+    margin: 5em auto 5em;
+
+    .text_paragraph{
+        line-height: 20px;
+        text-align: justify;
+    }    
+    .intro_text{
+        font-weight: normal;
+        font-size: 20px;
+        letter-spacing: 3px;
+        h4{
+            margin-bottom: 0;
+        }
+        
+    }
+    h1{
+            padding: 0;
+            margin: 0;
+            font-size:  50px;
+        }
+    .immaculate_text{
+        font-size:  50px;
+        font-weight: bolder;
+        color: #252079;
+    }
+    .sub_text{
+        font-size: 17px;
+        h3{
+            margin: 0;
+        }
+    }
+    hr{
+        margin: 2.5em 0 2.5em;
+        border: none;
+        height: 1px;
+        color: black;
+        background-color: #d3d3d3;
+    }
+`
+
 export const Cards = styled.div `
     align-items: center;
-    width: 280px;
-    margin: 2em;
-    @media (min-width: 760px){
-        width: 365px;
-        margin: 1.5em 0.5em 5em;
+    min-width: 280px;
+    margin: 1em;
+    @media (min-width: 1329px){
+        min-width: 465px;
+        margin: 1.5em;
     }
 
     
@@ -35,12 +78,12 @@ export const Cards = styled.div `
             background-repeat: no-repeat;
             background-position: center;
             background-size: 350px 300px;
-            width: 280px;
+            min-width: 280px;
             height: 250px;
 
-            @media (min-width: 760px){
-                background-size: 365px 330px;
-                width: 365px;
+            @media (min-width: 1329px){
+                background-size: 465px 430px;
+                min-width: 465px;
                 height: 315px;
             }
 
@@ -64,6 +107,12 @@ export const Cards = styled.div `
                     color: white;
                     background: #252079;
                     border: none;
+                    border-radius: 2px;
+
+                    @media (max-width: 1024px){
+                        visibility: visible;
+                        opacity: 1;
+                    }
                 }
                 .caption{
                 margin: 0 auto;
@@ -75,17 +124,21 @@ export const Cards = styled.div `
                 width: 240px;
                 padding: 20px;
 
-                @media (min-width: 760px){
-                    width: 325px;
+                @media (min-width: 1329px){
+                    width: 425px;
                 }
                 }
             }
 
-            :hover  button {
+            @media (min-width: 1024px){
+                
+                :hover  button {
                 visibility: visible;
                 opacity:  1;
                 transition: 0.8s;
             }
+            }
+
         
         }
     
@@ -98,12 +151,13 @@ export const FlexStyle = styled.div`
     flex-direction: row;
     align-items: center;
     align-content: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
-    margin: 1em;
+    margin: 1em 0 6em;
     width: 90%;
 
     @media (min-width: 760px){
+        margin: auto;
         width: 100%;
     }
 `
