@@ -158,6 +158,6 @@ export const FlexStyle = styled.div`
 
     @media (min-width: 760px){
         margin: auto;
-        width: 85%;
+        width: 100%;
     }
 `
