@@ -28,8 +28,8 @@ div {
     margin-top: 2em;
     .name {
         img {
-            width: 350px;
-            height: 100px;
+            width: 150px;
+            height: 50px;
         }
     }
  }

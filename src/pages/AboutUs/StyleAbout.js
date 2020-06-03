@@ -6,7 +6,7 @@ export const Container = styled.div `
     margin-top: 5em;
 
     .text_paragraph{
-        line-height: 20px;
+        line-height: 25px;
         text-align: justify;
     }
     .intro_text{
@@ -47,14 +47,14 @@ export const Container = styled.div `
         flex-direction: row;
         align-items: center;
         align-content: center;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
         width: 90%;
         margin: 0 auto 6em;
         overflow: hidden;
 
         @media (min-width: 760px){
-            width: 90%;
+            width: 100%;
     }
     }
 `
