@@ -1,6 +1,5 @@
-import React, {useState, useEffect} from 'react'
+{/*import React, {useState, useEffect} from 'react'
 import axios from 'axios';
-import {Main} from './styled'
 
 import Category from './Cat'
 import Header from '../../components/modules/Header/Header'
@@ -10,7 +9,7 @@ import Posts from './Posts'
 
     
 
-function Blog() {
+function Blo() {
     const [posts, setPosts] = useState([]);
     const [loading, setLoading] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
@@ -39,7 +38,7 @@ function Blog() {
    
 
     return (
-        <Main>
+        <div>
              <Header 
             bgcolor={'transparent'}
             title={'Visit Our Blogs'}
@@ -47,16 +46,15 @@ function Blog() {
             height={'70vh'}
             img={'https://res.cloudinary.com/hisroyalwonginess/image/upload/v1588437898/Immaculate/Doctors_ieplxk.jpg'}
             />
-            <h1 style={{color: '#252079'}}>Blog in Spanish</h1>
-            <div className='posts'>
-            <Posts posts={currentPosts} loading={loading} />
             <Category />
-            </div>  
-            <Pagination postsPerPage={postsPerPage} totalPosts={posts.length} paginate={paginate} />        
-        </Main>
+            
+            <h1 style={{color: '#252079'}}>Blog in Spanish</h1>
+            <Posts posts={currentPosts} loading={loading} /> 
+            <Pagination postsPerPage={postsPerPage} totalPosts={posts.length} paginate={paginate} />         
+        </div>
     )
 }
            
 
 
-export default Blog
+export default Blo*/}

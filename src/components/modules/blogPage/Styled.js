@@ -3,6 +3,8 @@ import styled from 'styled-components'
 export const Body = styled.div `
 display: flex;
 margin: 50px;
+position: relative;
+left: 25%;
     @media (max-width: 1000px) {
     justify-content: center;  
     }
@@ -10,9 +12,18 @@ margin: 50px;
     flex-wrap: wrap;  
     }
 
+    .img {
+        position: relative;
+        img{
+            position: relative;
+        }
+    }
+
 .info {
     position: relative;
-    right: 7%;
+    left: 20%;
+    width: 70em;
+    border: 2px solid black;
     @media (max-width: 1270px) {
     right: 10%;  
     }

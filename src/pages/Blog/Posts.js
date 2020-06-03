@@ -1,8 +1,7 @@
 import React from 'react'
-import {Ul} from './styled'
+import {Div} from './styled'
 
 import BlogData from '../../components/modules/blogPage/blogData'
-import BlogPage from '../../components/modules/blogPage/blogPage'
 
 
 const Posts = ({ posts, loading, title }) => {
@@ -10,12 +9,14 @@ const Posts = ({ posts, loading, title }) => {
         return <h2>Loading...</h2>
     }
     return(
-     <Ul>
+      <Div>
+     <ul>
       {posts.map(post => (
-        <BlogData key={post.id} title={title}/>
+        <BlogData key={post.id} title={post.title}/>
       ))}
       
-     </Ul>
+     </ul>
+     </Div>
     )
 }
 
