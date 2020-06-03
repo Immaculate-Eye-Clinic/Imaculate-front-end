@@ -10,6 +10,7 @@ import NoMatch from './NoMatch';
 import ScrollToTop from './ScrollToTop';
 import AboutUs from '../pages/AboutUs/AboutUs'
 import {GlobalStyle} from "../GlobalStyle"
+import ShowServices from '../pages/services/ShowServices'
 
 
 class ReactRouter extends React.Component {
@@ -26,6 +27,7 @@ class ReactRouter extends React.Component {
                               <Route exact path="/" component={Home} />
                               <Route exact path="/blog" component={Blog} />
                               <Route exact path="/about" component={AboutUs} />
+                              <Route exact path="/services" component={ShowServices} />
                               <Route component={NoMatch} />      
                           </Switch>
                         </App>
