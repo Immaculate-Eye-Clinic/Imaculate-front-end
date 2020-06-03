@@ -4,6 +4,7 @@ import {Div } from './VisitStyle'
 import Header from '../../components/modules/Header/Header'
 import MapImage from '../../components/modules/mapView/MapImage'
 import Footer from '../../components/modules/footer/footer'
+import Contact from '../../components/modules/contactUs/Contact'
 
 function VisitUs(){
     return(
@@ -17,6 +18,7 @@ function VisitUs(){
                 img={'https://res.cloudinary.com/hisroyalwonginess/image/upload/v1588437898/Immaculate/Doctors_ieplxk.jpg'}
             />
             <MapImage />
+            <Contact />
             <Footer />
         </Div>
     )

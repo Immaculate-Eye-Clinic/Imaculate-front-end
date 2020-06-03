@@ -4,6 +4,7 @@ import {Div } from './MapStyle'
 
 
 const mapStyle = {
+    overflow: 'hidden',
     width: '40%',
     height: '55%',
 }

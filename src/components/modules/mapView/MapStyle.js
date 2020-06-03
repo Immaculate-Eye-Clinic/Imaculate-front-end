@@ -10,8 +10,15 @@ box-sizing: border-box;
 
 .text-section{
     width: 50%;
+    box-sizing: border-box;
+    @media (max-width: 900px){
+        width: 100%;
+    }
     .div{
         margin: 60px 0 150px 150px;
+            @media (max-width: 900px){
+                margin: 60px;
+            }
     }
     .first{
         font-size: 19px;
@@ -53,6 +60,10 @@ box-sizing: border-box;
 }
 .map{
     width: 50%;
+    box-sizing: border-box;
+    @media (max-width: 900px){
+        display: none;
+    }
     .div2{
         margin: 60px 0 60px 10px;
     }
