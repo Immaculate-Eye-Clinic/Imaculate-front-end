@@ -14,6 +14,18 @@ export class MapImage extends React.Component{
     render(){
         return(
             <Div>
+                <div className='map'>
+                    <div className='div2'>
+                        <Map google={this.props.google} zoom={14} style={mapStyle}>
+                            <Marker onClick={this.onMarkerClick}
+                                name={'Current location'} 
+                            />
+                            <InfoWindow onClose={this.onInfoWindowClose}>
+                                
+                            </InfoWindow>
+                        </Map>
+                    </div>
+                </div>
                 <div className='text-section'>
                     <div className='div'>
                         <h2 className='first'>
@@ -34,18 +46,6 @@ export class MapImage extends React.Component{
                         <h2 className='forth'>
                             Enquiries <a href='#' className='a2'>info@immaculateEyeClinic.com</a>
                         </h2>
-                    </div>
-                </div>
-                <div className='map'>
-                    <div className='div2'>
-                        <Map google={this.props.google} zoom={14} style={mapStyle}>
-                            <Marker onClick={this.onMarkerClick}
-                                name={'Current location'} 
-                            />
-                            <InfoWindow onClose={this.onInfoWindowClose}>
-                                
-                            </InfoWindow>
-                        </Map>
                     </div>
                 </div>
             </Div>
