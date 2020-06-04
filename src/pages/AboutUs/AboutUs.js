@@ -18,7 +18,7 @@ function AboutUs (){
             img={'https://res.cloudinary.com/hisroyalwonginess/image/upload/v1588437898/Immaculate/Doctors_ieplxk.jpg'}
             />
         <Container>
-            <span className = 'intro_text'><h4><em><strong>Private Eye Care Services </strong>  Imo State</em></h4></span>
+            <span className = 'intro_text'><h4><em><strong>Private Eye Care Services </strong></em></h4></span>
             <br />
             <h1>About <span className = 'immaculate_text'>Immaculate Eye Clinic</span></h1>
             <br />
