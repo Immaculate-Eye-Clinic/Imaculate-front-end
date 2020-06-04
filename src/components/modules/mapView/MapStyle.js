@@ -15,7 +15,7 @@ box-sizing: border-box;
         width: 100%;
     }
     .div{
-        margin: 60px 0 150px 150px;
+        margin: 60px 100px 60px 10px;
             @media (max-width: 900px){
                 margin: 60px;
             }
@@ -65,7 +65,7 @@ box-sizing: border-box;
         display: none;
     }
     .div2{
-        margin: 60px 0 60px 10px;
+        margin: 60px 0 150px 50px;
     }
 }
 `
