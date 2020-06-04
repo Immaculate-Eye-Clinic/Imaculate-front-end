@@ -33,20 +33,22 @@ a {
 
 export const Cate = styled.div `
 display: flex;
+border: 2px solid black;
 position: relative;
-top: 9.5%;
-right: 27%;
+bottom: 0;
+height: 60%;
+align-items: center;
 flex-direction: column;
 text-align: center;
 @media (max-width: 1270px) {
   right: 0;  
 }
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
   display: none; 
 }
 .head {
     background-color: #252079;
-    padding: 19px 65px;
+    padding: 19px 75px;
     font-size: 14px;
     color: white;
     text-align: left;
@@ -81,5 +83,9 @@ export const Main = styled.div`
 .posts {
     display: flex;
     justify-content: center;
+    margin-top: 5em;
+    .post {
+        margin-bottom: 4em;
+    }
 }
 `

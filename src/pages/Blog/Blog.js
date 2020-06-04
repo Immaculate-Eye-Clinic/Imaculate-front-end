@@ -49,10 +49,13 @@ function Blog() {
             />
             <h1 style={{color: '#252079'}}>Blog in Spanish</h1>
             <div className='posts'>
+            <div className='post'>
             <Posts posts={currentPosts} loading={loading} />
+            <Pagination postsPerPage={postsPerPage} totalPosts={posts.length} paginate={paginate} />  
+            </div> 
             <Category />
             </div>  
-            <Pagination postsPerPage={postsPerPage} totalPosts={posts.length} paginate={paginate} />        
+                 
         </Main>
     )
 }
