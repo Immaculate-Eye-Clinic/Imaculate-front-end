@@ -52,7 +52,7 @@ export const Page = styled.div`
 
 export const Cards = styled.div `
     align-items: center;
-    width: 310px;
+    width: 510px;
     margin: 1em;
 
     @media (min-width: 600px) {
