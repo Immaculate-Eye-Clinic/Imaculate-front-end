@@ -6,11 +6,18 @@ import {Div } from './MapStyle'
 const mapStyle = {
     overflow: 'hidden',
     width: '40%',
-    height: '55%',
+    height: '400px',
 }
 
 
 export class MapImage extends React.Component{
+    constructor(){
+        super()
+        this.state = {
+            latitude: null,
+            longitude: null,
+        }
+    }
     render(){
         return(
             <Div>

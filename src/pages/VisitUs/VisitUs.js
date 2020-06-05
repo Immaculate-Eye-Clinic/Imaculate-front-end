@@ -17,7 +17,7 @@ function VisitUs(){
                 mobileHeight={'50vh'}
                 img={'https://res.cloudinary.com/hisroyalwonginess/image/upload/v1588437898/Immaculate/Doctors_ieplxk.jpg'}
             />
-            <MapImage />
+            <MapImage /><br/>
             <Contact />
             <Footer />
         </Div>
