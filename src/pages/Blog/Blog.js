@@ -41,18 +41,20 @@ function Blog() {
     return (
         <Main>
              <Header 
-            bgcolor={'transparent'}
-            title={'Visit Our Blogs'}
-            subText={'Linda Ikeji still dey learn work'}
-            height={'70vh'}
-            img={'https://res.cloudinary.com/hisroyalwonginess/image/upload/v1588437898/Immaculate/Doctors_ieplxk.jpg'}
+                bgcolor={'transparent'}
+                title={'Visit Our Blogs'}
+                subText={'Linda Ikeji still dey learn work'}
+                height={'70vh'}
+                img={'https://res.cloudinary.com/hisroyalwonginess/image/upload/v1588437898/Immaculate/Doctors_ieplxk.jpg'}
             />
-            <h1 style={{color: '#252079'}}>Blog in Spanish</h1>
             <div className='posts'>
-            <Posts posts={currentPosts} loading={loading} />
+                <div className='post'>
+                    <Posts posts={currentPosts} loading={loading} />
+                    <Pagination postsPerPage={postsPerPage} totalPosts={posts.length} paginate={paginate} />  
+                </div> 
             <Category />
             </div>  
-            <Pagination postsPerPage={postsPerPage} totalPosts={posts.length} paginate={paginate} />        
+                 
         </Main>
     )
 }
