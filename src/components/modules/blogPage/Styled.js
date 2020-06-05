@@ -4,14 +4,14 @@ export const Body = styled.div `
 display: flex;
 margin: 50px;
 position: relative;
-left: 25%;
+left: 3%;
+
     @media (max-width: 1000px) {
-    justify-content: center;  
+    flex-direction: row; 
     }
     @media (max-width: 760px) {
-    flex-wrap: wrap;  
+    flex-direction: column;  
     }
-
     .img {
         position: relative;
         img{
@@ -21,15 +21,20 @@ left: 25%;
 
 .info {
     position: relative;
-    left: 20%;
-    width: 70em;
-    border: 2px solid black;
+    left: 112.5%;
+    width: 500em;
+    height: 50%;
     @media (max-width: 1270px) {
     right: 10%;  
     }
     @media (max-width: 1000px) {
-    right: 0%;  
+    left: 200%; 
     }
+    @media (max-width: 760px) {
+    width: 400%; 
+    left: 0;
+    }
+   
     .date {
         display: flex;
     }
@@ -49,15 +54,15 @@ left: 25%;
     left: -5%;  
     }
     @media (max-width: 1000px) {
-    left: 0;
+    left: -30%;
     img{
-        width: 90%;
+        width: 2500%;
     }  
     }
     @media (max-width: 760px) {
     left: 0; 
     img{
-        width: 100%;
+        width: 400%;
     } 
     }
 }
