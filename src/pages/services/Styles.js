@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const Page = styled.div`
     margin: auto;
-    width: 80%;
+    width: 90%;
     margin: 5em auto 5em;
 
     .text_paragraph{
@@ -52,20 +52,31 @@ export const Page = styled.div`
 
 export const Cards = styled.div `
     align-items: center;
-    width: 310px;
+    box-sizing: border-box;
+    width: 500px;
+    min-width: 310;
+    height: 310px;
+    max-height: 350px;
     margin: 1em;
 
-    @media (min-width: 600px) {
-        width: 500px;
-    }  
-    @media (min-width: 700px) {
-        width: 600px;
+    @media (max-width: 700px) {
+        margin: 1em 0 1em;
+        width: 100%;
+        height: 250px;
+        padding: 0;
     }
-    @media (min-width: 900px) {
-                width: 750px;
-            }
-    @media (min-width: 1025px) {
+    @media (max-width: 900px) {
+        margin: 1em 0 1em;
+        width: 100%;
+        height: 350px;
+        padding: 0;
+    }
+    @media (min-width: 901px) {
         width: 320px;
+        height: 250px;
+    }
+    @media (min-width: 1441px) {
+        width: 560px;
     }
 
     .card{
@@ -75,6 +86,9 @@ export const Cards = styled.div `
         flex-direction: column;
         flex-wrap: wrap;
         cursor: pointer;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
 
         :hover .caption_container{
                     filter: blur(4px);
@@ -91,30 +105,13 @@ export const Cards = styled.div `
             background-image: linear-gradient(rgba(8, 1, 43, 0.63), rgba(8, 1, 43, 0.63)), url(${props => props.imgUrl});
             background-repeat: no-repeat;
             background-position: center;
-            background-size: 350px 300px;
-            width: 310px;
-            height: 250px;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
             margin: auto;
 
-            @media (min-width: 600px) {
-                background-size: 500px 400px;
-                width: 500px;
-            }
-            @media (min-width: 700px) {
-                background-size: 600px 450px;
-                width: 600px;
-                height: 350px;
-            }
-            @media (min-width: 900px) {
-                background-size: 750px 550px;
-                width: 750px;
-                height: 450px;
-            }
-            @media (min-width: 1025px) {
-                background-size: 350px 300px;
-                width: 320px;
-                height: 250px;
-            }
+            
         }
             .card_text{
                 position: absolute;
@@ -141,27 +138,42 @@ export const Cards = styled.div `
                     }
                 }
                 .caption{
-                margin: 0 auto;
-                font-weight: bold;
-                font-size: 20px;
-                line-height: 30px;
-                color: white;
-                text-align: center;
-                width: 270px;
-                padding: 20px;
-                    
-                    @media (min-width: 600px) {
-                        width: 460px;
-                    }
-                    @media (min-width: 700px) {
-                        width: 560px;
-                    }
-                    @media (min-width: 900px) {
-                        width: 710px;
-                    }
-                    @media (min-width: 1025px) {
-                        width: 270px;
-                    }
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    font-weight: bold;
+                    font-size: 20px;
+                    line-height: 30px;
+                    color: white;
+                    text-align: center;
+                    width: 270px;
+                    padding: 20px;
+                    margin: auto;
+
+                @media  (min-width: 400px){
+                    width: 285px;
+                }
+                @media  (min-width: 500px){
+                    width: 365px;
+                }
+                @media  (min-width: 600px){
+                    width: 446px;
+                }
+                @media  (min-width: 700px){
+                    width: 527px;
+                }
+                @media  (min-width: 800px){
+                    width: 680px;
+                }
+                @media  (min-width: 900px){
+                    width: 771px;
+                }
+                @media  (min-width: 901px){
+                    width: 280px;
+                }
+                @media (min-width: 1441px) {
+                    width: 520px;
+                }
                 }
             }
 
@@ -187,6 +199,7 @@ export const FlexStyle = styled.div`
 
     @media (min-width: 760px){
         margin: auto;
+        margin-right: 0;
         width: 100%;
     }
 `

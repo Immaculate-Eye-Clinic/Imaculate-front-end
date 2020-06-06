@@ -26,6 +26,10 @@ function ShowServices (props){
             <br />
             <div className = 'text_paragraph'>Our experienced Consultants provide expert care for a wide range of eye conditions. At our clinic, assessment of your eye condition will include a thorough examination, and many tests can be performed conveniently in-house. You will enjoy courteous, personalized medical attention and an exceptionally high level of care.</div>
             <hr />
+            <div className = 'contain'>
+                <div className = 'test1'>Test Box 1</div>
+                <div className = 'test2'>Test Box 2</div>
+            </div>
             <FlexStyle>
                 {ServicesData.map((service, index) =>(
                     <Services key = {service.id} service = {service} />

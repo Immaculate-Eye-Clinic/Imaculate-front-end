@@ -11,7 +11,6 @@ function Services (props, imgUrl){
                         <button>{props.service.readMore}</button>
                     </div>
                 </div>
-            
         </Cards>  
     )
 }
