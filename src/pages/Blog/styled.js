@@ -17,9 +17,10 @@ list-style: none;
 display: flex;
 position: relative;
 align-items: center;
+left: 55%;
 li {
     border: 1px solid #c0c0c0;
-    padding: 6px 10px 6px 10px;
+     padding: 6px 10px 6px 10px;
     font: 13px/20px Arial, Helvetica, sans-serif;
     :hover,
     :focus {
