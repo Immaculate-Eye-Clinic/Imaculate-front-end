@@ -12,9 +12,11 @@ const Pagination = ({ totalPosts, postsPerPage, paginate }) => {
             <Ula>
                 {pageNumbers.map(number => (
                     <li key={number}>
+                        <button>
                         <a onClick={() => paginate(number)} href="#">
                             {number}
                         </a>
+                        </button>
                     </li>
                 ))}
             </Ula>
