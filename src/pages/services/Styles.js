@@ -2,51 +2,62 @@ import styled from "styled-components"
 
 export const Page = styled.div`
     margin: auto;
-    width: 90%;
+    width: 80%;
     margin: 5em auto 5em;
 
-    .text_paragraph{
-        line-height: 25px;
-        text-align: justify;
-    }    
-    .intro_text{
-        font-weight: normal;
-        font-size: 20px;
-        letter-spacing: 3px;
-        h4{
-            margin-bottom: 0;
+    @media (max-width: 600px) {
+        width: 100%;
+    }
+
+    .upperText_container{
+        @media (max-width: 600px) {
+            margin: auto;
+            width: 80%;
         }
         
-    }
-    h1{
-            padding: 0;
-            margin: 0;
+        .text_paragraph{
+            line-height: 25px;
+            text-align: justify;
+        }    
+        .intro_text{
+            font-weight: normal;
+            font-size: 20px;
+            letter-spacing: 3px;
+            h4{
+                margin-bottom: 0;
+            }
+            
+        }
+        h1{
+                padding: 0;
+                margin: 0;
+                font-size:  50px;
+                @media (max-width: 760px) {
+                font-size: 40px;
+            }
+            }
+        .immaculate_text{
             font-size:  50px;
-            @media (max-width: 760px) {
-            font-size: 40px;
-        }
-        }
-    .immaculate_text{
-        font-size:  50px;
-        font-weight: bolder;
-        color: #252079;
+            font-weight: bolder;
+            color: #252079;
 
-        @media (max-width: 760px) {
-            font-size: 40px;
+            @media (max-width: 760px) {
+                font-size: 40px;
+            }
         }
-    }
-    .sub_text{
-        font-size: 17px;
-        h3{
-            margin: 0;
+        .sub_text{
+            font-size: 17px;
+            h3{
+                margin: 0;
+            }
         }
-    }
-    hr{
-        margin: 2.5em 0 2.5em;
-        border: none;
-        height: 1px;
-        color: black;
-        background-color: #d3d3d3;
+        hr{
+            margin: 2.5em 0 2.5em;
+            border: none;
+            height: 1px;
+            color: black;
+            background-color: #d3d3d3;
+        }
     }
 `
 
@@ -55,28 +66,25 @@ export const Cards = styled.div `
     box-sizing: border-box;
     width: 500px;
     min-width: 310;
-    height: 310px;
+    height: 300px;
     max-height: 350px;
     margin: 1em;
 
-    @media (max-width: 700px) {
+    @media (max-width: 768px) {
         margin: 1em 0 1em;
         width: 100%;
-        height: 250px;
-        padding: 0;
-    }
-    @media (max-width: 900px) {
-        margin: 1em 0 1em;
-        width: 100%;
-        height: 350px;
+        height: 280px;
         padding: 0;
     }
     @media (min-width: 901px) {
         width: 320px;
+        min-width: 310px;
         height: 250px;
     }
-    @media (min-width: 1441px) {
-        width: 560px;
+    @media (min-width: 1380px) {
+        width: 520px;
+        max-width: 550px;
+        height: 300px;
     }
 
     .card{
@@ -116,7 +124,7 @@ export const Cards = styled.div `
             .card_text{
                 position: absolute;
                 display: flex;
-                flex-wrap: wrap;
+                flex-wrap: nowrap;
                 flex-direction: column;
 
                 
