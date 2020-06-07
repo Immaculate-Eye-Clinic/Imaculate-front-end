@@ -124,8 +124,9 @@ export const Cards = styled.div `
             .card_text{
                 position: absolute;
                 display: flex;
-                flex-wrap: nowrap;
+                flex-wrap: wrap;
                 flex-direction: column;
+                justify-content: center;
 
                 
                 button{
