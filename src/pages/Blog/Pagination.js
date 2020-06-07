@@ -7,13 +7,14 @@ const Pagination = ({ totalPosts, postsPerPage, paginate }) => {
     for (let i = 1; i <= Math.ceil (totalPosts / postsPerPage); i++) {
         pageNumbers.push(i)
     }
+
     return (
         <nav>
             <Ula>
                 {pageNumbers.map(number => (
                     <li key={number}>
                         <a onClick={() => paginate(number)} href="#">
-                            {number}
+                            <button>{number}</button>
                         </a>
                     </li>
                 ))}

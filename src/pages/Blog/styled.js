@@ -20,16 +20,12 @@ align-items: center;
 left: 55%;
 li {
     border: 1px solid #c0c0c0;
-     padding: 6px 10px 6px 10px;
     font: 13px/20px Arial, Helvetica, sans-serif;
-    :hover,
-    :focus {
-        outline: 2px solid #252079;
-        border: 1px solid #252079;
-    }
+    
 }
-a {
+button {
     text-decoration: none;
+    padding: 6px 10px 6px 10px;
     height: 100%;
     width: 100%;
     overflow: hidden;
