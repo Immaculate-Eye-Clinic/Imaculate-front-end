@@ -1,1 +1,6 @@
 [0530/164031.724:ERROR:process_info.cc(359)] UncheckedAllocate
+[0602/181359.727:ERROR:process_info.cc(359)] UncheckedAllocate
+[0602/181359.831:ERROR:process_info.cc(359)] UncheckedAllocate
+[0602/181400.016:ERROR:process_info.cc(359)] UncheckedAllocate
+[0602/181401.575:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[0602/181401.579:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
