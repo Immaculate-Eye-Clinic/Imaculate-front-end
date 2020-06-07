@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const Div = styled.div`
+.main{
 overflow: hidden;
 display: flex;
 flex-wrap: wrap-reverse;
@@ -168,5 +169,6 @@ input {
             }
         }
     }
+}
 }
 `
