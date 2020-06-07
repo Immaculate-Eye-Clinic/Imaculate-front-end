@@ -4,7 +4,6 @@ import {Div } from './MapStyle'
 
 
 const mapStyle = {
-    overflow: 'hidden',
     width: '40%',
     height: '50%',
 }
@@ -14,8 +13,7 @@ export class MapImage extends React.Component{
     constructor(){
         super()
         this.state = {
-            latitude: null,
-            longitude: null,
+            
         }
     }
     render(){
@@ -23,8 +21,16 @@ export class MapImage extends React.Component{
             <Div>
                 <div className='map'>
                     <div className='div2'>
-                        <Map google={this.props.google} zoom={14} style={mapStyle}>
-                            <Marker onClick={this.onMarkerClick}
+                        <Map 
+                            google={this.props.google} 
+                            zoom={14} 
+                            containerStyle={mapStyle}
+                            initialCenter={{
+                                lat: 5.392691,
+                                lng: 6.986264
+                            }} 
+                        >
+                            <Marker onClick={this.onMarkerClick} position={{lat: 5.392691, lng: 6.986264}}
                                 name={'Current location'} 
                             />
                             <InfoWindow onClose={this.onInfoWindowClose}>
