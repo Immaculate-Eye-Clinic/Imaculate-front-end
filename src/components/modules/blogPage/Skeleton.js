@@ -8,12 +8,11 @@ function Skeleton(props) {
             
         </div>
         <div className='info'>
-            <div className='date'>
-                
-            </div>
-            <div className='other'>
-
-            </div>
+            <div className='line'></div>
+            <div className='line'></div>
+            <div className='line'></div>
+            <div className='line'></div>
+            <div className='line'></div>
         </div>
     </Skele>
     )

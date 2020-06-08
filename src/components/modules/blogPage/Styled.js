@@ -102,12 +102,13 @@ justify-content: space-evenly;
 `
 export const Skele = styled.div `
 display: flex;
+flex-wrap: wrap;
 position: relative;
 top: 1.2%;
-background: red;
 height: 30%;
 width: 100%;
 @media (max-width: 1000px) {
+ justify-content: space-evenly;
  width: 100%;
  height: 1000%;   
 }
@@ -125,5 +126,39 @@ width: 100%;
     position: relative;
     left: 28%;
     top: 5%;
+    .line {
+        height: 6px;
+        margin: 23px;
+        animation: beat 2s infinite ease-in-out;
+        background: gray;
+    }
+    div:nth-child(1) {
+        width: 30%;
+    }
+    div:nth-child(2) {
+        width: 80%;
+        height: 9px;
+    }
+    div:nth-child(3) {
+        width: 60%;
+    }
+    div:nth-child(4) {
+        width: 45%;
+    }
+    div:nth-child(5) {
+        width: 20%;
+    }
+}
+
+@keyframes beat {
+    0% {
+        background-color: rgba(165,165,165,.1);
+    }
+    50% {
+        background-color: rgba(165,165,165,.3);
+    }
+    0% {
+        background-color: rgba(165,165,165,.1);
+    }
 }
 `
