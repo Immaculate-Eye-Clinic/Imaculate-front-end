@@ -113,14 +113,13 @@ width: 100%;
  height: 1000%;   
 }
 .image {
-    background: green;
+    background-color: rgba(165,165,165,.1);
     width: 30%;
     height: 100%;
     position: relative;
     left: 15%;
 }
 .info {
-    background: yellow;
     width: 35%;
     height: 90%;
     position: relative;
@@ -129,7 +128,7 @@ width: 100%;
     .line {
         height: 6px;
         margin: 23px;
-        animation: beat 2s infinite ease-in-out;
+        animation: beat 1s infinite ease-in-out;
         background: gray;
     }
     div:nth-child(1) {
