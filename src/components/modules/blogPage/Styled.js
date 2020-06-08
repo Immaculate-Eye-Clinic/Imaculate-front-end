@@ -103,9 +103,27 @@ justify-content: space-evenly;
 export const Skele = styled.div `
 display: flex;
 position: relative;
+top: 1.2%;
+background: red;
+height: 30%;
+width: 100%;
+@media (max-width: 1000px) {
+ width: 100%;
+ height: 1000%;   
+}
 .image {
-    background: red;
+    background: green;
+    width: 30%;
     height: 100%;
-    width: 100%;
+    position: relative;
+    left: 15%;
+}
+.info {
+    background: yellow;
+    width: 35%;
+    height: 90%;
+    position: relative;
+    left: 28%;
+    top: 5%;
 }
 `
