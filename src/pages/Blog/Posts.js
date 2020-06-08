@@ -2,11 +2,12 @@ import React from 'react'
 import {Div} from './styled'
 
 import BlogData from '../../components/modules/blogPage/blogData'
+import Skeleton from '../../components/modules/blogPage/Skeleton'
 
 
 const Posts = ({ posts, loading, title }) => {
     if(loading) {
-        return <h2>Loading...</h2>
+        return <Skeleton />
     }
     return(
       <Div>

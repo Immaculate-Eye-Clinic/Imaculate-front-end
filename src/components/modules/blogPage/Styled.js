@@ -100,49 +100,12 @@ justify-content: space-evenly;
     }
 }
 `
-export const Cat = styled.div `
+export const Skele = styled.div `
 display: flex;
 position: relative;
-top: 9.5%;
-right: 50%;
-flex-direction: column;
-width: 250px;
-text-align: center;
-@media (max-width: 1270px) {
-  right: 0;  
-}
-@media (max-width: 1000px) {
-  display: none; 
-}
-.head {
-    background-color: #252079;
-    padding: 19px 0;
-    font-size: 14px;
-    color: white;
-    text-align: left;
-    strong {
-        margin-left: 14px;
-    }
-}
-.body {
-    background: silver;
-    padding-top: 6px;
-    padding-bottom: 8px;
-    text-align: left;
-    a {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-    cursor: pointer;
-    margin-left: 2px;
-}
-}
-.category {
-
+.image {
+    background: red;
+    height: 100%;
+    width: 100%;
 }
 `
