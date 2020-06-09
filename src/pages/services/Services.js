@@ -6,12 +6,11 @@ function Services (props, imgUrl){
         <Cards imgUrl = {props.service.imgUrl}>
             <div className='card'>
                 <div className='caption_container'><span></span></div>
-                    <div className = 'card_text'>
-                        <span className='caption'>{props.service.caption}</span>
-                        <button>{props.service.readMore}</button>
-                    </div>
+                <div className = 'card_text'>
+                    <span className='caption'>{props.service.caption}</span>
+                    <button>{props.service.readMore}</button>
                 </div>
-            
+            </div>
         </Cards>  
     )
 }
