@@ -5,7 +5,7 @@ function Skeleton(props) {
     return (
     <Skele>
         <div className='image'>
-            
+           
         </div>
         <div className='info'>
             <div className='line'></div>

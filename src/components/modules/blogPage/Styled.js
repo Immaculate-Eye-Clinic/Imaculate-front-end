@@ -116,7 +116,7 @@ width: 100%;
 flex-direction: column;
 height: 100%;
 position: absolute;
-top: 90%;
+top: 60%;
 }
 .image {
     background-color: rgba(165,165,165,.1);
