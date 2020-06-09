@@ -110,7 +110,13 @@ width: 100%;
 @media (max-width: 1000px) {
  justify-content: space-evenly;
  width: 100%;
- height: 1000%;   
+ height: 110%;  
+}
+@media (max-width: 760px) {
+flex-direction: column;
+height: 100%;
+position: absolute;
+top: 90%;
 }
 .image {
     background-color: rgba(165,165,165,.1);
@@ -118,6 +124,18 @@ width: 100%;
     height: 100%;
     position: relative;
     left: 15%;
+    @media (max-width: 1000px) {
+        width: 60%;
+        height: 110%;
+        position: absolute;
+        top: 0;
+        left: 5%;
+    }
+    @media (max-width: 760px) {
+        height: 50%;
+        width: 90%;
+        position: relative;
+    }
 }
 .info {
     width: 35%;
@@ -125,11 +143,31 @@ width: 100%;
     position: relative;
     left: 28%;
     top: 5%;
+    @media (max-width: 1000px) {
+        height: 150%;
+        top: 0;
+        left: 50%;
+    }
+    @media (max-width: 760px) {  
+        position: absolute;
+        top: 77%;
+        width: 80%;
+        left: 5%;
+    }
     .line {
         height: 6px;
         margin: 23px;
         animation: beat 1s infinite ease-in-out;
         background: gray;
+        @media (max-width: 1000px) {
+        margin: 35px;
+        height: 12px;
+    }
+        @media (max-width: 760px) {
+        margin: 14px;
+        height: 6px;
+        width: 80%;
+    }
     }
     div:nth-child(1) {
         width: 30%;
