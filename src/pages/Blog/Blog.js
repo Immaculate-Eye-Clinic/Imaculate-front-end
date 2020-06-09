@@ -8,6 +8,7 @@ import Pagination from './Pagination'
 import Posts from './Posts'
 
 
+
     
 
 function Blog() {
@@ -26,7 +27,6 @@ function Blog() {
         fetchPosts();
         
     }, []);
-    console.log(posts)
 
     // Get current posts
     const indexOfLastPost = currentPage * postsPerPage;

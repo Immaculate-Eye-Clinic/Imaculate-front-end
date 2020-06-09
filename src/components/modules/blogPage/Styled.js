@@ -100,49 +100,103 @@ justify-content: space-evenly;
     }
 }
 `
-export const Cat = styled.div `
+export const Skele = styled.div `
 display: flex;
+flex-wrap: wrap;
 position: relative;
-top: 9.5%;
-right: 50%;
-flex-direction: column;
-width: 250px;
-text-align: center;
-@media (max-width: 1270px) {
-  right: 0;  
-}
+top: 1.2%;
+height: 30%;
+width: 100%;
 @media (max-width: 1000px) {
-  display: none; 
+ justify-content: space-evenly;
+ width: 100%;
+ height: 110%;  
 }
-.head {
-    background-color: #252079;
-    padding: 19px 0;
-    font-size: 14px;
-    color: white;
-    text-align: left;
-    strong {
-        margin-left: 14px;
+@media (max-width: 760px) {
+flex-direction: column;
+height: 100%;
+position: absolute;
+top: 60%;
+}
+.image {
+    background-color: rgba(165, 165, 165, 0.493);
+    width: 30%;
+    height: 100%;
+    position: relative;
+    animation: beat 1s infinite ease-in-out;
+    left: 15%;
+    @media (max-width: 1000px) {
+        width: 60%;
+        height: 110%;
+        position: absolute;
+        top: 0;
+        left: 5%;
+    }
+    @media (max-width: 760px) {
+        height: 50%;
+        width: 90%;
+        position: relative;
     }
 }
-.body {
-    background: silver;
-    padding-top: 6px;
-    padding-bottom: 8px;
-    text-align: left;
-    a {
+.info {
+    width: 35%;
+    height: 100%;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-    cursor: pointer;
-    margin-left: 2px;
+    left: 19%;
+    top: 0;
+    @media (max-width: 1000px) {
+        height: 150%;
+        top: 0;
+        left: 50%;
+    }
+    @media (max-width: 760px) {  
+        position: absolute;
+        top: 77%;
+        width: 80%;
+        left: 5%;
+    }
+    .line {
+        height: 6px;
+        margin: 30px;
+        animation: beat 1s infinite ease-in-out;
+        background: rgba(165, 165, 165, 0.493);
+        @media (max-width: 1000px) {
+        margin: 35px;
+        height: 12px;
+    }
+        @media (max-width: 760px) {
+        margin: 14px;
+        height: 6px;
+        width: 80%;
+    }
+    }
+    div:nth-child(1) {
+        width: 30%;
+    }
+    div:nth-child(2) {
+        width: 80%;
+        height: 9px;
+    }
+    div:nth-child(3) {
+        width: 60%;
+    }
+    div:nth-child(4) {
+        width: 45%;
+    }
+    div:nth-child(5) {
+        width: 20%;
+    }
 }
-}
-.category {
 
+@keyframes beat {
+    0% {
+        background-color: rgba(165,165,165,.1);
+    }
+    50% {
+        background-color: rgba(165,165,165,.3);
+    }
+    0% {
+        background-color: rgba(165,165,165,.1);
+    }
 }
 `
