@@ -119,10 +119,11 @@ position: absolute;
 top: 60%;
 }
 .image {
-    background-color: rgba(165,165,165,.1);
+    background-color: rgba(165, 165, 165, 0.493);
     width: 30%;
     height: 100%;
     position: relative;
+    animation: beat 1s infinite ease-in-out;
     left: 15%;
     @media (max-width: 1000px) {
         width: 60%;
@@ -139,10 +140,10 @@ top: 60%;
 }
 .info {
     width: 35%;
-    height: 90%;
+    height: 100%;
     position: relative;
-    left: 28%;
-    top: 5%;
+    left: 19%;
+    top: 0;
     @media (max-width: 1000px) {
         height: 150%;
         top: 0;
@@ -156,9 +157,9 @@ top: 60%;
     }
     .line {
         height: 6px;
-        margin: 23px;
+        margin: 30px;
         animation: beat 1s infinite ease-in-out;
-        background: gray;
+        background: rgba(165, 165, 165, 0.493);
         @media (max-width: 1000px) {
         margin: 35px;
         height: 12px;
