@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const Div = styled.div`
 overflow: hidden;
 display: flex;
+justify-content: space-evenly;
 flex-wrap: wrap;
 width: 100%;
 box-sizing: border-box;
@@ -15,12 +16,12 @@ box-sizing: border-box;
     width: 50%;
     box-sizing: border-box;
     @media (max-width: 900px){
-        width: 95%;
+        width: 100%;
     }
     .div{
         margin: 60px 100px 60px 10px;
             @media (max-width: 900px){
-                margin: 60px 100px 60px 50px;
+                margin: 20px;
             }
     }
     .first{
