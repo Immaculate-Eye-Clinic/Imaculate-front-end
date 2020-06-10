@@ -54,38 +54,6 @@ height: 90%;
 }
 `
 
-export const Div = styled.div `
-margin-top: 4%;
-display: flex;
-justify-content: space-evenly;
-
-.first{
-    position: relative;
-    left: 11%;
-    top: 3.5%;
-    @media (max-width: 1270px) {
-    left: 2%;  
-    }
-    @media (max-width: 985px) {
-    text-align: center;
-    top: 2%;  
-    margin-right: 16px;
-    }
-    @media (max-width: 760px) {
-    left: 5%;  
-    top: 1%;
-    margin-right: 10px;
-    }
-    h1{
-        font-size: 60px;
-        font-weight: 700;
-    }
-
-    p{
-       font-style: italic; 
-    }
-}
-`
 export const Skele = styled.div `
 display: flex;
 flex-wrap: wrap;

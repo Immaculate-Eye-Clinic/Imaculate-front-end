@@ -50,7 +50,7 @@ function Blog() {
             <div className='posts'>
                 <div className='post'>
                     <Posts posts={currentPosts} loading={loading} />
-                    <Pagination postsPerPage={postsPerPage} totalPosts={posts.length} paginate={paginate} />  
+                    <Pagination postsPerPage={postsPerPage} totalPosts={posts.length} paginate={paginate} /> 
                 </div> 
             <Category />
             </div>  
