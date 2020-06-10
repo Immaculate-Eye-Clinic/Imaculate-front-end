@@ -1,71 +1,7 @@
 import styled from 'styled-components'
 
 export const Body = styled.div `
-display: flex;
-margin: 50px;
-position: relative;
-left: 3%;
 
-    @media (max-width: 1000px) {
-    flex-direction: row; 
-    }
-    @media (max-width: 760px) {
-    flex-direction: column;  
-    }
-    .img {
-        position: relative;
-        img{
-            position: relative;
-        }
-    }
-
-.info {
-    position: relative;
-    left: 112.5%;
-    width: 500em;
-    height: 50%;
-    @media (max-width: 1270px) {
-    right: 10%;  
-    }
-    @media (max-width: 1000px) {
-    left: 200%; 
-    }
-    @media (max-width: 760px) {
-    width: 400%; 
-    left: 0;
-    }
-   
-    .date {
-        display: flex;
-    }
-    h2 {
-        color: #252079;
-        font-weight: 900;
-    }
-    a {
-        text-decoration: none;
-        color: #252079;
-    }
-}
-.image {
-    position: relative;
-    left: 8%;
-    @media (max-width: 1270px) {
-    left: -5%;  
-    }
-    @media (max-width: 1000px) {
-    left: -30%;
-    img{
-        width: 2500%;
-    }  
-    }
-    @media (max-width: 760px) {
-    left: 0; 
-    img{
-        width: 400%;
-    } 
-    }
-}
 `
 
 export const Div = styled.div `
