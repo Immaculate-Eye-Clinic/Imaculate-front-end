@@ -1,19 +1,24 @@
 import styled from 'styled-components'
 
 export const Body = styled.div `
-border: 2px solid black;
 display: flex;
 justify-content: space-evenly;
 flex-direction: row;
+align-items: center;
 margin: 50px;
 width: 150%;
 height: 90%;
 @media (max-width: 1000px) {
     position: relative;
     width: 250%;
+    align-items: center;
 }
+@media (max-width: 760px) {
+    flex-wrap: wrap;
+    left: -15%;
+}
+
 .image{
-    border: 2px solid black;
     width: 220%;
     position: relative;
     img {
@@ -23,6 +28,9 @@ height: 90%;
             position: relative;
             left: -15%;
         }
+        @media (max-width: 760px) {
+            left: 0;
+        }
     }
 }
 .info {
@@ -30,12 +38,18 @@ height: 90%;
     left: 13%;
     margin: 20px;
     width: 250%;
-    border: 3px solid black;
     @media (max-width: 1000px) {
     left: 0;
 }
     .date {
         display: flex;
+    }
+    h2 {
+        color: #252079;
+    }
+    a {
+        text-decoration: none;
+        color: #252079;
     }
 }
 `
@@ -172,3 +186,52 @@ top: 60%;
     }
 }
 `
+{/*
+border: 2px solid black;
+display: flex;
+justify-content: space-evenly;
+flex-direction: row;
+align-items: center;
+margin: 50px;
+width: 150%;
+height: 90%;
+@media (max-width: 1000px) {
+    position: relative;
+    width: 250%;
+    align-items: center;
+}
+@media (max-width: 760px) {
+    flex-wrap: wrap;
+    left: -15%;
+}
+
+.image{
+    border: 2px solid black;
+    width: 220%;
+    position: relative;
+    img {
+        width: 100%;
+        height: 100%;
+        @media (max-width: 1000px) {
+            position: relative;
+            left: -15%;
+        }
+        @media (max-width: 760px) {
+            left: 0;
+        }
+    }
+}
+.info {
+    position: relative;
+    left: 13%;
+    margin: 20px;
+    width: 250%;
+    border: 3px solid black;
+    @media (max-width: 1000px) {
+    left: 0;
+}
+    .date {
+        display: flex;
+    }
+}
+*/}
