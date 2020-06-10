@@ -5,7 +5,7 @@ function BlogData(props) {
     return (
     <Body>
         <div className='image'>
-            <img src='/Asset/Img/sunglasses.jpg' alt=''  width='1200%' height='100%'/>
+            <img src='/Asset/Img/sunglasses.jpg' alt=''/>
         </div>
         <div className='info'>
             <div className='date'>

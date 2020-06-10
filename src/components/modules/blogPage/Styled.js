@@ -1,7 +1,38 @@
 import styled from 'styled-components'
 
 export const Body = styled.div `
+border: 2px solid black;
+display: flex;
+justify-content: space-evenly;
+flex-direction: row;
+margin: 50px;
+position: ;
+width: 150%;
+height: 90%;
+.image{
+    border: 2px solid black;
+    width: 200%;
+    position: relative;
+    img {
+        width: 100%;
+        height: 100%;
+        @media (max-width: 1100px) {
+            width: 100%;
+            height: 90%;
+        }
+    }
+}
+.info {
+    position: relative;
+    left: 20%;
+    margin: 20px;
+    width: 250%;
 
+    border: 3px solid black;
+    .date {
+        display: flex;
+    }
+}
 `
 
 export const Div = styled.div `
