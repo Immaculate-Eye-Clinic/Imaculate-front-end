@@ -128,7 +128,7 @@ top: 60%;
     width: 35%;
     height: 100%;
     position: relative;
-    left: 19%;
+    left: 30%;
     top: 0;
     @media (max-width: 1000px) {
         height: 150%;
