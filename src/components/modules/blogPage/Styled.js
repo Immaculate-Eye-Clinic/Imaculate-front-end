@@ -6,29 +6,34 @@ display: flex;
 justify-content: space-evenly;
 flex-direction: row;
 margin: 50px;
-position: ;
 width: 150%;
 height: 90%;
+@media (max-width: 1000px) {
+    position: relative;
+    width: 250%;
+}
 .image{
     border: 2px solid black;
-    width: 200%;
+    width: 220%;
     position: relative;
     img {
         width: 100%;
         height: 100%;
-        @media (max-width: 1100px) {
-            width: 100%;
-            height: 90%;
+        @media (max-width: 1000px) {
+            position: relative;
+            left: -15%;
         }
     }
 }
 .info {
     position: relative;
-    left: 20%;
+    left: 13%;
     margin: 20px;
     width: 250%;
-
     border: 3px solid black;
+    @media (max-width: 1000px) {
+    left: 0;
+}
     .date {
         display: flex;
     }
