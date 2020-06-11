@@ -18,6 +18,11 @@ display: flex;
 position: relative;
 align-items: center;
 left: 55%;
+width: 450px;
+@media (max-width: 760px) {
+    left: 25%;
+}
+
 li {
     border: 1px solid #c0c0c0;
     font: 13px/20px Arial, Helvetica, sans-serif;

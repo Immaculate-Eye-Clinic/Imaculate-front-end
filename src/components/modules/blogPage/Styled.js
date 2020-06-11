@@ -17,6 +17,12 @@ height: 90%;
     flex-wrap: wrap;
     left: -15%;
 }
+@media (max-width: 550px) {
+    left: -30%;
+}
+@media (max-width: 450px) {
+    left: -40%;
+}
 
 .image{
     width: 220%;
@@ -60,7 +66,6 @@ display: flex;
 height: 30%;
 width: 100%;
 border: 2px solid black;
-position: relative;
 
 .image {
     background-color: rgba(165, 165, 165, 0.493);
