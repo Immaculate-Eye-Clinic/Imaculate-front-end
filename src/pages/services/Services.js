@@ -5,13 +5,17 @@ function Services (props, imgUrl){
     return(
         <Cards imgUrl = {props.service.imgUrl}>
             <div className='card'>
-                <div className='caption_container'><span></span></div>
-                    <div className = 'card_text'>
-                        <span className='caption'>{props.service.caption}</span>
+                <div className='caption_container'>
+                </div>
+                <div className = 'card_text'>
+                    <div className='caption'>
+                        {props.service.caption}
                         <button>{props.service.readMore}</button>
                     </div>
+                    
                 </div>
-            
+                
+            </div>
         </Cards>  
     )
 }

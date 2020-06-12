@@ -55,6 +55,6 @@ export const Container = styled.div `
 
         @media (min-width: 760px){
             width: 100%;
-    }
+        }
     }
 `
