@@ -1,7 +1,12 @@
 import styled from 'styled-components'
 
 export const Div = styled.div `
-ul {list-style: none;
+a{
+    text-decoration: none;
+    color: black;
+}
+ul {
+list-style: none;
 width: 50%;
 margin: 0;
 li {

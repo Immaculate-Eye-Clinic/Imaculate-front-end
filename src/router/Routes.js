@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import Home from '../pages/home/Home';
 import Blog from '../pages/Blog/Blog';
+import SingleBlog from '../pages/SingleBlog/SingleBlog';
 import Login from '../pages/Login/Login'
 import SignUp from '../pages/SignUp/SignUp'
 import App from '../components/App';
@@ -27,7 +28,7 @@ class ReactRouter extends React.Component {
                               <Route exact path='/signup' component={SignUp} />
                               <Route exact path="/" component={Home} />
                               <Route exact path="/blog" component={Blog} />
-                              <Route exact path="/blog/id" component={Blog} />
+                              <Route exact path="/blog/id" component={SingleBlog} />
                               <Route exact path="/about" component={AboutUs} />
                               <Route exact path="/services" component={ShowServices} />
                               <Route exact path='/visit' component={VisitUs} />
