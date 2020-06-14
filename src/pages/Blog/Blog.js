@@ -27,6 +27,7 @@ function Blog() {
         fetchPosts();
         
     }, []);
+    
 
     // Get current posts
     const indexOfLastPost = currentPage * postsPerPage;
