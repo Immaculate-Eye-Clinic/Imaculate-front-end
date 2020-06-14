@@ -12,7 +12,7 @@ const Posts = ({ posts, loading, title }) => {
     }
     return(
       <Div>
-        <NavLink to='/blog/id'>
+        <NavLink to='/blog/{`${post.id}`}'>
           <ul>
             {posts.map(post => (
               <BlogData key={post.id} title={post.title}/>

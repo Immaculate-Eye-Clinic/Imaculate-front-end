@@ -28,7 +28,7 @@ class ReactRouter extends React.Component {
                               <Route exact path='/signup' component={SignUp} />
                               <Route exact path="/" component={Home} />
                               <Route exact path="/blog" component={Blog} />
-                              <Route exact path="/blog/id" component={SingleBlog} />
+                              <Route exact path="/blog/post.id" component={SingleBlog} />
                               <Route exact path="/about" component={AboutUs} />
                               <Route exact path="/services" component={ShowServices} />
                               <Route exact path='/visit' component={VisitUs} />
