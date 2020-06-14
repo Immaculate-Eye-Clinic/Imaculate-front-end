@@ -5,6 +5,7 @@ import Footer from '../../components/modules/footer/footer'
 import {Container} from './StyleAbout'
 import AboutUsData from './AboutUsData'
 import Contact from '../../components/modules/contactUs/Contact'
+import Questions from '../../components/modules/questions/Questions'
 
 function AboutUs (){
     return(
@@ -17,7 +18,9 @@ function AboutUs (){
             mobileHeight={'50vh'}
             img={'https://res.cloudinary.com/hisroyalwonginess/image/upload/v1588437898/Immaculate/Doctors_ieplxk.jpg'}
             />
+            
             <Container>
+            <Questions />
                 <span className = 'intro_text'><h4><em><strong>Private Eye Care Services </strong></em></h4></span>
                 <br />
                 <h1>About <span className = 'immaculate_text'>Immaculate Eye Clinic</span></h1>
