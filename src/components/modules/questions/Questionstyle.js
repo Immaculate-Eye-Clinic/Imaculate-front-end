@@ -8,7 +8,7 @@ width: 100%;
         color: #252079;
         padding-bottom: 35px;
     }
-    button{
+    .service-button{
         width: 100%;
         display: flex;
         border: none;

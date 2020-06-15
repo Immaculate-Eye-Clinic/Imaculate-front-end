@@ -20,7 +20,14 @@ function AboutUs (){
             />
             
             <Container>
-            <Questions />
+            <Questions question='What services do you provide?'>
+                Infinity Eye Clinic specialises in the diagnosis and
+                treatment of Cataracts and Glaucoma. We provide an 
+                efficient service for the treatment of Chalazion. We also 
+                deal with General Ophthalmological conditions such as Dry
+                Eye and Blepharitis. We manage both chronic diseases and
+                urgent eye problems in adults and children
+            </Questions>
                 <span className = 'intro_text'><h4><em><strong>Private Eye Care Services </strong></em></h4></span>
                 <br />
                 <h1>About <span className = 'immaculate_text'>Immaculate Eye Clinic</span></h1>
