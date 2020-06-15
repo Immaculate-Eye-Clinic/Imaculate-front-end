@@ -28,18 +28,17 @@ class SingleBlog extends React.Component {
         return (
             <div>
             <NavLink to='/blog'>
-            <div>
                 <button>Close</button>
-            </div>
             </NavLink>
-            {post.slice(startIndex, startIndex + TOTAL_PER_PAGE).map(post => (
-                <Table.Row key={post.id}>
-                  <Table.Cell>
-                    <NavLink to={`/blog/${post.id}`}>{post.title}</NavLink>
-                  </Table.Cell>
-                  <Table.Cell>{post.body}</Table.Cell>
-                </Table.Row>
-              ))}
+            {this.setState.post.map(blog =>{
+              return (
+                <div key={blog.id}>
+                  <h3>{blog.title.rendered}</h3>
+                </div>
+              )
+            })
+
+            }
             </div>  
         )
     }
