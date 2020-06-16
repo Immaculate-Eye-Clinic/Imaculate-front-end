@@ -4,6 +4,13 @@ import {NavLink} from 'react-router-dom'
 
 class SingleBlog extends React.Component {
 
+    constructor() {
+      super()
+      this.state = {
+        post: []
+      }
+    }
+
     componentDidMount () {
         const { match: {params} } = this.props;
 
@@ -27,18 +34,18 @@ class SingleBlog extends React.Component {
     render() {
         return (
             <div>
-            <NavLink to='/blog'>
-                <button>Close</button>
-            </NavLink>
-            {this.setState.post.map(blog =>{
-              return (
-                <div key={blog.id}>
-                  <h3>{blog.title.rendered}</h3>
-                </div>
-              )
-            })
+              <NavLink to='/blog'>
+                  <button>Close</button>
+              </NavLink>
+              {this.state.post.map(blog =>{
+                return (
+                  <div key={blog.id}>
+                    <h3>{blog.title.rendered}</h3>
+                  </div>
+                )
+              })
 
-            }
+              }
             </div>  
         )
     }
