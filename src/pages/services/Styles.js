@@ -88,6 +88,7 @@ export const Cards = styled.div `
     }
 
     .card{
+        position: relative;
         display: flex;
         align-content: center;
         justify-content: center;
@@ -98,104 +99,76 @@ export const Cards = styled.div `
         width: 100%;
         height: 100%;
 
-        :hover .caption_container{
-                    filter: blur(4px);
-                    transition: 0.5s;
-                }
+            :hover .caption_container{
+                filter: blur(4px);
+                transition: 0.5s;
+            }
 
-
-        .caption_container{
-            display: flex;
-            align-content: center;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            text-align: center;
-            background-image: linear-gradient(rgba(8, 1, 43, 0.63), rgba(8, 1, 43, 0.63)), url(${props => props.imgUrl});
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: 100% 100%;
-            box-sizing: border-box;
-            width: 100%;
-            height: 100%;
-            margin: auto;
-
-            
-        }
-            .card_text{
-                position: absolute;
+            .caption_container{
                 display: flex;
+                align-content: center;
+                justify-content: space-around;
                 flex-wrap: wrap;
-                flex-direction: column;
-                justify-content: center;
+                text-align: center;
+                background-image: linear-gradient(rgba(8, 1, 43, 0.63), rgba(8, 1, 43, 0.63)), url(${props => props.imgUrl});
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                box-sizing: border-box;
+                width: 100%;
+                height: 100%;
+                margin: auto;        
+            }
 
-                
-                button{
-                    margin: 0 auto;
-                    padding: 0.5em 2em 0.5em;
-                    visibility: hidden;
-                    opacity: 0;
-                    font-weight: bold;
-                    font-size:15px;
-                    color: white;
-                    background: #252079;
-                    border: none;
-                    border-radius: 2px;
-
-                    @media (max-width: 1024px){
+                @media (min-width: 1024px){
+                    :hover .card_text .caption button {
                         visibility: visible;
-                        opacity: 1;
+                        opacity:  1;
+                        transition: 0.6s;
                     }
                 }
+            .card_text{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+
                 .caption{
                     display: flex;
+                    flex-wrap: wrap;
                     flex-direction: column;
-                    justify-content: center;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 2;
+                    width: 90%;
                     font-weight: bold;
                     font-size: 20px;
                     line-height: 30px;
                     color: white;
                     text-align: center;
-                    width: 270px;
-                    padding: 20px;
                     margin: auto;
 
-                @media  (min-width: 400px){
-                    width: 285px;
-                }
-                @media  (min-width: 500px){
-                    width: 365px;
-                }
-                @media  (min-width: 600px){
-                    width: 446px;
-                }
-                @media  (min-width: 700px){
-                    width: 527px;
-                }
-                @media  (min-width: 800px){
-                    width: 680px;
-                }
-                @media  (min-width: 900px){
-                    width: 771px;
-                }
-                @media  (min-width: 901px){
-                    width: 280px;
-                }
-                @media (min-width: 1441px) {
-                    width: 520px;
-                }
-                }
-            }
+                    button{
+                        margin: 1em auto;
+                        padding: 0.5em 2em 0.5em;
+                        visibility: hidden;
+                        opacity: 0;
+                        font-weight: bold;
+                        font-size:15px;
+                        color: white;
+                        background: #252079;
+                        border: none;
+                        border-radius: 2px;
 
-            @media (min-width: 1024px){
-                
-                :hover  button {
-                visibility: visible;
-                opacity:  1;
-                transition: 0.6s;
+                        @media (max-width: 1024px){
+                            visibility: visible;
+                            opacity: 1;
+                        }
+                    }
                 }
             }
-        }
-    
+    }
 `
 
 export const FlexStyle = styled.div`

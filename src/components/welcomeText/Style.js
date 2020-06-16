@@ -11,9 +11,13 @@ color: black;
 
 
 .welcome{
-    width: 500px;
-    h2{
+    width: 600px;
+    text-align: center;
+    .title{
         color: #252079;
+        font-weight: bolder;
+        font-size: 25px;
+        padding-top: 50px;
     }
     p{
         line-height: 30px;

@@ -6,9 +6,8 @@ class WelcomeText extends React.Component{
         return(
             <Div>
                 <div className='welcome'>
-                    <h2>Welcome to Immaculate Eye Clinic</h2>
+                    <h1 className="title">Welcome to Immaculate Eye Clinic</h1>
                     <p>Vivamus hendrerit mi non tincidunt maximus. Praesent vestibulum odio nunc, a viverra tortor vehicula ut. Fusce a sem nisl. Pellentesque maximus ipsum quis ipsum rhoncus, suscipit ornare orci dapibus. Sed
-                    Vivamus hendrerit mi non tincidunt maximus. Praesent vestibulum odio nunc, a viverra tortor vehicula ut. Fusce a sem nisl. Pellentesque maximus ipsum quis ipsum rhoncus, suscipit ornare orci dapibus. Sed
                     Vivamus hendrerit mi non tincidunt maximus. Praesent vestibulum odio nunc, a viverra tortor vehicula ut. Fusce a sem nisl. Pellentesque maximus ipsum quis ipsum rhoncus, suscipit ornare orci dapibus. Sed</p>
                 </div>
                 <div className='image'>
