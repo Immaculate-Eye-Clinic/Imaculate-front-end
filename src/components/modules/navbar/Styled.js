@@ -43,6 +43,33 @@ export const Div = styled.header`
             padding-bottom: 2rem;
             z-index: 0;
         }
+        .about{
+          .dropdown{
+            position: absolute;
+            top: -45px;
+            background: whitesmoke;
+            opacity: 0;
+            box-sizing: border-box;
+            :hover{
+              top: 75px;
+              opacity: 1;
+
+            }
+            li{
+              padding-right: 35px;
+              .links{
+                color: black;
+                font-weight: 600;
+                line-height: 1.7em;
+                :hover{
+                  color: #252079;
+                }
+              }
+              
+            }
+            
+          }
+        }
         li {
             display: flex;
             align-items: center;
