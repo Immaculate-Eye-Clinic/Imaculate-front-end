@@ -3,7 +3,8 @@ const ServicesData = [
         id: '1',
         imgUrl:'https://res.cloudinary.com/hisroyalwonginess/image/upload/v1591217990/Immaculate/New-Lady-Cat-Eye-Glasses-Frames-For-Women-Sexy-Metal-Frame-Brand-Designer-Optical-EyeGlasses-Fashion.jpg_q50_elrhvg.webp',
         caption: 'Placeholder placeholder What you must know about Corona Virus',
-        readMore: 'Read More',
+        link: 'Read More',
+        link: 'idea',
 
     },
     {
@@ -11,6 +12,7 @@ const ServicesData = [
         imgUrl:'https://res.cloudinary.com/hisroyalwonginess/image/upload/v1591217991/Immaculate/eye-care-at-work_l338nm.jpg',
         caption: 'What you must know about Corona Virus',
         readMore: 'Read More',
+        link: 'clinic',
     },
     {
         id: '3',
