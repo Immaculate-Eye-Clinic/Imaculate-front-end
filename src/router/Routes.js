@@ -12,6 +12,7 @@ import ScrollToTop from './ScrollToTop';
 import AboutUs from '../pages/AboutUs/AboutUs'
 import {GlobalStyle} from "../GlobalStyle"
 import ShowServices from '../pages/services/ShowServices'
+import Services from '../pages/SingleService/Services'
 import VisitUs from '../pages/VisitUs/VisitUs'
 
 
@@ -31,6 +32,7 @@ class ReactRouter extends React.Component {
                               <Route exact path="/blog/:postid" component={SingleBlog} />
                               <Route exact path="/about" component={AboutUs} />
                               <Route exact path="/services" component={ShowServices} />
+                              <Route exact path="/services/:seviceblog" component={Services} />
                               <Route exact path='/visit' component={VisitUs} />
                               <Route component={NoMatch} />      
                           </Switch>
