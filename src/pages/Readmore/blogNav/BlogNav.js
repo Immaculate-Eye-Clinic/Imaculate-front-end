@@ -7,10 +7,10 @@ function BlogNav(){
         <Div>
             <nav>
                 <ul>
-                    <li><NavLink to='/idea' className='li'>Idea</NavLink></li>
-                    <li><NavLink to='/clinic' className='li'>Clinic</NavLink></li>
-                    <li><NavLink to='/mission' className='li'>Mission</NavLink></li>
-                    <li><NavLink to='/corona' className='li'>Corona</NavLink></li>
+                    <li><NavLink exact to='/idea' className='li' activeClassName='active'>Immaculate Values</NavLink></li>
+                    <li><NavLink exact to='/clinic' className='li' activeClassName='active'>Why Choose Immaculate?</NavLink></li>
+                    <li><NavLink exact to='/mission' className='li' activeClassName='active'>Frequently Asked Questions</NavLink></li>
+                    <li><NavLink exact to='/corona' className='li' activeClassName='active'>Careers</NavLink></li>
                 </ul>
             </nav>
         </Div>

@@ -2,6 +2,8 @@ import React from 'react'
 import Header from '../../../components/modules/Header/Header'
 import BlogNav from '../blogNav/BlogNav'
 import {Div } from './IdeaStyle'
+import Contact from '../../../components/modules/contactUs/Contact'
+import Footer from '../../../components/modules/footer/footer'
 
 function Idea(){
     return(
@@ -14,7 +16,12 @@ function Idea(){
             mobileHeight={'50vh'}
             img={'https://res.cloudinary.com/hisroyalwonginess/image/upload/v1588437898/Immaculate/Doctors_ieplxk.jpg'}
             />
-            <BlogNav />
+            <div className='blognav'>
+                <BlogNav />
+            </div>
+            <Contact />
+            <Footer />
+            
         </Div>
     )
 }
