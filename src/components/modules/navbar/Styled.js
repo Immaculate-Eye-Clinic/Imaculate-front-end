@@ -43,14 +43,28 @@ export const Div = styled.header`
             transition: all 0.5s ease;
             margin-top: 1rem;
             display: block;
+            top: 66%;
+            background: white;
+            padding-left: 30px;
+            
             :hover
             {
               opacity: 1;
               transition: 0.6s;
             }
-            li {
+            a {
               clear: both;
               width: 100%;
+              color: black;
+              font-size: 15px;
+              font-weight: 500;
+              margin: 10px 0;
+              text-align: left;
+              :hover,
+              active 
+              {
+                color: #252079;
+              }
             }
         }
         }

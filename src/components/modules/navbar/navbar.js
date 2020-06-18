@@ -17,12 +17,12 @@ class Navbar extends React.Component {
                         <li><NavLink exact to='/about'  activeClassName='active'>About</NavLink><span></span></li>
                         <li className='service'><NavLink exact to='/services'  activeClassName='active'>Services</NavLink><span></span>
                             <ul className='dropdown'>
-                                <li><NavLink to='/services/:serviceblog'>Urgent Eye Problem</NavLink></li>
-                                <li><NavLink to='/services/:serviceblog'>Charazion Removal</NavLink></li>
-                                <li><NavLink to='/services/:serviceblog'>Cataract Treatment</NavLink></li>
-                                <li><NavLink to='/services/:serviceblog'>Glaucoma Treatment</NavLink></li>
-                                <li><NavLink to='/services/:serviceblog'>Squint Treatment</NavLink></li>
-                                <li><NavLink to='/services/:serviceblog'>Aqueous Shunt Surgery</NavLink></li>
+                                <li><NavLink to='/services/:serviceblog' className='link'>Urgent Eye Problem</NavLink></li>
+                                <li><NavLink to='/services/:serviceblog' className='link'>Charazion Removal</NavLink></li>
+                                <li><NavLink to='/services/:serviceblog' className='link'>Cataract Treatment</NavLink></li>
+                                <li><NavLink to='/services/:serviceblog' className='link'>Glaucoma Treatment</NavLink></li>
+                                <li><NavLink to='/services/:serviceblog' className='link'>Squint Treatment</NavLink></li>
+                                <li><NavLink to='/services/:serviceblog' className='link'>Aqueous Shunt Surgery</NavLink></li>
                             </ul>
                         </li>
                         <li><NavLink exact to='/blog'  activeClassName='active'>Blog</NavLink><span></span></li>
