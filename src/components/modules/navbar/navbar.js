@@ -17,7 +17,7 @@ class Navbar extends React.Component {
                         <li><NavLink exact to='/about'  activeClassName='active'>About</NavLink><span></span></li>
                         <li className='service'><NavLink exact to='/services'  activeClassName='active'>Services</NavLink><span></span>
                             <ul className='dropdown'>
-                                <li><NavLink to='/services/:serviceblog' className='link'>Urgent Eye Problem</NavLink></li>
+                                <li><NavLink to='/services/:serviceblog/:urgent-eye-problems' className='link'>Urgent Eye Problem</NavLink></li>
                                 <li><NavLink to='/services/:serviceblog' className='link'>Charazion Removal</NavLink></li>
                                 <li><NavLink to='/services/:serviceblog' className='link'>Cataract Treatment</NavLink></li>
                                 <li><NavLink to='/services/:serviceblog' className='link'>Glaucoma Treatment</NavLink></li>
