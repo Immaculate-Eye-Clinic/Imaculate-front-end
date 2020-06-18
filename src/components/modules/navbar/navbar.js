@@ -17,10 +17,10 @@ class Navbar extends React.Component {
                         <li className='about'><NavLink exact to='/about'  activeClassName='active'>About</NavLink><span></span>
                             <div className='dropdown'>
                                 <ul>
-                                    <li><NavLink exact to='/idea' className='links'>Immaculate Values</NavLink></li>
-                                    <li><NavLink exact to='/clinic' className='links'>Why Choose Immaculate?</NavLink></li>
-                                    <li><NavLink exact to='/mission' className='links'>Frequently Asked Questions</NavLink></li>
-                                    <li><NavLink exact to='/corona' className='links'>Careers</NavLink></li>
+                                    <li><NavLink exact to='/values' className='links'>Immaculate Values</NavLink></li>
+                                    <li><NavLink exact to='/choose' className='links'>Why Choose Immaculate?</NavLink></li>
+                                    <li><NavLink exact to='/faq' className='links'>Frequently Asked Questions</NavLink></li>
+                                    <li><NavLink exact to='/careers' className='links'>Careers</NavLink></li>
                                 </ul>
                             </div>
                         </li>
