@@ -17,9 +17,9 @@ export const Div = styled.div `
     }
     .op {
         display: flex;
-        flex-wrap: wrap;
         font-size: 15px;
         margin-left: 8em;
+        align-items: center;
             .text {
                 width: 42%;
                     button {
