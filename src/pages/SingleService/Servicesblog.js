@@ -17,9 +17,9 @@ function Servicesblog() {
             img={'https://res.cloudinary.com/hisroyalwonginess/image/upload/v1588437898/Immaculate/Doctors_ieplxk.jpg'}
             />
             <Navs />
-            <Urgent 
-            head={'EYE PAIN'}
-            />
+            <Urgent head={'EYE PAIN'}>
+                jhdhdhdjh
+            </Urgent>
         </div>
     )
 }

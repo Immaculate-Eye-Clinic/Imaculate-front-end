@@ -30,10 +30,10 @@ export const Div = styled.div `
                         }
                         div {
                             display: flex;
-                            justify-content: space-evenly;
+                            justify-content: space-between;
                             align-items: center;
+                            width: 500px;
                             .h {
-                                margin-left: 14em;
                                 color: green;
                             }
                             .hi {

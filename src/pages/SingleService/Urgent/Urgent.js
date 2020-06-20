@@ -8,7 +8,10 @@ class Urgent extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            open: false
+            open: false,
+            loss: false,
+            red: false,
+            float: false
         }
     }
     render() {
@@ -38,19 +41,70 @@ class Urgent extends React.Component {
                             </p><br />
                             <p><b>Ask our friendly team about your eye problem.</b> Whether it’s an urgent issue or something that has been nagging you for a while, we’ll do our level best to help.</p>
                             <div>
-                                <button onClick={() => this.setState({open: !this.state.open})}>
-                                    <div>
-                                        <h1 className='hi'>{this.props.head}</h1>
+                                <div>
+                                    <button onClick={() => this.setState({open: !this.state.open})}>
+                                        <div>
+                                        <h1 className='hi'>Eye Pain</h1>
                                         <h1 className='h'>{this.state.open === false ? '+' : '-'}</h1>
-                                    </div>
-                                </button>
-                                {this.state.open && 
-                                    <div>
-                                        <p>
-                                         {this.props.children}
-                                        </p>
-                                    </div>
-                                }<hr />
+                                        </div>
+                                    </button>
+                                    {this.state.open && 
+                                        <div>
+                                            <p>
+                                            This can be caused by many different problems, ranging from scratches and foreign bodies on the eye to infection and inflammation of the eye and surrounding structures.
+                                            Making the correct diagnosis is key to ensuring that the right treatment can be prescribed.
+                                            </p>
+                                        </div>
+                                    }<hr />
+                                </div>
+                                <div>
+                                    <button onClick={() => this.setState({open: !this.state.open})}>
+                                        <div>
+                                        <h1 className='hi'>Eye Pain</h1>
+                                        <h1 className='h'>{this.state.open === false ? '+' : '-'}</h1>
+                                        </div>
+                                    </button>
+                                    {this.state.open && 
+                                        <div>
+                                            <p>
+                                            This can be caused by many different problems, ranging from scratches and foreign bodies on the eye to infection and inflammation of the eye and surrounding structures.
+                                            Making the correct diagnosis is key to ensuring that the right treatment can be prescribed.
+                                            </p>
+                                        </div>
+                                    }<hr />
+                                </div>
+                                <div>
+                                    <button onClick={() => this.setState({open: !this.state.open})}>
+                                        <div>
+                                        <h1 className='hi'>Eye Pain</h1>
+                                        <h1 className='h'>{this.state.open === false ? '+' : '-'}</h1>
+                                        </div>
+                                    </button>
+                                    {this.state.open && 
+                                        <div>
+                                            <p>
+                                            This can be caused by many different problems, ranging from scratches and foreign bodies on the eye to infection and inflammation of the eye and surrounding structures.
+                                            Making the correct diagnosis is key to ensuring that the right treatment can be prescribed.
+                                            </p>
+                                        </div>
+                                    }<hr />
+                                </div>
+                                <div>
+                                    <button onClick={() => this.setState({open: !this.state.open})}>
+                                        <div>
+                                        <h1 className='hi'>Eye Pain</h1>
+                                        <h1 className='h'>{this.state.open === false ? '+' : '-'}</h1>
+                                        </div>
+                                    </button>
+                                    {this.state.open && 
+                                        <div>
+                                            <p>
+                                            This can be caused by many different problems, ranging from scratches and foreign bodies on the eye to infection and inflammation of the eye and surrounding structures.
+                                            Making the correct diagnosis is key to ensuring that the right treatment can be prescribed.
+                                            </p>
+                                        </div>
+                                    }<hr />
+                                </div>
                             </div>
                         </div>    
                         <div className='image'>
