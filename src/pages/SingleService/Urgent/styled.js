@@ -34,11 +34,11 @@ export const Div = styled.div `
                             align-items: center;
                             width: 500px;
                             .h {
-                                color: green;
+                                color: #252079;
                             }
                             .hi {
-                                width: 100px;
-                                font-size: 20px;
+                            
+                                font-size: 17px;
                                 margin-left: -8px;
                             }
                         }
