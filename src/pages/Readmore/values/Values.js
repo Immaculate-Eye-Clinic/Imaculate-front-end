@@ -1,17 +1,17 @@
 import React from 'react'
 import Header from '../../../components/modules/Header/Header'
 import BlogNav from '../blogNav/BlogNav'
-import {Div } from './IdeaStyle'
+import {Div } from './ValuesStyle'
 import Contact from '../../../components/modules/contactUs/Contact'
 import Footer from '../../../components/modules/footer/footer'
 
-function Idea(){
+function Values(){
     return(
         <Div>
             <Header 
             bgcolor={'transparent'}
-            title={'Idea'}
-            subText={'Get to Know More About our Ideas'}
+            title={'Immaculate Values'}
+            subText={'Get to Know More About our Values'}
             height={'70vh'}
             mobileHeight={'50vh'}
             img={'https://res.cloudinary.com/hisroyalwonginess/image/upload/v1588437898/Immaculate/Doctors_ieplxk.jpg'}
@@ -52,4 +52,4 @@ function Idea(){
     )
 }
 
-export default Idea
+export default Values
