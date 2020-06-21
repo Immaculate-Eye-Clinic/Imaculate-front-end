@@ -1,7 +1,7 @@
 import React from 'react'
-import {Div } from './Questionstyle'
+import {Div } from './FaqStyle'
 
-class Questions extends React.Component{
+class Faqprops extends React.Component{
     constructor(props){
         super(props)
         this.state = {
@@ -9,12 +9,11 @@ class Questions extends React.Component{
             
         }
     }
-
     render(props){
         return(
             <Div>
                 <div className='services'>
-                    <h2>Services</h2>
+                    <h2>{this.props.header}</h2>
                     <button onClick={() => this.setState({open : !this.state.open})} className='service-button'>
                         {this.props.question}
                         <div className='space'/>
@@ -22,11 +21,9 @@ class Questions extends React.Component{
                     </button>
                     <div className='service-open'>
                         {this.state.open && 
-                            <div>
-                                <p>
-                                    {this.props.children}
-                                </p>
-                            </div>   
+                            <p>
+                                {this.props.children}
+                            </p>  
                         }
                     </div><hr/>
                 </div>
@@ -35,4 +32,4 @@ class Questions extends React.Component{
     }
 }
 
-export default Questions
+export default Faqprops

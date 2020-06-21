@@ -14,6 +14,7 @@ import ShowServices from '../pages/services/ShowServices'
 import VisitUs from '../pages/VisitUs/VisitUs'
 import Values from '../pages/Readmore/values/Values'
 import Choose from '../pages/Readmore/choose/Choose'
+import Faq from '../pages/Readmore/faq/Faq'
 
 
 class ReactRouter extends React.Component {
@@ -34,6 +35,7 @@ class ReactRouter extends React.Component {
                               <Route exact path='/visit' component={VisitUs} />
                               <Route exact path='/values' component={Values} />
                               <Route exact path='/choose' component={Choose} />
+                              <Route exact path='/faq' component={Faq} />
                               <Route component={NoMatch} />      
                           </Switch>
                         </App>
