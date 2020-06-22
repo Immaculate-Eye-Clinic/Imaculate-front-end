@@ -19,7 +19,7 @@ class Navbar extends React.Component {
                             <ul className='dropdown'>
                                 <li><NavLink to='/services/:serviceblog/:urgent-eye-problems' className='link'>Urgent Eye Problem</NavLink></li>
                                 <li><NavLink to='/services/:serviceblog/:chalazion-removal' className='link'>Charazion Removal</NavLink></li>
-                                <li><NavLink to='/services/:serviceblog' className='link'>Cataract Treatment</NavLink></li>
+                                <li><NavLink to='/services/:serviceblog/:cataract-treatment' className='link'>Cataract Treatment</NavLink></li>
                                 <li><NavLink to='/services/:serviceblog' className='link'>Glaucoma Treatment</NavLink></li>
                                 <li><NavLink to='/services/:serviceblog' className='link'>Squint Treatment</NavLink></li>
                                 <li><NavLink to='/services/:serviceblog' className='link'>Aqueous Shunt Surgery</NavLink></li>

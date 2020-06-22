@@ -9,7 +9,7 @@ function Navs() {
             <ul className='dropdown'>
                 <li><NavLink to='/services/:serviceblog/:urgent-eye-problems' activeClassName='link' exact>Urgent Eye Problem</NavLink></li>
                 <li><NavLink to='/services/:serviceblog/:chalazion-removal' activeClassName='link'exact>Charazion Removal</NavLink></li>
-                <li><NavLink to='/services/:serviceblog' activeClassName='link'exact>Cataract Treatment</NavLink></li>
+                <li><NavLink to='/services/:serviceblog/:cataract-treatment' activeClassName='link'exact>Cataract Treatment</NavLink></li>
                 <li><NavLink to='/services/:serviceblog' activeClassName='link'exact>Glaucoma Treatment</NavLink></li>
                 <li><NavLink to='/services/:serviceblog' activeClassName='link'exact>Squint Treatment</NavLink></li>
                 <li><NavLink to='/services/:serviceblog' activeClassName='link'exact>Aqueous Shunt Surgery</NavLink></li>

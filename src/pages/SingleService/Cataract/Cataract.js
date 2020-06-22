@@ -5,7 +5,7 @@ import Navs from '../Navs'
 import {Div} from './styled'
 import Prop from './Prop'
 
-class Urgent extends React.Component {
+class Cataract extends React.Component {
     
     render() {
         return (
@@ -24,19 +24,34 @@ class Urgent extends React.Component {
                 <div className='body'>
                     <div className='head'>
                         <p>How can we help?</p>
-                        <h1><b>TREATMENT OF URGENT EYE PROBLEMS</b> </h1>
+                        <h1><b>CATARACT TREATMENT AND SURGERY</b> </h1>
                     </div>
                     <div className='op'>
                         <div className='text'>
                             <p>
-                            wide variety of problems can affect the eye and surrounding structures. Ophthalmologists are qualified doctors who have special training in diagnosing and managing eye problems.
-                            All our Ophthalmologists are experienced Consultants who are registered as Specialists in the UK.
+                                At Infinity Eye Clinic, we offer a cataract treatment service. We remove cataracts to restore vision. For most patients,
+                                the treatment of choice is a minimally-invasive procedure, called phacoemulsification.
                             </p><br />
-                            <p><b>Ask our friendly team about your eye problem.</b> Whether it’s an urgent issue or something that has been nagging you for a while, we’ll do our level best to help.</p>
+                            <p> The surgery lasts about 30 minutes and can usually be performed as a day case, under local anaesthesia. This means
+                                patients recover very quickly from surgery and don’t need to stay overnight in hospital.</p>
                             <div>
-                                <Prop head={'EYE PAIN'}>
-                                    This can be caused by many different problems, ranging from scratches and foreign bodies on the eye to infection and inflammation of the eye and surrounding structures.
-                                    Making the correct diagnosis is key to ensuring that the right treatment can be prescribed.
+                                <Prop head={'WHAT ARE CATARACTS?'}>
+                                    <p>
+                                        A  cataract forms when the normally clear lens of the eye becomes cloudy, causing blurry vision. The normal lens focuses light onto the back of the eye so that images appear sharp.
+                                        The clouding of this lens when a cataract forms distorts vision.
+                                    </p>
+                                    <p>
+                                        Cataracts usually form gradually and are age related but can also develop rapidly. They often affect both eyes, but it is not uncommon for a cataract in one eye to form more quickly.
+                                        Cataracts become more common, as people become older.
+                                    </p>
+                                    <p>
+                                        It is uncertain precisely why cataracts occur. Most cataracts are thought to be caused by changes in the protein structures within the lens over a period of years so that the lens becomes cloudy.
+                                        Rarely, early childhood cataracts or cataracts in the new-born may be a result of genetic disease, hereditary enzyme defects, or systemic congenital infections.
+                                    </p>
+                                    <p>
+                                        The formation of cataracts can also be hastened by severe trauma to the eye, eye surgery, or intraocular inflammation. Excessive ultraviolet light exposure, exposure to ionizing radiation, smoking, diabetes mellitus, or the use of certain medications, such as oral, topical, or inhaled steroids,
+                                        & statins have been thought to be associated with promoting cataract formation.
+                                    </p>
                                 </Prop>
                                 <Prop head={'LOSS OF SIGHT'}>
                                     Vision may be lost suddenly or over a long period of time. Many causes are eminently treatable, and the correct treatment depends 
@@ -52,7 +67,7 @@ class Urgent extends React.Component {
                             </div>
                         </div>    
                         <div className='image'>
-                            <img src='/Asset/Img/urgent.jpg' alt='' />
+                            <img src='/Asset/Img/cataract.jpg' alt='' />
                         </div>
                     </div><br /><br />
                 </div>
@@ -61,4 +76,4 @@ class Urgent extends React.Component {
         }
 }
 
-export default Urgent
+export default Cataract

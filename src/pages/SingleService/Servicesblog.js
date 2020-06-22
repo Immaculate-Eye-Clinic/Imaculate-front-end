@@ -3,6 +3,8 @@ import React from 'react'
 import Header from '../../components/modules/Header/Header'
 import Navs from './Navs'
 import Urgent from './Urgent/Urgent'
+import Chalazion from './Chalazion/Chalazion'
+import Cataract from './Cataract/Cataract'
 
 
 function Servicesblog() {
@@ -17,9 +19,9 @@ function Servicesblog() {
             img={'https://res.cloudinary.com/hisroyalwonginess/image/upload/v1588437898/Immaculate/Doctors_ieplxk.jpg'}
             />
             <Navs />
-            <Urgent head={'EYE PAIN'}>
-                jhdhdhdjh
-            </Urgent>
+            <Urgent />
+            <Chalazion />
+            <Cataract />
         </div>
     )
 }
