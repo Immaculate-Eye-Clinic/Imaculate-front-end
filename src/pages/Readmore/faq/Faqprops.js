@@ -23,7 +23,7 @@ class Faqprops extends React.Component{
                         {this.state.open && 
                             <p>
                                 {this.props.children}
-                            </p>  
+                            </p>    
                         }
                     </div><hr/>
                 </div>
