@@ -105,8 +105,7 @@ export const Div = styled.div `
                     
                 }
                     img {
-                        border-radius: 23em;
-                        @media (max-width: 1000px) {
+                        @media (max-width: 1140px) {
                             width: 90%;
                         }
                     }

@@ -3,7 +3,7 @@ import React from 'react'
 import Header from '../../../components/modules/Header/Header'
 import Navs from '../Navs'
 import {Div} from './styled'
-import Prop from './Urgentprops'
+import Prop from './Prop'
 
 class Urgent extends React.Component {
     
