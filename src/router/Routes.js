@@ -15,6 +15,7 @@ import VisitUs from '../pages/VisitUs/VisitUs'
 import Values from '../pages/Readmore/values/Values'
 import Choose from '../pages/Readmore/choose/Choose'
 import Faq from '../pages/Readmore/faq/Faq'
+import Career from '../pages/Readmore/career/Career'
 
 
 class ReactRouter extends React.Component {
@@ -26,7 +27,7 @@ class ReactRouter extends React.Component {
                     <ScrollToTop>
                         <App>
                           <Switch>
-                              <Route  exact path='/login' component={Login} />
+                              <Route exact path='/login' component={Login} />
                               <Route exact path='/signup' component={SignUp} />
                               <Route exact path="/" component={Home} />
                               <Route exact path="/blog" component={Blog} />
@@ -36,6 +37,7 @@ class ReactRouter extends React.Component {
                               <Route exact path='/values' component={Values} />
                               <Route exact path='/choose' component={Choose} />
                               <Route exact path='/faq' component={Faq} />
+                              <Route exact path='/careers' component={Career} />
                               <Route component={NoMatch} />      
                           </Switch>
                         </App>
