@@ -14,16 +14,7 @@ class Navbar extends React.Component {
                 <div className="navs">
                     <ul class="menu">
                         <li><NavLink exact to='/'  activeClassName='active'>Home</NavLink><span></span></li>
-                        <li className='about'><NavLink exact to='/about'  activeClassName='active'>About</NavLink><span></span>
-                            <div className='dropdown'>
-                                <ul>
-                                    <li><NavLink exact to='/values' className='links'>Immaculate Values</NavLink></li>
-                                    <li><NavLink exact to='/choose' className='links'>Why Choose Immaculate?</NavLink></li>
-                                    <li><NavLink exact to='/faq' className='links'>Frequently Asked Questions</NavLink></li>
-                                    <li><NavLink exact to='/careers' className='links'>Careers</NavLink></li>
-                                </ul>
-                            </div>
-                        </li>
+                        <li><NavLink exact to='/about'  activeClassName='active'>About</NavLink><span></span></li>
                         <li><NavLink exact to='/services'  activeClassName='active'>Services</NavLink><span></span></li>
                         <li><NavLink exact to='/blog'  activeClassName='active'>Blog</NavLink><span></span></li>
                         <li><NavLink exact to='/visit'  activeClassName='active'>Visit Us</NavLink><span></span></li>
