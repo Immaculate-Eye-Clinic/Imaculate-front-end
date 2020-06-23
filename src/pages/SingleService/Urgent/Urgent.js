@@ -29,8 +29,7 @@ class Urgent extends React.Component {
                     <div className='op'>
                         <div className='text'>
                             <p>
-                            wide variety of problems can affect the eye and surrounding structures. Ophthalmologists are qualified doctors who have special training in diagnosing and managing eye problems.
-                            All our Ophthalmologists are experienced Consultants who are registered as Specialists in the UK.
+                            Wide variety of problems can affect the eye and surrounding structures. Ophthalmologists are qualified doctors who have special training in diagnosing and managing eye problems.
                             </p><br />
                             <p><b>Ask our friendly team about your eye problem.</b> Whether it’s an urgent issue or something that has been nagging you for a while, we’ll do our level best to help.</p>
                             <div>

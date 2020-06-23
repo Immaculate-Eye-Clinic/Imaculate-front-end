@@ -88,9 +88,13 @@ export const Div = styled.div `
                                 color: #252079;
                             }
                             .hi {
-                            
-                                font-size: 17px;
+                                font-size: 15px;
                                 margin-left: -8px;
+                                text-transform: uppercase;
+                                text-align: left;
+                                @media (max-width: 1000px) {
+                                   font-size: 12px;
+                                }
                             }
                         }
                     }
@@ -105,7 +109,7 @@ export const Div = styled.div `
                     
                 }
                     img {
-                        border-radius: 23em;
+                        
                         @media (max-width: 1000px) {
                             width: 90%;
                         }
