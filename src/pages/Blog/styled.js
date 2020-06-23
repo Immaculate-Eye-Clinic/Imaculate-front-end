@@ -1,7 +1,12 @@
 import styled from 'styled-components'
 
 export const Div = styled.div `
-ul {list-style: none;
+a{
+    text-decoration: none;
+    color: black;
+}
+ul {
+list-style: none;
 width: 50%;
 margin: 0;
 li {
@@ -18,6 +23,11 @@ display: flex;
 position: relative;
 align-items: center;
 left: 55%;
+width: 450px;
+@media (max-width: 760px) {
+    left: 25%;
+}
+
 li {
     border: 1px solid #c0c0c0;
     font: 13px/20px Arial, Helvetica, sans-serif;
