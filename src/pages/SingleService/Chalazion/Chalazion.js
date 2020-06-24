@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Header from '../../../components/modules/Header/Header'
-import Toolbar from '../Navbar/Toolbar'
+import Navs from '../Navbar/Navs'
 import {Div} from './styled'
 import Prop from './Chalazionprop'
 
@@ -19,7 +19,7 @@ class Chalazion extends React.Component {
                     mobileHeight={'50vh'}
                     img={'https://res.cloudinary.com/hisroyalwonginess/image/upload/v1588437898/Immaculate/Doctors_ieplxk.jpg'}
                     />
-                    <Toolbar />
+                    <Navs />
                 </div>
                 <div className='body'>
                     <div className='head'>

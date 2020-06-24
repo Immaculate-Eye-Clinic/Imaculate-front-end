@@ -6,7 +6,7 @@ button {
     flex-direction: column;
     justify-content: space-evenly;
     margin-top: 30%;
-    margin-left: 70%;
+    margin-left: 50%;
     height: 20px;
     width: 36px;
     border: none;
@@ -21,6 +21,32 @@ button {
         width: 18px;
         height: 1px;
         background: white;
+    }
+}
+`
+
+export const Nav = styled.nav `
+height: auto;
+background: #606060;
+position: relative;
+padding: 14px;
+text-align: center;
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    li{
+        margin: 15px;
+        a {
+            text-decoration: none;
+            color: white;
+            :hover,
+            :active,
+            :focus {
+                color: #252079;
+            }
+        }
     }
 }
 `

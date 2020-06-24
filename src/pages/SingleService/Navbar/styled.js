@@ -7,8 +7,8 @@ padding: 10px;
 flex-wrap: wrap;
 .dropdown {
     display: flex;
+    justify-content: center;
     list-style: none;
-    margin-left: 4%;
     .link {
         border-bottom: 2px white solid;
     }
