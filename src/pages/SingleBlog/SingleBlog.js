@@ -1,35 +1,25 @@
-import React from 'react'
+import React, { Component } from 'react';
 import axios from 'axios'
 import {NavLink} from 'react-router-dom'
 
-class SingleBlog extends React.Component {
+class SingleBlog extends Component {
 
-    constructor() {
-      super()
-      this.state = {
-        post: []
-      }
+      constructor() {
+        super();
+        this.state = {
+            post: [],
+        };
     }
 
     componentDidMount () {
         const { match: {params} } = this.props;
 
         axios.get(`https:/jsonplaceholder.typicode.com/posts/${params.postid}`)
-        .then(({ data: post }) => {
-        console.log('post', post);
-      
-        this.setState({ post });
-          });
-    }
+        .then(response => {
+          this.setState({ post: response.data})
+        })
 
-    handleDelete() {
-        const { match: { params } } = this.props;
-      
-        axios.delete(`https:/jsonplaceholder.typicode.com/posts/${params.postid}`)
-          .then(() => {
-            console.log('post deleted');
-          });
-        }
+    }
 
     render() {
         return (
@@ -37,15 +27,10 @@ class SingleBlog extends React.Component {
               <NavLink to='/blog'>
                   <button>Close</button>
               </NavLink>
-              {this.state.post.map(blog =>{
-                return (
-                  <div key={blog.id}>
-                    <h3>{blog.title.rendered}</h3>
+              <div key={this.state.post.id}>
+                    <h3>{this.state.post.title}</h3>
                   </div>
-                )
-              })
 
-              }
             </div>  
         )
     }
