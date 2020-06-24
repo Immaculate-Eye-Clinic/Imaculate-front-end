@@ -32,6 +32,9 @@ margin: 100px 300px;
         padding: 10px;
         background: none;
         cursor: pointer;
+        @media (max-width: 550px){
+            text-align: left;
+        }
         .space{
             flex: 1;
         }

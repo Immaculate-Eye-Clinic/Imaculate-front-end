@@ -2,7 +2,7 @@ import React from 'react'
 import {Div } from './CareerStyle'
 
 import Header from '../../../components/modules/Header/Header'
-import BlogNav from '../blogNav/BlogNav'
+import Nav from '../blogNav/Nav'
 import Contact from '../../../components/modules/contactUs/Contact'
 import Footer from '../../../components/modules/footer/footer'
 
@@ -17,7 +17,7 @@ function Career(){
                 mobileHeight={'50vh'}
                 img={'https://res.cloudinary.com/hisroyalwonginess/image/upload/v1588437898/Immaculate/Doctors_ieplxk.jpg'}
             />
-            <BlogNav />
+            <Nav />
             <div className='textbody'>
                 <div className='first'>
                     <h1>Talent Wanted</h1>

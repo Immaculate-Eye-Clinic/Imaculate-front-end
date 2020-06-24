@@ -2,7 +2,7 @@ import React from 'react'
 import Faqprops from './Faqprops'
 
 import Header from '../../../components/modules/Header/Header'
-import BlogNav from '../blogNav/BlogNav'
+import Nav from '../blogNav/Nav'
 import Contact from '../../../components/modules/contactUs/Contact'
 import Footer from '../../../components/modules/footer/footer'
 
@@ -26,7 +26,7 @@ class Faq extends React.Component{
                     mobileHeight={'50vh'}
                     img={'https://res.cloudinary.com/hisroyalwonginess/image/upload/v1588437898/Immaculate/Doctors_ieplxk.jpg'}
                 />
-                <BlogNav />
+                <Nav />
                 <Faqprops header='Service' question='What services do you provide?'>
                     Infinity Eye Clinic specialises in the diagnosis and treatment of Cataracts and Glaucoma. We provide an efficient service for the treatment of Chalazion. We also deal with General Ophthalmological conditions such as Dry Eye and Blepharitis. We manage both chronic diseases and urgent eye problems in adults and children
                 </Faqprops>
