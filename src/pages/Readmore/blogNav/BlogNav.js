@@ -1,6 +1,7 @@
 import React from 'react'
 import {Div } from './BlogNavStyle'
 import {NavLink } from 'react-router-dom'
+import DrawerToggleButton from './drawerToggleButton'
 
 function BlogNav(){
     return(
@@ -12,6 +13,7 @@ function BlogNav(){
                     <li><NavLink exact to='/faq' className='li' activeClassName='active'>Frequently Asked Questions</NavLink></li>
                     <li><NavLink exact to='/careers' className='li' activeClassName='active'>Careers</NavLink></li>
                 </ul>
+                 
             </nav>
         </Div>
     )

@@ -27,3 +27,36 @@ nav{
     }
 }
 `
+export const Button = styled.button`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 24px;
+    width: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    box-sizing: border-box;
+    /* position: fixed;
+    top: 10px; */
+
+    .toggle-button__line {
+    width: 30px;
+    height: 2px;
+    background: #0000cd;
+  }
+  
+  :focus {
+    outline: none;
+  }
+`
+export const Backdrop = styled.div `
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    top: 0;
+    left: 0;
+`
