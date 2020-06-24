@@ -8,6 +8,7 @@ flex-wrap: wrap;
 .dropdown {
     display: flex;
     list-style: none;
+    margin-left: 4%;
     .link {
         border-bottom: 2px white solid;
     }
@@ -15,7 +16,7 @@ flex-wrap: wrap;
         text-decoration: none;
         color: white;
         margin: 8px;
-        margin-left: 30px;
+        margin-left: 35px;
         padding-bottom: 20px;
         font-size: 15px;
     }

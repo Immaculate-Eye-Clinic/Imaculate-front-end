@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Header from '../../../components/modules/Header/Header'
-import Navs from '../Navs'
+import Toolbar from '../Navbar/Toolbar'
 import {Div} from './styled'
 import Prop from './Prop'
 
@@ -19,7 +19,7 @@ class Cataract extends React.Component {
                     mobileHeight={'50vh'}
                     img={'https://res.cloudinary.com/hisroyalwonginess/image/upload/v1588437898/Immaculate/Doctors_ieplxk.jpg'}
                     />
-                    <Navs />
+                    <Toolbar />
                 </div>
                 <div className='body'>
                     <div className='head'>
