@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../../../components/modules/Header/Header'
-import BlogNav from '../blogNav/BlogNav'
+import Nav from '../blogNav/Nav'
 import {Div } from './ValuesStyle'
 import Contact from '../../../components/modules/contactUs/Contact'
 import Footer from '../../../components/modules/footer/footer'
@@ -16,7 +16,7 @@ function Values(){
             mobileHeight={'50vh'}
             img={'https://res.cloudinary.com/hisroyalwonginess/image/upload/v1588437898/Immaculate/Doctors_ieplxk.jpg'}
             />
-            <BlogNav />
+            <Nav />
 
             <div className='blogmessage'>
                 <div className='first'>
