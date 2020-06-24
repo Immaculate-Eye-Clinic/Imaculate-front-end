@@ -1,5 +1,6 @@
 import React from "react"
 import {Cards} from "./Styles"
+import {NavLink} from 'react-router-dom'
 
 function Services (props, imgUrl){
     return(
@@ -10,7 +11,7 @@ function Services (props, imgUrl){
                 <div className = 'card_text'>
                     <div className='caption'>
                         {props.service.caption}
-                        <button>{props.service.readMore}</button>
+                        <NavLink to={props.service.link}><button>{props.service.readMore}</button></NavLink>
                     </div>
                     
                 </div>
