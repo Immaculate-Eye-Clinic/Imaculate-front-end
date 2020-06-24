@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import Home from '../pages/home/Home';
 import Blog from '../pages/Blog/Blog';
+import SingleBlog from '../pages/SingleBlog/SingleBlog';
 import Login from '../pages/Login/Login'
 import SignUp from '../pages/SignUp/SignUp'
 import App from '../components/App';
@@ -12,10 +13,6 @@ import AboutUs from '../pages/AboutUs/AboutUs'
 import {GlobalStyle} from "../GlobalStyle"
 import ShowServices from '../pages/services/ShowServices'
 import VisitUs from '../pages/VisitUs/VisitUs'
-import Values from '../pages/Readmore/values/Values'
-import Choose from '../pages/Readmore/choose/Choose'
-import Faq from '../pages/Readmore/faq/Faq'
-import Career from '../pages/Readmore/career/Career'
 
 
 class ReactRouter extends React.Component {
@@ -27,17 +24,14 @@ class ReactRouter extends React.Component {
                     <ScrollToTop>
                         <App>
                           <Switch>
-                              <Route exact path='/login' component={Login} />
+                              <Route  exact path='/login' component={Login} />
                               <Route exact path='/signup' component={SignUp} />
                               <Route exact path="/" component={Home} />
                               <Route exact path="/blog" component={Blog} />
+                              <Route exact path="/blog/:postid" component={SingleBlog} />
                               <Route exact path="/about" component={AboutUs} />
                               <Route exact path="/services" component={ShowServices} />
                               <Route exact path='/visit' component={VisitUs} />
-                              <Route exact path='/values' component={Values} />
-                              <Route exact path='/choose' component={Choose} />
-                              <Route exact path='/faq' component={Faq} />
-                              <Route exact path='/careers' component={Career} />
                               <Route component={NoMatch} />      
                           </Switch>
                         </App>
