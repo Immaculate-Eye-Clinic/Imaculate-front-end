@@ -17,6 +17,7 @@ flex-wrap: wrap;
         margin: 8px;
         margin-left: 30px;
         padding-bottom: 20px;
+        font-size: 15px;
     }
 }
 `

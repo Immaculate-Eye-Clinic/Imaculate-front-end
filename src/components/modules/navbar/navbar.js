@@ -15,16 +15,7 @@ class Navbar extends React.Component {
                     <ul class="menu">
                         <li><NavLink exact to='/'  activeClassName='active'>Home</NavLink><span></span></li>
                         <li><NavLink exact to='/about'  activeClassName='active'>About</NavLink><span></span></li>
-                        <li className='service'><NavLink exact to='/services'  activeClassName='active'>Services</NavLink><span></span>
-                            <ul className='dropdown'>
-                                <li><NavLink to='/services/:urgent-eye-problems' className='link'>Urgent Eye Problem</NavLink></li>
-                                <li><NavLink to='/services/:chalazion-removal' className='link'>Charazion Removal</NavLink></li>
-                                <li><NavLink to='/services/:cataract-treatment' className='link'>Cataract Treatment</NavLink></li>
-                                <li><NavLink to='/services/' className='link'>Glaucoma Treatment</NavLink></li>
-                                <li><NavLink to='/services/' className='link'>Squint Treatment</NavLink></li>
-                                <li><NavLink to='/services/' className='link'>Aqueous Shunt Surgery</NavLink></li>
-                            </ul>
-                        </li>
+                        <li className='service'><NavLink exact to='/services'  activeClassName='active'>Services</NavLink><span></span></li>
                         <li><NavLink exact to='/blog'  activeClassName='active'>Blog</NavLink><span></span></li>
                         <li><NavLink exact to='/visit'  activeClassName='active'>Visit Us</NavLink><span></span></li>
                         <li height = "30px"><div className = 'container_sign_up'>
