@@ -13,6 +13,10 @@ import AboutUs from '../pages/AboutUs/AboutUs'
 import {GlobalStyle} from "../GlobalStyle"
 import ShowServices from '../pages/services/ShowServices'
 import VisitUs from '../pages/VisitUs/VisitUs'
+import Values from '../pages/Readmore/values/Values'
+import Choose from '../pages/Readmore/choose/Choose'
+import Faq from '../pages/Readmore/faq/Faq'
+import Career from '../pages/Readmore/career/Career'
 
 
 class ReactRouter extends React.Component {
@@ -32,6 +36,10 @@ class ReactRouter extends React.Component {
                               <Route exact path="/about" component={AboutUs} />
                               <Route exact path="/services" component={ShowServices} />
                               <Route exact path='/visit' component={VisitUs} />
+                              <Route exact path='/values' component={Values} />
+                              <Route exact path='/choose' component={Choose} />
+                              <Route exact path='/faq' component={Faq} />
+                              <Route exact path='/careers' component={Career} />
                               <Route component={NoMatch} />      
                           </Switch>
                         </App>

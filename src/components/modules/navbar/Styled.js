@@ -36,6 +36,38 @@ export const Div = styled.header`
         width: 100%;
         justify-content: space-between;
 
+        .service {
+        .dropdown{
+            opacity: 0;
+            position: absolute;
+            transition: all 0.5s ease;
+            margin-top: 1rem;
+            display: block;
+            top: 66%;
+            background: white;
+            padding-left: 30px;
+            
+            :hover
+            {
+              opacity: 1;
+              transition: 0.6s;
+            }
+            a {
+              clear: both;
+              width: 100%;
+              color: black;
+              font-size: 15px;
+              font-weight: 500;
+              margin: 10px 0;
+              text-align: left;
+              :hover,
+              active 
+              {
+                color: #252079;
+              }
+            }
+        }
+        }
         .active~span {
             position: absolute;
             width: 27px;
