@@ -3,7 +3,7 @@ const AboutUsData = [
         id: '1',
         imgUrl:'https://res.cloudinary.com/hisroyalwonginess/image/upload/v1591214546/Immaculate/idea__1591214457_105.112.96.182_exn4p6.jpg',
         caption: 'Immaculate Values',
-        readMore: 'Read More',
+        readMore: '/values',
         link: '/values'
 
     },

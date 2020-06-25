@@ -30,7 +30,7 @@ function ShowServices (props){
             </div>
             <FlexStyle>
                 {ServicesData.map((service, index) =>(
-                    <Services key = {service.id} service = {service} />
+                    <Services key={service.id} service={service} />
                 ))}
             </FlexStyle>
         </Page>
