@@ -16,6 +16,10 @@ import Urgent from '../pages/SingleService/Urgent/Urgent'
 import Chalazion from '../pages/SingleService/Chalazion/Chalazion'
 import Cataract from '../pages/SingleService/Cataract/Cataract'
 import VisitUs from '../pages/VisitUs/VisitUs'
+import Values from '../pages/Readmore/values/Values'
+import Choose from '../pages/Readmore/choose/Choose'
+import Faq from '../pages/Readmore/faq/Faq'
+import Career from '../pages/Readmore/career/Career'
 
 
 class ReactRouter extends React.Component {
@@ -38,6 +42,10 @@ class ReactRouter extends React.Component {
                               <Route exact path="/services/chalazion-removal" component={Chalazion} />
                               <Route exact path="/services/cataract-treatment" component={Cataract} />
                               <Route exact path='/visit' component={VisitUs} />
+                              <Route exact path='/values' component={Values} />
+                              <Route exact path='/choose' component={Choose} />
+                              <Route exact path='/faq' component={Faq} />
+                              <Route exact path='/careers' component={Career} />
                               <Route component={NoMatch} />      
                           </Switch>
                         </App>
