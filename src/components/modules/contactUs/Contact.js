@@ -7,7 +7,6 @@ class Contact extends React.Component{
         this.state = {
             text: '',
             email: '',
-            number: '',
             subject: '',
             number: '',
         }
