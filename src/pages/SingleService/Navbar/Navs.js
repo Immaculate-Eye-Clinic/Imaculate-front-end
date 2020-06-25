@@ -5,26 +5,25 @@ import SideDrawer from './SideDrawer/SideDrawer'
 
 class Navs extends React.Component {
     state = {
-        sideDrawerOpen: false,
+        open: false,
     }
 
     drawerToggleClickHandler = () => {
         this.setState((prevState) => {
-            return {
-                sideDrawerOpen: !prevState.sideDrawerOpen
-            }
+            return{open: !prevState.open}
         })
     }
 
     render() {
-        let sideDrawer;
-        if (this.state.sideDrawerOpen) {
-            sideDrawer = <SideDrawer />
+        let drawer
+
+        if (this.state.open) {
+            drawer = <SideDrawer />
         }
         return(
             <div>
                 <Toolbar drawerClickHandler={this.drawerToggleClickHandler}/>
-                {SideDrawer}
+                {drawer}
             </div>
         )
     }
