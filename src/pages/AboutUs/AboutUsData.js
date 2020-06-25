@@ -11,21 +11,21 @@ const AboutUsData = [
         id: '2',
         imgUrl:'https://res.cloudinary.com/hisroyalwonginess/image/upload/v1591214294/Immaculate/how_we_run_nvp0yo.webp',
         caption: 'Why Choose Immaculate',
-        readMore: 'Read More',
+        readMore: '/choose',
         link: '/choose'
     },
     {
         id: '3',
         imgUrl:'https://res.cloudinary.com/hisroyalwonginess/image/upload/v1591214288/Immaculate/our_mission_ntcpxs.jpg',
         caption: 'Frequently Asked Questions',
-        readMore: 'Read More',
+        readMore: '/faq',
         link: '/faq'
     },
     {
         id: '4',
         imgUrl:'https://res.cloudinary.com/hisroyalwonginess/image/upload/v1566842519/sample.jpg',
         caption: 'Careers',
-        readMore: 'Read More',
+        readMore: '/career',
         link: '/career'
     }
 ]

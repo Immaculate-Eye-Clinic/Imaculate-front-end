@@ -19,7 +19,7 @@ function Home() {
             />
             <WelcomeText />
             <div style={{width: "90%", margin: "auto"}}>
-            <BlogCard />
+            {/* <BlogCard /> */}
             </div>
             <Slider />
             <Why />
