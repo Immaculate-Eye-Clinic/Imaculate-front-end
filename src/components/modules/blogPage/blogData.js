@@ -14,7 +14,7 @@ function BlogData(props) {
             </div>
             <h2>Lorem ipsum dolor sit amet</h2>
             <p>{props.title}</p>
-            <a href='/'>Read more ></a>
+            <a href='/'>Read more</a>
         </div>
     </Body>
     )

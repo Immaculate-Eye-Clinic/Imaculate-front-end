@@ -1,27 +1,23 @@
 import React from 'react'
-import {Div} from './Style'
+import {Cards} from './Style'
+import {NavLink} from 'react-router-dom'
 
 function BlogCard(props){
     return(
-        <Div>
+        <Cards imgUrl = {props.blog.imgUrl}>
             <div className='card'>
-                <div className='card-image'>
-                    <img src={props.blog.imgUrl} alt = ""/>
+                <div className='caption_container'>
                 </div>
-
-
-                <div className='card-text'>
-                    <span className='date'>{props.blog.date}</span>
-                    <h2>{props.blog.post}</h2>
-                    <p> {props.blog.caption} </p>
+                <div className = 'card_text'>
+                    <div className='caption'>
+                        {props.blog.caption}
+                        <NavLink to={props.blog.link}><button>{props.blog.readMore}</button></NavLink>
+                    </div>
+                    
                 </div>
-
-
-                <div className='button'>
-                    <button>{props.blog.seeMore}</button>
-                </div>
+                
             </div>
-        </Div>
+        </Cards>
     )
 }
 

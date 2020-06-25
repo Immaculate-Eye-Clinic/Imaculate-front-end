@@ -1,12 +1,26 @@
 import styled from 'styled-components'
 
 export const Div = styled.div`
-width: 100%;
-
+margin: 100px 300px;
+@media (max-width: 1200px){
+    margin: 50px 150px;
+}
+@media (max-width: 850px){
+    margin: 50px;
+}
+@media (max-width: 750px){
+    margin: 20px;
+}
 .services{
+    margin-bottom: -70px;
+    @media (max-width: 1200px){
+        margin-bottom: -40px;
+    }
+    @media (max-width: 1200px){
+        margin-bottom: -10px;
+    }
     h2{
-        color: #252079;
-        padding-bottom: 35px;
+        color: #252079;    
     }
     .service-button{
         width: 100%;
@@ -18,6 +32,9 @@ width: 100%;
         padding: 10px;
         background: none;
         cursor: pointer;
+        @media (max-width: 550px){
+            text-align: left;
+        }
         .space{
             flex: 1;
         }
