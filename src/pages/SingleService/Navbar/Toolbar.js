@@ -4,7 +4,7 @@ import {Div} from './styled'
 import DrawerToggleButton from './SideDrawer/DrawerToggleButton'
 
 
-function Toolbar() {
+function Toolbar(props) {
     return(
         <Div>
             <ul className='dropdown'>
@@ -12,7 +12,7 @@ function Toolbar() {
                 <li><NavLink to='/services/:chalazion-removal' activeClassName='link'exact>Charazion Removal</NavLink></li>
                 <li><NavLink to='/services/:cataract-treatment' activeClassName='link'exact>Cataract Treatment</NavLink></li>
                 <div>
-                    <DrawerToggleButton />
+                    <DrawerToggleButton click={props.drawerClickHandler}/>
                 </div>
                 <li><NavLink to='/services' activeClassName='link'exact>Glaucoma Treatment</NavLink></li>
                 <li><NavLink to='/services' activeClassName='link'exact>Squint Treatment</NavLink></li>
