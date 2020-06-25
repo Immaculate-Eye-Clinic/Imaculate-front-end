@@ -22,31 +22,31 @@ class Contact extends React.Component{
         })
     }
 
-    submit(e){
-        e.preventDefault()
+    // submit(e){
+    //     e.preventDefault()
         
-        const user = {
-            text: this.state.text,
-            email: this.state.email,
-            number: this.state.number,
-            subject: this.state.subject,
-            message: this.state.message,
-        }
+    //     const user = {
+    //         text: this.state.text,
+    //         email: this.state.email,
+    //         number: this.state.number,
+    //         subject: this.state.subject,
+    //         message: this.state.message,
+    //     }
 
-        fetch('https://jsonplaceholder.typicode.com/users', {
-            method: 'POST',
-            contacts: {
-                'content-type': 'application/json'
-            },
-            text: JSON.stringify(user),
-            email: JSON.stringify(user),
-            number: JSON.stringify(user),
-            subject: JSON.stringify(user),
-            number: JSON.stringify(user),
-        })
-        .then(res => res.json())
-        .then(data => console.log(data));
-    }
+    //     fetch('https://jsonplaceholder.typicode.com/users', {
+    //         method: 'POST',
+    //         contacts: {
+    //             'content-type': 'application/json'
+    //         },
+    //         text: JSON.stringify(user),
+    //         email: JSON.stringify(user),
+    //         number: JSON.stringify(user),
+    //         subject: JSON.stringify(user),
+    //         number: JSON.stringify(user),
+    //     })
+    //     .then(res => res.json())
+    //     .then(data => console.log(data));
+    // }
 
     render(){
         return(
