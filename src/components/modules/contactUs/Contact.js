@@ -16,10 +16,10 @@ class Contact extends React.Component{
 
 
     change(e){
-        const {name, value} = e.target
-        this.setState ({
-            [name] : e.target.value
-        })
+        // const {name, value} = e.target
+        // this.setState ({
+        //     [name] : e.target.value
+        // })
     }
 
     // submit(e){
