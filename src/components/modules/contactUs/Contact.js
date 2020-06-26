@@ -2,17 +2,17 @@ import React from 'react'
 import {Div } from './ContactStyle'
 
 class Contact extends React.Component{
-    constructor(){
-        super()
-        this.state = {
-            text: '',
-            email: '',
-            subject: '',
-            number: '',
-        }
-        this.change = this.change.bind(this)
-        this.submit = this.submit.bind(this)
-    }
+    // constructor(){
+    //     super()
+    //     this.state = {
+    //         text: '',
+    //         email: '',
+    //         subject: '',
+    //         number: '',
+    //     }
+    //     this.change = this.change.bind(this)
+    //     this.submit = this.submit.bind(this)
+    // }
 
 
     change(e){
@@ -51,7 +51,7 @@ class Contact extends React.Component{
     render(){
         return(
             <Div>
-                <div className='main'>
+                {/* <div className='main'>
                     <div className='body'>
                         <div className='div'>
                             <h3><i>We'd love to hear from you</i></h3>
@@ -118,7 +118,7 @@ class Contact extends React.Component{
                     <div className='img'>
                         <img src='\Asset\Img\optician.jpg' />
                     </div>
-                </div>
+                </div> */}
             </Div>
         )
     }
