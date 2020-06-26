@@ -14,7 +14,7 @@ export const Style = styled.div`
                 box-sizing: border-box;
                 background-color: #f0f0f0;
                 margin-bottom: 2em;
-                border-radius: 30px 0 0;
+                border-radius: 30px 3px 3px;
 
 
                 .sub_container_first{
@@ -35,10 +35,10 @@ export const Style = styled.div`
 
                 img{
                     width: 100%;
-                    box-shadow: 4px 4px 20px gray;
+                    box-shadow: 4px 4px 10px gray;
 
                     :hover{
-                        box-shadow: 10px 10px 20px gray;
+                        box-shadow: 7px 7px 20px gray;
                         transition: 0.5s
                     }
                 }
@@ -51,14 +51,14 @@ export const Style = styled.div`
                 flex-basis: 32%;
                 box-sizing: border-box;
                 margin-bottom: 2em;
-                border-radius: 0 0 30px;
+                border-radius: 3px 3px 30px;
 
                 .sub_container_hours{
-                    padding: 8%;
+                    padding: 10%;
 
                     hr{
                         margin-bottom: 2em;
-                        background-color: gray;
+                        background-color: #b0b0b0;
                         border: none;
                         height: 1px;
                     }
@@ -74,6 +74,12 @@ export const Style = styled.div`
                         justify-content: space-between;
                         flex-wrap: wrap;
                         width: 80%;
+                        font-size: 15px;
+
+                        .days{
+                            color: #252079;
+                            font-weight: bolder;
+                        }
                     }
                 }
             }

@@ -18,7 +18,8 @@ function MidSection(){
                 <div className = 'working_hours'>
                     <div className = 'sub_container_hours'>
                         <h3>Working Hours</h3>
-                        <h5>We're Open between these hours below</h5>
+                        <br />
+                        <br />
                         <div className = 'days_container'>
                             <div className = 'days'>Monday</div>      <div>9:00 AM - 5:00 PM</div>
                         </div>
