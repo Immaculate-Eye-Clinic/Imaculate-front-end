@@ -43,10 +43,10 @@ class ReactRouter extends React.Component {
                               <Route exact path="/services/:seviceblog/:chalazion-removal" component={Chalazion} />
                               <Route exact path="/services/:seviceblog/:cataract-treatment" component={Cataract} />
                               <Route exact path='/visit' component={VisitUs} />
-                              <Route exact path='/values' component={Values} />
-                              <Route exact path='/choose' component={Choose} />
-                              <Route exact path='/faq' component={Faq} />
-                              <Route exact path='/careers' component={Career} />
+                              <Route exact path='/about/values' component={Values} />
+                              <Route exact path='/about/choose' component={Choose} />
+                              <Route exact path='/about/faq' component={Faq} />
+                              <Route exact path='/about/careers' component={Career} />
                               <Route component={NoMatch} />      
                           </Switch>
                         </App>
