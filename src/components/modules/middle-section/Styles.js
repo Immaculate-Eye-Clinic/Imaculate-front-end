@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 export const Style = styled.div`
     width: 90%;
-    color: red;
     margin: auto;
 
 
@@ -19,9 +18,11 @@ export const Style = styled.div`
 
                 .sub_container_first{
                     padding: 8%;
+                    font-size: 15px;
+                    line-height: 25px;
 
                     h3{
-                        margin-top: 0;
+                        margin: 0 0 2em;
                         color: #252079;
                     }
                 }
@@ -32,6 +33,11 @@ export const Style = styled.div`
                 flex-basis: 32%;
                 box-sizing: border-box;
                 margin-bottom: 2em;
+                font-size: 15px;
+
+                h3{
+                    color: #252079;
+                }
 
                 img{
                     width: 100%;
@@ -66,6 +72,8 @@ export const Style = styled.div`
                     h3{
                         margin-top: 0;
                         color: #252079;
+                        font-size: 25px;
+                        font-weight: bolder;
                     }
 
 
@@ -79,6 +87,7 @@ export const Style = styled.div`
                         .days{
                             color: #252079;
                             font-weight: bolder;
+                            font-size: 17px;
                         }
                     }
                 }
@@ -89,6 +98,25 @@ export const Style = styled.div`
         .container_div{
             display: flex;
             justify-content: space-between
+        }
+    }
+`
+
+export const FirstSection = styled.div `
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+    img{
+        width: 30%;
+        margin-bottom: 1em;
+        border-radius: 3px;
+        box-shadow: 2px 2px 3px gray;
+
+        :hover{
+            box-shadow: 7px 7px 20px gray;
+            transition: 0.5s
         }
     }
 `
