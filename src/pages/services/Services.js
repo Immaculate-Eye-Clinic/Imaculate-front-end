@@ -11,7 +11,7 @@ function Services (props, imgUrl){
                 <div className = 'card_text'>
                     <div className='caption'>
                         {props.service.caption}
-                        <NavLink to={props.service.readMore}><button>Read More</button></NavLink>
+                        <button>{props.service.readMore}</button>
                     </div>
                     
                 </div>
