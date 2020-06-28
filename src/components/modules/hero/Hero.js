@@ -9,8 +9,6 @@ function Hero ({ title, subText, height, img, mobileHeight}){
                 <div class="hero-text">
                 <Bounce left cascade> 
                     <h1>{title}</h1>
-                </Bounce>
-                <Bounce right cascade> 
                     <p>{subText}</p>
                 </Bounce>
                 </div>
