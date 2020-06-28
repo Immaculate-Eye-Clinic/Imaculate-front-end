@@ -8,7 +8,7 @@ function MidSection(){
     return (
         <Style>
             <div className = "container_div">
-                <Slide left cascade>
+                <Slide left>
                     <div className = 'first_section'>
                         <div className = 'sub_container_first'>
                             <h3>We are A Team of Eyecare Professionals</h3>
@@ -33,7 +33,7 @@ function MidSection(){
                     </div>
                 </Zoom>
 
-                <Slide right cascade>
+                <Slide right>
                     <div className = 'working_hours'>
                         <div className = 'sub_container_hours'>
                             <h3>Working Hours</h3>
