@@ -23,7 +23,7 @@ class Testimonials extends Component {
                 </span>
             </div>
             <div className="name">
-                <span>mcbobby madu</span>
+                <span>- mcbobby madu</span>
             </div>
         </Testi>
       )

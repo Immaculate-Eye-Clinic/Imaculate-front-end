@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-const width = '100%', height='550px';
+const width = '100%', height='620px';
 
 export const Container = styled.div`
   border: none;
@@ -12,6 +12,9 @@ export const Container = styled.div`
   background-color: #252079;
   color: white;
   padding: 30px 0;
+  @media (min-width: 800px){
+    height: 480px;
+  }
 `;
 export const Arrow = styled.div`
   text-shadow: 1px 1px 1px #fff;
@@ -36,6 +39,7 @@ export const Testi = styled.div`
   height: 100%;
 
   .image {
+    margin-top: 70px;
     display: flex;
     justify-content: center;
     img {
@@ -51,7 +55,7 @@ export const Testi = styled.div`
     font-size: 15px;
   }
   .name {
-    font-size: 18px;
+    font-size: 20px;
     float: right;
   }
 `;

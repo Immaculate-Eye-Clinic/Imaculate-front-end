@@ -6,6 +6,7 @@ import Testimonials from "./testimonial"
 
 const CarouselUI = ({ position, handleClick, children }) => (
   <Container>
+      <h2 style={{textAlign: "center"}}> What Patients Say</h2>
       {children}
       <Arrow onClick={handleClick} data-position={position - 1}>{'<'}</Arrow>
       <Arrow right onClick={handleClick} data-position={position + 1}>{'>'}</Arrow>
