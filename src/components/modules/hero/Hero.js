@@ -13,7 +13,6 @@ function Hero ({ title, subText, height, img, mobileHeight}){
                 </Bounce>
                 </div>
             </HeroStyle>
-            
         )
     }
 
