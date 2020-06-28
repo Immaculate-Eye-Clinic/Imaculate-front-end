@@ -23,6 +23,8 @@ flex-wrap: wrap;
         border-bottom: 2px white solid;
     }
     li {
+        display: flex;
+        flex-direction: column;
         a {
         text-decoration: none;
         color: white;
