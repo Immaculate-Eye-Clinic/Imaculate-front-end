@@ -11,6 +11,7 @@ export const Container = styled.div`
   margin: 60px 0;
   background-color: #252079;
   color: white;
+  padding: 30px 0;
 `;
 export const Arrow = styled.div`
   text-shadow: 1px 1px 1px #fff;
@@ -24,4 +25,33 @@ export const Arrow = styled.div`
   cursor: pointer;
   user-select: none;
   ${props => props.right ? css`left: 90%;` : css`left: 0%;`}
+`;
+
+export const Testi = styled.div`
+  width: 70%;
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+
+  .image {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
+  }
+  .message {
+    text-align: center;
+    line-height: 25px;
+    margin: 20px 0;
+    font-size: 15px;
+  }
+  .name {
+    font-size: 18px;
+    float: right;
+  }
 `;

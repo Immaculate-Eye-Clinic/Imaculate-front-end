@@ -2,6 +2,7 @@ import React from 'react';
 import makeCarousel from 'react-reveal/makeCarousel';
 import Slide from 'react-reveal/Slide';
 import { Container, Arrow} from "./style"
+import Testimonials from "./testimonial"
 
 const CarouselUI = ({ position, handleClick, children }) => (
   <Container>
@@ -12,31 +13,19 @@ const CarouselUI = ({ position, handleClick, children }) => (
 );
 const Carousel = makeCarousel(CarouselUI);
 
-// render (
- 
-// );
 function Testimonial(){
     return (
-        <Carousel>
-        <Slide right>
-          <div>
-            <h1>Slide 1</h1>
-            <p>Slide Description</p>
-          </div>
-        </Slide>
-        <Slide right>
-          <div>
-            <h1>Slide 2</h1>
-            <p>Slide Description</p>
-          </div>
-        </Slide>
-        <Slide right>
-          <div>
-            <h1>Slide 3</h1>
-            <p>Slide Description</p>
-          </div>
-        </Slide>
-      </Carousel>
+            <Carousel>
+                <Slide right>
+                    <Testimonials />
+                </Slide>
+                <Slide right>
+                    <Testimonials />
+                </Slide>
+                <Slide right>
+                    <Testimonials />
+                </Slide>
+            </Carousel>
         )
     }
     
