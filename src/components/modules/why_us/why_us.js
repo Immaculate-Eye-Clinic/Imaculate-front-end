@@ -13,7 +13,7 @@ class Slides extends Component {
                 {Data.map((why, index) => (
                     <React.Fragment>
                         <div className="why" key={why.id}>
-                            <Slide left>
+                            <Slide left cascade>
                                 <div className="text">
                                     <div className="title">{why.title}</div>
                                     <p>
@@ -21,7 +21,7 @@ class Slides extends Component {
                                     </p>
                                 </div>
                             </Slide>
-                            <Slide right>
+                            <Slide right cascade>
                                 <div className="image">
                                     <img src={why.imgUrl} alt="" />
                                 </div>

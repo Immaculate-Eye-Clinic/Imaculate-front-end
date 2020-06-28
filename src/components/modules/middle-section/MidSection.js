@@ -8,7 +8,7 @@ function MidSection(){
     return (
         <Style>
             <div className = "container_div">
-                <Slide left>
+                <Slide left cascade>
                     <div className = 'first_section'>
                         <div className = 'sub_container_first'>
                             <h3>We are A Team of Eyecare Professionals</h3>
@@ -21,7 +21,7 @@ function MidSection(){
                     </div>
                 </Slide>
 
-                <Zoom>
+                <Zoom cascade>
                     <div className = 'photo_section'>
                         <img src = 'https://res.cloudinary.com/hisroyalwonginess/image/upload/v1567505818/Startng/234_813_674_3132_20190810_223902_mc4hyc.jpg' alt = 'Doctor'></img>
                         <h3>
@@ -33,7 +33,7 @@ function MidSection(){
                     </div>
                 </Zoom>
 
-                <Slide right>
+                <Slide right cascade>
                     <div className = 'working_hours'>
                         <div className = 'sub_container_hours'>
                             <h3>Working Hours</h3>
