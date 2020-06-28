@@ -22,7 +22,8 @@ flex-wrap: wrap;
     .link {
         border-bottom: 2px white solid;
     }
-    a {
+    li {
+        a {
         text-decoration: none;
         color: white;
         margin: 8px;
@@ -32,6 +33,7 @@ flex-wrap: wrap;
         @media (max-width: 1000px) {
             display: none;
         }
+    }
     }
 }
 `
