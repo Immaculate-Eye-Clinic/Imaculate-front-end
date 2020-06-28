@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-const width = '100%', height='620px';
+const width = '100%', height='650px';
 
 export const Container = styled.div`
   border: none;
