@@ -2,18 +2,16 @@ import styled from "styled-components"
 
 export const Page = styled.div`
     margin: auto;
-    width: 80%;
-    margin: 5em auto 5em;
+    width: 90%;
+    /* margin: 5em auto 5em; */
 
     @media (max-width: 600px) {
         width: 100%;
     }
 
     .upperText_container{
-        @media (max-width: 600px) {
-            margin: auto;
-            width: 80%;
-        }
+        width: 90%;
+        margin: auto;
         
         .text_paragraph{
             line-height: 25px;
@@ -36,14 +34,17 @@ export const Page = styled.div`
                 font-size: 40px;
             }
             }
-        .immaculate_text{
-            font-size:  50px;
+        .immaculate_text, .head{
+            font-size:  40px;
             font-weight: bolder;
             color: #252079;
 
             @media (max-width: 760px) {
-                font-size: 40px;
+                font-size: 20px;
             }
+        }
+        .head {
+            color: black;
         }
         .sub_text{
             font-size: 17px;
@@ -64,13 +65,12 @@ export const Page = styled.div`
 export const Cards = styled.div `
     align-items: center;
     box-sizing: border-box;
-    width: 500px;
-    min-width: 310;
+    width: 100%;
+    max-width: 450px;
     height: 300px;
-    max-height: 350px;
     margin: 1em;
 
-    @media (max-width: 768px) {
+    /* @media (max-width: 768px) {
         margin: 1em 0 1em;
         width: 100%;
         height: 280px;
@@ -85,7 +85,7 @@ export const Cards = styled.div `
         width: 520px;
         max-width: 550px;
         height: 300px;
-    }
+    } */
 
     .card{
         position: relative;
@@ -100,7 +100,9 @@ export const Cards = styled.div `
         height: 100%;
 
             :hover .caption_container{
-                filter: blur(4px);
+                filter: blur(3px);
+                -webkit-filter: blur(3px);
+                backdrop-filter: blur(3px);                
                 transition: 0.5s;
             }
 
@@ -177,7 +179,7 @@ export const FlexStyle = styled.div`
     justify-content: center;
     flex-wrap: wrap;
     margin: 1em auto 6em;
-    width: 90%;
+    width: 100%;
 
     @media (min-width: 760px){
         margin: auto;

@@ -2,9 +2,12 @@ import styled from 'styled-components'
 
 export const Container = styled.div `
     margin: auto;
-    width: 80%;
+    width: 100%;
     margin-top: 5em;
 
+    .head {
+        width: 90%;
+        margin: auto;
     .text_paragraph{
         line-height: 25px;
         text-align: justify;
@@ -42,6 +45,9 @@ export const Container = styled.div `
         background-color: #d3d3d3;
     }
 
+    }
+
+    
     .aboutUs_container{
         display: flex;
         flex-direction: row;
@@ -49,7 +55,7 @@ export const Container = styled.div `
         align-content: center;
         justify-content: center;
         flex-wrap: wrap;
-        width: 90%;
+        width: 100%;
         margin: 0 auto 6em;
         overflow: hidden;
 
