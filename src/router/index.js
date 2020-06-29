@@ -12,7 +12,7 @@ import ScrollToTop from './ScrollToTop';
 import AboutUs from '../pages/AboutUs/AboutUs'
 import {GlobalStyle} from "../GlobalStyle"
 import ShowServices from '../pages/services/ShowServices'
-import Urgent from '../pages/SingleService/Urgent/Urgent'
+import Urgent from '../pages/services/Urgent'
 import Chalazion from '../pages/SingleService/Chalazion/Chalazion'
 import Cataract from '../pages/SingleService/Cataract/Cataract'
 import VisitUs from '../pages/VisitUs/VisitUs'
