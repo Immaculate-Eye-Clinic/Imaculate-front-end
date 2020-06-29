@@ -35,6 +35,27 @@ export const Div = styled.header`
         align-items: center;
         width: 100%;
         justify-content: space-between;
+        .submenu{
+          display: block;
+          position: absolute;
+          background: #252079;
+          margin-top: 125px;
+          :hover{
+            
+          }
+          ul{
+            display: block;
+            margin: 10px;
+            padding-right: 30px;
+            .li{
+              font-size: 14px;
+              color: white;
+              width: 180px;
+              padding: 10px;
+              background: transparent;
+            }
+          }
+        }
 
         .service {
         .dropdown{
@@ -82,6 +103,9 @@ export const Div = styled.header`
             cursor: pointer;
 
             &:hover {
+              .submenu{
+                  
+              }
             span:not(.hasContent) {
                 position: absolute;
                 width: 27px;
