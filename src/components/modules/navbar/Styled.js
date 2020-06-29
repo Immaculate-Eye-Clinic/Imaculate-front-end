@@ -46,7 +46,7 @@ export const Div = styled.header`
               font-size: 14px;
               color: white;
               width: 180px;
-              padding: 10px;
+              padding: 11px;
             }
           }
         }
