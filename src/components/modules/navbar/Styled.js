@@ -38,20 +38,15 @@ export const Div = styled.header`
 
         .service {
         .dropdown{
-            opacity: 0;
             position: absolute;
             transition: all 0.5s ease;
             margin-top: 1rem;
-            display: block;
+            display: none;
             top: 66%;
             background: #252079;
             padding-left: 30px;
             
-            :hover
-            {
-              opacity: 1;
-              transition: 0.6s;
-            }
+            
             a {
               clear: both;
               width: 100%;
@@ -82,6 +77,9 @@ export const Div = styled.header`
             cursor: pointer;
 
             &:hover {
+              .dropdown {
+                display: block;
+              }
             span:not(.hasContent) {
                 position: absolute;
                 width: 27px;
