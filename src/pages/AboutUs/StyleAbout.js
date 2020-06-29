@@ -26,13 +26,27 @@ export const Container = styled.div `
             margin: 0;
             font-size:  50px;
         }
-    .immaculate_text{
+    .immaculate_text, .header{
         font-size:  50px;
         font-weight: bolder;
         color: #252079;
+        @media (max-width: 760px) {
+                font-size: 20px;
+            }
+    }
+    .header {
+        padding: 0;
+        margin: 0;
+        font-size:  50px;
+        color: black;
+        @media (max-width: 760px) {
+                font-size: 20px;
+            }
     }
     .sub_text{
         font-size: 17px;
+        font-weight: 700;
+        line-height: 30px;
         h3{
             margin: 0;
         }

@@ -36,7 +36,7 @@ export const Page = styled.div`
             }
         .immaculate_text, .head{
             font-size:  40px;
-            font-weight: bolder;
+            font-weight: 1000;
             color: #252079;
 
             @media (max-width: 760px) {
@@ -48,7 +48,10 @@ export const Page = styled.div`
         }
         .sub_text{
             font-size: 17px;
-            h3{
+            font-weight: 700;
+            line-height: 30px;
+            
+            div{
                 margin: 0;
             }
         }
@@ -94,7 +97,6 @@ export const Cards = styled.div `
         justify-content: center;
         flex-direction: column;
         flex-wrap: wrap;
-        cursor: pointer;
         box-sizing: border-box;
         width: 100%;
         height: 100%;
@@ -153,6 +155,7 @@ export const Cards = styled.div `
 
                     button{
                         margin: 1em auto;
+                        margin-top: 80px;
                         padding: 0.5em 2em 0.5em;
                         visibility: hidden;
                         opacity: 0;
@@ -162,6 +165,7 @@ export const Cards = styled.div `
                         background: #252079;
                         border: none;
                         border-radius: 2px;
+                        cursor: pointer;
 
                         @media (max-width: 1024px){
                             visibility: visible;

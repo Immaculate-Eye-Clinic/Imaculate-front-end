@@ -22,9 +22,9 @@ function AboutUs (){
                 <div className="head">
                     <span className = 'intro_text'><h4><em><strong>Private Eye Care Services </strong></em></h4></span>
                     <br />
-                    <h1>About <span className = 'immaculate_text'>Immaculate Eye Clinic</span></h1>
+                    <div className="header">About <span className = 'immaculate_text'>Immaculate Eye Clinic</span></div>
                     <br />
-                    <span className = 'sub_text'><h3>Immaculate Eye Clinic is a Private Ophtalmology clinic in Imo State, around Awaka, Owerri - North.</h3></span>
+                    <span className = 'sub_text'><div>Immaculate Eye Clinic is a Private Ophtalmology clinic in Imo State, around Awaka, Owerri - North.</div></span>
                     <br />
                     <div className = 'text_paragraph'>Our experienced Consultants provide expert care for a wide range of eye conditions. At our clinic, assessment of your eye condition will include a thorough examination, and many tests can be performed conveniently in-house. You will enjoy courteous, personalized medical attention and an exceptionally high level of care.</div>
                     <hr />
