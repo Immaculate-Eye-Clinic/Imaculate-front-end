@@ -36,23 +36,17 @@ export const Div = styled.header`
         width: 100%;
         justify-content: space-between;
         .submenu{
-          display: block;
+          display: none;
           position: absolute;
           background: #252079;
-          margin-top: 125px;
-          :hover{
-            
-          }
+          margin-top: 110px;
           ul{
-            display: block;
-            margin: 10px;
             padding-right: 30px;
             .li{
               font-size: 14px;
               color: white;
               width: 180px;
               padding: 10px;
-              background: transparent;
             }
           }
         }
@@ -63,7 +57,7 @@ export const Div = styled.header`
             position: absolute;
             transition: all 0.5s ease;
             margin-top: 1rem;
-            display: block;
+            display: none;
             top: 66%;
             background: white;
             padding-left: 30px;
@@ -104,7 +98,7 @@ export const Div = styled.header`
 
             &:hover {
               .submenu{
-                  
+                  display: block;
               }
             span:not(.hasContent) {
                 position: absolute;
