@@ -44,7 +44,7 @@ export const Div = styled.header`
             margin-top: 1rem;
             display: block;
             top: 66%;
-            background: white;
+            background: #252079;
             padding-left: 30px;
             
             :hover
@@ -55,15 +55,15 @@ export const Div = styled.header`
             a {
               clear: both;
               width: 100%;
-              color: black;
+              color: white;
               font-size: 15px;
               font-weight: 500;
               margin: 10px 0;
               text-align: left;
               :hover,
-              active 
+              :active 
               {
-                color: #252079;
+                color: white;
               }
             }
         }
