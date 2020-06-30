@@ -24,7 +24,7 @@ const AboutUsData = [
         id: '4',
         imgUrl:'https://res.cloudinary.com/hisroyalwonginess/image/upload/v1566842519/sample.jpg',
         caption: 'Careers',
-        link: '/about/career',
+        link: '/about/careers',
         readMore: 'Read More'
     }
 ]
