@@ -2,9 +2,12 @@ import styled from 'styled-components'
 
 export const Container = styled.div `
     margin: auto;
-    width: 80%;
+    width: 100%;
     margin-top: 5em;
 
+    .head {
+        width: 90%;
+        margin: auto;
     .text_paragraph{
         line-height: 25px;
         text-align: justify;
@@ -23,13 +26,27 @@ export const Container = styled.div `
             margin: 0;
             font-size:  50px;
         }
-    .immaculate_text{
+    .immaculate_text, .header{
         font-size:  50px;
         font-weight: bolder;
         color: #252079;
+        @media (max-width: 760px) {
+                font-size: 20px;
+            }
+    }
+    .header {
+        padding: 0;
+        margin: 0;
+        font-size:  50px;
+        color: black;
+        @media (max-width: 760px) {
+                font-size: 20px;
+            }
     }
     .sub_text{
         font-size: 17px;
+        font-weight: 700;
+        line-height: 30px;
         h3{
             margin: 0;
         }
@@ -42,6 +59,9 @@ export const Container = styled.div `
         background-color: #d3d3d3;
     }
 
+    }
+
+    
     .aboutUs_container{
         display: flex;
         flex-direction: row;
@@ -49,7 +69,7 @@ export const Container = styled.div `
         align-content: center;
         justify-content: center;
         flex-wrap: wrap;
-        width: 90%;
+        width: 100%;
         margin: 0 auto 6em;
         overflow: hidden;
 
