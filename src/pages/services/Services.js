@@ -1,6 +1,7 @@
 import React from "react"
 import {Cards} from "./Styles"
 import {NavLink} from 'react-router-dom'
+import { Zoom } from "react-reveal"
 
 function Services (props, imgUrl){
     return(

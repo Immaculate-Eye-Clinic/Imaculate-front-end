@@ -2,17 +2,17 @@ import React from 'react'
 import {Div } from './ContactStyle'
 
 class Contact extends React.Component{
-    // constructor(){
-    //     super()
-    //     this.state = {
-    //         text: '',
-    //         email: '',
-    //         subject: '',
-    //         number: '',
-    //     }
-    //     this.change = this.change.bind(this)
-    //     this.submit = this.submit.bind(this)
-    // }
+    constructor(){
+        super()
+        this.state = {
+            text: '',
+            email: '',
+            subject: '',
+            number: '',
+        }
+        this.change = this.change.bind(this)
+        this.submit = this.submit.bind(this)
+    }
 
 
     change(e){
