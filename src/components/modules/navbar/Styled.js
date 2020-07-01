@@ -39,14 +39,16 @@ export const Div = styled.header`
           display: none;
           position: absolute;
           background: #252079;
-          margin-top: 110px;
+          margin-top: 140px;
+          border-radius: 10px;
+          padding: 20px 0;
           ul{
             padding-right: 30px;
             .li{
               font-size: 14px;
               color: white;
-              width: 180px;
-              padding: 11px;
+              width: 200px;
+              padding: 10px;
             }
           }
         }
