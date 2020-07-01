@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Header from '../../../components/modules/Header/Header'
-import Navs from '../Navs'
+import Navs from '../Navbar/Navs'
 import {Div} from './styled'
 import Prop from './Prop'
 

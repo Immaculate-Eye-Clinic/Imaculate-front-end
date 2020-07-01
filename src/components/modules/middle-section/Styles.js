@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Style = styled.div`
     width: 90%;
-    margin: 60px auto;
+    margin: auto;
 
 
     .container_div{
