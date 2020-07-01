@@ -39,8 +39,9 @@ export const Div = styled.header`
           display: none;
           position: absolute;
           background: #252079;
-          margin-top: 120px;
+          margin-top: 140px;
           border-radius: 10px;
+          padding: 20px 0;
           ul{
             padding-right: 30px;
             .li{
