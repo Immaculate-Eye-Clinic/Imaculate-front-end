@@ -2,6 +2,7 @@ import React from "react"
 import {Cards} from "./Styles"
 import {NavLink} from 'react-router-dom'
 import { Zoom } from "react-reveal"
+import Modal from '../../components/modules/Modal/Modal'
 
 function Services (props, imgUrl){
     return(
@@ -14,7 +15,7 @@ function Services (props, imgUrl){
                         {props.service.caption}
                         <NavLink to={props.service.link}><button>{props.service.readMore}</button></NavLink>
                     </div>
-                    
+                    <Modal />
                 </div>
                 
             </div>
