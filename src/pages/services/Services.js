@@ -15,7 +15,11 @@ function Services (props, imgUrl){
                         {props.service.caption}
                         <NavLink to={props.service.link}><button>{props.service.readMore}</button></NavLink>
                     </div>
-                    <Modal />
+                    <Modal>
+                        <div>
+                            The best has happened
+                        </div>
+                    </Modal>
                 </div>
                 
             </div>

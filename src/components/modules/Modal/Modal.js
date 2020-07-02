@@ -1,10 +1,11 @@
 import React from 'react'
+import {Div} from './styled'
 
 function Modal(props) {
     return (
-        <div>
-            
-        </div>
+        <Div>
+            {props.children}
+        </Div>
     )
 }
 
