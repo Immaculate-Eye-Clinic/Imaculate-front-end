@@ -4,7 +4,7 @@ export const Div = styled.div`
 
 nav{
     background: #252079;
-    height: 65px;
+    height: 80px;
     padding-top: 1px;
     
     ul{
