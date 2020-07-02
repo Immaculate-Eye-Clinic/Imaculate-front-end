@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-const width = '100%', height='650px';
+const width = '100%', height='600px';
 
 export const Container = styled.div`
   border: none;
@@ -37,6 +37,20 @@ export const Testi = styled.div`
   justify-content: center;
   flex-direction: column;
   height: 100%;
+  @media (max-width: 500px){
+
+    .message {
+        line-height: 20px;
+        font-size: 10px;
+    }
+      .image {
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+    
+  }
 
   .image {
     margin-top: 70px;
@@ -46,6 +60,10 @@ export const Testi = styled.div`
       width: 200px;
       height: 200px;
       border-radius: 50%;
+      @media (max-width: 500px){
+        width: 130px;
+        height: 130px;
+      }
     }
   }
   .message {
@@ -53,6 +71,9 @@ export const Testi = styled.div`
     line-height: 25px;
     margin: 20px 0;
     font-size: 15px;
+    @media (max-width: 500px){
+      font-size: 13px;
+    }
   }
   .name {
     font-size: 20px;
