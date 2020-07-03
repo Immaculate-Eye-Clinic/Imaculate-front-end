@@ -6,10 +6,37 @@ import {Container} from './Style'
       super();
   
       this.state = {
-          intervalId: 0
+          intervalId: 0,
+          displayButton: false,
+          scrollPosition: 0,
+          opacity: 0,
+          visibility: 'hidden',
       };
     }
     
+    handleScroll = (event) => {
+      this.setState({
+        scrollPosition: window.pageYOffset
+      }, this.checkScroll)
+    }
+
+    checkScroll = () => {
+      if (this.state.scrollPosition > 100) {
+        this.setState({
+          displayButton: true,
+          opacity: 1,
+          visibility: 'visible'
+        })
+      }
+      else{
+        this.setState({
+          displayButton: false,
+          opacity: 0,
+          visibility: 'hidden'
+        })
+      }
+    }
+
     scrollStep() {
       if (window.pageYOffset === 0) {
           clearInterval(this.state.intervalId);
@@ -23,12 +50,21 @@ import {Container} from './Style'
     }
     
     render () {
+      const scroll = {
+        color: 'white'
+      }
         return (
             <Container>
-                <button title='Back to top' className='scroll' 
-                    onClick={ () => { this.scrollToTop(); }}>
+              <div>
+                {window.onscroll = () => this.handleScroll()}
+                <button title='Back to top' 
+                  className = 'scroll' 
+                  style = {{...scroll, opacity: this.state.opacity, visibility: this.state.display}}
+                  onClick={ () => { this.scrollToTop(); }}
+                  >
                     <span className='arrow-up'>^</span>
                 </button>
+              </div>
             </Container>
         )
      }
