@@ -39,46 +39,43 @@ export const Div = styled.header`
           display: none;
           position: absolute;
           background: #252079;
-          margin-top: 110px;
+          margin-top: 140px;
+          border-radius: 10px;
+          padding: 20px 0;
           ul{
             padding-right: 30px;
             .li{
               font-size: 14px;
               color: white;
-              width: 180px;
-              padding: 11px;
+              width: 200px;
+              padding: 10px;
             }
           }
         }
 
         .service {
         .dropdown{
-            opacity: 0;
             position: absolute;
             transition: all 0.5s ease;
             margin-top: 1rem;
             display: none;
             top: 66%;
-            background: white;
+            background: #252079;
             padding-left: 30px;
             
-            :hover
-            {
-              opacity: 1;
-              transition: 0.6s;
-            }
+            
             a {
               clear: both;
               width: 100%;
-              color: black;
+              color: white;
               font-size: 15px;
               font-weight: 500;
               margin: 10px 0;
               text-align: left;
               :hover,
-              active 
+              :active 
               {
-                color: #252079;
+                color: white;
               }
             }
         }
@@ -97,6 +94,9 @@ export const Div = styled.header`
             cursor: pointer;
 
             &:hover {
+              .dropdown {
+                display: block;
+              }
               .submenu{
                   display: block;
               }

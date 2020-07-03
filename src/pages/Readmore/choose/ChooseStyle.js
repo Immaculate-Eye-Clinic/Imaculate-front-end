@@ -29,7 +29,7 @@ export const Div = styled.div`
             display: block;
         }
             h1{
-
+                font-size: 25px;
             }
             p{
 

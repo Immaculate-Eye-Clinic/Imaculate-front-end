@@ -11,7 +11,6 @@ import ScrollToTop from './ScrollToTop';
 import AboutUs from '../pages/AboutUs/AboutUs'
 import {GlobalStyle} from "../GlobalStyle"
 import ShowServices from '../pages/services/ShowServices'
-import Servicesblog from '../pages/SingleService/Servicesblog'
 import Urgent from '../pages/SingleService/Urgent/Urgent'
 import Chalazion from '../pages/SingleService/Chalazion/Chalazion'
 import Cataract from '../pages/SingleService/Cataract/Cataract'
@@ -38,10 +37,9 @@ class ReactRouter extends React.Component {
                               <Route exact path="/blog" component={Blog} />
                               <Route exact path="/about" component={AboutUs} />
                               <Route exact path="/services" component={ShowServices} />
-                              <Route exact path="/services/:seviceblog" component={Servicesblog} />
-                              <Route exact path="/services/:seviceblog/:urgent-eye-problems" component={Urgent} />
-                              <Route exact path="/services/:seviceblog/:chalazion-removal" component={Chalazion} />
-                              <Route exact path="/services/:seviceblog/:cataract-treatment" component={Cataract} />
+                              <Route exact path="/services/:urgent-eye-problems" component={Urgent} />
+                              <Route exact path="/services/:chalazion-removal" component={Chalazion} />
+                              <Route exact path="/services/:cataract-treatment" component={Cataract} />
                               <Route exact path='/visit' component={VisitUs} />
                               <Route exact path='/about/values' component={Values} />
                               <Route exact path='/about/choose' component={Choose} />

@@ -5,8 +5,6 @@ import Header from '../../components/modules/Header/Header';
 import WelcomeText from '../../components/welcomeText/WelcomeText.js';
 import Footer from '../../components/modules/footer/footer'
 import MidSection from '../../components/modules/middle-section/MidSection'
-import Testimonial from "../../components/modules/testimonial"
-import ScrollApp from '../../components/floatToTop/ScrollApp'
 
 function Home() {
     return (
@@ -20,9 +18,10 @@ function Home() {
             img={'https://res.cloudinary.com/hisroyalwonginess/image/upload/v1588437898/Immaculate/Doctors_ieplxk.jpg'}
             />
             <WelcomeText />
-            <ScrollApp />
+            <div style={{width: "90%", margin: "auto"}}>
+            {/* <BlogCard /> */}
+            </div>
             <MidSection />
-            <Testimonial />
             <Why />
             <Footer />
         </div>

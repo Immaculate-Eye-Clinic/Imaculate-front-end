@@ -26,12 +26,12 @@ class Navbar extends React.Component {
                         </li>
                         <li className='service'><NavLink exact to='/services'  activeClassName='active'>Services</NavLink><span></span>
                             <ul className='dropdown'>
-                                <li><NavLink to='/services/:serviceblog/:urgent-eye-problems' className='link'>Urgent Eye Problem</NavLink></li>
-                                <li><NavLink to='/services/:serviceblog/:chalazion-removal' className='link'>Charazion Removal</NavLink></li>
-                                <li><NavLink to='/services/:serviceblog/:cataract-treatment' className='link'>Cataract Treatment</NavLink></li>
-                                <li><NavLink to='/services/:serviceblog' className='link'>Glaucoma Treatment</NavLink></li>
-                                <li><NavLink to='/services/:serviceblog' className='link'>Squint Treatment</NavLink></li>
-                                <li><NavLink to='/services/:serviceblog' className='link'>Aqueous Shunt Surgery</NavLink></li>
+                                <li><NavLink to='/services/urgent-eye-problems' activeClassName='link' exact>Urgent Eye Problem</NavLink></li>
+                                <li><NavLink to='/services/chalazion-removal' activeClassName='link'exact>Charazion Removal</NavLink></li>
+                                <li><NavLink to='/services/cataract-treatment' activeClassName='link'exact>Cataract Treatment</NavLink></li>
+                                <li><NavLink to='/services' activeClassName='link'exact>Glaucoma Treatment</NavLink></li>
+                                <li><NavLink to='/services' activeClassName='link'exact>Squint Treatment</NavLink></li>
+                                <li><NavLink to='/services' activeClassName='link'exact>Aqueous Shunt Surgery</NavLink></li>
                             </ul>
                         </li>
                         <li><NavLink exact to='/blog'  activeClassName='active'>Blog</NavLink><span></span></li>
