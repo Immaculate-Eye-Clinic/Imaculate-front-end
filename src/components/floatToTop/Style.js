@@ -16,7 +16,7 @@ a {
   border-radius: 50px;
   border: none;
   z-index: 99;
-    transition: 1s;
+  transition: 1s;
   
   &:hover {
     transition: 0.5s;
