@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const Div = styled.div `
-div {
     position: fixed;
     z-index: 500;
     background-color: white;
@@ -13,7 +12,6 @@ div {
     top: 30%;
     box-sizing: border-box;
     transition: all 0.3s ease-out;
-}
 
 @media (min-width: 600px) {
     .Modal {
