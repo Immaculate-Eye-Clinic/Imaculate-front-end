@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const Div = styled.div `
+div {
     position: fixed;
     z-index: 500;
     background-color: white;
@@ -19,4 +20,5 @@ export const Div = styled.div `
         width: 500px;
         left: calc(50% - 250px);
     }
+}
 `

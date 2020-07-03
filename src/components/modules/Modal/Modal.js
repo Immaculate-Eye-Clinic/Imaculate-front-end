@@ -4,7 +4,9 @@ import {Div} from './styled'
 function Modal(props) {
     return (
         <Div>
-            {props.children}
+            <div>
+                {props.children}
+            </div>
         </Div>
     )
 }
