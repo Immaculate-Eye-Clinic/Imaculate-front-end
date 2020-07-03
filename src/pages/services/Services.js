@@ -9,9 +9,10 @@ class Services extends React.Component{
             modalToggle: false,
         }
 
-    modalHandler = () => {
+    modalHandler = (e) => {
+        e.preventDefault();
         this.setState({
-            modalToggle: true
+            modalToggle: !this.state.modalToggle
         })
     }
     render() {
@@ -26,7 +27,7 @@ class Services extends React.Component{
                             <NavLink to={this.props.service.link}><button>{this.props.service.readMore}</button></NavLink>
                         </div>
                         { this.state.modalToggle &&
-                            <Modal show={this.state.modalToggle}>
+                            <Modal show={this.state.modalToggle} >
                                 <div>
                                     The best has happened
                                 </div>
@@ -35,7 +36,7 @@ class Services extends React.Component{
                     </div>
                     
                 </div>
-                <button onClick={this.modalHandler}>Modal</button>
+                <button onClick={this.modalHandler} modalClosed={this.modalHandler}>Modal</button>
             </Cards>  
         )
     }
