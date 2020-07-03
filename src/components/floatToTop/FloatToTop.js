@@ -59,10 +59,10 @@ import {Container} from './Style'
                 {window.onscroll = () => this.handleScroll()}
                 <button title='Back to top' 
                   className = 'scroll' 
-                  style = {{...scroll, opacity: this.state.opacity, visibility: this.state.display}}
+                  style = {{...scroll, opacity: this.state.opacity, visibility: this.state.visibility}}
                   onClick={ () => { this.scrollToTop(); }}
                   >
-                    <span className='arrow-up'>^</span>
+                    <i class="fa fa-arrow-up"></i>
                 </button>
               </div>
             </Container>
