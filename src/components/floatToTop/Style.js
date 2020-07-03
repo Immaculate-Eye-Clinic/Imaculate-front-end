@@ -6,14 +6,8 @@ a {
   color: white;
 }
   
-.scroll_hidden {
-  display: none;
-  transition: 5s;
-}
-
-.scroll_shown {
-  opacity: 0.5;
-  background-color: #252079;
+.scroll {
+  background-color: #B1AEEA;
   width: 40px;
   height: 40px;
   position: fixed;
@@ -22,12 +16,11 @@ a {
   border-radius: 50px;
   border: none;
   z-index: 99;
-  display: block;
-  transition: 3s;
+    transition: 1s;
   
   &:hover {
-    opacity: 1;
     transition: 0.5s;
+    background-color: #252079;
   }
 }
 

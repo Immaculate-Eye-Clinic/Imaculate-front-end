@@ -8,7 +8,9 @@ import {Container} from './Style'
       this.state = {
           intervalId: 0,
           displayButton: false,
-          scrollPosition: 0
+          scrollPosition: 0,
+          opacity: 0,
+          visibility: 'hidden',
       };
     }
     
@@ -19,14 +21,18 @@ import {Container} from './Style'
     }
 
     checkScroll = () => {
-      if (this.state.scrollPosition > 0) {
+      if (this.state.scrollPosition > 100) {
         this.setState({
-          displayButton: true
+          displayButton: true,
+          opacity: 1,
+          visibility: 'visible'
         })
       }
       else{
         this.setState({
-          displayButton: false
+          displayButton: false,
+          opacity: 0,
+          visibility: 'hidden'
         })
       }
     }
@@ -44,12 +50,18 @@ import {Container} from './Style'
     }
     
     render () {
+      const scroll = {
+        color: 'white'
+      }
         return (
             <Container>
               <div>
                 {window.onscroll = () => this.handleScroll()}
-                <button title='Back to top' className = {this.state.scrollPosition > 100 ? 'scroll_shown' : 'scroll_hidden'} 
-                    onClick={ () => { this.scrollToTop(); }}>
+                <button title='Back to top' 
+                  className = 'scroll' 
+                  style = {{...scroll, opacity: this.state.opacity, visibility: this.state.display}}
+                  onClick={ () => { this.scrollToTop(); }}
+                  >
                     <span className='arrow-up'>^</span>
                 </button>
               </div>
