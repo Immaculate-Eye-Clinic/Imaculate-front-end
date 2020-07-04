@@ -3,7 +3,7 @@ import {Divs} from './styled'
 
 function Backdrop(props) {
     return (
-        props.show ? <Divs onClick = {props.clicked}></Divs> : null
+        props.show ? <Divs onClick={props.clicked}></Divs> : null
     )
 }
 
