@@ -14,10 +14,8 @@ export const Div = styled.div `
     transition: all 0.3s ease-out;
 
 @media (min-width: 600px) {
-    .Modal {
         width: 500px;
         left: calc(50% - 250px);
-    }
 }
 `
 
