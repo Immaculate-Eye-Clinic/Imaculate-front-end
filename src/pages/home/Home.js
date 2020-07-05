@@ -5,7 +5,6 @@ import Header from '../../components/modules/Header/Header';
 import WelcomeText from '../../components/welcomeText/WelcomeText.js';
 import Footer from '../../components/modules/footer/footer'
 import MidSection from '../../components/modules/middle-section/MidSection'
-import ScrollApp from '../../components/floatToTop/ScrollApp'
 
 function Home() {
     return (
@@ -22,7 +21,6 @@ function Home() {
             <div style={{width: "90%", margin: "auto"}}>
             {/* <BlogCard /> */}
             </div>
-            <ScrollApp />
             <MidSection />
             <Why />
             <Footer />

@@ -3,6 +3,7 @@ import Toolbar from './modules/navbar/navbar';
 
 import SideDrawer from './modules/navbar/sideDrawer';
 import Backdrop from './modules/navbar/backdrop';
+import ScrollApp from '../components/floatToTop/ScrollApp'
 
 class App extends Component {
     // state = {
@@ -34,7 +35,7 @@ class App extends Component {
                 <main>
                     {children}
                 </main>
-                
+                <ScrollApp />
             </div>
         );
     }

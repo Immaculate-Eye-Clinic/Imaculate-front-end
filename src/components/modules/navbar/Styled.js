@@ -42,10 +42,9 @@ export const Div = styled.header`
           visibility: hidden;
           position: absolute;
           background: #252079;
-          margin-top: 140px;
+          margin-top: 120px;
           border-radius: 10px;
-          padding: 20px 0;
-          
+          padding: 0;
           ul{
             padding-right: 30px;
 
@@ -73,11 +72,10 @@ export const Div = styled.header`
             
             a {
               clear: both;
-              width: 100%;
+              width: 200px;
               color: white;
-              font-size: 15px;
-              font-weight: 500;
-              margin: 10px 0;
+              font-size: 14px;
+              padding: 10px;
               text-align: left;
 
               :hover,
