@@ -35,8 +35,11 @@ export const Div = styled.header`
         align-items: center;
         width: 100%;
         justify-content: space-between;
-        .submenu{
-          display: none;
+
+
+        .submenu {
+          opacity: 0;
+          visibility: hidden;
           position: absolute;
           background: #252079;
           margin-top: 120px;
@@ -44,6 +47,7 @@ export const Div = styled.header`
           padding: 0;
           ul{
             padding-right: 30px;
+
             .li{
               font-size: 14px;
               color: white;
@@ -54,13 +58,18 @@ export const Div = styled.header`
         }
 
         .service {
-        .dropdown{
+        
+          .dropdown{
             position: absolute;
-            display: none;
-            margin-top: 160px;
-            border-radius: 10px;
+            transition: all 0.5s ease;
+            margin-top: 1rem;
+            top: 66%;
             background: #252079;
-            padding-left: 30px; 
+            padding-left: 30px;
+            opacity: 0;
+            visibility: hidden;
+            
+            
             a {
               clear: both;
               width: 200px;
@@ -68,6 +77,7 @@ export const Div = styled.header`
               font-size: 14px;
               padding: 10px;
               text-align: left;
+
               :hover,
               :active 
               {
@@ -91,10 +101,14 @@ export const Div = styled.header`
 
             &:hover {
               .dropdown {
-                display: block;
+                opacity: 1;
+                visibility: visible;
+                transition: 1s;
               }
               .submenu{
-                  display: block;
+                opacity: 1;
+                visibility: visible;
+                transition: 5s;
               }
             span:not(.hasContent) {
                 position: absolute;
@@ -119,30 +133,36 @@ export const Div = styled.header`
               /* The Sign-up and Login Styles begins here */
               img{
                 margin-left: 2em;
-                margin-right: 2em;
+                margin-right: 4em;
                 padding: 0;
               }
-
-              .container_sign_up {
-                text-align: left;
-                margin: 0;
-                padding: 0;
-                height: 30px;
-
-
+              
                 .userStyle{
                   position: absolute;
                   top: 75px;
+                  font-size: 15px;
                   color: white;
                   text-align: center;
                   line-height: 2em;
-                  display: block;
-                  background: rgba(14, 16, 116, 0.033);
-                  width: 100px;
+                  background: rgba(14, 16, 116, 1);
+                  width: 230px;
                   border-radius: 3px;
                   transition: 0.5s;
                   opacity: 0;
                   visibility: hidden;
+                }
+
+                .userStyle_about{
+                  right: 420px;
+                }
+
+                .userStyle_user{
+                  right: 30px;
+                  width: 150px;
+                }
+
+                .userStyle_services{
+                  right: 315px;
                 }
 
                 :hover .userStyle{
@@ -151,28 +171,16 @@ export const Div = styled.header`
                   visibility: visible;
                 }
 
-                .login {
-                  border-bottom: 1px solid gray;
+                .item {
+                  font-size: 15px;
                 }
 
-                .sign_up{
-                  
-                }
-
-                .login:hover {
+                .item:hover {
                   background: rgba(25, 20, 80, 0.795);
                   border-radius: 3px;
                   transition: 0.5s;
                 }
-
-                .sign_up:hover {
-                  background: rgba(25, 20, 80, 0.795);
-                  border-radius: 3px;
-                  transition: 0.5s;
-                }
-
-              } 
-
+               
             }
         }
     }

@@ -7,7 +7,7 @@ a {
 }
   
 .scroll {
-  background-color: #B1AEEA;
+  background-color: #24207977;
   width: 40px;
   height: 40px;
   position: fixed;

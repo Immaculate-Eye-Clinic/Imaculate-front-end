@@ -1,0 +1,50 @@
+.container_sign_up {
+    position: relative;
+    text-align: left;
+    margin: auto;
+    padding: 0;
+    height: 30px;
+
+
+    .userStyle{
+      position: absolute;
+      top: 75px;
+      color: white;
+      text-align: left;
+      line-height: 2em;
+      display: block;
+      background: rgba(14, 16, 116, 1);
+      width: 200px;
+      border-radius: 3px;
+      transition: 0.5s;
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    :hover .userStyle{
+      opacity: 1;
+      transition: 0.6s;
+      visibility: visible;
+    }
+
+    .login {
+      border-bottom: 1px solid gray;
+    }
+
+    .sign_up{
+      
+    }
+
+    .login:hover {
+      background: rgba(25, 20, 80, 0.795);
+      border-radius: 3px;
+      transition: 0.5s;
+    }
+
+    .sign_up:hover {
+      background: rgba(25, 20, 80, 0.795);
+      border-radius: 3px;
+      transition: 0.5s;
+    }
+
+  } 

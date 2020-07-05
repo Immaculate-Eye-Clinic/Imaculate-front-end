@@ -14,34 +14,43 @@ class Navbar extends React.Component {
                 <div className="navs">
                     <ul class="menu">
                         <li><NavLink exact to='/'  activeClassName='active'>Home</NavLink><span></span></li>
-                        <li><NavLink exact to='/about'  activeClassName='active'>About</NavLink><span></span>
-                            <div className='submenu'>
-                                <ul>
-                                    <li><NavLink exact to='/about/values' className='li'>Immaculate Values</NavLink></li>
-                                    <li><NavLink exact to='/about/choose' className='li'>Why Choose Immaculate</NavLink></li>
-                                    <li><NavLink exact to='/about/faq' className='li'>Frequently Asked Question</NavLink></li>
-                                    <li><NavLink exact to='/about/careers' className='li'>Careers</NavLink></li>
-                                </ul>
+                        
+                        
+                        <li>
+                            <NavLink exact to='/about'  activeClassName='active'>About</NavLink><span></span>
+                            <div className = 'userStyle userStyle_about'>
+                                <div><NavLink exact to='/about/values' className='item'>Immaculate Values</NavLink></div>
+                                <div><NavLink exact to='/about/choose' className='item'>Why Choose Us</NavLink></div>
+                                <div><NavLink exact to='/about/faq' className='item'>FAQ</NavLink></div>
+                                <div><NavLink exact to='/about/careers' className='item item_last'>Careers</NavLink></div>                                
                             </div>
                         </li>
-                        <li className='service'><NavLink exact to='/services'  activeClassName='active'>Services</NavLink><span></span>
-                            <ul className='dropdown'>
-                                <li><NavLink to='/services/urgent-eye-problems' activeClassName='link' exact>Urgent Eye Problem</NavLink></li>
-                                <li><NavLink to='/services/chalazion-removal' activeClassName='link'exact>Charazion Removal</NavLink></li>
-                                <li><NavLink to='/services/cataract-treatment' activeClassName='link'exact>Cataract Treatment</NavLink></li>
-                                <li><NavLink to='/services' activeClassName='link'exact>Glaucoma Treatment</NavLink></li>
-                                <li><NavLink to='/services' activeClassName='link'exact>Squint Treatment</NavLink></li>
-                                <li><NavLink to='/services' activeClassName='link'exact>Aqueous Shunt Surgery</NavLink></li>
-                            </ul>
+                        
+                        
+                        <li>
+                            <NavLink exact to='/services'  activeClassName='active'>Services</NavLink><span></span>
+                            <div className = 'userStyle userStyle_services'>
+                                <div><NavLink to='/services/chalazion-removal' className='item' activeClassName='link'exact>Charazion Removal</NavLink></div>
+                                <div><NavLink to='/services/urgent-eye-problems' className='item' activeClassName='link' exact>Urgent Eye Problem</NavLink></div>
+                                <div><NavLink to='/services/cataract-treatment' className='item' activeClassName='link'exact>Cataract Treatment</NavLink></div>
+                                <div><NavLink to='/services' className='item' activeClassName='link'exact>Glaucoma Treatment</NavLink></div>
+                                <div><NavLink to='/services' className='item' activeClassName='link'exact>Squint Treatment</NavLink></div>
+                                <div><NavLink to='/services' className='item item_last' activeClassName='link'exact>Aqueous Shunt Surgery</NavLink></div>
+                            </div>
                         </li>
+                        
+                        
                         <li><NavLink exact to='/blog'  activeClassName='active'>Blog</NavLink><span></span></li>
+                        
+                        
                         <li><NavLink exact to='/visit'  activeClassName='active'>Visit Us</NavLink><span></span></li>
-                        <li height = "30px"><div className = 'container_sign_up'>
-                                <img src = "https://res.cloudinary.com/hisroyalwonginess/image/upload/v1589821953/pngfind.com-profile-icon-png-1102927_gaepvx.png"  alt = "user" height = "30px" width = "30px"/>
-                                <div className = 'userStyle'>
-                                    <div className = 'login'><NavLink to='/login'>Login</NavLink></div>
-                                    <div className = 'sign_up'><NavLink to='/signup'>SignUp</NavLink></div>
-                                </div>
+                        
+                        
+                        <li>
+                            <img src = "https://res.cloudinary.com/hisroyalwonginess/image/upload/v1589821953/pngfind.com-profile-icon-png-1102927_gaepvx.png"  alt = "user" height = "30px" width = "30px"/>
+                            <div className = 'userStyle userStyle_user'>
+                                <div><NavLink to='/login' className='item'>Login</NavLink></div>
+                                <div><NavLink to='/signup' className='item item_last'>SignUp</NavLink></div>
                             </div>
                         </li>
                     </ul>
