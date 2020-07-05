@@ -19,10 +19,10 @@ class Navbar extends React.Component {
                         <li>
                             <NavLink exact to='/about'  activeClassName='active'>About</NavLink><span></span>
                             <div className = 'userStyle userStyle_about'>
-                                <div><NavLink exact to='/about/values' className='item'>Immaculate Values</NavLink></div>
-                                <div><NavLink exact to='/about/choose' className='item'>Why Choose Us</NavLink></div>
-                                <div><NavLink exact to='/about/faq' className='item'>FAQ</NavLink></div>
-                                <div><NavLink exact to='/about/careers' className='item item_last'>Careers</NavLink></div>                                
+                                <div className='item'><NavLink exact to='/about/values' className='item_content'>Immaculate Values</NavLink></div>
+                                <div className='item'><NavLink exact to='/about/choose' className='item_content'>Why Choose Us</NavLink></div>
+                                <div className='item'><NavLink exact to='/about/faq' className='item_content'>FAQ</NavLink></div>
+                                <div className='item'><NavLink exact to='/about/careers' className='item_content'>Careers</NavLink></div>                                
                             </div>
                         </li>
                         
@@ -30,12 +30,12 @@ class Navbar extends React.Component {
                         <li>
                             <NavLink exact to='/services'  activeClassName='active'>Services</NavLink><span></span>
                             <div className = 'userStyle userStyle_services'>
-                                <div><NavLink to='/services/chalazion-removal' className='item' activeClassName='link'exact>Charazion Removal</NavLink></div>
-                                <div><NavLink to='/services/urgent-eye-problems' className='item' activeClassName='link' exact>Urgent Eye Problem</NavLink></div>
-                                <div><NavLink to='/services/cataract-treatment' className='item' activeClassName='link'exact>Cataract Treatment</NavLink></div>
-                                <div><NavLink to='/services' className='item' activeClassName='link'exact>Glaucoma Treatment</NavLink></div>
-                                <div><NavLink to='/services' className='item' activeClassName='link'exact>Squint Treatment</NavLink></div>
-                                <div><NavLink to='/services' className='item item_last' activeClassName='link'exact>Aqueous Shunt Surgery</NavLink></div>
+                                <div className='item'><NavLink to='/services/chalazion-removal' className='item_content' activeClassName='link'exact>Charazion Removal</NavLink></div>
+                                <div className='item'><NavLink to='/services/urgent-eye-problems' className='item_content' activeClassName='link' exact>Urgent Eye Problem</NavLink></div>
+                                <div className='item'><NavLink to='/services/cataract-treatment' className='item_content' activeClassName='link'exact>Cataract Treatment</NavLink></div>
+                                <div className='item'><NavLink to='/services' className='item_content' activeClassName='link'exact>Glaucoma Treatment</NavLink></div>
+                                <div className='item'><NavLink to='/services' className='item_content' activeClassName='link'exact>Squint Treatment</NavLink></div>
+                                <div className='item'><NavLink to='/services' className='item_content' activeClassName='link'exact>Aqueous Shunt Surgery</NavLink></div>
                             </div>
                         </li>
                         
@@ -49,8 +49,8 @@ class Navbar extends React.Component {
                         <li>
                             <img src = "https://res.cloudinary.com/hisroyalwonginess/image/upload/v1589821953/pngfind.com-profile-icon-png-1102927_gaepvx.png"  alt = "user" height = "30px" width = "30px"/>
                             <div className = 'userStyle userStyle_user'>
-                                <div><NavLink to='/login' className='item'>Login</NavLink></div>
-                                <div><NavLink to='/signup' className='item item_last'>SignUp</NavLink></div>
+                                <div className='item'><NavLink to='/login' className='item_content'>Login</NavLink></div>
+                                <div className='item'><NavLink to='/signup' className='item_content'>SignUp</NavLink></div>
                             </div>
                         </li>
                     </ul>

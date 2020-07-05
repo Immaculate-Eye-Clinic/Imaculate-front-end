@@ -28,7 +28,7 @@ export const Div = styled.header`
         padding-bottom: 2em;
         align-content: center;
     
-    .menu {
+      .menu {
         list-style-type: none;
         list-style-type: none;
         display: flex;
@@ -124,7 +124,7 @@ export const Div = styled.header`
                 font-weight: 500;
                 font-size: 18px;
                 font-style: normal;
-                line-height: 20px;
+                line-height: 50px;
                 padding: 0 25px;
                 text-decoration: none;
                 z-index: 1;
@@ -139,15 +139,13 @@ export const Div = styled.header`
               
                 .userStyle{
                   position: absolute;
-                  top: 75px;
+                  top: 250px;
                   font-size: 15px;
                   color: white;
                   text-align: center;
-                  line-height: 2em;
-                  background: rgba(14, 16, 116, 1);
+                  background: rgba(0, 0, 0, 0.3);
                   width: 230px;
                   border-radius: 3px;
-                  transition: 0.5s;
                   opacity: 0;
                   visibility: hidden;
                 }
@@ -169,9 +167,14 @@ export const Div = styled.header`
                   opacity: 1;
                   transition: 0.6s;
                   visibility: visible;
+                  top: 65px;
                 }
 
                 .item {
+                  
+                }
+
+                .item_content{
                   font-size: 15px;
                 }
 
