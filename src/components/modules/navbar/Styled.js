@@ -13,11 +13,10 @@ export const Div = styled.header`
 
     .logo {
         margin-left: 15px;
-        margin-top: 9px;
+        margin-top: 15px;
 
         img {
-            width: 300px;
-            height: 90px;
+            width: 250px;
         }
     }
 
@@ -100,16 +99,6 @@ export const Div = styled.header`
             cursor: pointer;
 
             &:hover {
-              .dropdown {
-                opacity: 1;
-                visibility: visible;
-                transition: 1s;
-              }
-              .submenu{
-                opacity: 1;
-                visibility: visible;
-                transition: 5s;
-              }
             span:not(.hasContent) {
                 position: absolute;
                 width: 27px;

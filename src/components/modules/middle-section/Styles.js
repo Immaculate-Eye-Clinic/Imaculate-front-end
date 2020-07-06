@@ -25,6 +25,15 @@ export const Style = styled.div`
                         margin: 0 0 2em;
                         color: #252079;
                     }
+
+                    a {
+                        color: #252079;
+                        font-weight: bold;
+                        text-decoration: none;
+                        outline: 0;
+                        border: none;
+                        -moz-outline-style: none;
+                    }
                 }
             }
 
@@ -94,7 +103,7 @@ export const Style = styled.div`
             }
     }
 
-    @media (min-width: 900px){
+    @media (min-width: 1100px){
         .container_div{
             display: flex;
             justify-content: space-between

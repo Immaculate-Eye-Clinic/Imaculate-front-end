@@ -7,12 +7,10 @@ class Footer extends React.Component {
             <Wrapper>
              <div className='diw'>
               <div className='div'>
+                <img src='asset/img/logo2.png' alt="logo" />
                 <div className='div1'>
-                    <div className='name'>
-                       <img src='asset/img/logo1.png' alt="logo" />
-                    </div><br /><br /><br />
                     <div className='add'>
-                        <h1>Adress</h1>
+                        <h1>Address</h1>
                         <p className='pa'>No 1. Ipsun Street mbah ndi Ipsun maka Ipsun is all i have to say at this Ipsun Loremous Time</p>
                     </div><br />
                 </div>

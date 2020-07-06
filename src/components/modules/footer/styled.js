@@ -7,43 +7,43 @@ position: relative;
 color: white;
 
 .diw {
-background: #9932cc;
+background: #252079;
 width: 100%;
 background-size: 100%;
-opacity: 0.7;
+opacity: 0.8;
 }
 
 .div {
 display: flex;
 justify-content: space-evenly;
 margin-left: 6em;
+
 div {
     text-align: left;
     width: 45%;
 }
+
+img{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 2em;
+    left: 2em;
+}
 }
 
 .div1 {
-
-    margin-top: 2em;
-    .name {
-        img {
-            width: 150px;
-            height: 50px;
-        }
-    }
+    margin-top: 10.5em;
  }
 
  
 
  .div2 {
-margin-top: 12.5em;
-
-
+margin-top: 10.5em;
  }
 
 .div3 {
-margin-top: 12.5em;
+margin-top: 10.5em;
 
 }
 
@@ -74,11 +74,6 @@ div {
 
         p {
             font-size: 15px;
-        }
-
-        img {
-            width: 300px;
-            height: 70px;
         }
     }
 }
