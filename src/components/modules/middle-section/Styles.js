@@ -94,7 +94,7 @@ export const Style = styled.div`
             }
     }
 
-    @media (min-width: 900px){
+    @media (min-width: 1100px){
         .container_div{
             display: flex;
             justify-content: space-between

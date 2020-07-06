@@ -13,10 +13,10 @@ export const Div = styled.header`
 
     .logo {
         margin-left: 15px;
-        margin-top: 9px;
+        margin-top: 15px;
 
         img {
-            width: 300px;
+            width: 250px;
         }
     }
 
