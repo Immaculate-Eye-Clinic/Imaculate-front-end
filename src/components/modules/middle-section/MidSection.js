@@ -13,7 +13,7 @@ function MidSection(){
                         <FirstSectionPics />
                         <p>
                             Immaculate Eye Clinic was established in 2015. Our staff comprise of a team all working together to provide quality optical and medical services.{'\u00A0'}
-                            <NavLink exact to='/about'  activeClassName='active'>Read More About Us</NavLink>
+                            <NavLink exact to='/about'  activeClassName='active'>Read More ...</NavLink>
                         </p>                        
                     </div>
                 </div>
