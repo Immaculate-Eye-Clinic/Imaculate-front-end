@@ -35,7 +35,7 @@ margin-right: 6em;
 
     .img_mobile{
         position: absolute;
-        height: 50px;
+        height: 80px;
         opacity: 1;
         top: 2em;
         left: 2em;
