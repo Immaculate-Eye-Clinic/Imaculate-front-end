@@ -13,27 +13,53 @@ background-size: 100%;
 opacity: 0.8;
 }
 
-.div {
+.container {
 display: flex;
 justify-content: space-evenly;
 margin-left: 6em;
+margin-right: 6em;
 
-div {
-    text-align: left;
-    width: 45%;
-}
+    div {
+        text-align: center;
+        width: 100%;
+    }
 
-img{
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    top: 2em;
-    left: 2em;
-}
+    .img_desktop{
+        position: absolute;
+        height: 80px;
+        opacity: 1;
+        top: 2em;
+        left: 2em;
+        display: none;
+    }
+
+    .img_mobile{
+        position: absolute;
+        height: 80px;
+        opacity: 1;
+        top: 2em;
+        left: 2em;
+        display: none;
+    }
+
+    @media (max-width: 500px){
+        .img_mobile{
+            display: block;
+        }
+    }
+
+    @media (min-width: 501px){
+        .img_desktop{
+            display: block;
+        }
+    }
 }
 
 .div1 {
     margin-top: 10.5em;
+
+    .add{
+    }
  }
 
  
@@ -50,23 +76,38 @@ margin-top: 10.5em;
 .dim {
 div {
     display: flex;
-    justify-content: space-evenly;
-    .a {
-        margin-left: 30em;
+    justify-content: space-between;
+    margin: auto;
+
+    .a{
+        flex: 1;
+        text-align: right;
+        margin-right: 1em;
     }
-    .b {
-        margin-right: 30em;
+
+    hr{
+        border: none;
+        background-color: #FFFFFF80;
+        width: 2px;
+        border-radius: 5px;
+    }
+
+    .b{
+        flex: 1;
+        text-align: left;
+        margin-left: 1em;
     }
 }
 }
 
 @media (max-width: 760px) {
-    .div {
+    .container {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        text-align: left;
-        margin-left: 3em;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
 
         h1 {
             font-size: 20px;
@@ -80,52 +121,23 @@ div {
 
 @media (max-width: 760px) {
    .div1 {
-  
+        .add{
+            margin: auto;
+            width: 80%;
+        }
    } 
 }
 
 @media (max-width: 760px) {
    .div2 {
        margin-top: 2em;
-       
    } 
 }
 
 @media (max-width: 760px) {
  .div3 {
        margin-top: 2em;
-       text-align: left;
  }   
-}
-
-@media (max-width: 760px) {
-  .add {
-      margin-right: 12em;
-  }  
-}
-
-@media (max-width: 760px) {
- .num {
-    margin-right: 12em;
-   }
-}
-
-@media (max-width: 760px) {
- .a  {
-     margin-right: 2em;
- }   
-}
-
-@media (max-width: 760px) {
-  .b {
-      margin-left: 2em;
-  }  
-}
-
-@media (max-width: 760px) {
-   .pa {
-       width: 13em;
-   } 
 }
 `
 

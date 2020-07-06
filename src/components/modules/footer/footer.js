@@ -6,8 +6,9 @@ class Footer extends React.Component {
         return (
             <Wrapper>
              <div className='diw'>
-              <div className='div'>
-                <img src='asset/img/logo2.png' alt="logo" />
+              <div className='container'>
+                <img src='asset/img/logo1.png' alt="logo" className = 'img_desktop'/>
+                <img src='asset/img/logo2.png' alt="logo" className = 'img_mobile'/>
                 <div className='div1'>
                     <div className='add'>
                         <h1>Address</h1>
