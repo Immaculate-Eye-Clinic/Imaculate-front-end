@@ -16,7 +16,7 @@ export const Div = styled.header`
         margin-top: 15px;
 
         img {
-            width: 250px;
+            height: 80px;
         }
     }
 
