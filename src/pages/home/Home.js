@@ -5,7 +5,7 @@ import Header from '../../components/modules/Header/Header';
 import WelcomeText from '../../components/welcomeText/WelcomeText.js';
 import Footer from '../../components/modules/footer/footer'
 import MidSection from '../../components/modules/middle-section/MidSection'
-import Testimonial from
+import Testimonial from '../../components/modules/testimonial/index'
 
 function Home() {
     return (
