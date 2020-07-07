@@ -13,7 +13,7 @@ function AboutUs (){
             bgcolor={'transparent'}
             title={'About Us'}
             subText={'Get to Know More About Us'}
-            height={'100vh'}
+            height={'70vh'}
             mobileHeight={'50vh'}
             img={'https://res.cloudinary.com/hisroyalwonginess/image/upload/v1588437898/Immaculate/Doctors_ieplxk.jpg'}
             />
