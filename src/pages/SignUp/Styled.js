@@ -67,7 +67,7 @@ height: 100%;
         margin: 20px 0 40px;
     
             input{
-            padding: 0 25px;
+            padding: 0 24px;
             margin: 0;
             width: 100%;
             height: 40px;
