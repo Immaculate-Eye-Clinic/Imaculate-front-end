@@ -23,6 +23,7 @@ function Home() {
             {/* <BlogCard /> */}
             </div>
             <MidSection />
+            <Testimonial />
             <Why />
             <Footer />
         </div>
