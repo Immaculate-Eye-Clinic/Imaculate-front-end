@@ -7,7 +7,7 @@ import {Container} from './Style'
   
       this.state = {
           intervalId: 0,
-          displayButton: false,
+          disableButton: false,
           scrollPosition: 0,
           opacity: 0,
           visibility: 'hidden',
@@ -23,14 +23,12 @@ import {Container} from './Style'
     checkScroll = () => {
       if (this.state.scrollPosition > 100) {
         this.setState({
-          displayButton: true,
           opacity: 1,
           visibility: 'visible'
         })
       }
       else{
         this.setState({
-          displayButton: false,
           opacity: 0,
           visibility: 'hidden'
         })
@@ -40,13 +38,19 @@ import {Container} from './Style'
     scrollStep() {
       if (window.pageYOffset === 0) {
           clearInterval(this.state.intervalId);
+          this.setState({
+            disableButton: false
+          })
       }
       window.scroll(0, window.pageYOffset - this.props.scrollStepInPx);
     }
     
     scrollToTop() {
       let intervalId = setInterval(this.scrollStep.bind(this), this.props.delayInMs);
-      this.setState({ intervalId: intervalId });
+      this.setState({ 
+        intervalId: intervalId ,
+        disableButton: true
+      });
     }
     
     render () {
@@ -60,7 +64,7 @@ import {Container} from './Style'
                 <button title='Back to top' 
                   className = 'scroll' 
                   style = {{...scroll, opacity: this.state.opacity, visibility: this.state.visibility}}
-                  onClick={ () => { this.scrollToTop(); }}
+                  onClick={this.state.disableButton ? null : () => { this.scrollToTop();}}
                   >
                     <i class="fa fa-arrow-up"></i>
                 </button>

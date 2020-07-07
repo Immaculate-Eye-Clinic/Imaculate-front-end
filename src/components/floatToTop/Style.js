@@ -17,6 +17,7 @@ a {
   border: none;
   z-index: 99;
   transition: 1s;
+  outline: none;
   
   &:hover {
     transition: 0.5s;
@@ -35,12 +36,5 @@ a {
   transition: 0.5s;
   color: red;
 }
-
-.arrow-up {
-  color: white;
-  font-size: 30px;
-  font-weight: bolder;
-}
-  
 
 `

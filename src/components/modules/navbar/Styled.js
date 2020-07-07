@@ -16,7 +16,17 @@ export const Div = styled.header`
         margin-top: 15px;
 
         img {
-            width: 250px;
+            height: 80px;
+        }
+
+        @media (max-width: 650px){
+          margin-left: 9px;
+          margin-top: 9px;
+
+          img{
+            height: auto;
+            width:  170px;
+          }
         }
     }
 
