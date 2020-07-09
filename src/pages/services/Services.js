@@ -27,16 +27,17 @@ class Services extends React.Component{
                             <NavLink to={this.props.service.link}><button>{this.props.service.readMore}</button></NavLink>
                         </div>
                         { this.state.modalToggle &&
-                            <Modal show={this.state.modalToggle} >
+                            <Modal show={this.state.modalToggle} onClick={this.modalHandler} >
                                 <div>
                                     The best has happened
+                                    <button onClick={this.modalHandler}>x</button>
                                 </div>
                             </Modal>
                         }
                     </div>
                     
                 </div>
-                <button onClick={this.modalHandler} modalClosed={this.modalHandler}>Modal</button>
+                <button onClick={this.modalHandler}>Modal</button>
             </Cards>  
         )
     }
