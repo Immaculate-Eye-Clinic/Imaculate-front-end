@@ -7,7 +7,6 @@ background: whitesmoke;
 overflow: hidden;
 width: 100%;
 height: 100vh;
-font-family: cursive;
 
 .div {
 margin-top: 8%;
@@ -45,6 +44,7 @@ padding: 0 2rem;
     padding: 10px 0;
     border-radius: 20px;
     box-sizing: border-box;
+
 
     @media (max-width: 1000px) {
     position: relative;
