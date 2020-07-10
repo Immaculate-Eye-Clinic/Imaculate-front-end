@@ -64,9 +64,7 @@ height: 100%;
         top: 0;
         width: 400px;
         margin: 20px 0 40px;
-        @media (max-width: 800px){
-            padding: 0;
-        }
+        
     
             input{
             padding: 0 24px;
