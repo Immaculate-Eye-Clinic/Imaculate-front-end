@@ -1,10 +1,9 @@
 import styled from 'styled-components'
 
 export const Div = styled.div`
-
 nav{
     background: #252079;
-    height: 80px;
+    height: 90px;
     padding-top: 1px;
     
     ul{
@@ -16,22 +15,22 @@ nav{
             text-decoration: none;
             font-size: 15px;
             padding-bottom: 25px;
-            @media (max-width: 770px){
+            @media (max-width: 900px){
                 display: none;
             }
             :hover{
-                border-bottom: 5px solid white;
+                border-bottom: 3px solid white;
                 
             }
         }
         .button{
-            @media (min-width: 770px){
+            @media (min-width: 900px){
                 display: none;
             }
         }
         .active{
             color: white;
-            border-bottom: 5px solid white;
+            border-bottom: 3px solid white;
         }
     }
 }
@@ -48,6 +47,7 @@ border: none;
 cursor: pointer;
 padding: 0;
 box-sizing: border-box;
+align-items: center;
 :focus{
     outline: none;
 }
@@ -55,6 +55,7 @@ box-sizing: border-box;
     width: 30px;
     height: 3px;
     background: white;
+    
 }
 `
 

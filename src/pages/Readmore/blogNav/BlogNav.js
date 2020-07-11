@@ -15,6 +15,7 @@ function BlogNav(props){
                     </div>
                     <li><NavLink exact to='/about/faq' className='li' activeClassName='active'>Frequently Asked Questions</NavLink></li>
                     <li><NavLink exact to='/about/careers' className='li' activeClassName='active'>Careers</NavLink></li>
+                    <li><NavLink exact to='/about/contactus' className='li' activeClassName='active'>Contact Us</NavLink></li>
                 </ul>
             </nav>
         </Div>

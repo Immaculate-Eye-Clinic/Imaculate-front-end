@@ -5,7 +5,7 @@ overflow: hidden;
 background: white;
 margin-bottom: 30px;
 padding: 0;
-height: 100%;
+height: 100vh;
 
 .space {
     margin: 20px;
