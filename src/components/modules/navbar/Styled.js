@@ -191,7 +191,7 @@ export const Div = styled.header`
                 }
 
                 .item {
-                  
+                  transition: 0.5s;
                 }
 
                 .item_content{
