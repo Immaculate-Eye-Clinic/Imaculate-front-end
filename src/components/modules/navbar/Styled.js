@@ -138,12 +138,12 @@ export const Div = styled.header`
               
                 .userStyle{
                   position: absolute;
-                  top: 250px;
+                  top: 240px;
                   font-size: 15px;
                   color: white;
                   text-align: center;
-                  background: rgba(0, 0, 0, 0.3);
-                  width: 230px;
+                  background: transparent;
+                  width: 250px;
                   border-radius: 3px;
                   opacity: 0;
                   visibility: hidden;
@@ -151,22 +151,43 @@ export const Div = styled.header`
 
                 .userStyle_about{
                   right: 420px;
+                  height: 220px;
+
+                  .box{
+                    background-color: rgba(0, 0, 0, 0.3);
+                    margin-top: 1.5em;
+                    border-radius: 8px;
+                  }
                 }
 
                 .userStyle_user{
                   right: 30px;
                   width: 150px;
+                  height: 120px;
+
+                  .box{
+                    background-color: rgba(0, 0, 0, 0.3);
+                    margin-top: 1.5em;
+                    border-radius: 8px;
+                  }
                 }
 
                 .userStyle_services{
                   right: 315px;
+                  height: 320px;
+
+                  .box{
+                    background-color: rgba(0, 0, 0, 0.3);
+                    margin-top: 1.5em;
+                    border-radius: 8px;
+                  }
                 }
 
                 :hover .userStyle{
                   opacity: 1;
                   transition: 0.6s;
                   visibility: visible;
-                  top: 65px;
+                  top: 4em;
                 }
 
                 .item {
@@ -181,6 +202,7 @@ export const Div = styled.header`
                   background: rgba(25, 20, 80, 0.795);
                   border-radius: 3px;
                   transition: 0.5s;
+                  padding-left: 15px;
                 }
                
             }
