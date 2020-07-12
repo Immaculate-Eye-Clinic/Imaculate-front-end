@@ -1,5 +1,11 @@
 import React from 'react'
 
-function
+function Profile() {
+    return (
+        <div>
+            
+        </div>
+    )
+}
 
 export default Profile
