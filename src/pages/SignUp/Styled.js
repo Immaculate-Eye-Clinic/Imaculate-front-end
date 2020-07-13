@@ -5,7 +5,7 @@ overflow: hidden;
 background: white;
 margin-bottom: 30px;
 padding: 0;
-height: 100%;
+height: 100vh;
 
 .space {
     margin: 20px;
@@ -46,7 +46,6 @@ height: 100%;
             left: 45%;
         }
         
-        
         h1{
         padding: 0 0 15px;
         margin: 15px;
@@ -65,9 +64,10 @@ height: 100%;
         top: 0;
         width: 400px;
         margin: 20px 0 40px;
+        
     
             input{
-            padding: 0 25px;
+            padding: 0 24px;
             margin: 0;
             width: 100%;
             height: 40px;
@@ -133,7 +133,7 @@ height: 100%;
 
 .box .inputbox input:focus ~ label,
 .box .inputbox input:valid ~ label{
-    top: -20px;
+    top: -25px;
     left: 5px;
     color: #252079;
     font-size: 13px;
@@ -143,7 +143,7 @@ height: 100%;
     position: absolute;
     font-size: 13px;
     color: #dc143c;
-    margin-top: 4px;
+    margin-top: 3px;
     font-weight: 500;
 }
 `
