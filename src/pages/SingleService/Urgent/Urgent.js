@@ -4,6 +4,8 @@ import Header from '../../../components/modules/Header/Header'
 import Navs from '../Navbar/Navs'
 import {Div} from './styled'
 import Prop from './Urgentprops'
+import Footer from '../../../components/modules/footer/footer'
+import Contact from '../../../components/modules/contactUs/Contact'
 
 class Urgent extends React.Component {
     
@@ -55,6 +57,8 @@ class Urgent extends React.Component {
                         </div>
                     </div><br /><br />
                 </div>
+                <Contact />
+                <Footer />
             </Div>
         )
         }
