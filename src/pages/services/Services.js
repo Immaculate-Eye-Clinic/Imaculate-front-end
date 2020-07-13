@@ -36,7 +36,7 @@ class Services extends React.Component{
                     </div>
                     
                 </div>
-                <button onClick={this.modalHandler} modalClosed={this.modalHandler}>Modal</button>
+                <button onClick={this.modalHandler} modalClosed={this.modalHandler}>Modal Button</button>
             </Cards>  
         )
     }
