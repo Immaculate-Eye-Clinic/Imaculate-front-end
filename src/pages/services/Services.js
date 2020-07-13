@@ -29,7 +29,7 @@ class Services extends React.Component{
                         { this.state.modalToggle &&
                             <Modal show={this.state.modalToggle} >
                                 <div>
-                                    The best has happened
+                                    What to know about Corona
                                 </div>
                             </Modal>
                         }
