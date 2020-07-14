@@ -1,11 +1,14 @@
 import React from 'react'
 import Profile from '../../components/modules/Profile/Profile'
+import {Div} from './styled'
 
 function Dashboard() {
     return (
-        <div>
-            <Profile />
-        </div>
+        <Div>
+            <div>
+                <Profile />
+            </div>
+        </Div>
     )
 }
 
