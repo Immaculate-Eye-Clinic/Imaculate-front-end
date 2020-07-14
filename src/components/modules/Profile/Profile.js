@@ -12,6 +12,13 @@ function Profile() {
                 <h1>Justice</h1>
                 <p>hhhshsh@gmail.com</p>
             </div>
+            <div>
+                <h1>Office Address</h1>
+                <p>Immaculate Eye Clinic
+                10 Owerri Street
+                Nigeria
+                W1G 9PF</p>
+            </div>
         </Div>
     )
 }
