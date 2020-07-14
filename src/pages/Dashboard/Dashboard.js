@@ -1,5 +1,7 @@
 import React from 'react'
+
 import Profile from '../../components/modules/Profile/Profile'
+import Taba from '../../components/modules/Tabs/Taba'
 import {Div} from './styled'
 
 function Dashboard() {
@@ -7,6 +9,7 @@ function Dashboard() {
         <Div>
             <div>
                 <Profile />
+                <Taba />
             </div>
         </Div>
     )
