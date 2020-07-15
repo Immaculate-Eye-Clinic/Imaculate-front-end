@@ -1,9 +1,10 @@
 import styled from 'styled-components'
 
 export const Div = styled.div `
-width: 60%;
+width: 70%;
 text-align: center;
     .tab-list {
+        border-bottom: 1px solid #ccc;
         padding-left: 0;
       }
       
@@ -18,5 +19,7 @@ text-align: center;
       
       .tab-list-active {
         background-color: white;
+        border: solid #ccc;
+        border-width: 1px 1px 0 1px;
       }
 `
