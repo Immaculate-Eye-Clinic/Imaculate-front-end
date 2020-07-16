@@ -4,7 +4,7 @@ export const Div = styled.div `
     position: fixed;
     z-index: 500;
     background-color: white;
-    width: 70%;
+    width: 500px;
     border: 1px solid #ccc;
     box-shadow: 1px 1px 1px black;
     padding: 16px;
@@ -20,8 +20,7 @@ export const Div = styled.div `
 `
 
 export const Divs = styled.div `
-    width: 100%;
-    height: 100%;
+    width: 500px;
     position: fixed;
     z-index: 100;
     left: 0;
