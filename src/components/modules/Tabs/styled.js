@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const Div = styled.div `
 width: 70%;
+border: 2px solid black;
 text-align: center;
     .tab-list {
         border-bottom: 1px solid #ccc;
