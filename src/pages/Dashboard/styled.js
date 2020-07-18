@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Div = styled.div `
 div {
-    display: grid;
-    grid-template-columns: 30% 90%;
+    display: flex;
+    flex-direction: row;
 }
 `

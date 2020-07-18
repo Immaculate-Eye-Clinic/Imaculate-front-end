@@ -24,8 +24,3 @@ text-align: center;
         border-width: 1px 1px 0 1px;
       }
 `
-export const Diva = styled.nav `
-li {
-  width: 500px;
-}
-`
