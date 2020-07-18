@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import {Diva} from './styled'
 
 class Tab extends Component {
   static propTypes = {
@@ -29,12 +30,14 @@ class Tab extends Component {
     }
 
     return (
+      <Diva>
       <li
         className={className}
         onClick={onClick}
       >
         {label}
       </li>
+      </Diva>
     );
   }
 }
