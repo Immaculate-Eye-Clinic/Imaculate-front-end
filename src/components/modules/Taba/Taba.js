@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
-import { TabManager } from "./tabManager";
-import "./styles.css";
+import { TabManager } from "./TabManager";
 
 const TABS = [
   { label: "Tab 1", value: 1 },

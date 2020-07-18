@@ -1,10 +1,14 @@
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import {Tabss} from './styled'
+
 export class TabManager extends Component {
     state = {}
   
     render() {
       const { activeTab, handleTab, tabs } = this.props;
       return (
-        <div className="tab-manager">
+        <Tabss>
           {tabs.map(({ label, value }) => (
             <div
               className={`tab ${value === activeTab ? 'selected-tab' : ''}`}
@@ -13,7 +17,7 @@ export class TabManager extends Component {
               {label}
             </div>
           ))}
-        </div>
+        </Tabss>
       );
     }
   }
