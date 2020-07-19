@@ -30,6 +30,7 @@ class Services extends React.Component{
                             <Modal show={this.state.modalToggle} onClick={this.modalHandler} >
                                 <div>
                                     <form className='form'>
+                                        <h3>Schedule</h3>
                                         <input type='date' /><br/>
                                         <input type='time' /><br/>
                                         <button>Submit</button>
