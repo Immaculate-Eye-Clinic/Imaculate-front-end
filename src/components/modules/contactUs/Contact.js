@@ -2,9 +2,9 @@ import React from 'react'
 import {Div } from './ContactStyle'
 
 class Contact extends React.Component{
-     constructor(){
-         super()
-         this.state = {
+    constructor(){
+        super()
+        this.state = {
              text: '',
              email: '',
              subject: '',
@@ -12,27 +12,26 @@ class Contact extends React.Component{
          }
          this.change = this.change.bind(this)
          this.submit = this.submit.bind(this)
-     }
+        }
 
 
-    change(e){
-     const {name, value} = e.target
-         this.setState ({
-             [name] : e.target.value
-     })
-    }
+        change(e){
+            const {name, value} = e.target
+            this.setState ({
+                [name] : e.target.value
+            })
+        }
 
-     submit(e){
-         e.preventDefault()
-        
-         const user = {
+    submit(e){
+        e.preventDefault()
+        const user = {
              text: this.state.text,
              email: this.state.email,
              number: this.state.number,
              subject: this.state.subject,
              message: this.state.message,
-         }
-
+            }
+            
         fetch('https://jsonplaceholder.typicode.com/users', {
              method: 'POST',
              contacts: {
@@ -46,7 +45,8 @@ class Contact extends React.Component{
          })
          .then(res => res.json())
          .then(data => console.log(data));
-     }
+        }
+    
 
     render(){
         return(
@@ -118,12 +118,10 @@ class Contact extends React.Component{
                     <div className='img'>
                         <img src='\Asset\Img\optician.jpg' />
                     </div>
-                </div> 
+                </div>
             </Div>
         )
     }
 }
     
-
-
 export default Contact
