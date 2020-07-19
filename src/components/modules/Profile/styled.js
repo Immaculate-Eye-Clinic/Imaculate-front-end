@@ -9,4 +9,7 @@ img {
     width: 40%;
     border-radius: 12em;
 }
+h1 {
+    font-size: 25px;
+}
 `
