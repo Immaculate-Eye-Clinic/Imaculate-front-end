@@ -17,7 +17,6 @@ display: flex;
   transition: all 0.5s ease;
   color: black;
   user-select: none;
-  height: 20px;
     :hover {
   background-color: rgba(0, 43, 73, 0.17);
 }
@@ -33,7 +32,6 @@ export const App = styled.div `
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
 }
 
 .hi {
