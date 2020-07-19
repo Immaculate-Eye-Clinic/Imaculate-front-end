@@ -29,7 +29,8 @@ class Services extends React.Component{
                         { this.state.modalToggle &&
                             <Modal show={this.state.modalToggle} onClick={this.modalHandler} >
                                 <div>
-                                    <form>
+                                    <form className='form'>
+                                        <input type='text' /><br/>
                                         <input type='text' /><br/>
                                         <input type='text' /><br/>
                                         <button>Submit</button>

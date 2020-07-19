@@ -12,6 +12,11 @@ export const Div = styled.div `
     top: 30%;
     box-sizing: border-box;
     transition: all 0.3s ease-out;
+    .form{
+        input{
+            color: green;
+        }
+    }
 
 @media (min-width: 600px) {
         width: 500px;
