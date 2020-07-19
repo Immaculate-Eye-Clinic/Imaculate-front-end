@@ -8,7 +8,6 @@ function Dashboard() {
     return (
         <Div>
             <div>
-                <Profile />
                 <Taba />
             </div>
         </Div>

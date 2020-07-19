@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import {App} from './styled'
 
 import { TabManager } from "./TabManager";
+import Profile from '../Profile/Profile'
 
 const TABS = [
   { label: "Tab 1", value: 1 },
@@ -10,12 +12,17 @@ const TABS = [
 export default function Taba() {
   const [activeTab, handleTab] = useState(0);
   return (
-    <div className="App">
+    <App>
+        <div>
+            <Profile />
+        </div>
+        <div className='hi'>
       <TabManager tabs={TABS} activeTab={activeTab} handleTab={handleTab} />
       <div className="tab-content">
         {" "}
         <div> Content of Tab {activeTab}</div>
       </div>
-    </div>
+      </div>
+    </App>
   );
 }
