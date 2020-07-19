@@ -14,7 +14,13 @@ export const Div = styled.div `
     transition: all 0.3s ease-out;
     .form{
         display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        input{
+            width: 200px;
+        }
         button{
+            width: 200px;
             color: green;
         }
     }
