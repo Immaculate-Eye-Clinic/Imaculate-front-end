@@ -7,13 +7,14 @@ import {Div} from './styled'
 function Dashboard() {
     return (
         <Div>
-            <div className='hi'>
-                <Profile />
+            <div className='dash'>
+                <div className='profile'>
+                    <Profile />
+                </div>
+                <div className='tab'>
+                    <Taba />
+                </div>
             </div>
-            <div className='g'>
-                <Taba />
-            </div>
-            
         </Div>
     )
 }

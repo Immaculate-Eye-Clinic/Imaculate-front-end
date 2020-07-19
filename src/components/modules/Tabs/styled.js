@@ -1,10 +1,13 @@
 import styled from 'styled-components'
 
 export const Div = styled.div `
-text-align: center;
+    text-align: center;
+    background: white;
+    height: 45vh;
     .tab-list {
         border-bottom: 1px solid #ccc;
         padding-left: 0;
+        margin-top: 20px;
       }
       
       .tab-list-item {
@@ -19,6 +22,6 @@ text-align: center;
       .tab-list-active {
         background-color: white;
         border: solid #ccc;
-        border-width: 1px 1px 0 1px;
+        border-width: 1px 1px 1px 1px;
       }
 `

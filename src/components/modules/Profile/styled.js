@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Div = styled.div `
-background: whitesmoke;
+background: white;
 display: flex;
 flex-direction: column;
 text-align: center;
