@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const Div = styled.div `
-width: 30%;
 background: whitesmoke;
 display: flex;
 flex-direction: column;

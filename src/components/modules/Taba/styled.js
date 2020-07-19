@@ -34,7 +34,4 @@ export const App = styled.div `
   justify-content: center;
 }
 
-.hi {
-    width: 60%;
-}
 `

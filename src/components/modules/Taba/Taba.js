@@ -13,15 +13,10 @@ export default function Taba() {
   const [activeTab, handleTab] = useState(0);
   return (
     <App>
-        <div>
-            <Profile />
-        </div>
-        <div className='hi'>
       <TabManager tabs={TABS} activeTab={activeTab} handleTab={handleTab} />
       <div className="tab-content">
         {" "}
         <div> Content of Tab {activeTab}</div>
-      </div>
       </div>
     </App>
   );
