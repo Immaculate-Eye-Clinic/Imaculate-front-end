@@ -12,10 +12,10 @@ function Taba() {
       <div label="Basic Information">
         <Content>
           <div>
-            <div>
+            <div className='acc'>
               <p>Account Information</p>
             </div>
-            <div>
+            <div className='con'>
               <div className='flex'>
                 <p>Email</p>
                 <p>Justice@gmail.com</p>
@@ -29,8 +29,8 @@ function Taba() {
                 <span><p>Mass Debt</p></span>
               </div>
               <div className='flex'>
-                <p>Email</p>
-                <p>Justice@gmail.com</p>
+                <p>Customer</p>
+                <p>Good Debtor</p>
               </div>
             </div>
           </div>
