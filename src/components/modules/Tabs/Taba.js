@@ -3,13 +3,38 @@ import { render } from "react-dom";
 
 import Tabs from './Tabs';
 import {Div} from './styled'
+import Content from './Content'
 
 function Taba() {
   return (
     <Div>
      <Tabs>
       <div label="Basic Information">
-        See ya later, <em>Alligator</em>!
+        <Content>
+          <div>
+            <div>
+              <p>Account Information</p>
+            </div>
+            <div>
+              <div className='flex'>
+                <p>Email</p>
+                <p>Justice@gmail.com</p>
+              </div>
+              <div className='flex'>
+                <p>Tel</p>
+                <p>+234 800 300 4000</p>
+              </div>
+              <div className='flex'>
+                <p>Status</p>
+                <span><p>Mass Debt</p></span>
+              </div>
+              <div className='flex'>
+                <p>Email</p>
+                <p>Justice@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </Content>
       </div>
       <div label="Transaction">
         After 'while, <em>Crocodile</em>!
