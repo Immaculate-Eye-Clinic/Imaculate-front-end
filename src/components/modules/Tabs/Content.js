@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {Cont} from
+import {Cont} from './styled'
 
 function Content(props) {
     return (

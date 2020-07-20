@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Div = styled.div `
     text-align: center;
     background: white;
-    height: 45vh;
+    height: auto;
     .tab-list {
         border-bottom: 1px solid #ccc;
         padding-left: 0;
@@ -25,4 +25,16 @@ export const Div = styled.div `
         border: solid #ccc;
         border-width: 1px 1px 0 1px;
       }
+`
+export const Cont = styled.div `
+text-align: left;
+.con {
+  position: relative;
+  left: 8%;
+  width: 40%;
+  .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 `

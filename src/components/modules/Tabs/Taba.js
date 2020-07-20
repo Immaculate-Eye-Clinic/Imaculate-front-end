@@ -25,8 +25,8 @@ function Taba() {
                 <p>+234 800 300 4000</p>
               </div>
               <div className='flex'>
-                <p>Status</p>
-                <span><p>Mass Debt</p></span>
+                <p>Status of</p>
+                <p className='p'>Mass Doctors</p>
               </div>
               <div className='flex'>
                 <p>Customer</p>
