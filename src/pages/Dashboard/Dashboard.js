@@ -8,7 +8,9 @@ import Navbar from '../../components/modules/navbar/navbar'
 function Dashboard() {
     return (
         <Div>
-            <Navbar />
+            <Navbar
+            bgcolor='gray'
+            />
             <div className='dash'>
                 <div className='profile'>
                     <Profile />
