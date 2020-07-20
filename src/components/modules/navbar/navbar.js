@@ -48,6 +48,8 @@ class Navbar extends React.Component {
                         
                         
                         <li><NavLink exact to='/visit'  activeClassName='active'>Visit Us</NavLink><span></span></li>
+
+                        <li><NavLink exact to='/dashboard'  activeClassName='active'>Dashboard</NavLink><span></span></li>
                         
                         
                         <li>
