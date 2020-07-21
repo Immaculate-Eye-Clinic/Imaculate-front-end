@@ -11,11 +11,13 @@ export const Div = styled.div `
            flex-direction: column;
            align-items: center;
            height: auto;
+           position: relative;
+           margin-top: 5em;
         }
         .profile {
             width: 30%;
             position: relative;
-            top: 11.7%;
+            top: 22.7%;
             @media (max-width: 1000px) {
                 width: 80%;
                 margin-top: 50px;
@@ -24,7 +26,7 @@ export const Div = styled.div `
         .tab {
             width: 60%;
             position: relative;
-            top: 10%;
+            top: 21%;
             @media (max-width: 1000px) {
                 width: 80%;
                 margin-top: 50px;
