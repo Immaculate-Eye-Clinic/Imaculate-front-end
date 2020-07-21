@@ -12,18 +12,22 @@ export const Div = styled.div `
     top: 30%;
     box-sizing: border-box;
     transition: all 0.3s ease-out;
+    border-radius: 10px;
     .form{
         display: flex;
         justify-content: space-evenly;
         flex-direction: column;
         input{
             padding: 5px;
+            border: 0.5px solid black;
+            border-radius: 10px;
         }
         button{
             background: #252079;
             color: white;
             border: none;
             padding: 10px 30px;
+            border-radius: 10px;
             cursor: pointer;
         }
         h3{
