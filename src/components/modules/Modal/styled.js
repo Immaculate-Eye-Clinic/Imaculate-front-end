@@ -13,6 +13,16 @@ export const Div = styled.div `
     box-sizing: border-box;
     transition: all 0.3s ease-out;
     border-radius: 10px;
+    .x{
+        position: absolute;
+        bottom: 93%;
+        left: 93%;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        background: transparent;
+        cursor: pointer;
+    }
     .form{
         display: flex;
         justify-content: space-evenly;
