@@ -6,6 +6,7 @@ display: flex;
 flex-direction: column;
 text-align: center;
 img {
+    margin-top: 5px;
     width: 40%;
     border-radius: 12em;
 }
