@@ -7,7 +7,6 @@ export const Div = styled.div `
     .tab-list {
         border-bottom: 1px solid #ccc;
         padding-left: 0;
-        background: whitesmok
       }
       
       .tab-list-item {
