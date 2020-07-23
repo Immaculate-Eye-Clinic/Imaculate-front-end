@@ -11,6 +11,6 @@ img {
     border-radius: 12em;
 }
 h1 {
-    font-size: 25px;
+    font-size: 27px;
 }
 `
