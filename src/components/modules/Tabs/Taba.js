@@ -18,7 +18,7 @@ function Taba() {
             <div className='con'>
               <div className='flex'>
                 <p>Email</p>
-                <p>Justice@gmail.com</p>
+                <p>Justiceg@gmail.com</p>
               </div>
               <div className='flex'>
                 <p>Tel</p>
