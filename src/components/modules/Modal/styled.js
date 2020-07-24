@@ -16,7 +16,7 @@ export const Div = styled.div `
     .x{
         position: absolute;
         bottom: 93%;
-        left: 93%;
+        left: 92%;
         border: none;
         outline: none;
         font-size: 16px;
