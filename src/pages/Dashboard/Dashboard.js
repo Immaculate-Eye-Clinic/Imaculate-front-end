@@ -5,12 +5,12 @@ import Taba from '../../components/modules/Tabs/Taba'
 import {Div} from './styled'
 
 import Footer from '../../components/modules/footer/footer'
-import Navbar from '../../components/modules/navbar/navbar'
+import Header from '../../components/modules/Header/Header'
 
 function Dashboard() {
     return (
         <Div>
-            <Navbar 
+            <Header 
             bgcolor='gray'
             />
             <div className='dash'>
