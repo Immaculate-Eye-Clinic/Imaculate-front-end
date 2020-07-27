@@ -19,6 +19,7 @@ import Values from '../pages/Readmore/values/Values'
 import Choose from '../pages/Readmore/choose/Choose'
 import Faq from '../pages/Readmore/faq/Faq'
 import Career from '../pages/Readmore/career/Career'
+import Dashboard from '../pages/Dashboard/Dashboard'
 
 
 
@@ -45,6 +46,7 @@ class ReactRouter extends React.Component {
                               <Route exact path='/about/choose' component={Choose} />
                               <Route exact path='/about/faq' component={Faq} />
                               <Route exact path='/about/careers' component={Career} />
+                              <Route exact path='/dashboard' component={Dashboard} />
                               <Route component={NoMatch} />      
                           </Switch>
                         </App>
