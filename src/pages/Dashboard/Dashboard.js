@@ -6,6 +6,7 @@ import {Div} from './styled'
 
 import Footer from '../../components/modules/footer/footer'
 import Navbar from '../../components/modules/navbar/navbar'
+import Schedulebutton from './Schedulebutton'
 
 function Dashboard() {
     return (
@@ -21,6 +22,7 @@ function Dashboard() {
                     <Taba />
                 </div>
             </div>
+            <Schedulebutton />
             <Footer />
         </Div>
     )

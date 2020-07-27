@@ -1,13 +1,18 @@
 import React from 'react'
+import Modal from '../../components/modules/Modal/Modal'
 
 class Schedulebutton extends React.Component{
-    constructor(){
-        super()
-        this.state = {
-
-        }
+    state = {
+        modalToggle: false,
     }
-    render(){
+
+    modalHandler = (e) => {
+        e.preventDefault();
+        this.setState({
+            modalToggle: !this.state.modalToggle
+        })
+    }
+    render() {
         return(
             <div>
                 { this.state.modalToggle &&
@@ -25,6 +30,7 @@ class Schedulebutton extends React.Component{
                 }
                 <button onClick={this.modalHandler} modalClosed={this.modalHandler}>Modal Button</button>
             </div>
+                
         )
     }
 }
