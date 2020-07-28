@@ -2,8 +2,8 @@ import styled from 'styled-components'
 
 export const Div = styled.div `
 #loader-wrapper {
-    position: fixed;
-    top: 0;
+    position: relative;
+    margin-top: 15%;
     left: 0;
     width: 100%;
     height: 100%;
@@ -14,12 +14,12 @@ export const Div = styled.div `
     position: relative;
     left: 50%;
     top: 50%;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     margin: -75px 0 0 -75px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #3498db;
+    border-top-color: #252079;
     -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
     animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
 }
@@ -33,7 +33,7 @@ export const Div = styled.div `
     bottom: 5px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #e74c3c;
+    border-top-color: black;
     -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
       animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
 }
@@ -47,7 +47,7 @@ export const Div = styled.div `
     bottom: 15px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #f9c922;
+    border-top-color: #252079;
     -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
       animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
 }
