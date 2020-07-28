@@ -9,7 +9,7 @@ import Spinner from '../../components/modules/Spinner/Spinner'
 
 const Posts = ({ posts, loading, title }) => {
     if(loading) {
-        return <Spi />
+        return <Spinner />
     }
     return(
       <Div>
