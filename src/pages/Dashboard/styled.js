@@ -1,6 +1,17 @@
 import styled from 'styled-components'
 
 export const Div = styled.div `
+    .modal{
+        .button{
+            background: #252079;
+            color: white;
+            border: none;
+            outline: none;
+            padding: 10px 30px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    }
     .dash {
         display: flex;
         flex-direction: row;

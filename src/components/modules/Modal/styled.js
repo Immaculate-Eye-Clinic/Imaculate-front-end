@@ -32,6 +32,9 @@ export const Div = styled.div `
             border: 0.5px solid black;
             border-radius: 10px;
         }
+        .id{
+            display: none;
+        }
         button{
             background: #252079;
             color: white;
