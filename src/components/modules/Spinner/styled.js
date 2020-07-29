@@ -8,6 +8,9 @@ export const Div = styled.div `
     width: 100%;
     height: 100%;
     z-index: 1000;
+    @media (max-width: 1000px) {
+        align-items: center;
+    }
 }
 #loader {
     display: block;
