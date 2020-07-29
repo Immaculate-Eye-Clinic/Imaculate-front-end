@@ -10,6 +10,7 @@ export const Div = styled.div `
     z-index: 1000;
     @media (max-width: 1000px) {
         align-items: center;
+        margin-left: 25%;
     }
 }
 #loader {
