@@ -22,7 +22,7 @@ function Taba() {
               </div>
               <div className='flex'>
                 <p>Tel</p>
-                <p>+234 800 310 4010</p>
+                <p>+234 860 310 4010</p>
               </div>
               <div className='flex'>
                 <p>Status of</p>
