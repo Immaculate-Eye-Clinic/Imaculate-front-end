@@ -3,7 +3,7 @@ import {Div} from './styled'
 import {NavLink} from 'react-router-dom'
 
 import BlogData from '../../components/modules/blogPage/blogData'
-import Skeleton from '../../components/modules/blogPage/Skeleto'
+import Skeleton from '../../components/modules/blogPage/Skeleton'
 import Spinner from '../../components/modules/Spinner/Spinner'
 
 
