@@ -13,4 +13,12 @@ img {
 h1 {
     font-size: 27px;
 }
+    a {
+        button {
+            padding: 15px 30px;
+            background: transparent;
+            border: 2px solid #252079;
+            font-size: 15px;
+        }
+}
 `

@@ -20,7 +20,7 @@ function Profile() {
                 Nigeria
                 W1G 9PF</p>
             </div>
-            <div>
+            <div className='button'>
                 <NavLink to='/post'><button>Post A Blog</button></NavLink>
             </div>
         </Div>
