@@ -21,6 +21,12 @@ class Form extends React.Component {
                         type='file'
                         
                     />
+                    <Editor
+                        toolbarClassName="toolbarClassName"
+                        wrapperClassName="wrapperClassName"
+                        editorClassName="editorClassName"
+                        onEditorStateChange={this.onEditorStateChange}
+                    /><hr />
                 </div>
             </div>
         )
