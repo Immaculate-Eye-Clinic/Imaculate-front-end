@@ -21,6 +21,11 @@ class Form extends React.Component {
                         type='file'
                         
                     />
+                    <input 
+                        type='text'
+                        name='head'
+                        value={this.handleChange}
+                    />
                     <Editor
                         toolbarClassName="toolbarClassName"
                         wrapperClassName="wrapperClassName"
