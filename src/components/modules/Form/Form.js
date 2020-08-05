@@ -5,6 +5,12 @@ import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 import Header from '../Header/Header'
 
 class Form extends React.Component {
+    constructor () {
+        super()
+        this.state = {
+            header: '',
+        }
+    }
     render() {
         return (
             <div>
