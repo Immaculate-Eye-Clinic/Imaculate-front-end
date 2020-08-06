@@ -1,10 +1,12 @@
-import React from 'react'
+import React, {useCallback} from 'react'
 //import { Editor } from 'react-draft-wysiwyg';
 //import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 import 'froala-editor/css/froala_style.min.css';
 import 'froala-editor/css/froala_editor.pkgd.min.css';
  
 import FroalaEditor from 'react-froala-wysiwyg';
+
+import Dropzone from 'react-dropzone'
 
 import Header from '../Header/Header'
 
@@ -31,13 +33,17 @@ class Form extends React.Component {
                 />
                 <div>
                     <form>
-                    <input
-                        type='file'
-                        name='file'
-                        value={this.state.file}
-                        onChange={this.handleClick}
-                    />
-                    <input 
+                    <Dropzone onDrop={acceptedFiles => console.log(acceptedFiles)}>
+                        {({getRootProps, getInputProps}) => (
+                            <section>
+                            <div {...getRootProps()}>
+                                <input {...getInputProps()} />
+                                <p>Drag 'n' drop some files here, or click to select files</p>
+                            </div>
+                            </section>
+                        )}
+                        </Dropzone>
+                                            <input 
                         type='text'
                         name='header'
                         value={this.state.header}
