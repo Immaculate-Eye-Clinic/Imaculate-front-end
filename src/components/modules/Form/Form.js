@@ -15,10 +15,32 @@ class Form extends React.Component {
         super()
         this.state = {
             header: '',
-            file: '',
         }
     }
 
+    handleChange(e){
+        const {name, value} = e.target
+        this.setState ({
+            [name] : e.target.value
+        })
+    }
+
+    submit(e){
+        e.preventDefault()
+        const user = {
+             header: this.state.header,
+            }
+            
+        fetch('https://jsonplaceholder.typicode.com/users', {
+             method: 'POST',
+             contacts: {
+                 'content-type': 'application/json'
+             },
+             header: JSON.stringify(user),
+         })
+         .then(res => res.json())
+         .then(data => console.log(data));
+        }
     
     render() {
         return (
@@ -47,7 +69,7 @@ class Form extends React.Component {
                             type='text'
                             name='header'
                             value={this.state.header}
-                            onChange={this.handleClick}
+                            onChange={this.handleChange}
                             placeholder='Header goes here'
                         />
                     {/*<Editor
