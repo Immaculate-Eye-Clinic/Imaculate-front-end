@@ -58,9 +58,10 @@ class Form extends React.Component {
                 <div>
                     <div>
                         <h1>POST A BLOG</h1>
-                    </div>
+                    </div><br /><br /><br /><br />
                     <div>
                         <form onSubmit={this.submit}>
+                            <div>
                             <Dropzone onDrop={acceptedFiles => console.log(acceptedFiles)}>
                                 {({getRootProps, getInputProps}) => (
                                     <section>
@@ -70,7 +71,8 @@ class Form extends React.Component {
                                     </div>
                                     </section>
                                 )}
-                            </Dropzone>
+                            </Dropzone><hr style={{color: '#252709'}}/>
+                            </div>
                             <input 
                                 type='text'
                                 name='header'
@@ -89,7 +91,7 @@ class Form extends React.Component {
                                 config={this.config}
                                 model={this.state.model}
                                 onModelChange={this.handleModelChange}
-                            /><hr />
+                            />
 
                             <button>Post</button>
                         </form>
