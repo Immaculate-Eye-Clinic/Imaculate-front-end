@@ -32,36 +32,36 @@ class Form extends React.Component {
                     img={'https://res.cloudinary.com/hisroyalwonginess/image/upload/v1588437898/Immaculate/Doctors_ieplxk.jpg'}
                 />
                 <div>
-                    <form>
-                    <Dropzone onDrop={acceptedFiles => console.log(acceptedFiles)}>
-                        {({getRootProps, getInputProps}) => (
-                            <section>
-                            <div {...getRootProps()}>
-                                <input {...getInputProps()} />
-                                <p>Drag 'n' drop some files here, or click to select files</p>
-                            </div>
-                            </section>
-                        )}
+                    <form onSubmit={this.submit}>
+                        <Dropzone onDrop={acceptedFiles => console.log(acceptedFiles)}>
+                            {({getRootProps, getInputProps}) => (
+                                <section>
+                                <div {...getRootProps()}>
+                                    <input {...getInputProps()} />
+                                    <p>Drag 'n' drop some files here, or click to select files</p>
+                                </div>
+                                </section>
+                            )}
                         </Dropzone>
-                                            <input 
-                        type='text'
-                        name='header'
-                        value={this.state.header}
-                        onChange={this.handleClick}
-                        placeholder='Header goes here'
-                    />
+                        <input 
+                            type='text'
+                            name='header'
+                            value={this.state.header}
+                            onChange={this.handleClick}
+                            placeholder='Header goes here'
+                        />
                     {/*<Editor
                         toolbarClassName="toolbarClassName"
                         wrapperClassName="wrapperClassName"
                         editorClassName="editorClassName"
                         onEditorStateChange={this.onEditorStateChange}
                     />*/}
-                    <FroalaEditor
-  tag='textarea'
-  config={this.config}
-  model={this.state.model}
-  onModelChange={this.handleModelChange}
-/><hr />
+                        <FroalaEditor
+                            tag='textarea'
+                            config={this.config}
+                            model={this.state.model}
+                            onModelChange={this.handleModelChange}
+                        /><hr />
                     </form>
                 </div>
             </div>
