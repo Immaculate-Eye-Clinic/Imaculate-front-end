@@ -16,6 +16,8 @@ class Form extends React.Component {
         this.state = {
             header: '',
         }
+        this.handleChange = this.handleChange.bind(this)
+         this.submit = this.submit.bind(this)
     }
 
     handleChange(e){
