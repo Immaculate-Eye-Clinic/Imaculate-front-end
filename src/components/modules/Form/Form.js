@@ -55,7 +55,7 @@ class Form extends React.Component {
                     mobileHeight={'50vh'}
                     img={'https://res.cloudinary.com/hisroyalwonginess/image/upload/v1588437898/Immaculate/Doctors_ieplxk.jpg'}
                 />
-                <div>
+                <div className='main'>
                     <div>
                         <h1>POST A BLOG</h1>
                     </div><br /><br /><br /><br />
@@ -65,13 +65,13 @@ class Form extends React.Component {
                             <Dropzone onDrop={acceptedFiles => console.log(acceptedFiles)}>
                                 {({getRootProps, getInputProps}) => (
                                     <section>
-                                    <div {...getRootProps()}>
+                                    <div {...getRootProps()} style={{textAlign: 'center',outline: 'none', border: '1px solid gray', borderRadius: '9px'}}>
                                         <input {...getInputProps()} />
                                         <p>Drag 'n' drop some files here, or click to select files</p>
                                     </div>
                                     </section>
                                 )}
-                            </Dropzone><hr style={{color: '#252709'}}/>
+                            </Dropzone>
                             </div>
                             <input 
                                 type='text'
