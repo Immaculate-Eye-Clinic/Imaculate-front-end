@@ -3,12 +3,12 @@ import React, {useCallback} from 'react'
 //import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 import 'froala-editor/css/froala_style.min.css';
 import 'froala-editor/css/froala_editor.pkgd.min.css';
- 
 import FroalaEditor from 'react-froala-wysiwyg';
 
 import Dropzone from 'react-dropzone'
 
 import Header from '../Header/Header'
+import {Post} from './styled'
 
 class Form extends React.Component {
     constructor () {
@@ -46,7 +46,7 @@ class Form extends React.Component {
     
     render() {
         return (
-            <div>
+            <Post>
                 <Header 
                     bgcolor={'transparent'}
                     title={'About Us'}
@@ -97,7 +97,7 @@ class Form extends React.Component {
                         </form>
                     </div>
                 </div>
-            </div>
+            </Post>
         )
     }
 }
