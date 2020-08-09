@@ -59,9 +59,9 @@ class Form extends React.Component {
                     <div>
                         <h1>POST A BLOG</h1>
                     </div><br /><br /><br /><br />
-                    <div>
+                    <div className='blog'>
                         <form onSubmit={this.submit}>
-                            <div>
+                            <div className='drop'>
                             <Dropzone onDrop={acceptedFiles => console.log(acceptedFiles)}>
                                 {({getRootProps, getInputProps}) => (
                                     <section>
@@ -71,7 +71,7 @@ class Form extends React.Component {
                                     </div>
                                     </section>
                                 )}
-                            </Dropzone>
+                            </Dropzone><br />
                             </div>
                             <input 
                                 type='text'
