@@ -21,7 +21,31 @@ background: whitesmoke;
                 width: 100%;
                 left: 0;
             }
-}
+        }
+        input {
+            width: 80%;
+            padding: 23px 20px;
+            margin-bottom: 28px;
+            box-sizing: border-box;
+            border-radius: 9px;
+            border: 1px solid gray;
+            text-align: center;
+            font-size: 18px;
+            color: black;
+        }
+        .but {
+            button {
+            display: inline-block;
+            padding: 0.35em 1.2em;
+            margin: 0 0.3em 0.3em 0;
+            border: 0.1em solid #ffffff;
+            border-radius: 0.12em;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-weight: 300;
+            color: #ffffff;
+            }
+        }
     }
 }
 

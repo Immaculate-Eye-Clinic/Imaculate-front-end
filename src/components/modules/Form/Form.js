@@ -62,16 +62,16 @@ class Form extends React.Component {
                     <div className='blog'>
                         <form onSubmit={this.submit}>
                             <div className='drop'>
-                            <Dropzone onDrop={acceptedFiles => console.log(acceptedFiles)}>
-                                {({getRootProps, getInputProps}) => (
-                                    <section>
-                                    <div {...getRootProps()} style={{textAlign: 'center',outline: 'none', border: '1px solid gray', borderRadius: '9px'}}>
-                                        <input {...getInputProps()} />
-                                        <p>Drag 'n' drop some files here, or click to select files</p>
-                                    </div>
-                                    </section>
-                                )}
-                            </Dropzone><br />
+                                <Dropzone onDrop={acceptedFiles => console.log(acceptedFiles)}>
+                                    {({getRootProps, getInputProps}) => (
+                                        <section>
+                                        <div {...getRootProps()} style={{textAlign: 'center',outline: 'none', border: '1px solid gray', borderRadius: '9px'}}>
+                                            <input {...getInputProps()} />
+                                            <p>Drag 'n' drop some files here, or click to select files</p>
+                                        </div>
+                                        </section>
+                                    )}
+                                </Dropzone><br />
                             </div>
                             <input 
                                 type='text'
@@ -92,8 +92,9 @@ class Form extends React.Component {
                                 model={this.state.model}
                                 onModelChange={this.handleModelChange}
                             />
-
-                            <button>Post</button>
+                            <div className='but'>
+                                <button>Post</button>
+                            </div>
                         </form>
                     </div>
                 </div>
