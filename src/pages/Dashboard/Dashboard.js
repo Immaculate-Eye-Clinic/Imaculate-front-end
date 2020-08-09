@@ -70,6 +70,11 @@ class Dashboard extends React.Component{
                 <div className='dash'>
                     <div className='profile'>
                         <Profile />
+                        <button 
+                            onClick={this.modalHandler} 
+                            modalClosed={this.modalHandler} 
+                            className='button'>Schedule
+                        </button>
                     </div>
                     <div className='tab'>
                         <Taba />
@@ -90,11 +95,6 @@ class Dashboard extends React.Component{
                             </div>
                         </Modal>
                     }
-                    <button 
-                        onClick={this.modalHandler} 
-                        modalClosed={this.modalHandler} 
-                        className='button'>Schedule
-                    </button>
                 </div>
                 <Footer />
             </Div>
