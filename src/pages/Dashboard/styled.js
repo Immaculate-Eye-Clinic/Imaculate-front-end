@@ -22,14 +22,18 @@ export const Div = styled.div `
                 width: 80%;
                 margin-top: 50px;
             }
-            .button{
-                background: #252079;
-                color: white;
-                border: none;
-                outline: none;
-                padding: 10px 30px;
-                border-radius: 10px;
-                cursor: pointer;
+            .button-div{
+                display: flex;
+                justify-content: center;
+                .button{
+                    background: #252079;
+                    color: white;
+                    border: none;
+                    outline: none;
+                    padding: 10px 30px;
+                    border-radius: 10px;
+                    cursor: pointer;
+                }
             }
         }
         .tab {
