@@ -34,16 +34,18 @@ background: whitesmoke;
             color: black;
         }
         .but {
+            margin: 19px 0;
             button {
             display: inline-block;
-            padding: 0.35em 1.2em;
+            padding: 0.55em 2.9em;
             margin: 0 0.3em 0.3em 0;
             border: 0.1em solid #ffffff;
             border-radius: 0.12em;
             box-sizing: border-box;
             text-decoration: none;
             font-weight: 300;
-            color: #ffffff;
+            background: #252079;
+            color: white;
             }
         }
     }

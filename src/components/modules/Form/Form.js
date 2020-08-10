@@ -93,7 +93,7 @@ class Form extends React.Component {
                                 onModelChange={this.handleModelChange}
                             />
                             <div className='but'>
-                                <button>Post</button>
+                                <button onSubmit={this.submit}>Post</button>
                             </div>
                         </form>
                     </div>
