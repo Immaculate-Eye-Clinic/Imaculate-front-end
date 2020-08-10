@@ -72,10 +72,10 @@ export const Div = styled.div `
 `
 
 export const Divs = styled.div `
-    width: 500px;
+    width: 100%;
     position: fixed;
     z-index: 100;
     left: 0;
     top: 0;
-    background-color: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.5);
 `
