@@ -74,8 +74,7 @@ export const Div = styled.div `
 export const Divs = styled.div `
     width: 100%;
     position: fixed;
-    z-index: 100;
-    left: 0;
+    z-index: 500;
     top: 0;
     background: rgba(0,0,0,0.5);
 `
