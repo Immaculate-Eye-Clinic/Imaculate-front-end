@@ -18,11 +18,11 @@ function Taba() {
             <div className='con'>
               <div className='flex'>
                 <p>Email</p>
-                <p>Justice@gmail.com</p>
+                <p>Justice@gmaill.com</p>
               </div>
               <div className='flex'>
                 <p>Tel</p>
-                <p>+234 800 300 4000</p>
+                <p>+234 860 310 4010</p>
               </div>
               <div className='flex'>
                 <p>Status of</p>
