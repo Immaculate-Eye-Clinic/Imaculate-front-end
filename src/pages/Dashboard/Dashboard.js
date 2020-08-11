@@ -71,6 +71,13 @@ class Dashboard extends React.Component{
                 <div className='dash'>
                     <div className='profile'>
                         <Profile />
+                        <div className='button-div'>
+                            <button 
+                                onClick={this.modalHandler} 
+                                modalClosed={this.modalHandler} 
+                                className='button'>Schedule
+                            </button>
+                        </div>
                     </div>
                     <div className='tab'>
                         <Taba />
@@ -84,18 +91,13 @@ class Dashboard extends React.Component{
                                 <form className='form'>
                                     <h3>Schedule</h3>
                                     <input type='text' name='text' value={this.state.text} onChange={this.change} className='id' /><br/>
-                                    <input type='date' name='date' value={this.state.date} onChange={this.change} /><br/>
-                                    <input type='time' name='time' value={this.state.time} onChange={this.change} /><br/>
+                                    <input type='date' placeholder='Date' name='date' value={this.state.date} onChange={this.change} /><br/>
+                                    <input type='time' placeholder='Time' name='time' value={this.state.time} onChange={this.change} /><br/>
                                     <button>Submit</button>
                                 </form>
                             </div>
                         </Modal>
                     }
-                    <button 
-                        onClick={this.modalHandler} 
-                        modalClosed={this.modalHandler} 
-                        className='button'>Schedule
-                    </button>
                 </div>
                 <Footer />
             </Div>

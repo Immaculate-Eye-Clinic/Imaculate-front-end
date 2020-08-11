@@ -13,6 +13,24 @@ export const Div = styled.div `
     box-sizing: border-box;
     transition: all 0.3s ease-out;
     border-radius: 10px;
+    @media (max-width: 995px){
+        left: 35%
+    }
+    @media (max-width: 735px){
+        left: 30%
+    }
+    @media (max-width: 650px){
+        left: 25%
+    }
+    @media (max-width: 520px){
+        left: 20%
+    }
+    @media (max-width: 460px){
+        left: 15%
+    }
+    @media (max-width: 375px){
+        left: 10%
+    }
     .x{
         position: absolute;
         bottom: 93%;
@@ -28,7 +46,7 @@ export const Div = styled.div `
         justify-content: space-evenly;
         flex-direction: column;
         input{
-            padding: 5px;
+            padding: 5px 40px;
             border: 0.5px solid black;
             border-radius: 10px;
         }
@@ -54,10 +72,10 @@ export const Div = styled.div `
 `
 
 export const Divs = styled.div `
-    width: 500px;
+    width: 100%;
     position: fixed;
     z-index: 100;
     left: 0;
     top: 0;
-    background-color: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.5);
 `
