@@ -56,7 +56,7 @@ class Form extends React.Component {
                     img={'https://res.cloudinary.com/hisroyalwonginess/image/upload/v1588437898/Immaculate/Doctors_ieplxk.jpg'}
                 />
                 <div className='main'>
-                    <div>
+                    <div className='head'>
                         <h1>POST A BLOG</h1>
                     </div><br /><br /><br /><br />
                     <div className='blog'>

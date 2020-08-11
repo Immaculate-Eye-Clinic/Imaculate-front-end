@@ -7,7 +7,11 @@ background: whitesmoke;
     text-align: center;
     position: relative;
     left: 10%;
+    top: 3em;
     background: white;
+    .head {
+            padding: 10px 0;
+        }
     .blog {
         .drop {
             width: 50%;
@@ -48,6 +52,7 @@ background: whitesmoke;
             color: white;
             }
         }
+        
     }
 }
 
