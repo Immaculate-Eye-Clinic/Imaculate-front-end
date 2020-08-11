@@ -2,19 +2,10 @@ import React from "react"
 import {Cards} from "./Styles"
 import {NavLink} from 'react-router-dom'
 import { Zoom } from "react-reveal"
-import Modal from '../../components/modules/Modal/Modal'
 
 class Services extends React.Component{
         state = {
-            modalToggle: false,
         }
-
-    modalHandler = (e) => {
-        e.preventDefault();
-        this.setState({
-            modalToggle: !this.state.modalToggle
-        })
-    }
     render() {
         return(
             <Cards imgUrl = {this.props.service.imgUrl}>
@@ -26,18 +17,9 @@ class Services extends React.Component{
                             {this.props.service.caption}
                             <NavLink to={this.props.service.link}><button>{this.props.service.readMore}</button></NavLink>
                         </div>
-                        { this.state.modalToggle &&
-                            <Modal show={this.state.modalToggle} onClick={this.modalHandler} >
-                                <div>
-                                    The best has happened
-                                    <button onClick={this.modalHandler}>x</button>
-                                </div>
-                            </Modal>
-                        }
                     </div>
                     
                 </div>
-                <button onClick={this.modalHandler}>Modal</button>
             </Cards>  
         )
     }
