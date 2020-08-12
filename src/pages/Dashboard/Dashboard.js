@@ -7,7 +7,6 @@ import {Div} from './styled'
 import Footer from '../../components/modules/footer/footer'
 import Navbar from '../../components/modules/navbar/navbar'
 import Modal from '../../components/modules/Modal/Modal'
-import Backdrop from '../../components/modules/Modal/Backdrop'
 
 
 class Dashboard extends React.Component{
@@ -84,7 +83,6 @@ class Dashboard extends React.Component{
                     </div>
                 </div>
                 <div className='modal' onSubmit={this.submit}>
-                    <Backdrop />
                     { this.state.modalToggle &&
                         <Modal show={this.state.modalToggle} onClick={this.modalHandler} >
                             <div>
