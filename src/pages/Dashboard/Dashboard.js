@@ -84,9 +84,9 @@ class Dashboard extends React.Component{
                     </div>
                 </div>
                 <div className='modal' onSubmit={this.submit}>
+                    <Backdrop />
                     { this.state.modalToggle &&
                         <Modal show={this.state.modalToggle} onClick={this.modalHandler} >
-                            <Backdrop />
                             <div>
                                 <button onClick={this.modalHandler} className='x'>X</button>
                                 <form className='form'>
