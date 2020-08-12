@@ -4,10 +4,10 @@ export const Div = styled.div `
     .div{
         position: fixed;
         z-index: 100;
-        background-color: white;
+        background-color: yellow;
         width: 300px;
         border: 1px solid #ccc;
-        box-shadow: 1px 1px 1px black;
+        box-shadow: 3px 3px 3px black;
         padding: 40px;
         left: 40%;
         top: 30%;
@@ -46,6 +46,7 @@ export const Div = styled.div `
             display: flex;
             justify-content: space-evenly;
             flex-direction: column;
+            background: white;
             input{
                 padding: 5px 40px;
                 border: 0.5px solid black;
@@ -76,7 +77,7 @@ export const Divs = styled.div `
     width: 1000%;
     height: 1000%;
     position: fixed;
-    z-index: -500;
+    z-index: -1;
     left: -200%;
     top: -100%;
     background: rgba(0,0,0,0.5);
