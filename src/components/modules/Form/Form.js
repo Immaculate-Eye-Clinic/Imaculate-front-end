@@ -5,7 +5,9 @@ import 'froala-editor/css/froala_style.min.css';
 import 'froala-editor/css/froala_editor.pkgd.min.css';
 import FroalaEditor from 'react-froala-wysiwyg';
 
-import Dropzone from 'react-dropzone'
+//import Dropzone from 'react-dropzone'
+import ReactDropzone from 'react-dropzone';
+import request from "superagent";
 
 import Header from '../Header/Header'
 import {Post} from './styled'
@@ -62,7 +64,7 @@ class Form extends React.Component {
                     <div className='blog'>
                         <form onSubmit={this.submit}>
                             <div className='drop'>
-                                <Dropzone onDrop={acceptedFiles => console.log(acceptedFiles)}>
+                                {/*<Dropzone onDrop={acceptedFiles => console.log(acceptedFiles)}>
                                     {({getRootProps, getInputProps}) => (
                                         <section>
                                         <div {...getRootProps()} style={{textAlign: 'center',outline: 'none', border: '1px solid gray', borderRadius: '9px'}}>
@@ -71,7 +73,8 @@ class Form extends React.Component {
                                         </div>
                                         </section>
                                     )}
-                                </Dropzone><br />
+                                </Dropzone>*/}
+                                <br />
                             </div>
                             <input 
                                 type='text'
