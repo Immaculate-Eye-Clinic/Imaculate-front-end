@@ -51,6 +51,8 @@ class Form extends React.Component {
           }
     
     render() {
+        const maxSize = 1048576;
+
         return (
             <Post>
                 <Header 
@@ -68,15 +70,30 @@ class Form extends React.Component {
                     <div className='blog'>
                         <form onSubmit={this.submit}>
                             <div className='drop'>
-                            <Dropzone onDrop={this.onDrop}>
-                                {({getRootProps, getInputProps, isDragActive}) => (
-                                <div {...getRootProps()}>
-                                <input {...getInputProps()} />
-                                {isDragActive ? "Drop it like it's hot!" : 'Click me or drag a file to upload!'}
-                                </div>
-                                )}
-                            </Dropzone>
-                                    <br />
+                                <Dropzone
+                                    onDrop={this.onDrop}
+                                    accept="image/png, image/jpg"
+                                    minSize={0}
+                                    maxSize={maxSize}
+                                    >
+                                    {({getRootProps, getInputProps, isDragActive, isDragReject, rejectedFiles}) => {
+                                            const isFileTooLarge = rejectedFiles > 0 && rejectedFiles[0].size > maxSize;
+                                            return (
+                                                <div {...getRootProps()}>
+                                                <input {...getInputProps()} />
+                                                {!isDragActive && 'Click here or drop a file to upload!'}
+                                                {isDragActive && !isDragReject && "Drop it like it's hot!"}
+                                                {isDragReject && "File type not accepted, sorry!"}
+                                                {isFileTooLarge && (
+                                                    <div className="text-danger mt-2">
+                                                    File is too large.
+                                                    </div>
+                                                )}
+                                                </div>
+                                            )}
+                                            }
+                                </Dropzone>
+                                <br />
                             </div>
                             <input 
                                 type='text'
