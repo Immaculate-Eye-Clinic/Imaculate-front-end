@@ -73,10 +73,10 @@ export const Div = styled.div `
 `
 
 export const Divs = styled.div `
-    width: 1000%;
-    height: 1000%;
+    width: 100%;
+    height: 100%;
     position: fixed;
-    left: -200%;
-    top: -200%;
+    left: 0;
+    top: 0;
     background: rgba(0,0,0,0.5);
 `
