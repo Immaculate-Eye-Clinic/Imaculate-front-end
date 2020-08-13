@@ -5,9 +5,9 @@ import 'froala-editor/css/froala_style.min.css';
 import 'froala-editor/css/froala_editor.pkgd.min.css';
 import FroalaEditor from 'react-froala-wysiwyg';
 
-//import Dropzone from 'react-dropzone'
-import ReactDropzone from 'react-dropzone';
-import request from "superagent";
+import Dropzone from 'react-dropzone'
+//import ReactDropzone from 'react-dropzone';
+//import request from "superagent";
 
 import Header from '../Header/Header'
 import {Post} from './styled'
@@ -45,6 +45,10 @@ class Form extends React.Component {
          .then(res => res.json())
          .then(data => console.log(data));
         }
+
+        onDrop = (acceptedFiles) => {
+            console.log(acceptedFiles);
+          }
     
     render() {
         return (
@@ -64,17 +68,15 @@ class Form extends React.Component {
                     <div className='blog'>
                         <form onSubmit={this.submit}>
                             <div className='drop'>
-                                {/*<Dropzone onDrop={acceptedFiles => console.log(acceptedFiles)}>
-                                    {({getRootProps, getInputProps}) => (
-                                        <section>
-                                        <div {...getRootProps()} style={{textAlign: 'center',outline: 'none', border: '1px solid gray', borderRadius: '9px'}}>
-                                            <input {...getInputProps()} />
-                                            <p>Drag 'n' drop some files here, or click to select files</p>
-                                        </div>
-                                        </section>
-                                    )}
-                                </Dropzone>*/}
-                                <br />
+                            <Dropzone onDrop={this.onDrop}>
+                                {({getRootProps, getInputProps, isDragActive}) => (
+                                <div {...getRootProps()}>
+                                <input {...getInputProps()} />
+                                {isDragActive ? "Drop it like it's hot!" : 'Click me or drag a file to upload!'}
+                                </div>
+                                )}
+                            </Dropzone>
+                                    <br />
                             </div>
                             <input 
                                 type='text'
