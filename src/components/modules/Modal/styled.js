@@ -3,8 +3,7 @@ import styled from 'styled-components'
 export const Div = styled.div `
     .div{
         position: fixed;
-        z-index: 100;
-        background-color: yellow;
+        background-color: white;
         width: 300px;
         border: 1px solid #ccc;
         box-shadow: 3px 3px 3px black;
@@ -77,8 +76,7 @@ export const Divs = styled.div `
     width: 1000%;
     height: 1000%;
     position: fixed;
-    z-index: -1;
     left: -200%;
-    top: -100%;
+    top: -200%;
     background: rgba(0,0,0,0.5);
 `
