@@ -79,7 +79,7 @@ class Form extends React.Component {
                                     {({getRootProps, getInputProps, isDragActive, isDragReject, rejectedFiles}) => {
                                             const isFileTooLarge = rejectedFiles > 0 && rejectedFiles[0].size > maxSize;
                                             return (
-                                                <div {...getRootProps()}>
+                                                <div {...getRootProps()} className='file'>
                                                 <input {...getInputProps()} />
                                                 {!isDragActive && 'Click here or drop a file to upload!'}
                                                 {isDragActive && !isDragReject && "Drop it like it's hot!"}
