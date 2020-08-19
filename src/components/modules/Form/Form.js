@@ -17,10 +17,18 @@ class Form extends React.Component {
         super()
         this.state = {
             header: '',
+            file: null,
         }
         this.handleChange = this.handleChange.bind(this)
          this.submit = this.submit.bind(this)
+         this.handleChange = this.handleChange.bind(this)
     }
+
+    handleChange(event) {
+        this.setState({
+          file: URL.createObjectURL(event.target.files[0])
+        })
+      }
 
     handleChange(e){
         const {name, value} = e.target
