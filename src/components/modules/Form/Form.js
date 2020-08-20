@@ -1,34 +1,58 @@
-import React, {useCallback} from 'react'
+import React, {useCallback, useState, useEffect} from 'react'
 //import { Editor } from 'react-draft-wysiwyg';
 //import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 import 'froala-editor/css/froala_style.min.css';
 import 'froala-editor/css/froala_editor.pkgd.min.css';
 import FroalaEditor from 'react-froala-wysiwyg';
 
-import Dropzone from 'react-dropzone'
+import {useDropzone} from 'react-dropzone';
 //import ReactDropzone from 'react-dropzone';
 //import request from "superagent";
 
 import Header from '../Header/Header'
 import {Post} from './styled'
 
+const thumbsContainer = {
+    display: 'flex',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    marginTop: 16
+  };
+  
+  const thumb = {
+    display: 'inline-flex',
+    borderRadius: 2,
+    border: '1px solid #eaeaea',
+    marginBottom: 8,
+    marginRight: 8,
+    width: 100,
+    height: 100,
+    padding: 4,
+    boxSizing: 'border-box'
+  };
+  
+  const thumbInner = {
+    display: 'flex',
+    minWidth: 0,
+    overflow: 'hidden'
+  };
+  
+  const img = {
+    display: 'block',
+    width: 'auto',
+    height: '100%'
+  };
+
 class Form extends React.Component {
     constructor () {
         super()
         this.state = {
             header: '',
-            file: null,
+            imageFiles: []
         }
         this.handleChange = this.handleChange.bind(this)
          this.submit = this.submit.bind(this)
-         this.handleChange = this.handleChange.bind(this)
     }
-
-    handleChange(event) {
-        this.setState({
-          file: URL.createObjectURL(event.target.files[0])
-        })
-      }
 
     handleChange(e){
         const {name, value} = e.target
@@ -57,9 +81,42 @@ class Form extends React.Component {
         onDrop = (acceptedFiles) => {
             console.log(acceptedFiles);
           }
+
+        onDrop(imageFiles) {
+            this.setState({
+                imageFiles: imageFiles
+            })
+            console.log(imageFiles)  
+        }
     
     render() {
         const maxSize = 1048576;
+
+        const [files, setFiles] = useState([]);
+  const {getRootProps, getInputProps} = useDropzone({
+    accept: 'image/*',
+    onDrop: acceptedFiles => {
+      setFiles(acceptedFiles.map(file => Object.assign(file, {
+        preview: URL.createObjectURL(file)
+      })));
+    }
+  });
+  
+  const thumbs = files.map(file => (
+    <div style={thumb} key={file.name}>
+      <div style={thumbInner}>
+        <img
+          src={file.preview}
+          style={img}
+        />
+      </div>
+    </div>
+  ));
+
+  useEffect(() => () => {
+    // Make sure to revoke the data uris to avoid memory leaks
+    files.forEach(file => URL.revokeObjectURL(file.preview));
+  }, [files]);
 
         return (
             <Post>
@@ -78,29 +135,15 @@ class Form extends React.Component {
                     <div className='blog'>
                         <form onSubmit={this.submit}>
                             <div className='drop'>
-                                <Dropzone
-                                    onDrop={this.onDrop}
-                                    accept="image/png, image/jpg"
-                                    minSize={0}
-                                    maxSize={maxSize}
-                                    >
-                                    {({getRootProps, getInputProps, isDragActive, isDragReject, rejectedFiles}) => {
-                                            const isFileTooLarge = rejectedFiles > 0 && rejectedFiles[0].size > maxSize;
-                                            return (
-                                                <div {...getRootProps()} className='file'>
-                                                <input {...getInputProps()} />
-                                                {!isDragActive && 'Click here or drop a file to upload!'}
-                                                {isDragActive && !isDragReject && "Drop it like it's hot!"}
-                                                {isDragReject && "File type not accepted, sorry!"}
-                                                {isFileTooLarge && (
-                                                    <div className="text-danger mt-2">
-                                                    File is too large.
-                                                    </div>
-                                                )}
-                                                </div>
-                                            )}
-                                            }
-                                </Dropzone>
+                            <section className="container">
+      <div {...getRootProps({className: 'dropzone'})}>
+        <input {...getInputProps()} />
+        <p>Drag 'n' drop some files here, or click to select files</p>
+      </div>
+      <aside style={thumbsContainer}>
+        {thumbs}
+      </aside>
+    </section>
                                 <br />
                             </div>
                             <input 
@@ -132,5 +175,31 @@ class Form extends React.Component {
         )
     }
 }
+
+{/* 
+<Dropzone
+                                    onDrop={this.onDrop.bind(this)}
+                                    accept="image/png, image/jpg"
+                                    minSize={0}
+                                    maxSize={maxSize}
+                                    >
+                                    {({getRootProps, getInputProps, isDragActive, isDragReject, rejectedFiles}) => {
+                                            const isFileTooLarge = rejectedFiles > 0 && rejectedFiles[0].size > maxSize;
+                                            return (
+                                                <div {...getRootProps()} className='file'>
+                                                <input {...getInputProps()} />
+                                                {!isDragActive && 'Click here or drop a file to upload!'}
+                                                {isDragActive && !isDragReject && "Drop it like it's hot!"}
+                                                {isDragReject && "File type not accepted, sorry!"}
+                                                {isFileTooLarge && (
+                                                    <div className="text-danger mt-2">
+                                                    File is too large.
+                                                    </div>
+                                                )}
+                                                </div>
+                                            )}
+                                            }
+                                </Dropzone>
+*/}
 
 export default Form
