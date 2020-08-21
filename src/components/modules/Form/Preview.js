@@ -38,7 +38,7 @@ const img = {
 function Previews(props) {
   const [files, setFiles] = useState([]);
   const {getRootProps, getInputProps} = useDropzone({
-    accept: 'image/*',
+    accept: 'image/jpeg, image/png',
     onDrop: acceptedFiles => {
       setFiles(acceptedFiles.map(file => Object.assign(file, {
         preview: URL.createObjectURL(file)
@@ -61,31 +61,7 @@ function Previews(props) {
     // Make sure to revoke the data uris to avoid memory leaks
     files.forEach(file => URL.revokeObjectURL(file.preview));
   }, [files]);
-
-  const {
-    acceptedFiles,
-    fileRejections,
-    
-  } = useDropzone({
-    accept: 'image/jpeg, image/png'
-  });
-
-  const acceptedFileItems = acceptedFiles.map(file => (
-    <li key={file.path}>
-      {file.path} - {file.size} bytes
-    </li>
-  ));
-
-  const fileRejectionItems = fileRejections.map(({ file, errors }) => (
-    <li key={file.path}>
-      {file.path} - {file.size} bytes
-      <ul>
-        {errors.map(e => (
-          <li key={e.code}>{e.message}</li>
-        ))}
-      </ul>
-    </li>
-  ));
+  
 
   return (
     <Div>
@@ -93,14 +69,9 @@ function Previews(props) {
         <div {...getRootProps({className: 'dropzone'})}>
             <input {...getInputProps()} />
             <p>Drag 'n' drop some files here, or click to select files</p>
-            <em>(Only *.jpeg and *.png images will be accepted)</em>
         </div>
         <aside className='thumbsContainer'>
             {thumbs}
-            <h4>Accepted files</h4>
-            <ul>{acceptedFileItems}</ul>
-            <h4>Rejected files</h4>
-            <ul>{fileRejectionItems}</ul>
         </aside>
         </section>
     </Div>
