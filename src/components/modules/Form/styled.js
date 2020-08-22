@@ -59,17 +59,17 @@ background: whitesmoke;
 
 export const Div = styled.div`
 width: 100%;
-border: 1px solid black;
 position: relative;
 right: 24%;
 
 .container {
     width: 100%;
-    border: 1px solid black;
     .dropzone {
         border: 1px solid #ccc;
         padding-top: -55px;
         width: 100%;
+        height: 500px;
+        outline: none;
     }
 }
 `
