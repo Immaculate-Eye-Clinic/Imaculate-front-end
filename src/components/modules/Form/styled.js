@@ -59,5 +59,7 @@ background: whitesmoke;
 `
 
 export const Div = styled.div`
-
+.dropzone {
+    
+}
 `
