@@ -14,7 +14,6 @@ background: whitesmoke;
         }
     .blog {
         .drop {
-            width: 50%;
             position: relative;
             left: 24%;
             @media (max-width: 1010px) {
@@ -59,7 +58,18 @@ background: whitesmoke;
 `
 
 export const Div = styled.div`
-.dropzone {
-    
+width: 100%;
+border: 1px solid black;
+position: relative;
+right: 24%;
+
+.container {
+    width: 100%;
+    border: 1px solid black;
+    .dropzone {
+        border: 1px solid #ccc;
+        padding-top: -55px;
+        width: 100%;
+    }
 }
 `

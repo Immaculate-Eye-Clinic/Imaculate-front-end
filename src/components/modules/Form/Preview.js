@@ -16,8 +16,8 @@ const thumb = {
   border: '1px solid #eaeaea',
   marginBottom: 8,
   marginRight: 8,
-  width: 'auto',
-  height: 200,
+  width: '100%',
+  height: 500,
   padding: 4,
   boxSizing: 'border-box'
 };
@@ -66,13 +66,13 @@ function Previews(props) {
   return (
     <Div>
         <section className="container">
-        <div {...getRootProps({className: 'dropzone'})}>
-            <input {...getInputProps()} />
-            <p>Drag 'n' drop some files here, or click to select files</p>
-        </div>
-        <aside style={thumbsContainer}>
-            {thumbs}
-        </aside>
+            <aside style={thumbsContainer}>
+                {thumbs}
+            </aside>
+            <div {...getRootProps({className: 'dropzone'})}>
+                <input {...getInputProps()} />
+                <p>Drag 'n' drop some files here, or click to select files</p>
+            </div>
         </section>
     </Div>
   );
@@ -81,27 +81,5 @@ function Previews(props) {
 export default Previews
 
 {/*
-<Dropzone
-                                    onDrop={this.onDrop.bind(this)}
-                                    accept="image/png, image/jpg"
-                                    minSize={0}
-                                    maxSize={maxSize}
-                                    >
-                                    {({getRootProps, getInputProps, isDragActive, isDragReject, rejectedFiles}) => {
-                                            const isFileTooLarge = rejectedFiles > 0 && rejectedFiles[0].size > maxSize;
-                                            return (
-                                                <div {...getRootProps()} className='file'>
-                                                <input {...getInputProps()} />
-                                                {!isDragActive && 'Click here or drop a file to upload!'}
-                                                {isDragActive && !isDragReject && "Drop it like it's hot!"}
-                                                {isDragReject && "File type not accepted, sorry!"}
-                                                {isFileTooLarge && (
-                                                    <div className="text-danger mt-2">
-                                                    File is too large.
-                                                    </div>
-                                                )}
-                                                </div>
-                                            )}
-                                            }
-                                </Dropzone>
+
 */}

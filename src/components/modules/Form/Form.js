@@ -12,6 +12,7 @@ import Dropzone from 'react-dropzone'
 import Header from '../Header/Header'
 import {Post} from './styled'
 import Previews from './Preview'
+import StyledDropzone from './Usedrop'
 
 class Form extends React.Component {
     constructor () {
@@ -78,7 +79,7 @@ class Form extends React.Component {
                     </div><br /><br /><br /><br />
                     <div className='blog'>
                         <form onSubmit={this.submit}>
-                            <div className='drop'>
+                            <div className='drop' style={{}}>
                                 <Previews />
                                 <br />
                             </div>
