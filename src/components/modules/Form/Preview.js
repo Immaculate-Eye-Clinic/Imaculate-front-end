@@ -16,10 +16,9 @@ const thumb = {
   border: '1px solid #eaeaea',
   marginBottom: 8,
   marginRight: 8,
-  width: '100%',
+  width: '80%',
   height: 400,
   padding: 4,
-  position: 'absolute',
   boxSizing: 'border-box'
 };
 
@@ -39,7 +38,7 @@ const img = {
 function Previews(props) {
   const [files, setFiles] = useState([]);
   const {getRootProps, getInputProps} = useDropzone({
-    accept: 'image/jpeg, image/png',
+    accept: 'image/*',
     onDrop: acceptedFiles => {
       setFiles(acceptedFiles.map(file => Object.assign(file, {
         preview: URL.createObjectURL(file)
@@ -62,22 +61,23 @@ function Previews(props) {
     // Make sure to revoke the data uris to avoid memory leaks
     files.forEach(file => URL.revokeObjectURL(file.preview));
   }, [files]);
-  
 
   return (
-    <Div>
+      <Div>
         <section className="container">
-                <aside style={thumbsContainer}>
-                    {thumbs}
-                </aside>
-            <div {...getRootProps({className: 'dropzone'})}>
-                <input {...getInputProps()} />
-                <p>Drag 'n' drop some files here, or click to select files</p>
-            </div>
+        <aside style={thumbsContainer}>
+            {thumbs}
+        </aside>
+        <div {...getRootProps({className: 'dropzone'})}>
+            <input {...getInputProps()} />
+            <p>Drag 'n' drop some files here, or click to select files</p>
+        </div>
         </section>
     </Div>
   );
 }
+
+
 
 export default Previews
 

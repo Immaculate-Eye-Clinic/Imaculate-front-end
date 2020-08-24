@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const Post = styled.div `
 background: whitesmoke;
+overflow: hidden;
 .main {
     width: 80%;
     text-align: center;
@@ -15,14 +16,12 @@ background: whitesmoke;
     .blog {
         .drop {
             position: relative;
-            left: 24%;
+            left: 34%;
             @media (max-width: 1010px) {
-                width: 80%;
-                left: 10%;
+                
             }
             @media (max-width: 640px) {
-                width: 100%;
-                left: 0;
+        
             }
         }
         input {
@@ -66,12 +65,14 @@ right: 24%;
     width: 100%;
     .dropzone {
         border: 1px solid #ccc;
+        border-radius: 4px;
         padding-top: -55px;
-        width: 100%;
-        height: 40px;
+        width: 80%;
+        height: 50px;
         outline: none;
         p {
-            margin-top: 4px;
+            margin-top: 10px;
+            color: black;
         }
     }
 }
