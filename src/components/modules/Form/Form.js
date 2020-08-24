@@ -76,7 +76,7 @@ class Form extends React.Component {
                 <div className='main'>
                     <div className='head'>
                         <h1>POST A BLOG</h1>
-                    </div><br /><br /><br /><br />
+                    </div><br /><br />
                     <div className='blog'>
                         <form onSubmit={this.submit}>
                             <div className='drop' style={{}}>

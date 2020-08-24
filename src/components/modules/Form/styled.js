@@ -12,6 +12,9 @@ overflow: hidden;
     background: white;
     .head {
             padding: 10px 0;
+            h1 {
+                color: #252079;
+            }
         }
     .blog {
         .drop {
@@ -25,22 +28,23 @@ overflow: hidden;
             }
         }
         input {
+            border: 1px solid black;
+            border-radius: 10px;
+            padding-top: -55px;
             width: 80%;
-            padding: 23px 20px;
-            margin-bottom: 28px;
-            box-sizing: border-box;
-            border-radius: 9px;
-            border: 1px solid gray;
+            height: 50px;
+            outline: none;
             text-align: center;
-            font-size: 18px;
-            color: black;
+            margin-bottom: 25px;
+            font-size: 16px;
         }
         .but {
-            margin: 19px 0;
+            margin-top: 19px;
+            margin-bottom: 88px;
             button {
             display: inline-block;
             padding: 0.55em 2.9em;
-            margin: 0 0.3em 0.3em 0;
+            margin: 0 0.3em 0.3em 2em;
             border: 0.1em solid #ffffff;
             border-radius: 0.12em;
             box-sizing: border-box;
@@ -64,8 +68,8 @@ right: 24%;
 .container {
     width: 100%;
     .dropzone {
-        border: 1px solid #ccc;
-        border-radius: 4px;
+        border: 1px solid black;
+        border-radius: 10px;
         padding-top: -55px;
         width: 80%;
         height: 50px;
