@@ -68,8 +68,11 @@ right: 24%;
         border: 1px solid #ccc;
         padding-top: -55px;
         width: 100%;
-        height: 10px;
+        height: 40px;
         outline: none;
+        p {
+            margin-top: 4px;
+        }
     }
 }
 `
