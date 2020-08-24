@@ -68,7 +68,7 @@ right: 24%;
         border: 1px solid #ccc;
         padding-top: -55px;
         width: 100%;
-        height: 500px;
+        height: 10px;
         outline: none;
     }
 }

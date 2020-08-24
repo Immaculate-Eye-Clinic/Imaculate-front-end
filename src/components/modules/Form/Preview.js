@@ -13,7 +13,7 @@ const thumbsContainer = {
 const thumb = {
   display: 'inline-flex',
   borderRadius: 2,
-  border: 'none',
+  border: '1px solid #eaeaea',
   marginBottom: 8,
   marginRight: 8,
   width: '100%',
@@ -67,13 +67,12 @@ function Previews(props) {
   return (
     <Div>
         <section className="container">
-            
-            <div {...getRootProps({className: 'dropzone'})}>
-                <input {...getInputProps()} />
-                <p>Drag 'n' drop some files here, or click to select files</p>
                 <aside style={thumbsContainer}>
                     {thumbs}
                 </aside>
+            <div {...getRootProps({className: 'dropzone'})}>
+                <input {...getInputProps()} />
+                <p>Drag 'n' drop some files here, or click to select files</p>
             </div>
         </section>
     </Div>
