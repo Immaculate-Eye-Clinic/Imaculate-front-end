@@ -38,7 +38,7 @@ const img = {
 function Previews(props) {
   const [files, setFiles] = useState([]);
   const {getRootProps, getInputProps} = useDropzone({
-    accept: 'image/*',
+    accept: 'image/jpeg, image/png',
     onDrop: acceptedFiles => {
       setFiles(acceptedFiles.map(file => Object.assign(file, {
         preview: URL.createObjectURL(file)
@@ -70,7 +70,7 @@ function Previews(props) {
         </aside>
         <div {...getRootProps({className: 'dropzone'})}>
             <input {...getInputProps()} />
-            <p>Drag 'n' drop some files here, or click to select files</p>
+            <p>Click to select files</p>
         </div>
         </section>
     </Div>

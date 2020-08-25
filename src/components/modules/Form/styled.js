@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const Post = styled.div `
-background: whitesmoke;
 overflow: hidden;
 .main {
     width: 80%;
@@ -29,12 +28,12 @@ overflow: hidden;
         }
         input {
             border: 1px solid black;
-            border-radius: 10px;
+            border-radius: 6px;
             padding-top: -55px;
             width: 80%;
-            height: 50px;
+            height: 40px;
             outline: none;
-            text-align: center;
+            text-align: left;
             margin-bottom: 25px;
             font-size: 16px;
         }
@@ -69,14 +68,16 @@ right: 24%;
     width: 100%;
     .dropzone {
         border: 1px solid black;
-        border-radius: 10px;
+        border-radius: 6px;
         padding-top: -55px;
         width: 80%;
-        height: 50px;
+        height: 40px;
         outline: none;
+        text-align: left;
         p {
-            margin-top: 10px;
+            margin-top: 7px;
             color: black;
+            font-size: 16px;
         }
     }
 }
