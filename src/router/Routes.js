@@ -21,6 +21,7 @@ import Faq from '../pages/Readmore/faq/Faq'
 import Career from '../pages/Readmore/career/Career'
 import Dashboard from '../pages/Dashboard/Dashboard'
 import Post from '../pages/Post/Post'
+import SingleBlog from '../pages/SingleBlog/SingleBlog'
 
 
 
@@ -49,6 +50,7 @@ class ReactRouter extends React.Component {
                               <Route exact path='/about/careers' component={Career} />
                               <Route exact path='/dashboard' component={Dashboard} />
                               <Route exact path='/post' component={Post} />
+                              <Route exact path='/:posts.id' component={SingleBlog} />
                               <Route component={NoMatch} />      
                           </Switch>
                         </App>
