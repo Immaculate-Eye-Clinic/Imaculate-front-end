@@ -18,7 +18,7 @@ class SingleBlog extends Component {
         .then(response => {
           this.setState({ post: response.data})
         })
-
+    
     }
 
     render() {
@@ -28,8 +28,8 @@ class SingleBlog extends Component {
                   <button>Close</button>
               </NavLink>
               <div key={this.state.post.id}>
-                    <h3>{this.state.post.title}</h3>
-                  </div>
+                <h3>{this.state.post.title}</h3>
+              </div>
 
             </div>  
         )
