@@ -15,7 +15,7 @@ function Blog() {
     const [posts, setPosts] = useState([]);
     const [loading, setLoading] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
-    const [postsPerPage, setPostsPerPage] = useState(10);
+    const [postsPerPage, setPostsPerPage] = useState(20);
 
     useEffect(() => {
         const fetchPosts = async () => {
@@ -44,7 +44,7 @@ function Blog() {
             <Header 
                 bgcolor={'transparent'}
                 title={'Visit Our Blogs'}
-                subText={'Linda Ikeji still dey learn work'}
+                subText={''}
                 height={'70vh'}
                 img={'https://res.cloudinary.com/hisroyalwonginess/image/upload/v1588437898/Immaculate/Doctors_ieplxk.jpg'}
             />

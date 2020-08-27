@@ -23,9 +23,9 @@ display: flex;
 position: relative;
 align-items: center;
 left: 55%;
-width: 450px;
+width: 200px;
 @media (max-width: 760px) {
-    left: -35%;
+    left: -5%;
     overflow: hidden;
 }
 
