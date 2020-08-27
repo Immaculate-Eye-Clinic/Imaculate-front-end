@@ -50,7 +50,7 @@ class ReactRouter extends React.Component {
                               <Route exact path='/about/careers' component={Career} />
                               <Route exact path='/dashboard' component={Dashboard} />
                               <Route exact path='/post' component={Post} />
-                              <Route exact path='/:posts.id' component={SingleBlog} />
+                              <Route exact path='/blog/:postsid' component={SingleBlog} />
                               <Route component={NoMatch} />      
                           </Switch>
                         </App>

@@ -25,7 +25,8 @@ align-items: center;
 left: 55%;
 width: 450px;
 @media (max-width: 760px) {
-    left: 25%;
+    left: -35%;
+    overflow: hidden;
 }
 
 li {

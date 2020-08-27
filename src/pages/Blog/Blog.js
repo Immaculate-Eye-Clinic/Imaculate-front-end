@@ -41,7 +41,7 @@ function Blog() {
 
     return (
         <Main>
-             <Header 
+            <Header 
                 bgcolor={'transparent'}
                 title={'Visit Our Blogs'}
                 subText={'Linda Ikeji still dey learn work'}
