@@ -7,16 +7,16 @@ class SingleBlog extends Component {
       constructor() {
         super();
         this.state = {
-            post: [],
+            blog: [],
         };
     }
 
     componentDidMount () {
         const { match: {params} } = this.props;
 
-        axios.get(`https:/jsonplaceholder.typicode.com/posts/${params.postid}`)
+        axios.get(`https:/jsonplaceholder.typicode.com/posts/${params.blogid}`)
         .then(response => {
-          this.setState({ post: response.data})
+          this.setState({ blog: response.data})
         })
     
     }
@@ -27,8 +27,8 @@ class SingleBlog extends Component {
               <NavLink to='/blog'>
                   <button>Close</button>
               </NavLink>
-              <div key={this.state.post.id}>
-                <h3>{this.state.post.title}</h3>
+              <div key={this.state.blog.id}>
+                <h3>{this.state.blog.title}</h3>
               </div>
 
             </div>  
