@@ -22,8 +22,8 @@ import Career from '../pages/Readmore/career/Career'
 import Dashboard from '../pages/Dashboard/Dashboard'
 import Post from '../pages/Post/Post'
 import SingleBlog from '../pages/SingleBlog/SingleBlog'
-
-
+import Protected from '../pages/Login/Protected'
+import Unprotected from '../pages/Login/unprotected'
 
 class ReactRouter extends React.Component {
     render() {
@@ -51,6 +51,8 @@ class ReactRouter extends React.Component {
                               <Route exact path='/dashboard' component={Dashboard} />
                               <Route exact path='/post' component={Post} />
                               <Route exact path='/blog/:blogid' component={SingleBlog} />
+                              <Route path='/protected' component={Protected} />
+                              <Route path='/unprotected' component={Unprotected} />
                               <Route component={NoMatch} />      
                           </Switch>
                         </App>
