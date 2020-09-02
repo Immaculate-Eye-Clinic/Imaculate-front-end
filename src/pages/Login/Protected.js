@@ -2,7 +2,7 @@ import React from 'react';
 
 function Protected(){
     return(
-        <p>Protected Page</p>
+        <p>Protected Pages</p>
     );
 }
 
