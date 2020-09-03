@@ -25,6 +25,9 @@ import SingleBlog from '../pages/SingleBlog/SingleBlog'
 import Protected from '../pages/Login/Protected'
 import Unprotected from '../pages/Login/unprotected'
 
+const fakeauth = {
+    isAuthenticated: false,
+}
 class ReactRouter extends React.Component {
     render() {
         return (
