@@ -24,7 +24,7 @@ import Post from '../pages/Post/Post'
 import SingleBlog from '../pages/SingleBlog/SingleBlog'
 import Protected from '../pages/Login/Protected'
 
-const fakeauth = {
+const fakeAuth = {
     isAuthenticated: false,
     authenticate(cb) {
         this.isAuthenticated = true 
@@ -35,6 +35,22 @@ const fakeauth = {
         setTimeout(cb,100)
     }
 }
+
+const PrivateRoute = ({ component: Dashboard, ...rest }) => (
+    <Route {...rest} render={(props) => (
+      fakeAuth.isAuthenticated === true
+        ? <Dashboard {...props} />
+        : <Redirect to='/login' />
+    )} />
+  )
+
+  const Router = ({ component: Post, ...rest }) => (
+    <Route {...rest} render={(props) => (
+      fakeAuth.isAuthenticated === true
+        ? <Post {...props} />
+        : <Redirect to='/login' />
+    )} />
+  )
 class ReactRouter extends React.Component {
     render() {
         return (
@@ -58,11 +74,9 @@ class ReactRouter extends React.Component {
                               <Route exact path='/about/choose' component={Choose} />
                               <Route exact path='/about/faq' component={Faq} />
                               <Route exact path='/about/careers' component={Career} />
-                              <Route exact path='/dashboard' component={Dashboard} />
-                              <Route exact path='/post' component={Post} />
+                              <PrivateRoute exact path='/dashboard' component={Dashboard} />
+                              <Router exact path='/post' component={Post} />
                               <Route exact path='/blog/:blogid' component={SingleBlog} />
-                              <Route path='/protected' component={Protected} />
-                              <Route path='/unprotected' component={Unprotected} />
                               <Route component={NoMatch} />      
                           </Switch>
                         </App>
