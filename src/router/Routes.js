@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Redirect, Link } from 'react-router-dom';
 
 import Home from '../pages/home/Home';
 import Blog from '../pages/Blog/Blog';
@@ -23,10 +23,17 @@ import Dashboard from '../pages/Dashboard/Dashboard'
 import Post from '../pages/Post/Post'
 import SingleBlog from '../pages/SingleBlog/SingleBlog'
 import Protected from '../pages/Login/Protected'
-import Unprotected from '../pages/Login/unprotected'
 
 const fakeauth = {
     isAuthenticated: false,
+    authenticate(cb) {
+        this.isAuthenticated = true 
+        setTimeout(cb, 100)
+    },
+    signout(cb) {
+        this.isAuthenticated = false
+        setTimeout(cb,100)
+    }
 }
 class ReactRouter extends React.Component {
     render() {
