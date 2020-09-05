@@ -22,7 +22,6 @@ import Career from '../pages/Readmore/career/Career'
 import Dashboard from '../pages/Dashboard/Dashboard'
 import Post from '../pages/Post/Post'
 import SingleBlog from '../pages/SingleBlog/SingleBlog'
-import Protected from '../pages/Login/Protected'
 
 const fakeAuth = {
     isAuthenticated: false,
