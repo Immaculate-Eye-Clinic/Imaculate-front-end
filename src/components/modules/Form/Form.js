@@ -90,12 +90,12 @@ class Form extends React.Component {
                                 onChange={this.handleChange}
                                 placeholder='Header goes here'
                             />
-                        {/*<Editor
+                            {/*<Editor
                             toolbarClassName="toolbarClassName"
                             wrapperClassName="wrapperClassName"
                             editorClassName="editorClassName"
                             onEditorStateChange={this.onEditorStateChange}
-                        />*/}
+                            />*/}
                             <FroalaEditor
                                 tag='textarea'
                                 config={this.config}
