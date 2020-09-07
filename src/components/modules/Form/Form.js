@@ -90,7 +90,8 @@ class Form extends React.Component {
                                 onChange={this.handleChange}
                                 placeholder='Header goes here'
                             />
-                            {/* uncomment<Editor
+                            {/* uncomment when
+                            <Editor
                             toolbarClassName="toolbarClassName"
                             wrapperClassName="wrapperClassName"
                             editorClassName="editorClassName"
