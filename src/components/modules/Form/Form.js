@@ -90,7 +90,7 @@ class Form extends React.Component {
                                 onChange={this.handleChange}
                                 placeholder='Header goes here'
                             />
-                            {/* uncomment when Froala
+                            {/* uncomment when Froala is not working
                             <Editor
                             toolbarClassName="toolbarClassName"
                             wrapperClassName="wrapperClassName"
