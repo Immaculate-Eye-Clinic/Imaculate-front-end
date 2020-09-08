@@ -14,6 +14,7 @@ height: 100vh;
 .container{
     width: 100vw;
     height: 100vh;
+    margin-top: 100px;
     /* max-height: 100%; */
     display: flex;
     justify-content: space-evenly;
