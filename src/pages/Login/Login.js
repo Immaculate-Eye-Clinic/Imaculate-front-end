@@ -33,7 +33,13 @@ class Login extends React.Component {
             email: this.email,
             password: this.password,
         }
-        axios.post('https://gentle-cove-39195.herokuapp.com/user/signup')
+        axios.post('https://gentle-cove-39195.herokuapp.com/user/signup', data)
+            .then(res => {
+                console.log(res)
+            })
+            .catch (err => {
+                console.log(err)
+            })
     }
     render() {
         return (
