@@ -22,8 +22,8 @@ const CustomTextInput = ({ label, ...props }) => {
     )
 }
 
-function Login() {
-
+class Login extends React.Component {
+    render() {
         return (
             <Div>
                 <Formik
@@ -93,5 +93,5 @@ function Login() {
         )
     }
 
-
+}
 export default Login
