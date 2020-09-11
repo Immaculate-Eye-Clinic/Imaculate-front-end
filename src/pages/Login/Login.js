@@ -22,7 +22,17 @@ const CustomTextInput = ({ label, ...props }) => {
     )
 }
 
+
 class Login extends React.Component {
+    handleSubmit = e => {
+        e.preventDefault();
+
+
+        const data = {
+            email: this.email,
+            password: this.password,
+        }
+    }
     render() {
         return (
             <Div>
