@@ -23,9 +23,10 @@ display: flex;
 position: relative;
 align-items: center;
 left: 55%;
-width: 450px;
+width: 200px;
 @media (max-width: 760px) {
-    left: 25%;
+    left: -5%;
+    overflow: hidden;
 }
 
 li {

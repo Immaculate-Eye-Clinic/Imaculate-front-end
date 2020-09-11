@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Post = styled.div `
-background: whitesmoke;
+overflow: hidden;
 .main {
     width: 80%;
     text-align: center;
@@ -11,38 +11,39 @@ background: whitesmoke;
     background: white;
     .head {
             padding: 10px 0;
+            h1 {
+                color: #252079;
+            }
         }
     .blog {
         .drop {
-            width: 50%;
             position: relative;
-            left: 24%;
+            left: 34%;
             @media (max-width: 1010px) {
-                width: 80%;
-                left: 10%;
+                
             }
             @media (max-width: 640px) {
-                width: 100%;
-                left: 0;
+        
             }
         }
         input {
+            border: 1px solid black;
+            border-radius: 6px;
+            padding-top: -55px;
             width: 80%;
-            padding: 23px 20px;
-            margin-bottom: 28px;
-            box-sizing: border-box;
-            border-radius: 9px;
-            border: 1px solid gray;
-            text-align: center;
-            font-size: 18px;
-            color: black;
+            height: 40px;
+            outline: none;
+            text-align: left;
+            margin-bottom: 25px;
+            font-size: 16px;
         }
         .but {
-            margin: 19px 0;
+            margin-top: 19px;
+            margin-bottom: 88px;
             button {
             display: inline-block;
             padding: 0.55em 2.9em;
-            margin: 0 0.3em 0.3em 0;
+            margin: 0 0.3em 0.3em 2em;
             border: 0.1em solid #ffffff;
             border-radius: 0.12em;
             box-sizing: border-box;
@@ -56,4 +57,28 @@ background: whitesmoke;
     }
 }
 
+`
+
+export const Div = styled.div`
+width: 100%;
+position: relative;
+right: 24%;
+
+.container {
+    width: 100%;
+    .dropzone {
+        border: 1px solid black;
+        border-radius: 6px;
+        padding-top: -55px;
+        width: 80%;
+        height: 40px;
+        outline: none;
+        text-align: left;
+        p {
+            margin-top: 7px;
+            color: black;
+            font-size: 16px;
+        }
+    }
+}
 `

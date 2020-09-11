@@ -6,15 +6,20 @@ import 'froala-editor/css/froala_editor.pkgd.min.css';
 import FroalaEditor from 'react-froala-wysiwyg';
 
 import Dropzone from 'react-dropzone'
+//import ReactDropzone from 'react-dropzone';
+//import request from "superagent";
 
 import Header from '../Header/Header'
 import {Post} from './styled'
+import Previews from './Preview'
+import StyledDropzone from './Usedrop'
 
 class Form extends React.Component {
     constructor () {
         super()
         this.state = {
             header: '',
+            imageFiles: []
         }
         this.handleChange = this.handleChange.bind(this)
          this.submit = this.submit.bind(this)
@@ -43,35 +48,40 @@ class Form extends React.Component {
          .then(res => res.json())
          .then(data => console.log(data));
         }
+
+        onDrop = (acceptedFiles) => {
+            console.log(acceptedFiles);
+          }
+
+        onDrop(imageFiles) {
+            this.setState({
+                imageFiles: imageFiles
+            })
+            console.log(imageFiles)  
+        }
     
     render() {
+        const maxSize = 1048576;
+
         return (
             <Post>
                 <Header 
                     bgcolor={'transparent'}
-                    title={'About Us'}
-                    subText={'Get to Know More About Us'}
-                    height={'70vh'}
+                    title={'Post A Blog'}
+                    subText={''}
+                    height={'60vh'}
                     mobileHeight={'50vh'}
                     img={'https://res.cloudinary.com/hisroyalwonginess/image/upload/v1588437898/Immaculate/Doctors_ieplxk.jpg'}
                 />
                 <div className='main'>
                     <div className='head'>
                         <h1>POST A BLOG</h1>
-                    </div><br /><br /><br /><br />
+                    </div><br /><br />
                     <div className='blog'>
                         <form onSubmit={this.submit}>
-                            <div className='drop'>
-                                <Dropzone onDrop={acceptedFiles => console.log(acceptedFiles)}>
-                                    {({getRootProps, getInputProps}) => (
-                                        <section>
-                                        <div {...getRootProps()} style={{textAlign: 'center',outline: 'none', border: '1px solid gray', borderRadius: '9px'}}>
-                                            <input {...getInputProps()} />
-                                            <p>Drag 'n' drop some files here, or click to select files</p>
-                                        </div>
-                                        </section>
-                                    )}
-                                </Dropzone><br />
+                            <div className='drop' style={{}}>
+                                <Previews />
+                                <br />
                             </div>
                             <input 
                                 type='text'
