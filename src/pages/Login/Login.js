@@ -5,6 +5,7 @@ import Header from '../../components/modules/Header/Header'
 
 import {Formik, useField, Form} from 'formik'
 import * as Yup from 'yup'
+import axios from 'axios'
 
 import Navbar from '../../components/modules/navbar/navbar'
 
@@ -32,6 +33,7 @@ class Login extends React.Component {
             email: this.email,
             password: this.password,
         }
+        axios.post('https://gentle-cove-39195.herokuapp.com/user/signup')
     }
     render() {
         return (
