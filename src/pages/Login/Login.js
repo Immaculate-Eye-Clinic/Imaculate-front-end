@@ -92,7 +92,7 @@ class Login extends React.Component {
                         <label>Password</label>
                         </div>
                         <div className='inputbox'>
-                         <button type='submit' className='button'>{ props.isSubmitting ? 'Loading...' : 'Login' }</button>
+                         <button type='submit' className='button'>Login</button>
                          </div>
                         </div>
                         <div className='a'>
