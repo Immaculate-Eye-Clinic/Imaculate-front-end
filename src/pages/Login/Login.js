@@ -25,6 +25,13 @@ const CustomTextInput = ({ label, ...props }) => {
 
 
 class Login extends React.Component {
+    constructor() {
+        super()
+        this.state = {
+            email: '',
+            password: ''
+        }
+    }
     handleSubmit = e => {
         e.preventDefault();
 
@@ -84,15 +91,15 @@ class Login extends React.Component {
                     <h1>LOGIN</h1>
                     <div>  
                         <div className='inputbox'>
-                        <CustomTextInput  name='email' type='text' required/>
+                        <CustomTextInput  name='email' type='text' onChange={this.handleChange} required/>
                         <label>E-mail</label>
                         </div>
                         <div className='inputbox'>
-                        <CustomTextInput  name='password' type='password' required/>
+                        <CustomTextInput  name='password' type='password' onChange={this.handleChange} required/>
                         <label>Password</label>
                         </div>
                         <div className='inputbox'>
-                         <button type='submit' className='button'>Login</button>
+                         <button type='submit' className='button'>{ props.isSubmitting ? 'Loading...' : 'Login' }</button>
                          </div>
                         </div>
                         <div className='a'>
