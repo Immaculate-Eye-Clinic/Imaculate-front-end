@@ -31,22 +31,22 @@ class Login extends React.Component {
             email: '',
             password: ''
         }
-
+        this.change = this.change.bind(this)
     }
 
-    handleChange(e){
+    change(e){
         const {name, value} = e.target
-        this.setState ({
-            [name] : e.target.value
-        })
+      this.setState({
+          [name]: value
+      })
     }
     handleSubmit = e => {
         e.preventDefault();
 
 
         const data = {
-            email: this.email,
-            password: this.password,
+            email: this.state.email,
+            password: this.state.password,
         }
         axios.post('https://gentle-cove-39195.herokuapp.com/user/login', data)
             .then(res => {
@@ -99,17 +99,11 @@ class Login extends React.Component {
                     <h1>LOGIN</h1>
                     <div>  
                         <div className='inputbox'>
-                        <CustomTextInput  name='email'
-                        value={this.state.password}
-                        type='text' 
-                        onChange={this.handleChange} required/>
+                        <CustomTextInput  name='email' type='text' value={this.state.email} onChange={this.change} required/>
                         <label>E-mail</label>
                         </div>
                         <div className='inputbox'>
-                        <CustomTextInput  name='password'
-                        value={this.state.password} 
-                        type='password' 
-                        onChange={this.handleChange} required/>
+                        <CustomTextInput  name='password' type='password' value={this.state.password} onChange={this.change} required/>
                         <label>Password</label>
                         </div>
                         <div className='inputbox'>
