@@ -33,7 +33,7 @@ class Login extends React.Component {
             email: this.email,
             password: this.password,
         }
-        axios.post('https://gentle-cove-39195.herokuapp.com/user/signup', data)
+        axios.post('https://gentle-cove-39195.herokuapp.com/user/login', data)
             .then(res => {
                 console.log(res)
             })
@@ -75,7 +75,7 @@ class Login extends React.Component {
                             height={'0px'}
                         />
 
-                        <div className='div'>
+                        <form className='div' onSubmit={this.handleSubmit}>
                    <div className='img'>
                         <img src='/Asset/Icon/Personalization.svg' alt='' />
                    </div>
@@ -101,7 +101,7 @@ class Login extends React.Component {
                     </div>
                 </div>   
                    </div>
-                </div>
+                </form>
                         </Form>
                     )}
                 </Formik>
