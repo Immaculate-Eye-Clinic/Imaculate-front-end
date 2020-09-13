@@ -40,22 +40,25 @@ class Login extends React.Component {
           [name]: value
       })
     }
+
     handleSubmit = e => {
         e.preventDefault();
 
-
         const data = {
             email: this.state.email,
-            password: this.state.password,
+            password: this.state.password
         }
+
         axios.post('https://gentle-cove-39195.herokuapp.com/user/login', data)
-            .then(res => {
-                localStorage.setItem('token', res.token)
+            .then(res =>{
+                console.log(res)
             })
-            .catch (err => {
+
+            .catch(err => {
                 console.log(err)
             })
     }
+   
     render() {
         return (
             <Div>
@@ -90,14 +93,14 @@ class Login extends React.Component {
                             height={'0px'}
                         />
 
-                        <form className='div' onSubmit={this.handleSubmit}>
+                        <div className='div' >
                    <div className='img'>
                         <img src='/Asset/Icon/Personalization.svg' alt='' />
                    </div>
                    <div className='login-container'>
                    <div className='box'>
                     <h1>LOGIN</h1>
-                    <div>  
+                    <form onSubmit={this.handleSubmit}>  
                         <div className='inputbox'>
                         <CustomTextInput  name='email' type='text' value={this.state.email} onChange={this.change} required/>
                         <label>E-mail</label>
@@ -109,14 +112,14 @@ class Login extends React.Component {
                         <div className='inputbox'>
                          <button type='submit' className='button'>{ props.isSubmitting ? 'Loading...' : 'Login' }</button>
                          </div>
-                        </div>
+                        </form>
                         <div className='a'>
                     <NavLink to='/signup' className='nav'>Don't Have An Account?</NavLink>
                     <NavLink to='/' className='nav'>Forgot My Password</NavLink>
                     </div>
                 </div>   
                    </div>
-                </form>
+                </div>
                         </Form>
                     )}
                 </Formik>
