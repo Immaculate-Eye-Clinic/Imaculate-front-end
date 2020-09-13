@@ -4,6 +4,7 @@ import {Div} from './Styled'
 import {Formik, useField, Form} from 'formik'
 import * as Yup from 'yup'
 import Navbar from '../../components/modules/navbar/navbar'
+import Axios from 'axios'
 
 
 const CustomTextInput = ({label, ...props}) => {
@@ -24,9 +25,41 @@ class SignUp extends React.Component{
     constructor(){
         super()
         this.state = {
-
+            firstName: '',
+            lastName: '',
+            email: '',
+            password: '',
+            confirmPassword: '',
         }
+        this.handleChange = this.handleChange.bind(this)
     }
+
+    handleSubmit = e => {
+        e.preventDefault();
+
+        const data = {
+            firstName: this.state.firstName,
+            lastName: this.state.lastName,
+            email: this.state.email,
+            password: this.state.password,
+        }
+
+        Axios.post('https://gentle-cove-39195.herokuapp.com/user/signup', data)
+            .then(res => {
+                console.log(res)
+            })
+            .catch(err => {
+                console.log(err)
+            })
+    }
+
+    handleChange(e){
+        const {name, value} = e.target
+        this.setState({
+            [name]: value
+        })
+    }
+
     render(){
         return(
             <Div>
@@ -88,29 +121,39 @@ class SignUp extends React.Component{
                             </div>
                             <div className='box'>
                                 <h1>SIGNUP</h1>
-                                <form action='#'>
+                                <form onSubmit={this.handleSubmit}>
                                     <div class='inputbox'>
-                                        <CustomTextInput type='text' name='firstName' required />
+                                        <CustomTextInput type='text' name='firstName' 
+                                            onChange={this.handleChange} value={this.state.firstName} required 
+                                        />
                                         <label>First Name</label>
                                     </div>
 
                                     <div class='inputbox'>
-                                        <CustomTextInput type='text' name='lastName' required />
+                                        <CustomTextInput type='text' name='lastName' 
+                                            onChange={this.handleChange} value={this.state.lastName} required 
+                                        />
                                         <label>Last Name</label>
                                     </div>
 
                                     <div class='inputbox'>
-                                        <CustomTextInput type='text' name='email' required />
+                                        <CustomTextInput type='text' name='email' 
+                                            onChange={this.handleChange} value={this.state.email} required 
+                                        />
                                         <label>Email Address</label>
                                     </div>
 
                                     <div class='inputbox'>
-                                        <CustomTextInput type='password' name='password' required />
+                                        <CustomTextInput type='password' name='password' 
+                                            onChange={this.handleChange} value={this.state.password} required 
+                                        />
                                         <label>Password</label>
                                     </div>
 
                                     <div class='inputbox'>
-                                        <CustomTextInput type='password' name='confirmPassword' required />
+                                        <CustomTextInput type='password' name='confirmPassword' 
+                                            onChange={this.handleChange} value={this.state.confirmPassword} required
+                                        />
                                         <label>Confirm Password</label>
                                     </div>
 
