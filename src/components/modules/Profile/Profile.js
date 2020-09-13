@@ -1,4 +1,5 @@
 import React from 'react'
+import {NavLink} from 'react-router-dom'
 
 import {Div} from './styled'
 
@@ -18,6 +19,9 @@ function Profile() {
                 10 Owerri Street
                 Nigeria
                 W1G 9PF</p>
+            </div>
+            <div className='button'>
+                <NavLink to='/post'><button>Post A Blog</button></NavLink>
             </div>
         </Div>
     )

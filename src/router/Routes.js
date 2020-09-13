@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Redirect, Link } from 'react-router-dom';
 
 import Home from '../pages/home/Home';
 import Blog from '../pages/Blog/Blog';
@@ -20,9 +20,36 @@ import Choose from '../pages/Readmore/choose/Choose'
 import Faq from '../pages/Readmore/faq/Faq'
 import Career from '../pages/Readmore/career/Career'
 import Dashboard from '../pages/Dashboard/Dashboard'
+import Post from '../pages/Post/Post'
+import SingleBlog from '../pages/SingleBlog/SingleBlog'
 
+const fakeAuth = {
+    isAuthenticated: false,
+    authenticate(cb) {
+        this.isAuthenticated = true 
+        setTimeout(cb, 100)
+    },
+    signout(cb) {
+        this.isAuthenticated = false
+        setTimeout(cb,100)
+    }
+}
 
+const PrivateRoute = ({ component: Dashboard, ...rest }) => (
+    <Route {...rest} render={(props) => (
+      fakeAuth.isAuthenticated === true
+        ? <Dashboard {...props} />
+        : <Redirect to='/login' />
+    )} />
+  )
 
+  const Router = ({ component: Post, ...rest }) => (
+    <Route {...rest} render={(props) => (
+      fakeAuth.isAuthenticated === true
+        ? <Post {...props} />
+        : <Redirect to='/login' />
+    )} />
+  )
 class ReactRouter extends React.Component {
     render() {
         return (
@@ -46,7 +73,9 @@ class ReactRouter extends React.Component {
                               <Route exact path='/about/choose' component={Choose} />
                               <Route exact path='/about/faq' component={Faq} />
                               <Route exact path='/about/careers' component={Career} />
-                              <Route exact path='/dashboard' component={Dashboard} />
+                              <PrivateRoute exact path='/dashboard' component={Dashboard} />
+                              <Router exact path='/post' component={Post} />
+                              <Route exact path='/blog/:blogid' component={SingleBlog} />
                               <Route component={NoMatch} />      
                           </Switch>
                         </App>

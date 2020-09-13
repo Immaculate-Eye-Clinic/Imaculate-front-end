@@ -1,4 +1,5 @@
 import React from 'react'
+import {NavLink} from 'react-router-dom'
 
 import Profile from '../../components/modules/Profile/Profile'
 import Taba from '../../components/modules/Tabs/Taba'
