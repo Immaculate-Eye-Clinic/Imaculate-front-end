@@ -50,7 +50,7 @@ class Login extends React.Component {
         }
         axios.post('https://gentle-cove-39195.herokuapp.com/user/login', data)
             .then(res => {
-                console.log(res)
+                localStorage.setItem('token', res.token)
             })
             .catch (err => {
                 console.log(err)
