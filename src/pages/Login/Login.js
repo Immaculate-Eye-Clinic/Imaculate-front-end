@@ -95,7 +95,7 @@ class Login extends React.Component {
 
                         <div className='div' >
                    <div className='img'>
-                        <img src='/Asset/Icon/Personalization.svg' alt='' />
+                        <img src='/Asset/Icon/Personalization.svg' alt='#' />
                    </div>
                    <div className='login-container'>
                    <div className='box'>
