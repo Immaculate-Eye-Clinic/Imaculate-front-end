@@ -3,8 +3,6 @@ import styled from 'styled-components'
 export const Div = styled.div`
 overflow: hidden;
 background: white;
-margin-bottom: 30px;
-padding: 0;
 height: 100vh;
 
 .space {
