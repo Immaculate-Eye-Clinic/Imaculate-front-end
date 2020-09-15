@@ -31,10 +31,10 @@ class Login extends React.Component {
             email: '',
             password: ''
         }
-        this.change = this.change.bind(this)
+        this.handleChange = this.handleChange.bind(this)
     }
 
-    change(e){
+    handleChange(e){
         const {name, value} = e.target
       this.setState({
           [name]: value
@@ -102,11 +102,11 @@ class Login extends React.Component {
                     <h1>LOGIN</h1>
                     <form onSubmit={this.handleSubmit}>  
                         <div className='inputbox'>
-                        <CustomTextInput  name='email' type='text' value={this.state.email} onChange={this.change} required/>
+                        <CustomTextInput  name='email' type='text' value={this.state.email} onChange={this.handleChange} required/>
                         <label>E-mail</label>
                         </div>
                         <div className='inputbox'>
-                        <CustomTextInput  name='password' type='password' value={this.state.password} onChange={this.change} required/>
+                        <CustomTextInput  name='password' type='password' value={this.state.password} onChange={this.handleChange} required/>
                         <label>Password</label>
                         </div>
                         <div className='inputbox'>
