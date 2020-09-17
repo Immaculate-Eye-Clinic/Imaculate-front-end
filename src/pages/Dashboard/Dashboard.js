@@ -27,7 +27,14 @@ class Dashboard extends React.Component{
     }
 
     componentDidMount() {
-        Axios.get('https://gentle-cove-39195.herokuapp.com/user/login').then
+        Axios.get('https://gentle-cove-39195.herokuapp.com/user/login').then(
+            res => {
+                console.log(res);
+            },
+            err => {
+                console.log(err)
+            }
+        )
     }
     
 
