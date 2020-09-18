@@ -27,7 +27,12 @@ class Dashboard extends React.Component{
     }
 
     componentDidMount() {
-        Axios.get('https://gentle-cove-39195.herokuapp.com/user/login').then(
+        const config = {
+            headers: {
+                Authorization: 'Bearer ' + localStorage.getItem('token')
+            }
+        }
+        Axios.get('https://gentle-cove-39195.herokuapp.com/user/login', config).then(
             res => {
                 console.log(res);
             },

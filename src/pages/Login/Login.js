@@ -29,8 +29,10 @@ class Login extends React.Component {
         super()
         this.state = {
             email: '',
-            password: ''
+            password: '',
+            data: [],
         }
+        this.handleSubmit = this.handleSubmit.bind(this)
         this.handleChange = this.handleChange.bind(this)
     }
 
@@ -51,7 +53,8 @@ class Login extends React.Component {
 
         axios.post('https://gentle-cove-39195.herokuapp.com/user/login', data)
             .then(res =>{
-                localStorage.setItem('token, res.data.token');
+                //localStorage.setItem('token, res.data.token');
+                this.setState({})
             })
 
             .catch(err => {
