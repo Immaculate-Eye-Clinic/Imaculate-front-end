@@ -31,6 +31,7 @@ class Login extends React.Component {
             email: '',
             password: '',
             data: [],
+            error: '',
         }
         this.handleSubmit = this.handleSubmit.bind(this)
         this.handleChange = this.handleChange.bind(this)
@@ -62,6 +63,9 @@ class Login extends React.Component {
                     case 'Authentication Successful':
                             localStorage.setItem('token, this.state.data.token');
                     case 'Request Failed':
+                        this.setState({
+                            error: 'login failed'
+                        })
                 
                     default:
                         break;
