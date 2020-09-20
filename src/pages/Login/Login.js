@@ -61,6 +61,7 @@ class Login extends React.Component {
                 switch (this.state.data.message) {
                     case 'Authentication Successful':
                             localStorage.setItem('token', this.state.data.token);
+                            window.location.href = 'href://www.facebook.com';
                     case  "Request failed with status code 401":
                         this.setState({
                             error: 'login failed'
