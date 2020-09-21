@@ -57,8 +57,8 @@ class Login extends React.Component {
                 this.setState({
                     data: res.data
                 })
-                console.log(this.state.data.message)
-                switch (this.state.data) {
+                console.log(this.state.data)
+                switch (this.state.data.message) {
                     case 'Authentication Successful':
                             localStorage.setItem('token', this.state.data.token);
                             window.location = '/dashboard';
