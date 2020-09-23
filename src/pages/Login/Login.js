@@ -58,23 +58,26 @@ class Login extends React.Component {
                     data: res.data
                 })
                 console.log(this.state.data)
-               {/* switch (this.state.data.message) {
+                switch (this.state.data.message) {
                     case 'Authentication Successful':
                             localStorage.setItem('token', this.state.data.token);
                             window.location.href = '/dashboard';
+                            console.log('hello')
                     case  "Request failed with status code 401":
                         this.setState({
                             error: 'login failed'
                         })
-                }*/}
-                if(this.state.data.message === 'Authentication Successful'){
+                        console.log('hello')
+                }
+                {/*if(this.state.data.message === 'Authentication Successful'){
                     localStorage.setItem('token', this.state.data.token);
                     window.location.href = '/dashboard';
+                    console.log('hello')
                 } else {
                     this.setState({
                         error: 'login failed'
                     })
-                }
+                }*/}
             })
             
             .catch(err => {
