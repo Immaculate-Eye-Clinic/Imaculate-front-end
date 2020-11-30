@@ -8,6 +8,7 @@ import {Div} from './styled'
 import Footer from '../../components/modules/footer/footer'
 import Navbar from '../../components/modules/navbar/navbar'
 import Modal from '../../components/modules/Modal/Modal'
+import Axios from 'axios'
 
 
 class Dashboard extends React.Component{
@@ -23,6 +24,22 @@ class Dashboard extends React.Component{
         this.modalHandler = this.modalHandler.bind(this)
         this.submit = this.submit.bind(this)
         this.change = this.change.bind(this)
+    }
+
+    componentDidMount() {
+        const config = {
+            headers: {
+                Authorization: 'Bearer ' + localStorage.getItem('token')
+            }
+        }
+        Axios.get('https://gentle-cove-39195.herokuapp.com/user/login', config).then(
+            res => {
+                console.log(res);
+            },
+            err => {
+                console.log(err)
+            }
+        )
     }
     
 

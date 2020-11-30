@@ -24,7 +24,7 @@ import Post from '../pages/Post/Post'
 import SingleBlog from '../pages/SingleBlog/SingleBlog'
 
 const fakeAuth = {
-    isAuthenticated: false,
+    isAuthenticated: true,
     authenticate(cb) {
         this.isAuthenticated = true 
         setTimeout(cb, 100)

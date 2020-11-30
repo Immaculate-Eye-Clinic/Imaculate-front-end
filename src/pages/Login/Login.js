@@ -1,97 +1,162 @@
 import React from 'react'
-import {Div} from './Styled'
-import {NavLink} from 'react-router-dom'
+import { Div } from './Styled'
+import { NavLink } from 'react-router-dom'
 import Header from '../../components/modules/Header/Header'
 
-import {Formik, useField, Form} from 'formik'
+import { Formik, useField, Form } from 'formik'
 import * as Yup from 'yup'
+import Axios from 'axios'
 
 import Navbar from '../../components/modules/navbar/navbar'
 
 const CustomTextInput = ({ label, ...props }) => {
-    const[field, meta] = useField(props);
+  const [field, meta] = useField(props)
 
-    return (
-        <>
-            <label htmlFor={props.id || props.name}>{label}</label>
-            <input className='text-input' {...field} {...props} />
-            {meta.touched && meta.error ? (
-                <div className='error'> {meta.error} </div>
-            ): null}
-        </>
-    )
+  return (
+    <>
+      <label htmlFor={props.id || props.name}>{label}</label>
+      <input className='text-input' {...field} {...props} />
+      {meta.touched && meta.error ? (
+        <div className='error'> {meta.error} </div>
+      ) : null}
+    </>
+  )
 }
 
-function Login() {
+class Login extends React.Component {
+  constructor({ location }) {
+    super({ location })
+    this.state = {
+      email: '',
+      password: '',
+      data: [],
+      error: ''
+    }
+    this.handleSubmit = this.handleSubmit.bind(this)
+    this.handleChange = this.handleChange.bind(this)
+  }
 
-        return (
-            <Div>
-                <Formik
-                 initialValues={{
-                     email: '',
-                     password: ''
-                 }}
-                 validationSchema={Yup.object({
-                     email: Yup.string()
-                     .email('invalid email address')
-                     .required(''), 
-                     password: Yup.string()
-                     .min(4,)
-                     .max(12)
-                     .matches('^(?=.*[a-z])(?=.*[A-Z](?=.*d)[a-zA-Zd]$')
-                     .required('')
-                 })}
-                onSubmit={(values, { setSubmitting, resetForm}) => {
-                    setTimeout(() => {
-                      console.log(JSON.stringify(values, null, 2));
-                      resetForm();
-                      setSubmitting(false);
-                    }, 3000)
-                 }}
-                >
-                    {props => (
-                        <Form>
-                        <Header 
-                            bgcolor={'rgba(0,0,0,0.5)'}
-                            mobileHeight="0px"
-                            height={'0px'}
-                        />
+  handleChange(e) {
+    const { name, value } = e.target
+    this.setState({
+      [name]: value
+    })
+  }
 
-                        <div className='div'>
-                   <div className='img'>
-                        <img src='/Asset/Icon/Personalization.svg' alt='' />
-                   </div>
-                   <div className='login-container'>
-                   <div className='box'>
-                    <h1>LOGIN</h1>
-                    <div>  
-                        <div className='inputbox'>
-                        <CustomTextInput  name='email' type='text' required/>
-                        <label>E-mail</label>
-                        </div>
-                        <div className='inputbox'>
-                        <CustomTextInput  name='password' type='password' required/>
-                        <label>Password</label>
-                        </div>
-                        <div className='inputbox'>
-                         <button type='submit' className='button'>{ props.isSubmitting ? 'Loading...' : 'Login' }</button>
-                         </div>
-                        </div>
-                        <div className='a'>
-                    <NavLink to='/signup' className='nav'>Don't Have An Account?</NavLink>
-                    <NavLink to='/' className='nav'>Forgot My Password</NavLink>
-                    </div>
-                </div>   
-                   </div>
-                </div>
-                        </Form>
-                    )}
-                </Formik>
+  handleSubmit = e => {
+    e.preventDefault()
 
-                
-            </Div>
-        )
+    const datas = {
+      email: this.state.email,
+      password: this.state.password
     }
 
+    fetch('https://gentle-cove-39195.herokuapp.com/user/login', {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+        'Content-type': 'application/json'
+      },
+      body: JSON.stringify(datas)
+    })
+      .then(res => res.json())
+      .then(data => {
+        this.setState({ data: data })
+        console.log(this.state.data.message)
+        if (this.state.data.message === 'Authentication successful') {
+          localStorage.setItem('token', this.state.data.token)
+          window.location.href = '/dashboard'
+          console.log('jur')
+        } else {
+          this.setState({
+            error: 'error in logging in'
+          })
+        }
+      })
+  }
 
+  render() {
+    return (
+      <Div>
+        <Formik
+          initialValues={{
+            email: '',
+            password: ''
+          }}
+          validationSchema={Yup.object({
+            email: Yup.string().email('invalid email address').required(''),
+            password: Yup.string()
+              .min(4)
+              .max(12)
+              .matches('^(?=.*[a-z])(?=.*[A-Z](?=.*d)[a-zA-Zd]$')
+              .required('')
+          })}
+          onSubmit={(values, { setSubmitting, resetForm }) => {
+            setTimeout(() => {
+              resetForm()
+              setSubmitting(false)
+            }, 3000)
+          }}
+        >
+          {props => (
+            <Form>
+              <Header
+                bgcolor={'rgba(0,0,0,0.5)'}
+                mobileHeight='0px'
+                height={'0px'}
+              />
+
+              <div className='div'>
+                <div className='img'>
+                  <img src='/Asset/Icon/Personalization.svg' alt='#' />
+                </div>
+                <div className='login-container'>
+                  <div className='box'>
+                    <h1>LOGIN</h1>
+                    <form onSubmit={this.handleSubmit}>
+                      <div className='inputbox'>
+                        <CustomTextInput
+                          name='email'
+                          type='text'
+                          value={this.state.email}
+                          onChange={this.handleChange}
+                          required
+                        />
+                        <label>E-mail</label>
+                      </div>
+                      <div className='inputbox'>
+                        <CustomTextInput
+                          name='password'
+                          type='password'
+                          value={this.state.password}
+                          onChange={this.handleChange}
+                          required
+                        />
+                        <label>Password</label>
+                      </div>
+                      <div className='inputbox'>
+                        <button type='submit' className='button'>
+                          {props.isSubmitting ? 'Loading...' : 'Login'}
+                        </button>
+                        <p>{this.state.error}</p>
+                      </div>
+                    </form>
+                    <div className='a'>
+                      <NavLink to='/signup' className='nav'>
+                        Don't Have An Account?
+                      </NavLink>
+                      <NavLink to='/' className='nav'>
+                        Forgot My Password
+                      </NavLink>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Form>
+          )}
+        </Formik>
+      </Div>
+    )
+  }
+}
 export default Login
