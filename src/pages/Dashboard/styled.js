@@ -1,17 +1,6 @@
 import styled from 'styled-components'
 
 export const Div = styled.div `
-    .modal{
-        .button{
-            background: #252079;
-            color: white;
-            border: none;
-            outline: none;
-            padding: 10px 30px;
-            border-radius: 10px;
-            cursor: pointer;
-        }
-    }
     .dash {
         display: flex;
         flex-direction: row;
@@ -32,7 +21,20 @@ export const Div = styled.div `
             @media (max-width: 1000px) {
                 width: 80%;
                 margin-top: 50px;
-        }
+            }
+            .button-div{
+                display: flex;
+                justify-content: center;
+                .button{
+                    background: #252079;
+                    color: white;
+                    border: none;
+                    outline: none;
+                    padding: 10px 30px;
+                    border-radius: 10px;
+                    cursor: pointer;
+                }
+            }
         }
         .tab {
             width: 60%;
